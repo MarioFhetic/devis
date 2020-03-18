@@ -1,0 +1,86 @@
+<div class="mat-typography container">
+    <div class="row">
+        <div class="col">
+            <h2>Quels sont les caractéristiques de votre salle ?</h2>
+            <mat-form-field class="textareaButton" appearance="outline">
+                <mat-label>De quelle capacité avez-vous besoin ?</mat-label>
+                <textarea matInput placeholder="J'ai besoin de 267 chaises et 1557 tables"></textarea>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2>Quelle est la disposition souhaitée ?</h2>
+            <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon></mat-button-toggle>
+                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>wb_sunny</mat-icon></mat-button-toggle>
+                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>ac_unit</mat-icon></mat-button-toggle>
+                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>fitness_center</mat-icon></mat-button-toggle>
+                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>local_cafe</mat-icon></mat-button-toggle>
+                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>euro</mat-icon></mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2>Avez-vous des besoins spécifiques ?</h2>
+            <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon></mat-button-toggle>
+                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>wb_sunny</mat-icon></mat-button-toggle>
+                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>ac_unit</mat-icon></mat-button-toggle>
+                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>fitness_center</mat-icon></mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2>Avez-vous besoin d'autres salles ?</h2>
+            <mat-button-toggle-group class="yesNoButton" #toggleYesNo="matButtonToggleGroup">
+                <mat-button-toggle (click)="displayModalHosting()" disableRipple value = "">Oui</mat-button-toggle>
+                <mat-button-toggle (click)="closeDisplayModalHosting()"disableRipple value = "" >Non</mat-button-toggle>
+            </mat-button-toggle-group>
+            {{toggleYesNo.value}}
+        </div>
+    </div>
+    <div class="row" >
+        <div *ngIf= "isDisplayHosting" class="col-lg-5 col-sm-12 modalRoom">
+            <div class="col">
+                <h3>Nombre de couchage</h3>
+                <mat-form-field appearance="outline">
+                    <mat-label>Rentrez le nombre de couchage</mat-label>
+                    <input matInput type="number" class="example-right-align">
+                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">king_bed</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <h3>Type de chambre</h3>
+                <mat-form-field appearance="outline">
+                    <mat-label>Lit simple</mat-label>
+                    <input matInput type="number" class="example-right-align">
+                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">king_bed</mat-icon>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Lit double</mat-label>
+                    <input matInput type="number" class="example-right-align">
+                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">king_bed</mat-icon>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Lit twins</mat-label>
+                    <input matInput type="number" class="example-right-align">
+                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">king_bed</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="col">
+                <h3>Avez-vous un besoin particulier ?</h3>
+                <mat-form-field class="textareaButton" appearance="outline">
+                    <mat-label>Détaillez vos besoins</mat-label>
+                    <textarea matInput placeholder=""></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="col-8 d-flex justify-content-end mt-4">
+            <button mat-raised-button color="primary">Continuer</button>
+        </div>
+    </div>
+    <app-svg></app-svg>
+</div>

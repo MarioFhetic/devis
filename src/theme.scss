@@ -1,0 +1,265 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$my-app-primary:mat-palette($mat-green);
+$my-app-accent: mat-palette($mat-grey, 500, 900, A100);
+$my-app-warn: mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+@include angular-material-theme($my-app-theme);
+
+.container
+{
+    margin-top: 4rem;
+}
+
+h3
+{
+    font-weight: bold !important;
+}
+
+header nav
+{
+    margin: 0;
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    -webkit-box-shadow: 0px -1px 38px -9px rgba(219,219,219,1);
+    -moz-box-shadow: 0px -1px 38px -9px rgba(219,219,219,1);
+    box-shadow: 0px -1px 38px -9px rgba(219,219,219,1);
+}
+
+.nav
+{
+    font-size: 1rem;
+}
+.nav-link
+{
+    padding: 0 !important;
+}
+a .mat-icon
+{
+    position: relative;
+    top: -1px;
+}
+
+.nav-link.disabled
+{
+    color: #929FB1 !important;
+}
+
+.activeNavButton
+{
+    color:#329494;
+    font-weight: bold;
+
+}
+
+.activeNavButton:hover
+{
+    list-style: none;
+    text-decoration: none;
+    color: #329494;
+}
+
+.textareaButton
+{
+    width: 20rem !important;
+}
+
+.bigTextareaButton
+{
+    width: 22rem !important;
+  
+}
+
+.mat-raised-button
+{
+    color: white !important;
+    width: 12rem;
+}
+
+.mat-button-toggle-group 
+{
+    border: none;
+    flex-wrap: wrap;
+}
+
+.mat-form-field
+{
+    width: 18.75rem;
+}
+
+.mat-grid-tile .mat-figure 
+{
+    flex-direction: column;
+    justify-content: flex-start !important ;
+    align-items: flex-start !important;
+    // background: lightgrey;
+}
+
+.mat-grid-tile:last-child
+{
+    margin-right: auto;
+    // background: lightskyblue;
+}
+
+// ICON SIZE
+
+ .mat-icon.md-14 {
+    font-size: 0.875rem;
+ }
+ 
+ .mat-icon.md-18 {
+    font-size: 1.125rem;
+ }
+ 
+ .mat-icon.md-24 {
+    font-size: 1.5rem;
+ }
+ 
+ .mat-icon.md-30 {
+    font-size: 1.875rem;
+ }
+
+ .mat-icon.md-36 {
+    font-size: 2.25rem;
+ }
+ 
+ .mat-icon.md-48 {
+    font-size: 3rem;
+ }
+
+body {
+    margin: 0;
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 16px;
+}
+
+//
+
+
+// header {
+//     padding: 1em 0;
+
+//     a {
+//         color: white;
+//         text-decoration: none;
+//     }
+//     a.logo {
+//         font-weight: bold;
+//     }
+
+//     nav {
+//         float: right;
+
+//         ul {
+//             list-style-type: none;
+//             margin: 0;
+//             display: flex;
+
+//             li a {
+//                 padding: 1em;
+
+//                 &:hover {
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
+
+h1 {
+    margin-top: 2em;
+}
+html, body { height: 100%; font-size: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+// BLUE FOCUS
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+outline: none;
+}
+
+
+
+.mat-button-toggle 
+{
+    display: flex;
+    justify-content: center !important;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 4.375rem;
+    border-radius: 8px;
+    background-color: #F8F9FA;
+    border: none !important;
+    margin-bottom: 1rem;    
+}
+
+.mat-button-toggle-checked
+{
+    color: white !important;
+    background: #27B9B9;
+    font-weight: bold;
+}
+
+.mat-button-toggle .mat-icon
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.mat-button-toggle-label-content
+{
+    line-height: 0px !important;
+}
+
+.row
+{
+    margin-bottom: 1rem;
+}
+
+.yesNoButton > *
+{
+    width: 13rem;
+    font-weight: bold;
+}
+
+.modalRoom 
+{
+    padding-top: 15px;
+    -webkit-box-shadow: 0px -1px 38px -9px rgba(219,219,219,1);
+    -moz-box-shadow: 0px -1px 38px -9px rgba(219,219,219,1);
+    box-shadow: 0px -1px 38px -9px rgba(219,219,219,1);
+}
+
+.addMeal
+{
+    width: 210px;
+    height: 50px;
+    background: #F8F9FA;
+    color: #AFBECD;
+}
+
+
+.col-lg-4
+{
+    display: inline-block;
+    background: lightcyan; 
+    text-align: left !important;
+    padding: 0;
+}
+
+
+// @media only screen 
+// and (min-device-width : 375px) 
+// and (max-device-width : 812px) 
+// and (-webkit-device-pixel-ratio : 3)
+// and (orientation : portrait) { 
+//     .mat-grid-list {
+//         column-count: 1
+//       }
+//  }

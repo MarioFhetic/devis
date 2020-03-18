@@ -1,0 +1,39 @@
+
+.mat-button-toggle
+{
+    margin-right: 1rem;
+    border-radius: 1.5rem;
+    color: #D5DDE5;
+    font-weight: bold;
+    width: 8rem;
+    height: 2.2rem;
+}
+
+.mat-button-toggle-checked
+{
+    color: white;
+    background: linear-gradient(180deg, #329696 0%, #3CC3C3 100%); 
+    font-weight: bold;
+}
+
+.mat-grid-list
+{
+    height: 35rem;
+    width: 50rem;
+    max-width: 100%;
+}
+
+.showToggleButton
+{
+    width: 2rem;
+    height: 2rem;
+
+}
+
+.showToggleButton .mat-icon
+{
+    position: relative;
+    left: -8px;
+    top: 3px;
+}
+
