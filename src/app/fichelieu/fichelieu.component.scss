@@ -1,0 +1,196 @@
+.container
+{
+    margin-left: inherit !important;
+}
+
+.bigContainer
+{
+    margin-left: 15%;
+}
+
+.bigContainer .col-9
+{
+    background: pink;
+}
+.bigContainer .col-4
+{
+    // background: red;
+    margin-left: 5%;
+}
+
+.devisContainer
+{
+    box-shadow: 0 4px 30px 0 rgba(199, 199, 199, 0.2), 0 6px 30px 0 rgba(199, 199, 199, 0.2);
+    border-radius: 20px;
+}
+
+.devisContainer h3
+{
+    color: #329494;
+    text-transform: uppercase;
+}
+
+.devisContainer  .divider
+{
+    border-bottom: 5px solid #329494;
+    width: 15%;
+}
+
+.devisContainer .colorSpan
+{
+    color: #329494 !important;
+    font-weight: bolder;
+}
+
+.devisContainer .buttonValider
+{
+    width: 90% !important;
+    border-radius: 20px;
+}
+
+.devisContainer .mat-form-field
+{
+    width: 100% !important;
+}
+
+.bigContainer .breadCrumd
+{
+    margin-top: 0rem !important;
+}
+
+.bigContainer .breadCrumd ul
+{
+    font-size: 14px !important;
+
+}
+
+.bigContainer .mat-button-toggle
+{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center !important;
+    justify-content: center !important;
+    /* margin-right: 1rem; */
+    width: 220px !important; 
+    height: 40px !important;
+    /* border-radius: 8px; */
+    background-color: transparent !important;
+    border: 1px solid #D5DDE5 !important;
+    color: #6E7A8A !important;
+    border-radius: 20px !important;
+    /* margin-bottom: 1rem; */
+}
+
+.bigContainer .mat-button-toggle-checked
+{
+    background: #27B9B9 !important;
+    border: none !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.bigContainer .squareButtonIcon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; 
+    height: 50px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 4px 30px 0 rgba(199, 199, 199, 0.2), 0 6px 30px 0 rgba(199, 199, 199, 0.2);
+}
+
+.bigContainer .squareButtonIcon .captionButton
+{
+    position: absolute;
+    bottom: -50%;
+    color: #329494;
+}
+
+.divider_title
+{
+    border-bottom: 1px solid #61BEB6;
+    opacity: 0.7;
+    width: 70%;
+}
+
+.showToggleButton
+{
+    color: #329494; 
+    cursor: pointer;   
+}
+
+.showToggleButton .mat-icon
+{
+    position: relative;
+    top: 7px;
+    right: 0px;
+}
+
+.bigContainer .spaceCard
+{
+    width: 300px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 30px;
+}
+
+.bigContainer .spaceCard.vertGalant
+{
+    background-image: url("../../assets/img3.jpg"); 
+}
+.bigContainer .spaceCard.centCouverts
+{
+    background-image: url("../../assets/img4.jpg"); 
+}
+
+.spaceCard .captionCard
+{
+    position: relative;
+    bottom: -100%;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(56, 56, 56, 0.247);
+    border-radius: 0 0 30px 30px;
+    width: 100%;
+    color: white;
+    
+}
+
+.toggleSpaceButton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #D5DDE5;
+    color: #329494;
+    cursor: pointer;
+}
+
+.toggleSpaceButton .mat-icon
+{
+    position: relative;
+    left:25px; 
+    font-size:30px;
+}
+
+.divider_title.tarifs
+{
+    width: 90% !important;
+
+}
+
+.containerTarif
+{
+    width: 250px;
+    background: blue;
+}

@@ -1,0 +1,80 @@
+
+
+// .recapDevis
+// {
+//     background: bisque;
+// }
+// .sectionSend
+// {
+//     background: darkcyan;
+// }
+
+.sectionSend h2:first-child
+{
+    margin-top: 7rem;
+}
+
+
+ul li
+{
+
+    padding-bottom: 0.5rem;
+}
+
+span
+{
+    color: #329494;
+    font-weight: bold;
+}
+
+.connectButton
+{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 8px;
+}
+
+.connectButton.linkedin
+{
+    background: #0E76A8 !important;
+}
+
+.connectButton.google
+{
+    background: white;
+    border: 1px solid #D5DDE5;
+    color: #7C7878 !important;
+}
+
+
+.connectButton .mat-icon
+{
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    
+}
+
+.emailInput
+{
+    width: 19rem;
+}
+.nameInput
+{
+    width: 15rem;
+}
+.telInput
+{
+    width: 15rem;
+}
+.activityInput
+{
+    width: 19rem;
+}
+
+.divider
+{
+    border-bottom: 1px solid #AFBECD;
+    opacity: 0.3;
+    width: 70%;
+}

@@ -1,0 +1,244 @@
+<app-image-lightbox></app-image-lightbox>
+<div class="row bigContainer">
+    <div class="col-9">
+        <div class="col breadCrumd">
+            <ul class="nav align-items-baseline">
+                <li class="nav-item align">
+                  <a class="nav-link activeNavButton" href="#">Salles de Séminaire et réunion en France<mat-icon class="md-24 d-inline align-middle activeNavButton" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Caugé<mat-icon class="md-24 d-inline align-middle" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Manoir HENRI IV</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col d-flex justify-content-between mt-3 pl-0">
+            <div class="col">
+                <h1 class="mb-0">Manoir HENRI IV</h1>
+                <span>Caugé ( 27180 )</span>
+            </div>
+            <div class="col">
+                <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+                    <mat-icon style="position: absolute; right: 12%; top: 14%; z-index: 10;" color ="primary" class="md-24">favorite_border</mat-icon>
+                    <mat-button-toggle disableRipple value = "favoris">Ajouter aux favoris</mat-button-toggle>
+                </mat-button-toggle-group>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-between mt-3">
+            <div class="squareButtonIcon">
+                <div class= "captionButton">
+                    <span class="captionSquareButtonIcon">5 espaces</span> 
+                </div>
+                <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
+            </div>
+            <div class="squareButtonIcon">
+                <div class= "captionButton">
+                    <span class="captionSquareButtonIcon">930 m2</span> 
+                </div>
+                <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
+            </div>
+            <div class="squareButtonIcon">
+                <div class= "captionButton">
+                    <span class="captionSquareButtonIcon">1500 pers</span> 
+                </div>
+                <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
+            </div>
+            <div class="squareButtonIcon">
+                <div class= "captionButton">
+                    <span class="captionSquareButtonIcon">4 formules</span> 
+                </div>
+                <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
+            </div>
+            <div class="squareButtonIcon">
+                <div class= "captionButton">
+                    <span class="captionSquareButtonIcon">Dès 2000€</span> 
+                </div>
+                <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
+            </div>
+        </div>
+        <div class="col mt-4 pt-4">
+            <div class="col p-0 d-flex justify-content-between">
+                <h2 class="mb-0">Présentation du lieu</h2>
+                <div class="divider_title mb-2"></div>
+            </div>
+            <p class="mt-4">
+                Le Manoir Henri IV vous reçoit pour toutes vos réceptions privées ou professionnelles.
+                <br/><br/>
+
+                Lors de vos soirées, nos deux granges s'adaptent à votre nombre d'invités de 80 à 600 personnes en repas assis et dansant sans avoir à retirer le mobilier pour la danse.
+                <br/><br/>
+
+                De part nos espaces, vous pouvez ainsi y organiser votre cérémonie laïque en salle ou dans le jardin, votre cocktail ou extérieur aux abords du préau et sur les pelouses ou en intérieur de grange.
+                <br/><br/>
+                Votre dîner permet la convivialité autour de table de 8 invités et un espace dansant accessible dès le début de votre entrée en salle.
+            </p>
+            <span (click) = "toggleShowButton()" class="showToggleButton" disableRipple value = "">Lire la suite<mat-icon class="md-24" color="primary" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></span>
+            <div *ngIf= "isShowButtonActive">
+                <p class="mt-4">
+                    La grande qualité du Domaine est l'espace parc et jardin, aménagé et agréablement fleuri pour vos photos de groupes et nos espaces salles de grande capacité d'accueil, totalement modulables selon votre nombre d' invités jusqu'à 600 couverts..
+                </p>
+            </div>
+        </div>
+        <div class="col mt-4">
+            <div class="col p-0 d-flex justify-content-between">
+                <h2 class="mb-0">Liste des espaces</h2>
+                <div class="divider_title mb-2"></div>
+            </div>
+            <div class="col mt-4">
+                <img src="../../assets/Tableau_Espaces.png" alt="">
+            </div>
+        </div>
+        <div class="col mt-4">
+            <div class="col p-0 d-flex justify-content-between">
+                <h2 class="mb-0">Explorer des espaces</h2>
+                <div class="divider_title mb-2"></div>
+            </div>
+            <div class="col d-flex justify-content-between p-0 mt-4 flex-wrap">
+                <div class="spaceCard vertGalant">
+                    <div class="captionCard">
+                        <h3 class = "p-0 m-0">Le Vert Galant</h3>
+                        <span>400m2 - 300 convives</span>
+                    </div>
+                </div>
+                <div class="spaceCard centCouverts">
+                    <div class="captionCard">
+                        <h3 class = "p-0 m-0">Les cents couverts</h3>
+                        <span>400m2 - 300 convives</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mt-4 d-flex justify-content-center">
+                <button (click) = "toggleSpaceShowButton()" class="toggleSpaceButton">
+                    Voir plus d'espaces
+                    <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+                </button>
+
+            </div>
+
+            <!-- OPEN IF CLICKED  -->
+            <div *ngIf = "isShowSpaceButtonActive" class="col d-flex justify-content-between p-0 mt-4 flex-wrap">
+                <div class="spaceCard vertGalant">
+                    <div class="captionCard">
+                        <h3 class = "p-0 m-0">Le Vert Galant</h3>
+                        <span>400m2 - 300 convives</span>
+                    </div>
+                </div>
+                <div class="spaceCard centCouverts">
+                    <div class="captionCard">
+                        <h3 class = "p-0 m-0">Les cents couverts</h3>
+                        <span>400m2 - 300 convives</span>
+                    </div>
+                </div>
+            </div>
+            <!-- OPEN IF CLICKED  -->
+        </div>
+        <div class="col mt-4">
+            <div class="col p-0 d-flex justify-content-between">
+                <h2 class="mb-0">Tarifs</h2>
+                <div class="divider_title tarifs mb-2"></div>
+            </div>
+            <div class="col p-0 d-flex justify-content-between flex-wrap mt-4">
+                <div class="containerTarif d-flex justify-content-between mb-4">
+                    <div class="squareButtonIcon">
+                        <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
+                    </div>
+                    <div class="captionTarif mt-2">
+                        <span>Tarif de location de la salle vide</span>
+                        <br/>
+                        <span>À partir de 2000 €</span>
+                    </div>
+                </div>
+                <div class="containerTarif d-flex justify-content-between mb-4">
+                    <div class="squareButtonIcon">
+                        <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
+                    </div>
+                    <div class="captionTarif mt-2">
+                        <span>Tarif de location de la salle vide</span>
+                        <br/>
+                        <span>À partir de 2000 €</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-0 d-flex justify-content-between flex-wrap">
+                <div class="containerTarif d-flex justify-content-between mb-4">
+                    <div class="squareButtonIcon">
+                        <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
+                    </div>
+                    <div class="captionTarif mt-2">
+                        <span>Tarif de location de la salle vide</span>
+                        <br/>
+                        <span>À partir de 2000 €</span>
+                    </div>
+                </div>
+                <div class="containerTarif d-flex justify-content-between mb-4">
+                    <div class="squareButtonIcon">
+                        <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
+                    </div>
+                    <div class="captionTarif mt-2">
+                        <span>Tarif de location de la salle vide</span>
+                        <br/>
+                        <span>À partir de 2000 €</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 d-flex align-items-center flex-column devisContainer">
+        <h3 class="mb-2 pt-4">Devis gratuit</h3>
+        <div class = "divider"></div>
+        <mat-form-field class="mt-3 pr-4 pl-4" appearance="legacy" >
+            <mat-label>Type d'événement</mat-label>
+            <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+            <select matNativeControl>
+                <!-- <mat-option>-- None --</mat-option> -->
+                <option value=""></option>
+                <option value="Footballeur">Footballeur</option>
+                <option value="Astronaute">Astronaute</option>
+                <option value="Fonctionnaire">Fonctionnaire</option>
+            </select>
+        </mat-form-field>
+        <mat-form-field class="mt-3 pr-4 pl-4"  appearance="legacy">
+            <mat-label>Nombre d'invités</mat-label>
+            <input matInput type="number" class="example-right-align">
+            <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="mt-3 pr-4 pl-4"  appearance="legacy" >
+            <mat-label>Type de disposition</mat-label>
+            <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+
+            <select matNativeControl>
+                <!-- <mat-option>-- None --</mat-option> -->
+                <option value=""></option>
+                <option value="Footballeur">Footballeur</option>
+                <option value="Astronaute">Astronaute</option>
+                <option value="Fonctionnaire">Fonctionnaire</option>
+            </select>
+        </mat-form-field>
+        <mat-form-field class="mt-3 pr-4 pl-4">
+            <mat-label>Date de l'événément </mat-label>
+            <input  (focus)= "arrivalDay.open()" matInput [matDatepicker]="arrivalDay" >
+            <mat-datepicker-toggle matSuffix [for]="arrivalDay">
+              <mat-icon color="primary" matDatepickerToggleIcon class="md-24">keyboard_arrow_down</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #arrivalDay></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field class="mt-3 pr-4 pl-4" appearance="legacy" >
+            <mat-label>Formule (facultatif)</mat-label>
+            <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+
+            <select matNativeControl>
+                <!-- <mat-option>-- None --</mat-option> -->
+                <option value=""></option>
+                <option value="Footballeur">Footballeur</option>
+                <option value="Astronaute">Astronaute</option>
+                <option value="Fonctionnaire">Fonctionnaire</option>
+            </select>
+        </mat-form-field>
+        <button class="mt-4 mb-4 buttonValider" mat-raised-button color="primary">Valider</button>
+        <span class="pb-4">Faire un devis en <span class="colorSpan">3 click !</span></span>
+
+    </div>
+</div>

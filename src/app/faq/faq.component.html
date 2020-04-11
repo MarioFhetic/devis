@@ -1,77 +1,21 @@
-<!-- <h1>Welcome</h1>
-
-<div class="play-container"> -->
-<!-- On appelle la méthode countClick() quand le span est clické. -->
-<!-- Le {{ clickCounter est display si on le définit dans le home.component.ts }} -->
-    <!-- <p>You've clicked <span (mouseover) = "countClick()">this</span> {{ clickCounter }} times.</p>
-</div>
-
-<div class="play-container">
-    <p>
-        <input type="text" [(ngModel)] = "name">
-        <br>
-        <strong>You said: </strong>{{ name }}
-    </p>
-</div> -->
-
-<!-- <div class="play-container">
-    <ng-template [ngIf] = "clickCounter > 4" [ngIfElse] = "none">
-        <p>The click counter <strong>IS GREATER</strong> than 4.</p>
-    </ng-template>
-
-    <ng-template #none>
-        <p>The click counter <strong>not greater</strong> than 4.</p>
-    </ng-template>
-</div> -->
-
-
-
-<!-- Style Binding -->
-<!-- <div class="play-container" [ngStyle] = "{
-    'background-color': clickCounter > 4 ? 'yellow' : 'lightgray',
-    'border':           clickCounter > 4 ? '1px solid black' : 'none'
-}">
-
-
-
-    <ng-template [ngIf] = "clickCounter > 4" [ngIfElse] = "none">
-        <p>The click counter <strong>IS GREATER</strong> than 4.</p>
-    </ng-template>
-
-    <ng-template #none>
-        <p>The click counter <strong>not greater</strong> than 4.</p>
-    </ng-template>
-</div> -->
-
-
-<!-- class Binding -->
-
-<!-- <div class="play-container" [class.active] = "clickCounter > 4">
-
-    <ng-template [ngIf] = "clickCounter > 4" [ngIfElse] = "none">
-        <p>The click counter <strong>IS GREATER</strong> than 4.</p>
-    </ng-template>
-
-    <ng-template #none>
-        <p>The click counter <strong>not greater</strong> than 4.</p>
-    </ng-template>
-</div> -->
-
-<!-- with mutltiple classes -->
-
-
-<!-- <div class="play-container" [ngClass] = "setClasses()">
-
-    <ng-template [ngIf] = "clickCounter > 4" [ngIfElse] = "none">
-        <p>The click counter <strong>IS GREATER</strong> than 4.</p>
-    </ng-template>
-
-    <ng-template #none>
-        <p>The click counter <strong>not greater</strong> than 4.</p>
-    </ng-template>
-
-</div> -->
-<div class="containerFaq d-none d-lg-inline">
+<div class="containerFaq d-none d-lg-block d-md-none">
+    <div class="btn-group d-block">
+        <button class="btn btn-light border-bottom-0 d-flex justify-content-between borderNone" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <mat-icon class="align-middle md-18" color="primary">credit_card</mat-icon>
+             Le service ABC Salles est-il payant ?
+             <mat-icon class="md-18 align-middle" color="white" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </button>
+        <div class="dropdown-menu dropdown">
+            <mat-icon class="align-middle md-24 mt-4" color="#404B5A">credit_card</mat-icon>
+            <h3 class="mt-3">Le service ABC Salles est-il payant ?</h3>
+            <p class="text-justify">
+                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+                Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, 
+                quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+                Le Lorem Ipsum  employé dans la composition
+            </p>
+        </div>
+    </div>
     <div class="btn-group d-block">
         <button class="btn btn-light border-bottom-0 d-flex justify-content-between" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <mat-icon class="align-middle md-18" color="primary">credit_card</mat-icon>
@@ -79,9 +23,9 @@
              <mat-icon class="md-18 align-middle" color="white" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
         </button>
         <div class="dropdown-menu dropdown">
-            <mat-icon class="align-middle md-24 mt-2" color="#404B5A">credit_card</mat-icon>
-            <h3 class="mt-4">Le service ABC Salles est-il payant ?</h3>
-            <p class="text-left ml-4">
+            <mat-icon class="align-middle md-24 mt-4" color="#404B5A">credit_card</mat-icon>
+            <h3 class="mt-3">Le service ABC Salles est-il payant ?</h3>
+            <p class="text-justify">
                 Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
                 Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, 
                 quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
@@ -95,9 +39,9 @@
              <mat-icon class="md-18 align-middle" color="white" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
         </button>
         <div class="dropdown-menu dropdown">
-            <mat-icon class="align-middle md-24 mt-2" color="#404B5A">credit_card</mat-icon>
-            <h3 class="mt-4">Le service ABC Salles est-il payant ?</h3>
-            <p class="text-left ml-4">
+            <mat-icon class="align-middle md-24 mt-4" color="#404B5A">credit_card</mat-icon>
+            <h3 class="mt-3">Le service ABC Salles est-il payant ?</h3>
+            <p class="text-justify">
                 Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
                 Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, 
                 quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
@@ -111,9 +55,9 @@
              <mat-icon class="md-18 align-middle" color="white" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
         </button>
         <div class="dropdown-menu dropdown">
-            <mat-icon class="align-middle md-24 mt-2" color="#404B5A">credit_card</mat-icon>
-            <h3 class="mt-4">Le service ABC Salles est-il payant ?</h3>
-            <p class="text-left ml-4">
+            <mat-icon class="align-middle md-24 mt-4" color="#404B5A">credit_card</mat-icon>
+            <h3 class="mt-3">Le service ABC Salles est-il payant ?</h3>
+            <p class="text-justify">
                 Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
                 Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, 
                 quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
@@ -127,9 +71,9 @@
              <mat-icon class="md-18 align-middle" color="white" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
         </button>
         <div class="dropdown-menu dropdown">
-            <mat-icon class="align-middle md-24 mt-2" color="#404B5A">credit_card</mat-icon>
-            <h3 class="mt-4">Le service ABC Salles est-il payant ?</h3>
-            <p class="text-left ml-4">
+            <mat-icon class="align-middle md-24 mt-4" color="#404B5A">credit_card</mat-icon>
+            <h3 class="mt-3">Le service ABC Salles est-il payant ?</h3>
+            <p class="text-justify">
                 Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
                 Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, 
                 quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
@@ -143,25 +87,9 @@
              <mat-icon class="md-18 align-middle" color="white" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
         </button>
         <div class="dropdown-menu dropdown">
-            <mat-icon class="align-middle md-24 mt-2" color="#404B5A">credit_card</mat-icon>
-            <h3 class="mt-4">Le service ABC Salles est-il payant ?</h3>
-            <p class="text-left ml-4">
-                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
-                Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, 
-                quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
-            </p>
-        </div>
-    </div>
-    <div class="btn-group d-block">
-        <button class="btn btn-light border-bottom-0 d-flex justify-content-between" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <mat-icon class="align-middle md-18" color="primary">credit_card</mat-icon>
-             Le service ABC Salles est-il payant ?
-             <mat-icon class="md-18 align-middle" color="white" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
-        </button>
-        <div class="dropdown-menu dropdown">
-            <mat-icon class="align-middle md-24 mt-2" color="#404B5A">credit_card</mat-icon>
-            <h3 class="mt-4">Le service ABC Salles est-il payant ?</h3>
-            <p class="text-left ml-4">
+            <mat-icon class="align-middle md-24 mt-4" color="#404B5A">credit_card</mat-icon>
+            <h3 class="mt-3">Le service ABC Salles est-il payant ?</h3>
+            <p class="text-justify">
                 Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
                 Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, 
                 quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.

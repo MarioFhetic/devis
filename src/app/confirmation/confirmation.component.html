@@ -1,0 +1,112 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 recapDevis">
+        <div class="row">
+            <div class="col breadCrumd">
+                <ul class="nav align-items-baseline">
+                    <li class="nav-item align">
+                      <a class="nav-link disabled" href="#">Brief <mat-icon class="md-24 d-inline align-middle" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Informations complémentaires <mat-icon class="md-24 d-inline align-middle" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link activeNavButton" href="#">Confirmation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h2>Récapitulatif de votre commande</h2>
+        <div class="row ml-0">
+            <h3 class="mr-4">Votre brief</h3>
+            <a href="#"><mat-icon class="md-24 d-inline align-middle" color="primary" matDatepickerToggleIcon>edit</mat-icon></a>
+        </div>
+        <ul class="pl-0">
+            <li>Type d'évenement : <span> Réunion</span></li>
+            <li>Date & heure : <span> 25 Août 2020 de 8h à 14h</span></li>
+            <li>Date flexible : <span> 2 semaines</span></li>
+            <li>Nombre de participants : <span> 20 / 40</span></li>
+            <li>Budget : <span> 18 000 €</span></li>
+        </ul>
+        <div class = "divider"></div>
+        <div class="row ml-0 mt-4">
+            <h3 class="mr-4">Informations complémentaires</h3>
+            <a href="#"><mat-icon class="md-24 d-inline align-middle" color="primary" matDatepickerToggleIcon>edit</mat-icon></a>
+        </div>
+        <ul class="pl-0">
+            <li>Type d'évenement : <span> Réunion</span></li>
+            <li>Date & heure : <span> 25 Août 2020 de 8h à 14h</span></li>
+            <li>Date flexible : <span> 2 semaines</span></li>
+            <li>Nombre de participants : <span> 20 / 40</span></li>
+            <li>Budget : <span> 18 000 €</span></li>
+        </ul>
+      </div>
+      <div class="col-md-6 sectionSend mx-auto">
+            <h2>Confirmation et envoi de la demande</h2>
+            <div class="row ml-0 sectionSend">
+                <button class="connectButton linkedin mr-4 mb-4" mat-raised-button color="primary">Continuer avec Linkedin
+                    <mat-icon class="md-18 d-inline align-middle" color="#primary" matDatepickerToggleIcon>edit</mat-icon>
+                </button>
+                <button class="connectButton google" mat-raised-button color="primary">Continuer avec Google
+                    <mat-icon class="md-18 d-inline align-middle" color="#primary" matDatepickerToggleIcon>edit</mat-icon>
+                </button>
+            </div>
+            <h2 class="mt-4">Avec votre adresse email</h2>
+            <mat-form-field class="emailInput" appearance="outline">
+                <mat-label>Adresse email</mat-label>
+                <input matInput placeholder="mariofayolle@abcsalles.com" >
+                <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+            </mat-form-field>
+            <div class="row ml-0 justify-content-between">
+                <mat-form-field appearance="outline" class="nameInput">
+                    <mat-label>Prénom</mat-label>
+                    <input matInput placeholder="Mario">
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="nameInput mr-3">
+                    <mat-label>Nom</mat-label>
+                    <input matInput placeholder="Fayolle">
+                </mat-form-field>
+            </div>
+            <div class="row ml-0 justify-content-between">
+                <mat-form-field class="telInput" appearance="outline">
+                    <mat-label>Telephone</mat-label>
+                    <input type="tel" matInput placeholder="0645759136">
+                    <mat-icon matSuffix>local_phone</mat-icon>
+                  </mat-form-field>
+                <mat-form-field appearance="outline" class="nameInput mr-3">
+                    <mat-label>Société</mat-label>
+                    <input matInput placeholder="ABCsalles">
+                </mat-form-field>
+            </div>
+            
+            <!-- <mat-form-field class="inputActivity" appearance="outline">
+                <mat-label>Secteur d'activité</mat-label>
+                <mat-select>
+                  <mat-option value="option">Option</mat-option>
+                  <mat-option value="option">Option</mat-option>
+                  <mat-option value="option">Option</mat-option>
+                  <mat-option value="option">Option</mat-option>
+                  <mat-option value="option">Option</mat-option>
+                  <mat-option value="option">Option</mat-option>
+                  <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field> -->
+            <mat-form-field class="activityInput" appearance="outline" >
+                <mat-label>Secteur d'activité</mat-label>
+                <select matNativeControl>
+                    <!-- <mat-option>-- None --</mat-option> -->
+                    <option value=""></option>
+                    <option value="Footballeur">Footballeur</option>
+                    <option value="Astronaute">Astronaute</option>
+                    <option value="Fonctionnaire">Fonctionnaire</option>
+                </select>
+            </mat-form-field>
+            <div class="row ml-1">
+                <p>Je souhaite être notifié par sms de l’avancée de ma demande</p>
+                <mat-checkbox class="ml-2" disableRipple color = "primary"></mat-checkbox>
+            </div>
+            <div class="row justify-content-end mr-1">
+                <button mat-raised-button color="primary">Envoyer</button>
+            </div>
+      </div>
+</div>

@@ -1,7 +1,22 @@
 <div class="mat-typography container">
     <div class="row">
+        <div class="col breadCrumd">
+            <ul class="nav align-items-baseline">
+                <li class="nav-item align">
+                  <a class="nav-link disabled" href="#">Brief <mat-icon class="md-24 d-inline align-middle" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link activeNavButton" href="#">Informations complémentaires <mat-icon class="md-24 d-inline align-middle activeNavButton" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Confirmation</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
         <div class="col">
-            <h2>Quelle est la disposition souhaitée ?</h2>
+            <h2>Avez-vous besoin d'équipement spécifiques ?</h2>
             <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
                 <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon></mat-button-toggle>
                 <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>wb_sunny</mat-icon></mat-button-toggle>
@@ -25,10 +40,12 @@
                 <h3>Quel type de repas ?</h3>
                 <mat-form-field appearance="outline" >
                     <select matNativeControl required>
-                      <option value="Italien">Italien</option>
-                      <option value="Espagnol">Espagnol</option>
-                      <option value="Français">Français</option>
-                      <option value="Japonais">Japonais</option>
+                      <option value="Collation">Collation</option>
+                      <option value="Petit déjeuner">Petit déjeuner</option>
+                      <option value="Déjeuner">Déjeuner</option>
+                      <option value="Goûter">Goûter</option>
+                      <option value="Dîner">Dîner</option>
+
                     </select>
                 </mat-form-field>
             </div>
@@ -114,7 +131,7 @@
             </div>
         </div>
         <div class="col-10 mt-4">
-            <h2>Avez-vous un besoin particulier ?</h2>
+            <h2>Avez-vous des demandes particulières ?</h2>
             <mat-form-field class="bigTextareaButton" appearance="outline">
                 <mat-label>Détaillez vos besoins</mat-label>
                 <textarea matInput placeholder=""></textarea>
@@ -124,5 +141,6 @@
     <div class="col-8 d-flex justify-content-end mt-4">
         <button mat-raised-button color="primary">Continuer</button>
     </div>
+    <app-faq></app-faq>
     <app-svg></app-svg>
 </div>

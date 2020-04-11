@@ -1,5 +1,20 @@
 <div class="mat-typography container">
     <div class="row">
+        <div class="col breadCrumd">
+            <ul class="nav align-items-baseline">
+                <li class="nav-item align">
+                  <a class="nav-link disabled" href="#">Brief <mat-icon class="md-24 d-inline align-middle" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link activeNavButton" href="#">Informations complémentaires <mat-icon class="md-24 d-inline align-middle activeNavButton" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Confirmation</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
         <div class="col">
             <h2>Quels sont les caractéristiques de votre salle ?</h2>
             <mat-form-field class="textareaButton" appearance="outline">
@@ -82,5 +97,6 @@
             <button mat-raised-button color="primary">Continuer</button>
         </div>
     </div>
+    <app-faq></app-faq>
     <app-svg></app-svg>
 </div>

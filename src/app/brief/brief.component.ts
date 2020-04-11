@@ -12,8 +12,10 @@ export class BriefComponent implements OnInit {
   isDisplayBudgetPeople = false;
   isDisplayBudget = false;
   isDisplayDate = false;
+  isDisplayEvent = false;
   isDisplay = false;  
   isShowButtonActive = false;
+  myGroup
 
   constructor() { }
 
@@ -40,10 +42,16 @@ export class BriefComponent implements OnInit {
   {
     this.isDisplayDate = !this.isDisplayDate;
   }
+  toggleDisplayEvent()
+  {
+    this.isDisplayEvent = !this.isDisplayEvent;
+  }
   toggleShowButton()
   {
     this.isShowButtonActive = !this.isShowButtonActive;
 
   }
+
+
 
 }

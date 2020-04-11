@@ -1,0 +1,40 @@
+
+    <div class="row justify-content-between containerImg">
+        <div class="col-8">
+            <ng-template *ngFor="let image of images; let i = index; first as isFirst" [ngIf] = "isFirst">
+                <img src="{{image.url}}" (click)="openModal();currentSlide(i+1)" class="hover-shadow cursor">
+            </ng-template>
+        </div>
+        <div class="col-3 d-flex flex-column justify-content-between">
+            <ng-template *ngFor="let image of images; let i = index;" [ngIf] = "i == 1 || i == 2" >
+                <img src="{{image.url}}" (click)="openModal();currentSlide(i+1)" class="hover-shadow cursor"> 
+            </ng-template>
+        </div>
+        <div class="col-3 d-flex flex-column justify-content-between">
+            <ng-template *ngFor="let image of images; let i = index;" [ngIf] = "i == 3" >
+                <img src="{{image.url}}" (click)="openModal();currentSlide(i+1)" class="hover-shadow cursor"> 
+            </ng-template>
+            <ng-template *ngFor="let image of images; let i = index;" [ngIf] = "image.caption == true">
+                <div class = "captionLast">
+                    <span> + {{images.length}}</span>
+                    <img class="overlayLastImg" src="{{image.url}}" (click)="openModal();currentSlide(i+1)" class="hover-shadow cursor">
+                </div>
+            </ng-template>
+        </div> 
+    </div>
+
+<div id="imgModal" class="slide-modal">
+    <span class="close cursor" (click)="closeModal()">&times;</span>
+    <div class="slide-modal-content">
+        <div class="img-slides" *ngFor="let image of images; let i = index">
+            <img src="{{image.url}}">
+        </div>
+        <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+        <a class="next" (click)="plusSlides(1)">&#10095;</a>
+        <div class="image-row">
+            <div class="image-column" *ngFor="let image of images; let i = index">
+                <img class="images" (click)="currentSlide(i+1)" src="{{image.url}}">
+            </div>
+        </div>
+    </div>
+</div>

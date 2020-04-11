@@ -1,0 +1,63 @@
+.containerFaq
+{
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    z-index: 1000;
+}
+
+.btn
+{
+    width: 25rem;
+    height: 3.75rem;
+}
+
+.dropdown-menu
+{
+    width: 25rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 150%;
+    margin: 0;
+    background: white;
+    padding: 0 10%;
+    border: 1px solid #f1f3f4;
+
+}
+
+
+.dropdown-menu p
+{
+    color: #404B5A;
+}
+
+.dropdown-menu h3
+{
+    color: #6E7A8A;
+}
+
+.containerFaq button
+{
+    font-size: 0.9rem !important;
+    border-top: 1px solid #dee3e2;
+}
+
+.borderNone
+{
+    border: none !important;
+}
+
+.containerFaq .btn
+{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #236772;
+}
+
+.containerFaq .mat-icon
+{
+    position: relative;
+    top: 2px;
+}
+

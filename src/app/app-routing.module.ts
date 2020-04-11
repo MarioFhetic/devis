@@ -5,6 +5,9 @@ import {ListComponent} from './list/list.component';
 import {BriefComponent} from './brief/brief.component';
 import {InfoComplementaireComponent} from './info-complementaire/info-complementaire.component';
 import {InfoComplementaire2Component} from './info-complementaire2/info-complementaire2.component';
+import {ConfirmationComponent} from './confirmation/confirmation.component';
+import {FichelieuComponent} from './fichelieu/fichelieu.component';
+
 
 
 
@@ -14,6 +17,10 @@ const routes: Routes = [
   { path: 'brief', component: BriefComponent},
   { path: 'info-complementaire', component: InfoComplementaireComponent},
   { path: 'info-complementaire2', component: InfoComplementaire2Component},
+  { path: 'confirmation', component: ConfirmationComponent},
+  { path: 'fichelieu', component: FichelieuComponent},
+
+
 
 
 

@@ -7,14 +7,31 @@ $my-app-warn: mat-palette($mat-deep-orange);
 $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
 @include angular-material-theme($my-app-theme);
 
-.container
+
+
+ul
 {
-    margin-top: 4rem;
+    list-style: none;
+}
+ul li
+{
+    font-weight: lighter;
+    color: #AFBECD;
 }
 
 h3
 {
     font-weight: bold !important;
+}
+
+.mat-checkbox
+{
+    max-width: 20px !important;
+}
+
+.breadCrumd
+{
+    margin-top: 4rem !important;
 }
 
 header nav
@@ -69,7 +86,6 @@ a .mat-icon
 .bigTextareaButton
 {
     width: 22rem !important;
-  
 }
 
 .mat-raised-button
@@ -114,7 +130,7 @@ a .mat-icon
  }
  
  .mat-icon.md-24 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
  }
  
  .mat-icon.md-30 {
@@ -198,6 +214,13 @@ outline: none;
     margin-bottom: 1rem;    
 }
 
+.mat-form-field-type-mat-native-select .mat-form-field-infix::after
+{
+    display: none !important;
+    border: none !important;
+}
+
+
 .mat-button-toggle-checked
 {
     color: white !important;
@@ -212,6 +235,7 @@ outline: none;
     text-align: center;
 }
 
+
 .mat-button-toggle-label-content
 {
     line-height: 0px !important;
@@ -219,7 +243,7 @@ outline: none;
 
 .row
 {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; 
 }
 
 .yesNoButton > *
@@ -248,18 +272,74 @@ outline: none;
 .col-lg-4
 {
     display: inline-block;
-    background: lightcyan; 
     text-align: left !important;
     padding: 0;
+    padding-left: 15px;
+}
+.col-lg-5
+{
+    display: inline-block;
+    text-align: left !important;
+    padding: 0;
+    padding-left: 15px;
 }
 
+// .continueButton
+// {
+//     width: 200px  !important;
+//     height: 50px !important;
+// }
 
-// @media only screen 
-// and (min-device-width : 375px) 
-// and (max-device-width : 812px) 
-// and (-webkit-device-pixel-ratio : 3)
-// and (orientation : portrait) { 
-//     .mat-grid-list {
-//         column-count: 1
-//       }
-//  }
+
+// .containerFaq
+// {
+//     position: absolute;
+//     right: 5%;
+//     top: 30%;
+//     z-index: 10000;
+// }
+
+// .btn
+// {
+//     width: 400px;
+//     height: 60px;
+//     background-color: white;
+// }
+
+// .dropdown-menu
+// {
+//     width: 400px;
+//     box-sizing: border-box;
+//     text-align: center;
+//     font-weight: lighter;
+//     line-height: 150%;
+//     margin: 0;
+//     background: #F8F9FA;
+//     border: none;
+//     padding-right: 10px;
+// }
+
+// .dropdown-menu p
+// {
+//     color: #404B5A;
+// }
+
+// .dropdown-menu h3
+// {
+//     color: #6E7A8A;
+// }
+
+
+// .containerFaq .btn
+// {
+//     font-size: 14px;
+//     font-weight: bold;
+//     color: #236772;
+// }
+
+// .containerFaq .mat-icon
+// {
+//     position: relative;
+//     top: 2px;
+// }
+

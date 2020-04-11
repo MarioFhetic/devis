@@ -1,7 +1,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col breadCrumd">
             <ul class="nav align-items-baseline">
                 <li class="nav-item align">
                   <a class="nav-link activeNavButton" href="#">Brief <mat-icon class="md-24 d-inline align-middle activeNavButton" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
@@ -25,7 +25,7 @@
                     <mat-button-toggle disableRipple value = "Mariage">Mariage</mat-button-toggle>
                     <mat-button-toggle disableRipple value = "Concert">Concert</mat-button-toggle>
                     <mat-button-toggle disableRipple value = "Anniversaire">Anniversaire</mat-button-toggle>
-                    <mat-button-toggle (click) = "toggleShowButton()" class="showToggleButton" disableRipple value = ""><mat-icon class="md-24" color="primary" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></mat-button-toggle>
+                    <mat-button-toggle (click) = "toggleShowButton()" class="showToggleButton" disableRipple value = ""><mat-icon class="md-24" color="white" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></mat-button-toggle>
                 </mat-button-toggle-group>
             </div>
             <div>
@@ -42,12 +42,30 @@
             <h2 class='mt-4'>À quelle date souhaitez-vous l'organiser ?</h2>
             <mat-form-field appearance="outline">
                 <mat-label>Date d'arrivée</mat-label>
-                <input disabled matInput [matDatepicker]="arrivalDay" >
+                <input disabled (focus)= "arrivalDay.open()" matInput [matDatepicker]="arrivalDay" >
                 <mat-datepicker-toggle matSuffix [for]="arrivalDay">
                   <mat-icon color="primary" matDatepickerToggleIcon>date_range</mat-icon>
                 </mat-datepicker-toggle>
                 <mat-datepicker disabled="false" #arrivalDay></mat-datepicker>
             </mat-form-field>
+
+            <!-- Date + heure
+
+            <!-- <mat-form-field appearance="outline" color="primary">
+                <input (focus)="picker1.open()" matInput [ngxMatDatetimePicker]="picker1" 
+                placeholder="Date & heure d'arrivée">
+                <mat-datepicker-toggle color="primary" matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <ngx-mat-datetime-picker #picker1></ngx-mat-datetime-picker>
+            </mat-form-field> -->
+            <!--             
+            <mat-form-field appearance="outline" color="primary">
+                <input (focus)="picker2.open()" matInput [ngxMatDatetimePicker]="picker2" 
+                placeholder="Date & heure d'arrivée">
+                <mat-datepicker-toggle color="primary" matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <ngx-mat-datetime-picker #picker2></ngx-mat-datetime-picker>
+            </mat-form-field> -->
+
+
             <mat-icon class="md-30 ml-4 mr-4 d-none d-lg-inline" color="accent" matDatepickerToggleIcon>arrow_right_alt</mat-icon>
             <mat-form-field appearance="outline">
                 <mat-label>Date de départ</mat-label>
@@ -57,6 +75,8 @@
                 </mat-datepicker-toggle>
                 <mat-datepicker disabled="false" #departureDay></mat-datepicker>
             </mat-form-field>
+
+
 
         </div>
     </div>
@@ -69,7 +89,14 @@
                   <mat-icon color = "primary" matDatepickerToggleIcon>schedule</mat-icon>
                 </mat-datepicker-toggle>
                 <mat-datepicker disabled="false" #arrivalHour></mat-datepicker> 
-            </mat-form-field>
+            </mat-form-field> 
+            <!-- <ngx-mat-timepicker 
+                [(ngModel)]="date" 
+                [showSpinners]="showSpinners"
+                [stepHour]="stepHour" [stepMinute]="stepMinute" 
+                [stepSecond]="stepSecond" 
+                [showSeconds]="showSeconds">
+            </ngx-mat-timepicker> -->
             <mat-icon class="md-30 ml-4 mr-4 d-none d-lg-inline" color="accent" matDatepickerToggleIcon>arrow_right_alt</mat-icon>
             <mat-form-field appearance="outline">
                 <mat-label>Heure de départ</mat-label>
@@ -79,18 +106,33 @@
                 </mat-datepicker-toggle>
                 <mat-datepicker disabled="false" #departureHour></mat-datepicker> 
             </mat-form-field>
-            <mat-checkbox class="d-block" disableRipple color = "primary" (click)="toggleDisplayDate()">Date flexible ?</mat-checkbox>
-            <div *ngIf= "isDisplayDate">
-                <mat-form-field class="textareaButton" appearance="outline">
-                    <mat-label>Sur quelles dates êtes-vous flexible ?</mat-label>
-                    <textarea matInput placeholder="Je suis flexible du 13 au 26 février..."></textarea>
-                </mat-form-field>
+            <div class="row ">
+                <div class="col-4">
+                    <mat-checkbox class="d-block" disableRipple color = "primary" (click)="toggleDisplayDate()">Date flexible ?</mat-checkbox>
+                    <div *ngIf= "isDisplayDate">
+                        <mat-form-field class="textareaButton" appearance="outline">
+                            <mat-label>Sur quelles dates êtes-vous flexible ?</mat-label>
+                            <textarea matInput placeholder="Je suis flexible du 13 au 26 février..."></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col ml-2">
+                    <mat-checkbox class="d-block" disableRipple color = "primary" (click)="toggleDisplayEvent()">Événement récurrent ?</mat-checkbox>
+                    <div *ngIf= "isDisplayEvent" class="mt-1">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Rentrez le nombre de récurrence</mat-label>
+                            <input placeHolder="0" matInput type="number" class="example-right-align">
+                            <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">event</mat-icon>
+                        </mat-form-field>
+                    </div>
+                </div>
             </div>
+            
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-5">
-            <h2><mat-icon class="align-middle mr-4" color="accent">group</mat-icon>Participants</h2>
+        <div class="col-lg-4">
+            <h2><mat-icon class="align-middle mr-3" color="accent">group</mat-icon>Participants</h2>
             <mat-checkbox class="d-block" disableRipple color = "primary" (click)="toggleDisplay()">Fourchette de participants</mat-checkbox>
             <mat-form-field  color="primary" appearance="outline" class="example-full-width">
                 <mat-label>Nombre de participants</mat-label>
@@ -110,8 +152,8 @@
                 </mat-form-field>
             </div>
         </div>
-        <div class="col-lg-5">
-            <h2><mat-icon class="align-middle mr-4 md-24" color="accent">credit_card</mat-icon>Budget</h2>
+        <div class="col-lg-5 ml-2">
+            <h2><mat-icon class="align-middle mr-3 md-24" color="accent">credit_card</mat-icon>Budget</h2>
             <div>
                 <mat-checkbox disableRipple class="mr-4" color = "primary" (click)="toggleDisplayBudget()">Par personne</mat-checkbox>
                 <mat-checkbox disableRipple color = "primary" (click)="toggleDisplayRangeOfPrices()">Fourchette de prix</mat-checkbox>
@@ -137,10 +179,11 @@
                 <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_upward</mat-icon>
             </mat-form-field>
         </div>
-        <div class="col-lg-8 d-flex justify-content-lg-end mt-4">
+        <div class="col-lg-8 d-flex justify-content-lg-end mt-4 continueButton">
             <button mat-raised-button color="primary">Continuer</button>
         </div>
     </div>
 
 </div>
+<app-faq></app-faq>
 <app-svg></app-svg>

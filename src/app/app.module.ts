@@ -31,6 +31,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { InfoComplementaireComponent } from './info-complementaire/info-complementaire.component';
 import { InfoComplementaire2Component } from './info-complementaire2/info-complementaire2.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
+
+import { NgxMatDatetimePickerModule, NgxMatTimepickerModule, NgxMatNativeDateModule } from 'ngx-mat-datetime-picker';
+import { NgxMatMomentModule } from 'ngx-mat-moment-adapter';
+import { FaqComponent } from './faq/faq.component';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import { FichelieuComponent } from './fichelieu/fichelieu.component';
+import { ImageLightboxComponent } from './components/image-lightbox/image-lightbox.component';
+import {ImageService} from './image.service'
+
 
 
 
@@ -44,6 +54,10 @@ import { InfoComplementaire2Component } from './info-complementaire2/info-comple
     MainNavComponent,
     InfoComplementaireComponent,
     InfoComplementaire2Component,
+    ConfirmationComponent,
+    FaqComponent,
+    FichelieuComponent,
+    ImageLightboxComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,9 +77,16 @@ import { InfoComplementaire2Component } from './info-complementaire2/info-comple
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatStepperModule
+    MatStepperModule,
+    NgxMatDatetimePickerModule,
+    NgxMatTimepickerModule,
+    NgxMatNativeDateModule,
+    NgxMatMomentModule,
+    NgxMaterialTimepickerModule,
+
+
   ],
-  providers: [],
+  providers: [ImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
