@@ -1,56 +1,35 @@
+
+.col.marginLeftBlock
+{
+    max-width: 10% !important;
+    flex: 0 0 10% !important;
+}
+.col-xl-3.marginLeftBlock
+{
+  max-width: 10% !important;
+  flex: 0 0 10% !important;
+}
+
 .container
 {
     margin-left: inherit !important;
+    margin-right: inherit !important;
+
 }
 
-.bigContainer
+
+.test
 {
-    margin-left: 15%;
+    float: right;
 }
 
-.bigContainer .col-9
+.col.col-sm-12
 {
-    background: pink;
+    padding-right: 0px !important;
 }
-.bigContainer .col-4
+.col.col-xl-9
 {
-    // background: red;
-    margin-left: 5%;
-}
-
-.devisContainer
-{
-    box-shadow: 0 4px 30px 0 rgba(199, 199, 199, 0.2), 0 6px 30px 0 rgba(199, 199, 199, 0.2);
-    border-radius: 20px;
-}
-
-.devisContainer h3
-{
-    color: #329494;
-    text-transform: uppercase;
-}
-
-.devisContainer  .divider
-{
-    border-bottom: 5px solid #329494;
-    width: 15%;
-}
-
-.devisContainer .colorSpan
-{
-    color: #329494 !important;
-    font-weight: bolder;
-}
-
-.devisContainer .buttonValider
-{
-    width: 90% !important;
-    border-radius: 20px;
-}
-
-.devisContainer .mat-form-field
-{
-    width: 100% !important;
+    padding-right: 0px !important;
 }
 
 .bigContainer .breadCrumd
@@ -130,21 +109,34 @@
 
 .bigContainer .spaceCard
 {
-    width: 300px;
+    width: 350px;
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 30px 0 rgba(199, 199, 199, 0.2), 0 6px 30px 0 rgba(199, 199, 199, 0.2);
+
 }
+
+
 
 .bigContainer .spaceCard.vertGalant
 {
-    background-image: url("../../assets/img3.jpg"); 
+    background-image: url("../../assets/space1.jpg"); 
 }
 .bigContainer .spaceCard.centCouverts
 {
-    background-image: url("../../assets/img4.jpg"); 
+    background-image: url("../../assets/space2.jpg"); 
+}
+.bigContainer .spaceCard.other1
+{
+    background-image: url("../../assets/space3.jpg"); 
+}
+.bigContainer .spaceCard.other2
+{
+    background-image: url("../../assets/space4.jpg"); 
 }
 
 .spaceCard .captionCard
@@ -155,20 +147,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(56, 56, 56, 0.247);
+    background-color: rgba(56, 56, 56, 0.623);
     border-radius: 0 0 30px 30px;
     width: 100%;
     color: white;
     
 }
 
-.toggleSpaceButton
+.toggleButton
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
-    height: 40px;
+
     background-color: white;
     border-radius: 20px;
     border: 1px solid #D5DDE5;
@@ -176,21 +167,253 @@
     cursor: pointer;
 }
 
-.toggleSpaceButton .mat-icon
+.toggleButton .mat-icon
 {
     position: relative;
     left:25px; 
     font-size:30px;
 }
 
+.toggleButton.space
+{
+    width: 220px;
+    height: 40px;
+}
+
+.toggleButton.stuff
+{
+    width: 150px;
+    height: 40px;
+}
+
 .divider_title.tarifs
 {
     width: 90% !important;
-
+}
+.divider_title.stuff
+{
+    width: 80% !important;
+}
+.divider_title.formules
+{
+    width: 84% !important;
 }
 
 .containerTarif
 {
-    width: 250px;
-    background: blue;
+    width: 300px;
 }
+
+// .containerTarif .captionTarif
+// {
+//     width: 30%;
+// }
+
+
+.containerTarif .captionTarifActive
+{
+    color: #329494;
+    font-weight: bolder;
+}
+
+.bigContainer .mediumMarginTopContainer
+{
+    margin-top: 2rem !important;
+
+}
+
+
+.bigContainer .bigMarginTopContainer
+
+{
+    margin-top: 4rem !important;
+}
+
+.bigContainer .cardFormuleContainer
+{
+    width: 280px;
+    height: 380px;
+    box-shadow: 0 4px 30px 0 rgba(199, 199, 199, 0.2), 0 6px 30px 0 rgba(199, 199, 199, 0.2);
+
+}
+
+.bigContainer .cardFormuleContainer h3
+{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.bigContainer .cardFormuleContainer .borderTop
+{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(39,185,185,1) 0%, rgba(50,148,148,1) 100%);
+}
+
+.bigContainer .cardFormuleContainer p
+{
+    font-size: 14px;
+}
+
+.bigContainer .cardFormuleContainer .containerPrix
+{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(50, 148, 148, 0.3);
+}
+
+.bigContainer .cardFormuleContainer .containerPrix h2
+{
+    font-size: 40px;
+}
+
+.bigContainer .cardFormuleContainer .containerPrix span
+{
+    margin-left: 1rem;
+}
+
+.bigContainer .cardFormuleContainer .containerPrix .mat-icon
+{
+    position: relative;
+    top: -25px;
+}
+
+.infoCard .mat-icon
+{
+    position: relative;
+    top: 3px;
+}
+
+.bigContainer .captionButtonActivity
+{
+    position: absolute;
+    top: -50%;
+    color: #329494;
+}
+
+.containerRestaurationCard
+{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #AFBECD;
+}
+
+.textRestaurationCard .mat-icon
+{
+    position: relative;
+    transform: translateY(10%);
+    left: 15px;
+}
+
+.containerIconRestaurationCard .mat-icon
+{
+    position: relative;
+    top: 5px;
+}
+
+
+.containerCardLogement
+{
+    width: 220px;
+    height: 330px;
+    box-shadow: 0 4px 30px 0 rgba(199, 199, 199, 0.2), 0 6px 30px 0 rgba(199, 199, 199, 0.2);
+    cursor: pointer;
+}
+
+.containerCardLogement .imgCardLogement
+{
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.containerCardLogement.simpleBed .imgCardLogement
+{
+    background-image: url("../../assets/bed3.jpg"); 
+}
+.containerCardLogement.doubleBed .imgCardLogement
+{
+    background-image: url("../../assets/bed2.jpg"); 
+}
+.containerCardLogement.twinBed .imgCardLogement
+{
+    background-image: url("../../assets/bed1.jpg"); 
+}
+
+
+.containerCardLogement .detailsCardLogement
+{
+
+    width: 50%;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #D5DDE5;
+    color: #329494;
+    cursor: pointer;
+}
+
+.bigContainer .imgMap
+{
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../assets/imgMap.png"); 
+}
+
+.adresseTitle .mat-icon
+{
+    transform: translateY(-20%);
+}
+
+.infoTransport .logoMetro
+{
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../assets/logometro.png"); 
+    transform: translateY(10%);
+
+}
+
+.logoLigneMetro
+{
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translateY(10%);
+
+}
+
+.logoLigneMetro.first
+{
+    background-image: url("../../assets/ligne1logo.png"); 
+}
+
+.logoLigneMetro.second
+{
+    background-image: url("../../assets/ligne7logo.png"); 
+
+}
+
+
+
+// @media (min-width: 576px) and (max-width: 768px) { 
+//     .testsm
+//     {
+//       display: none !important;
+//     }
+//    }

@@ -9,7 +9,13 @@ export class FichelieuComponent implements OnInit {
 
 
   isShowButtonActive = false;
+  isShowButtonFoodActive = false;
+
   isShowSpaceButtonActive = false;
+  isShowStuffButtonActive = false;
+  isShowActivityButtonActive = false;
+
+
 
 
 
@@ -21,12 +27,26 @@ export class FichelieuComponent implements OnInit {
   toggleShowButton()
   {
     this.isShowButtonActive = !this.isShowButtonActive;
-
   }
+
+  toggleShowFoodButton()
+  {
+    this.isShowButtonFoodActive = !this.isShowButtonFoodActive;
+  }
+
   toggleSpaceShowButton()
   {
     this.isShowSpaceButtonActive = !this.isShowSpaceButtonActive;
-
   }
+
+  toggleStuffShowButton()
+  {
+    this.isShowStuffButtonActive = !this.isShowStuffButtonActive;
+  }
+  toggleActivityShowButton()
+  {
+    this.isShowActivityButtonActive = !this.isShowActivityButtonActive;
+  }
+
 
 }

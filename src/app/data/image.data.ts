@@ -22,14 +22,14 @@ export const images = [
     },
     {
       id: 6,
-      url: ""
+      url: "../../assets/img6.jpg",
     },
     {
       id: 7,
-      url: ""
+      url: "../../assets/img3.jpg",
     },
     {
       id: 8,
-      url: ""
+      url: "../../assets/img8.jpg",
     },
   ];

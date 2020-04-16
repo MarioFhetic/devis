@@ -39,7 +39,8 @@ import { FaqComponent } from './faq/faq.component';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 import { FichelieuComponent } from './fichelieu/fichelieu.component';
 import { ImageLightboxComponent } from './components/image-lightbox/image-lightbox.component';
-import {ImageService} from './image.service'
+import {ImageService} from './image.service';
+import { DevisgratuitComponent } from './devisgratuit/devisgratuit.component'
 
 
 
@@ -58,6 +59,7 @@ import {ImageService} from './image.service'
     FaqComponent,
     FichelieuComponent,
     ImageLightboxComponent,
+    DevisgratuitComponent,
   ],
   imports: [
     BrowserModule,

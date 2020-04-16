@@ -1,0 +1,55 @@
+<!-- Move col col-md-3 from main div -->
+
+<div class="col col-md-3 d-flex align-items-center flex-column devisContainer">
+    <h3 class="mb-2 pt-4">Devis gratuit</h3>
+    <div class = "divider"></div>
+    <mat-form-field class="mt-3 pr-4 pl-4" appearance="legacy" >
+        <mat-label>Type d'événement</mat-label>
+        <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+        <select matNativeControl>
+            <!-- <mat-option>-- None --</mat-option> -->
+            <option value=""></option>
+            <option value="Footballeur">Séminaire</option>
+            <option value="Astronaute">Mariage</option>
+            <option value="Fonctionnaire">Réunion</option>
+        </select>
+    </mat-form-field>
+    <mat-form-field class="mt-3 pr-4 pl-4"  appearance="legacy">
+        <mat-label>Nombre d'invités</mat-label>
+        <input matInput type="number" class="example-right-align">
+        <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+    </mat-form-field>
+    <mat-form-field class="mt-3 pr-4 pl-4"  appearance="legacy" >
+        <mat-label>Type de disposition</mat-label>
+        <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+
+        <select matNativeControl>
+            <!-- <mat-option>-- None --</mat-option> -->
+            <option value=""></option>
+            <option value="Footballeur">Cocktail</option>
+            <option value="Astronaute">Debout</option>
+            <option value="Fonctionnaire">Assis</option>
+        </select>
+    </mat-form-field>
+    <mat-form-field class="mt-3 pr-4 pl-4">
+        <mat-label>Date de l'événément </mat-label>
+        <input  (focus)= "arrivalDay.open()" matInput [matDatepicker]="arrivalDay" >
+        <mat-datepicker-toggle matSuffix [for]="arrivalDay">
+          <mat-icon color="primary" matDatepickerToggleIcon class="md-24">keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #arrivalDay></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="mt-3 pr-4 pl-4" appearance="legacy" >
+        <mat-label>Formule (facultatif)</mat-label>
+        <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+
+        <select matNativeControl>
+            <!-- <mat-option>-- None --</mat-option> -->
+            <option value=""></option>
+            <option value="Footballeur">Basique</option>
+            <option value="Astronaute">Avancée</option>
+        </select>
+    </mat-form-field>
+    <button class="mt-4 mb-4 buttonValider" mat-raised-button color="primary">Valider</button>
+    <span class="pb-4">Faire un devis en <span class="colorSpan">3 click !</span></span>
+</div>
