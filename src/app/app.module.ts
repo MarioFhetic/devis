@@ -42,6 +42,12 @@ import { ImageLightboxComponent } from './components/image-lightbox/image-lightb
 import {ImageService} from './image.service';
 import { DevisgratuitComponent } from './devisgratuit/devisgratuit.component'
 
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogExempleComponent } from './dialog-exemple/dialog-exemple.component';
+import { DialogparticipantsComponent } from './dialogparticipants/dialogparticipants.component';
+import { DialogbudgetComponent } from './dialogbudget/dialogbudget.component';
+
+
 
 
 
@@ -60,7 +66,11 @@ import { DevisgratuitComponent } from './devisgratuit/devisgratuit.component'
     FichelieuComponent,
     ImageLightboxComponent,
     DevisgratuitComponent,
+    DialogExempleComponent,
+    DialogparticipantsComponent,
+    DialogbudgetComponent,
   ],
+  entryComponents:[DialogExempleComponent, DialogparticipantsComponent, DialogbudgetComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -85,7 +95,7 @@ import { DevisgratuitComponent } from './devisgratuit/devisgratuit.component'
     NgxMatNativeDateModule,
     NgxMatMomentModule,
     NgxMaterialTimepickerModule,
-
+    MatDialogModule,
 
   ],
   providers: [ImageService],

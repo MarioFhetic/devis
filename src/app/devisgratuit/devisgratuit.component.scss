@@ -2,7 +2,8 @@
 
 .devisContainer
 {
-    width: 20%;
+    position: sticky;
+    top: 0;
     box-shadow: 0 4px 30px 0 rgba(199, 199, 199, 0.2), 0 6px 30px 0 rgba(199, 199, 199, 0.2);
     border-radius: 20px;
 }

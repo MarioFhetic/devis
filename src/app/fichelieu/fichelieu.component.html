@@ -1,12 +1,10 @@
 
 <app-image-lightbox></app-image-lightbox>
-<!-- <div class="row">
-    <app-devisgratuit></app-devisgratuit>
-</div> -->
 
-<div class="container row bigContainer mt-4">
-    <div class="marginLeftBlock col col-xl-3 d-none d-lg-block"></div>
-    <div class="col col-xl-9 col-sm-12">
+
+<div class="row bigContainer mt-4">
+    <div class="marginLeftBlock col col-xl-3 d-none d-xl-block"></div>
+    <div class="col col-xl-7 col-sm-12">
         <div class="col breadCrumd">
             <ul class="nav align-items-baseline">
                 <li class="nav-item align">
@@ -116,14 +114,9 @@
                 </div>
             </div>
 
-            <div class="col mt-4 d-flex justify-content-center">
-                <button (click) = "toggleSpaceShowButton()" class="toggleButton space">
-                    Voir plus d'espaces
-                    <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
-                </button>
-            </div>
-
             <!-- OPEN IF CLICKED  -->
+
+
             <div *ngIf = "isShowSpaceButtonActive" class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
                 <div class="spaceCard other1 mb-3">
                     <div class="captionCard">
@@ -138,6 +131,18 @@
                     </div>
                 </div>
             </div>
+
+            <!-- OPEN IF CLICKED  -->
+
+
+            <div class="col mt-4 d-flex justify-content-center">
+                <button (click) = "toggleSpaceShowButton()" class="toggleButton space">
+                    Voir plus d'espaces
+                    <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+                </button>
+            </div>
+
+
             <!-- OPEN IF CLICKED  -->
         </div>
         <div class="col mt-4">
@@ -228,7 +233,7 @@
                 </div>
             </div>
             <!-- STUFF PART 2 -->
-            <div class="col d-flex justify-content-between mt-4 mb-4 bigMarginTopContainer">
+            <div class="col d-flex justify-content-between bigMarginTopContainer">
                 <div class="squareButtonIcon">
                     <div class= "captionButton d-none d-sm-block">
                         <span class="captionSquareButtonIcon">Téléviseur</span> 
@@ -261,17 +266,10 @@
                 </div>
             </div>
 
-            <div class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
-                <button (click) = "toggleStuffShowButton()" class="toggleButton stuff">
-                    Voir plus
-                    <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
-                </button>
-            </div>
-
             <!-- OPEN IF CLICKED -->
 
-            <div *ngIf = "isShowStuffButtonActive" class="col d-flex justify-content-between p-0 mt-4 flex-wrap">
-                <div class="col d-flex justify-content-between mt-4 mb-4">
+            <div *ngIf = "isShowStuffButtonActive" class="col d-flex justify-content-between p-0 flex-wrap bigMarginTopContainer">
+                <div class="col d-flex justify-content-between">
                     <div class="squareButtonIcon">
                         <div class= "captionButton d-none d-sm-block">
                             <span class="captionSquareButtonIcon">5 espaces</span> 
@@ -305,6 +303,18 @@
                 </div>
             </div>
             
+            <!-- OPEN IF CLICKED -->
+            
+
+            <div class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
+                <button (click) = "toggleStuffShowButton()" class="toggleButton stuff">
+                    Voir plus
+                    <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+                </button>
+            </div>
+
+
+            
         </div>
 
         <div class="col mt-4">
@@ -331,9 +341,14 @@
                             <mat-icon class="md-18">credit_card</mat-icon>
                             <span>50 HT par jour et par personnes</span>
                         </div>
-                        <div class="infoCard">
+                        <div class="infoCard mb-2">
                             <mat-icon class="md-18">description</mat-icon>
                             <span>Pas d'acompte, pas de caution</span>
+                        </div>
+                        <div class="infoCard mt-2">
+                            <button class="toggleButton cardFormule">
+                                Voir plus
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -355,9 +370,14 @@
                             <mat-icon class="md-18">credit_card</mat-icon>
                             <span>50 HT par jour et par personnes</span>
                         </div>
-                        <div class="infoCard">
+                        <div class="infoCard mb-2">
                             <mat-icon class="md-18">description</mat-icon>
                             <span>Pas d'acompte, pas de caution</span>
+                        </div>
+                        <div class="infoCard mt-2">
+                            <button class="toggleButton cardFormule">
+                                Voir plus
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -373,7 +393,7 @@
                     <div class= "captionButton d-none d-sm-block">
                         <span class="captionSquareButtonIcon">1km</span> 
                     </div>
-                    <div class= "captionButton d-none d-sm-blockActivity">
+                    <div class= "captionButtonActivity d-none d-sm-block ">
                         <span class="captionSquareButtonIcon">Football</span> 
                     </div>
                     <mat-icon color ="primary"  class="iconSquareButton md-24">sports_soccer</mat-icon>
@@ -382,7 +402,7 @@
                     <div class= "captionButton d-none d-sm-block">
                         <span class="captionSquareButtonIcon">1km</span> 
                     </div>
-                    <div class= "captionButton d-none d-sm-blockActivity">
+                    <div class= "captionButtonActivity d-none d-sm-block ">
                         <span class="captionSquareButtonIcon">Tennis</span> 
                     </div>
                     <mat-icon color ="primary"  class="iconSquareButton md-24">sports_tennis</mat-icon>
@@ -391,7 +411,7 @@
                     <div class= "captionButton d-none d-sm-block">
                         <span class="captionSquareButtonIcon">1km</span> 
                     </div>
-                    <div class= "captionButton d-none d-sm-blockActivity">
+                    <div class= "captionButtonActivity d-none d-sm-block ">
                         <span class="captionSquareButtonIcon">Baseball</span> 
                     </div>
                     <mat-icon color ="primary"  class="iconSquareButton md-24">sports_baseball</mat-icon>
@@ -400,7 +420,7 @@
                     <div class= "captionButton d-none d-sm-block">
                         <span class="captionSquareButtonIcon">1km</span> 
                     </div>
-                    <div class= "captionButton d-none d-sm-blockActivity">
+                    <div class= "captionButtonActivity d-none d-sm-block ">
                         <span class="captionSquareButtonIcon">Basket-Ball</span> 
                     </div>
                     <mat-icon color ="primary"  class="iconSquareButton md-24">sports_basketball</mat-icon>
@@ -409,18 +429,11 @@
                     <div class= "captionButton d-none d-sm-block">
                         <span class="captionSquareButtonIcon">1km</span> 
                     </div>
-                    <div class= "captionButton d-none d-sm-blockActivity">
+                    <div class= "captionButtonActivity d-none d-sm-block ">
                         <span class="captionSquareButtonIcon">Volley Ball</span> 
                     </div>
                     <mat-icon color ="primary"  class="iconSquareButton md-24">sports_volleyball</mat-icon>
                 </div>
-            </div>
-
-            <div class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
-                <button (click) = "toggleActivityShowButton()" class="toggleButton stuff">
-                    Voir plus
-                    <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
-                </button>
             </div>
 
             <!-- OPEN IF CLICKED -->
@@ -471,6 +484,17 @@
                     <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
                 </div>
             </div>
+
+
+            <div class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
+                <button (click) = "toggleActivityShowButton()" class="toggleButton stuff">
+                    Voir plus
+                    <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+                </button>
+            </div>
+
+
+
             <div class="col mt-4 p-0">
                 <div class="col p-0 d-flex justify-content-between">
                     <h2 class="mb-0">Restauration</h2>
@@ -548,7 +572,7 @@
             </div>
             <div class="col mt-4 p-0">
                 <div class="col p-0 d-flex justify-content-between">
-                    <h2 class="mb-0">Logements</h2>
+                    <h2 class="mb-0">Hébergement</h2>
                     <div class="divider_title d-none d-lg-block  mb-2"></div>
                 </div>
                 <div class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
@@ -616,7 +640,10 @@
 
         </div>
     </div>
-
+    <div class="bigContainerDevis d-none d-xl-block">
+        <app-devisgratuit></app-devisgratuit>
+    </div>
+    
 
     
 

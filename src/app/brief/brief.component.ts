@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { DialogExempleComponent } from '../dialog-exemple/dialog-exemple.component';
+import { DialogparticipantsComponent } from '../dialogparticipants/dialogparticipants.component';
+import { DialogbudgetComponent } from '../dialogbudget/dialogbudget.component';
+
+
 
 @Component({
   selector: 'app-brief',
@@ -15,9 +21,22 @@ export class BriefComponent implements OnInit {
   isDisplayEvent = false;
   isDisplay = false;  
   isShowButtonActive = false;
-  myGroup
 
-  constructor() { }
+  
+  constructor(public dialog: MatDialog){}
+
+  openDialogElement()
+  {
+    this.dialog.open(DialogExempleComponent);
+  }
+  openDialogParticipants()
+  {
+    this.dialog.open(DialogparticipantsComponent);
+  }
+  openDialogBudget()
+  {
+    this.dialog.open(DialogbudgetComponent);
+  }
 
   ngOnInit(): void {
   }
