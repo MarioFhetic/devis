@@ -16,7 +16,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-8">
             <h2>Quels événements souhaitez vous organiser ? <mat-icon class="md-24 ml-2 iconQuestion" color="primary" matDatepickerToggleIcon (click) = "openDialogElement()">help</mat-icon></h2>
             
             <!-- <button mat-raised-button (click) = "openDialogElement()" >Open</button>
@@ -29,11 +29,16 @@
                     <mat-button-toggle disableRipple value = "Mariage">Mariage</mat-button-toggle>
                     <mat-button-toggle disableRipple value = "Concert">Concert</mat-button-toggle>
                     <mat-button-toggle disableRipple value = "Anniversaire">Anniversaire</mat-button-toggle>
+                    <mat-button-toggle disableRipple value = "Soirée">Soirée</mat-button-toggle>
+                    <mat-button-toggle disableRipple value = "Soirée">Soirée</mat-button-toggle>
+                    <mat-button-toggle disableRipple value = "Soirée">Soirée</mat-button-toggle>
+                    <mat-button-toggle disableRipple value = "Soirée">Soirée</mat-button-toggle>
+
                     <mat-button-toggle (click) = "toggleShowButton()" class="showToggleButton" disableRipple value = ""><mat-icon class="md-24" color="white" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></mat-button-toggle>
                 </mat-button-toggle-group>
             </div>
             <div>
-                <mat-button-toggle-group *ngIf= "isShowButtonActive" fxLayout="wrap" #toggleGroup="matButtonToggleGroup" multiple class="d-xs-flex justify-content-center justify-content-sm-start">
+                <mat-button-toggle-group *ngIf= "isShowButtonActive" fxLayout="wrap" #toggleGroup="matButtonToggleGroup" multiple class="">
                     <mat-button-toggle disableRipple value = "Séminaire">Confinement</mat-button-toggle>
                     <mat-button-toggle disableRipple value = "Workshop">Maison</mat-button-toggle>
                     <mat-button-toggle disableRipple value = "Anniversaire">Barbecue</mat-button-toggle>
@@ -156,7 +161,7 @@
                 </mat-form-field>
             </div>
         </div>
-        <div class="col-lg-5 ml-2">
+        <div class="col-lg-5">
             <h2><mat-icon class="align-middle mr-3 md-24" color="accent">credit_card</mat-icon>Budget <mat-icon class="md-24 ml-2 iconQuestion" color="primary" matDatepickerToggleIcon (click) = "openDialogBudget()">help</mat-icon></h2>
             <div>
                 <mat-checkbox disableRipple class="mr-4 ml-4 ml-sm-0" color = "primary" (click)="toggleDisplayBudget()">Par personne</mat-checkbox>
@@ -183,9 +188,9 @@
                 <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_upward</mat-icon>
             </mat-form-field>
         </div>
-        <!-- <div class="col-lg-8 d-flex justify-content-lg-end mt-4 continueButton">
+        <!-- <div class="col-lg-7 d-flex justify-content-lg-end mt-4 continueButton">
             <button mat-raised-button color="primary">Continuer</button>
-        </div> -->
+        </div>  -->
     </div>
 
 </div>
