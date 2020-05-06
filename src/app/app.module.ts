@@ -33,10 +33,9 @@ import { InfoComplementaireComponent } from './info-complementaire/info-compleme
 import { InfoComplementaire2Component } from './info-complementaire2/info-complementaire2.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 
-import { NgxMatDatetimePickerModule, NgxMatTimepickerModule, NgxMatNativeDateModule } from 'ngx-mat-datetime-picker';
-import { NgxMatMomentModule } from 'ngx-mat-moment-adapter';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
 import { FaqComponent } from './faq/faq.component';
-import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 import { FichelieuComponent } from './fichelieu/fichelieu.component';
 import { ImageLightboxComponent } from './components/image-lightbox/image-lightbox.component';
 import {ImageService} from './image.service';
@@ -90,12 +89,8 @@ import { DialogbudgetComponent } from './dialogbudget/dialogbudget.component';
     MatIconModule,
     MatListModule,
     MatStepperModule,
-    NgxMatDatetimePickerModule,
-    NgxMatTimepickerModule,
-    NgxMatNativeDateModule,
-    NgxMatMomentModule,
-    NgxMaterialTimepickerModule,
     MatDialogModule,
+    MatDatepickerModule
 
   ],
   providers: [ImageService],

@@ -23,11 +23,9 @@
                 <h1 class="mb-0">Manoir HENRI IV</h1>
                 <span>Caugé ( 27180 )</span>
             </div>
-            <div>
-                <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
-                    <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>favorite</mat-icon></mat-button-toggle>
-                </mat-button-toggle-group>
-            </div> 
+            <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" class="favoriteButton"  multiple>
+                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>favorite</mat-icon></mat-button-toggle>
+            </mat-button-toggle-group>
             <!-- <div class="col">
                 <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
                     <mat-icon style="position: absolute; right: 12%; top: 14%; z-index: 10;" color ="primary" class="md-24">favorite_border</mat-icon>
@@ -67,7 +65,7 @@
                 <mat-icon color ="primary"  class="iconSquareButton md-24">credit_card</mat-icon>
             </div>
         </div>
-        <div class="col mt-4 pt-4 bigMarginTopContainer">
+        <div class="col mt-4 pt-4 mediumMarginTopContainer">
             <div class="col p-0 d-flex justify-content-between">
                 <h2 class="mb-0">Présentation du lieu</h2>
                 <div class="divider_title d-none d-lg-block mb-2 d-none d-lg-block"></div>
@@ -96,7 +94,7 @@
                 <div class="divider_title d-none d-lg-block mb-2"></div>
             </div>
             <div class="col mt-4">
-                <img src="../../assets/Tableau_Espaces.png" alt="">
+                <img src="assets/Tableau_Espaces.png" alt="">
             </div>
         </div>
         <div class="col mt-4">

@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col">
             <h2>Quels sont les caractéristiques de votre salle ?</h2>
-            <mat-form-field class="textareaButton" appearance="outline">
+            <mat-form-field class="textareaButton roomSection d-xs-flex justify-content-center justify-content-sm-start" appearance="outline" class="d-xs-flex justify-content-center justify-content-sm-start">
                 <mat-label>De quelle capacité avez-vous besoin ?</mat-label>
                 <textarea matInput placeholder="J'ai besoin de 267 chaises et 1557 tables"></textarea>
             </mat-form-field>
@@ -26,7 +26,7 @@
     <div class="row">
         <div class="col">
             <h2>Quelle est la disposition souhaitée ?</h2>
-            <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+            <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple class="d-xs-flex justify-content-center justify-content-sm-start">
                 <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon></mat-button-toggle>
                 <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>wb_sunny</mat-icon></mat-button-toggle>
                 <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>ac_unit</mat-icon></mat-button-toggle>
@@ -39,7 +39,7 @@
     <div class="row">
         <div class="col">
             <h2>Avez-vous des besoins spécifiques ?</h2>
-            <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+            <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple class="d-xs-flex justify-content-center justify-content-sm-start">
                 <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon></mat-button-toggle>
                 <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>wb_sunny</mat-icon></mat-button-toggle>
                 <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>ac_unit</mat-icon></mat-button-toggle>
@@ -50,7 +50,7 @@
     <div class="row">
         <div class="col">
             <h2>Avez-vous besoin d'autres salles ?</h2>
-            <mat-button-toggle-group class="yesNoButton" #toggleYesNo="matButtonToggleGroup">
+            <mat-button-toggle-group class="yesNoButton d-xs-flex justify-content-center justify-content-sm-start" #toggleYesNo="matButtonToggleGroup" >
                 <mat-button-toggle (click)="displayModalHosting()" disableRipple value = "">Oui</mat-button-toggle>
                 <mat-button-toggle (click)="closeDisplayModalHosting()"disableRipple value = "" >Non</mat-button-toggle>
             </mat-button-toggle-group>

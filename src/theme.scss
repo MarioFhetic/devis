@@ -94,7 +94,7 @@ a .mat-icon
     color: #329494;
 }
 
-.textareaButton
+.textareaButton.roomSection
 {
     width: 20rem !important;
 }
@@ -300,6 +300,17 @@ outline: none;
     padding-left: 15px;
 }
 
+.favoriteButton
+{
+    max-width: 100px;
+}
+
+.favoriteButton button
+{
+    display: flex;
+    justify-content: center;
+}
+
 // .continueButton
 // {
 //     width: 200px  !important;
@@ -358,4 +369,5 @@ outline: none;
 //     position: relative;
 //     top: 2px;
 // }
+
 
