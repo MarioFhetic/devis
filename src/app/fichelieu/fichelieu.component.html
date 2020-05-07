@@ -81,12 +81,13 @@
                 <br/><br/>
                 Votre dîner permet la convivialité autour de table de 8 invités et un espace dansant accessible dès le début de votre entrée en salle.
             </p>
-            <span (click) = "toggleShowButton()" class="showToggleButton" disableRipple value = "">Lire la suite<mat-icon class="md-24" color="primary" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></span>
             <div *ngIf= "isShowButtonActive">
                 <p class="mt-4">
                     La grande qualité du Domaine est l'espace parc et jardin, aménagé et agréablement fleuri pour vos photos de groupes et nos espaces salles de grande capacité d'accueil, totalement modulables selon votre nombre d' invités jusqu'à 600 couverts..
                 </p>
             </div>
+            <span (click) = "toggleShowButton()" class="showToggleButton" disableRipple value = "">Lire la suite<mat-icon class="md-24" color="primary" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></span>
+
         </div>
         <div class="col mt-4">
             <div class="col p-0 d-flex justify-content-between">
@@ -102,7 +103,7 @@
                 <h2 class="mb-0">Explorer des espaces</h2>
                 <div class="divider_title d-none d-lg-block mb-2"></div>
             </div>
-            <div class="col d-flex justify-content-around p-0 mt-4  flex-wrap">
+            <div class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
                 <div class="spaceCard vertGalant mb-3">
                     <div class="captionCard">
                         <h3 class = "p-0 m-0">Le Vert Galant</h3>
@@ -556,12 +557,13 @@
 
 
                 <!-- OPEN IF CLIKED -->
-                <span (click) = "toggleShowFoodButton()" class="showToggleButton" disableRipple value = "">Lire la suite<mat-icon class="md-24" color="primary" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></span>
                 <div *ngIf= "isShowButtonFoodActive">
                     <p class="mt-2">
                         La grande qualité du Domaine est l'espace parc et jardin, aménagé et agréablement fleuri pour vos photos de groupes et nos espaces salles de grande capacité d'accueil, totalement modulables selon votre nombre d' invités jusqu'à 600 couverts..
                     </p>
-                </div>  
+                </div> 
+                <span (click) = "toggleShowFoodButton()" class="showToggleButton" disableRipple value = "">Lire la suite<mat-icon class="md-24" color="primary" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></span>
+ 
                 <div class="containerRestaurationCard d-flex justify-content-between flex-wrap mt-4 align-items-center pl-4 pr-4">
                     <div class="textRestaurationCard d-flex">
                         <h2 class="m-0 p-0">Notre carte</h2>
@@ -573,9 +575,62 @@
                 </div>
                 <!--  -->
             </div>
+
             <div class="col mt-4 p-0">
                 <div class="col p-0 d-flex justify-content-between">
-                    <h2 class="mb-0">Hébergement</h2>
+                    <h2 class="mb-0">Logement</h2>
+                    <div class="divider_title d-none d-lg-block  mb-2"></div>
+                </div>
+                <div class="col d-flex mediumMarginTopContainer mb-4 flex-wrap">
+                    <div class="col left flex-column containerLogementItem">
+                        <div class="logementItem">
+                            <span>
+                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
+                                Hébergement <strong>non imposé</strong>
+                            </span>
+                        </div>
+                        <div class="logementItem">
+                            <span>
+                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
+                                <strong>12</strong> chambre
+                            </span>
+                        </div>
+                        <div class="logementItem">
+                            <span>
+                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
+                                 <strong>24</strong> couchages
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col left flex-column containerLogementItem">
+                        <div class="logementItem">
+                            <span>
+                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
+                                Check in - out  <strong>11 heures</strong>
+                            </span>
+                        </div>
+                        <div class="logementItem">
+                            <span>
+                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
+                                Check-out <strong>après mariage</strong> à 14 heures
+                            </span>
+                        </div>
+                        <div class="logementItem">
+                            <span>
+                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
+                                <strong>24</strong> couchages
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col mt-4 p-0">
+                <div class="col p-0 d-flex justify-content-between">
+                    <h2 class="mb-0">Disposition</h2>
                     <div class="divider_title d-none d-lg-block  mb-2"></div>
                 </div>
                 <div class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
@@ -636,8 +691,84 @@
                     <div class="logoLigneMetro first mr-2"></div>
                     <span>Nation - 5 minutes à pied</span>
                 </div>
-                
-                
+            </div>
+
+            <div class="col mt-4 p-0">
+                <div class="col p-0 d-flex justify-content-between">
+                    <h2 class="mb-0">Lieu du même groupe</h2>
+                    <div class="divider_title d-none d-lg-block  mb-2"></div>
+                </div>
+
+                <div class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
+                    <div class="cardSimilarGroup firstCard mb-3">
+                        <div class="cardCategory">
+                            <span>
+                                Restaurant
+                            </span>
+                        </div>
+                        <!-- <div class="captionCard">
+                            <h3 class = "p-0 m-0">Le Vert Galant</h3>
+                            <span>400m2 - 300 convives</span>
+                        </div> -->
+                    </div>
+                    <div class="cardSimilarGroup secondCard mb-3">
+                        <div class="cardCategory">
+                            <span>
+                                Bar
+                            </span>
+                        </div>
+                        <!-- <div class="captionCard">
+                            <h3 class = "p-0 m-0">Les cents couverts</h3>
+                            <span>400m2 - 300 convives</span>
+                        </div> -->
+                    </div>
+                    <div class="cardSimilarGroup thirdCard">
+                        <div class="cardCategory">
+                            <span>
+                                Discothèque
+                            </span>
+                        </div>
+                        <!-- <div class="captionCard">
+                            <h3 class = "p-0 m-0">Les cents couverts</h3>
+                            <span>400m2 - 300 convives</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-around p-0 mt-3 flex-wrap">
+                    <div class="cardSimilarGroup fourthCard mb-3">
+                        <div class="cardCategory">
+                            <span>
+                                Restaurant
+                            </span>
+                        </div>
+                        <!-- <div class="captionCard">
+                            <h3 class = "p-0 m-0">Le Vert Galant</h3>
+                            <span>400m2 - 300 convives</span>
+                        </div> -->
+                    </div>
+                    <div class="cardSimilarGroup fiveCard mb-3">
+                        <div class="cardCategory">
+                            <span>
+                                Restaurant
+                            </span>
+                        </div>
+                        <!-- <div class="captionCard">
+                            <h3 class = "p-0 m-0">Les cents couverts</h3>
+                            <span>400m2 - 300 convives</span>
+                        </div> -->
+                    </div>
+                    <div class="cardSimilarGroup sixCard ">
+                        <div class="cardCategory">
+                            <span>
+                                Restaurant
+                            </span>
+                        </div>
+                        <!-- <div class="captionCard">
+                            <h3 class = "p-0 m-0">Les cents couverts</h3>
+                            <span>400m2 - 300 convives</span>
+                        </div> -->
+                    </div>
+                </div>
             </div>
 
 

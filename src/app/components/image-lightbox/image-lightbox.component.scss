@@ -5,6 +5,36 @@
     // justify-content: space-between;
   }
 
+  .buttonFirstImg
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 30px;
+    background: linear-gradient(90deg, rgba(39,185,185,1) 0%, rgba(50,148,148,1) 100%);
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+
+  .buttonFirstImg.button-360
+  {
+    right: 10px !important;
+    bottom: 0px !important;
+  }
+
+  .buttonFirstImg.button-video
+  {
+    right: 100px !important;
+    bottom: 0px !important;
+  }
+
+
+
    // Modif des valeurs primaires de bootstrap - peut causer prbl responsive sur plus petit desktop 
   // .containerImg .col-md-8
   // {

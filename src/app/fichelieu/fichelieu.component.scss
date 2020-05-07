@@ -12,6 +12,7 @@
 
 .bigContainerDevis
 {
+    margin-top: 8rem;
     margin-left: 7rem;
 }
 .col.col-sm-12
@@ -110,6 +111,35 @@
     box-shadow: 0 4px 30px 0 rgba(199, 199, 199, 0.2), 0 6px 30px 0 rgba(199, 199, 199, 0.2);
 }
 
+.bigContainer .cardSimilarGroup
+{
+    width: 250px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 30px 0 rgba(199, 199, 199, 0.2), 0 6px 30px 0 rgba(199, 199, 199, 0.2);
+}
+
+
+.cardSimilarGroup .cardCategory{
+    height: 25px;
+    width: 90px;
+    background-color: rgba(56, 56, 56, 0.623);
+    position: relative;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    // flex-direction: column;
+    align-items: center;
+    background-color: rgba(56, 56, 56, 0.623);
+    color: white;
+
+
+}
 
 
 
@@ -130,6 +160,31 @@
     background-image: url("../../assets/space4.jpg"); 
 }
 
+.bigContainer .cardSimilarGroup.firstCard
+{
+    background-image: url("../../assets/img1.jpg"); 
+}
+.bigContainer .cardSimilarGroup.secondCard
+{
+    background-image: url("../../assets/img2.jpg"); 
+}
+.bigContainer .cardSimilarGroup.thirdCard
+{
+    background-image: url("../../assets/img3.jpg"); 
+}
+.bigContainer .cardSimilarGroup.fourthCard
+{
+    background-image: url("../../assets/img4.jpg"); 
+}
+.bigContainer .cardSimilarGroup.fiveCard
+{
+    background-image: url("../../assets/img5.jpg"); 
+}
+.bigContainer .cardSimilarGroup.sixCard
+{
+    background-image: url("../../assets/img6.jpg"); 
+}
+
 .spaceCard .captionCard
 {
     position: relative;
@@ -142,8 +197,22 @@
     border-radius: 0 0 15px 15px;
     width: 100%;
     color: white;
-    
 }
+
+.cardSimilarGroup .captionCard
+{
+    position: relative;
+    bottom: -100%;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(56, 56, 56, 0.623);
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    color: white;
+}
+
 
 .toggleButton
 {
@@ -414,3 +483,23 @@
 //       display: none !important;
 //     }
 //    }
+
+.containerLogementItem
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+}
+
+.logementItem
+{
+    // text-align: center;
+    width: 270px;
+}
+
+.logementItem .mat-icon
+{
+    vertical-align: bottom;
+    margin-right: 0.3rem;
+}

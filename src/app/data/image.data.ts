@@ -1,7 +1,8 @@
 export const images = [
     {
       id: 1,
-      url: "assets/img1.jpg"
+      url: "assets/img1.jpg",
+      button: true,
     },
     {
       id: 2,
