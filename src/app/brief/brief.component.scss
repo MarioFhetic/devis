@@ -44,3 +44,23 @@
     top: 3px;
 }
 
+.containerForkInput
+{
+    width: 18.75rem;
+    height: 3.42rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.containerForkInput .forkInputButton
+{
+    width: 50% !important;
+    height: 100%;
+    border: none !important;
+    text-align: center;
+}
+
+.containerForkInput .forkInputButton.min
+{
+    border-right: 1px solid rgba(0, 0, 0, 0.12) !important;
+}

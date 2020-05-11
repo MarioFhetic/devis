@@ -18,6 +18,25 @@ export class InfoComplementaireComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  quantity: number = 0;
+  i = 0
+  plus()
+  {
+    if(this.i!=100)
+    {
+      this.i++;
+      this.quantity = this.i;
+    }
+  }
+  minus()
+  {
+    if(this.i!=0)
+    {
+      this.i--;
+      this.quantity = this.i;
+    }
+  }
+
   displayModalMeal()
   {
       this.isDisplay = true;  

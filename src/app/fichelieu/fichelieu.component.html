@@ -4,7 +4,7 @@
 
 <div class="row bigContainer mt-4">
     <div class="marginLeftBlock col col-xl-3 d-none d-xl-block"></div>
-    <div class="col col-xl-7 col-sm-12">
+    <div class="col col-md-7 col-sm-12">
         <div class="col breadCrumd">
             <ul class="nav align-items-baseline">
                 <li class="nav-item align">
@@ -141,8 +141,10 @@
 
             <div class="col mt-4 d-flex justify-content-center">
                 <button (click) = "toggleSpaceShowButton()" class="toggleButton space">
-                    Voir plus d'espaces
-                    <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+                    <span *ngIf="!isShowSpaceButtonActive">Voir plus d'espaces</span>
+                    <span *ngIf="isShowSpaceButtonActive">Voir moins d'espaces</span>
+                    <mat-icon *ngIf="!isShowSpaceButtonActive" color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+                    <mat-icon *ngIf="isShowSpaceButtonActive" color ="primary" class="md-24">keyboard_arrow_up</mat-icon>
                 </button>
             </div>
 
@@ -154,7 +156,33 @@
                 <h2 class="mb-0">Tarifs</h2>
                 <div class="divider_title d-none d-lg-block  mb-2"></div>
             </div>
-            <div class="col p-0 d-flex justify-content-between flex-wrap mt-4">
+            <div class="col p-0 mediumMarginTopContainer mb-4">
+                <p>
+                    Nos tarifs salles varient en fonction de la saison du jours, semaine ou week-end de votre
+                    événement.
+                    <br/>
+                    Tarif sur simple demande.
+                    <br/>
+                    Nous proposons des tarifs promotionnels pour les lendemain de fête (exemple : le lendemain d'un
+                    mariage).
+                    <br/>
+                    N'hésitez pas à nous contacter pour en savoir davantage.
+                </p>
+                <p *ngIf = "isShowTarifButtonActive" class="mediumMarginTopContainer">
+                    Nos tarifs salles varient en fonction de la saison du jours, semaine ou week-end de votre
+                    événement.
+                    <br/>
+                    Tarif sur simple demande.
+                    <br/>
+                    Nous proposons des tarifs promotionnels pour les lendemain de fête (exemple : le lendemain d'un
+                    mariage).
+                    <br/>
+                    N'hésitez pas à nous contacter pour en savoir davantage.
+                </p>
+                <span (click) = "toggleShowTarifButton()" class="showToggleButton" disableRipple value = "">Lire la suite<mat-icon class="md-24" color="primary" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></span>
+
+            </div>
+            <div class="col p-0 d-flex justify-content-between flex-wrap mt-4 mediumMarginTopContainer">
                 <div class="containerTarif d-flex  mb-4">
                     <div class="squareButtonIcon">
                         <mat-icon color ="primary"  class="iconSquareButton md-24">home</mat-icon>
@@ -310,10 +338,17 @@
             <!-- OPEN IF CLICKED -->
             
 
-            <div class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
+            <div *ngIf = "!isShowStuffButtonActive" class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
                 <button (click) = "toggleStuffShowButton()" class="toggleButton stuff">
                     Voir plus
                     <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+                </button>
+            </div>
+
+            <div *ngIf = "isShowStuffButtonActive" class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
+                <button (click) = "toggleStuffShowButton()" class="toggleButton stuff">
+                    Voir moins
+                    <mat-icon color ="primary" class="md-24">keyboard_arrow_up</mat-icon>
                 </button>
             </div>
 
@@ -490,10 +525,17 @@
             </div>
 
 
-            <div class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
+            <div *ngIf = "!isShowActivityButtonActive" class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
                 <button (click) = "toggleActivityShowButton()" class="toggleButton stuff">
                     Voir plus
                     <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+                </button>
+            </div>
+
+            <div *ngIf = "isShowActivityButtonActive" class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
+                <button (click) = "toggleActivityShowButton()" class="toggleButton stuff">
+                    Voir moins
+                    <mat-icon color ="primary" class="md-24">keyboard_arrow_up</mat-icon>
                 </button>
             </div>
 
@@ -774,10 +816,12 @@
 
         </div>
     </div>
-    <div class="bigContainerDevis d-none d-xl-block">
+
+    <div class="bigContainerDevis d-none d-md-flex ">
         <app-devisgratuit></app-devisgratuit>
     </div>
-    
+
+
 
     
 

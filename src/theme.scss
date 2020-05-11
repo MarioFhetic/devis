@@ -41,7 +41,7 @@ h3
 
 .breadCrumd
 {
-    margin-top: 4rem !important;
+    margin-top: 2rem !important;
 }
 
 header nav
@@ -119,6 +119,21 @@ a .mat-icon
 .mat-form-field
 {
     width: 18.75rem;
+}
+
+.containerRoomFeatures .mat-form-field
+{
+    width: 100% !important;
+}
+
+.containerDemande .mat-form-field
+{
+    width: 100% !important;
+}
+
+.containerDemande .mat-form-field textarea
+{
+   height: 3rem !important;
 }
 
 .mat-grid-tile .mat-figure 
@@ -230,6 +245,21 @@ outline: none;
     margin-bottom: 1rem;    
 }
 
+.labelButtonToggle
+{
+    padding-top: 13px;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+
+.containerToggleGroup .mat-button-toggle-label-content
+{
+    padding: 0px !important;
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+
 // .mat-button-toggle:last-child
 // {
 //     margin-right: 0rem !important;
@@ -301,7 +331,7 @@ outline: none;
 {
     display: inline-block;
     text-align: left !important;
-    padding: 0;
+    // padding: 0;
     padding-left: 15px;
 }
 
@@ -376,3 +406,9 @@ outline: none;
 // }
 
 
+.iconName
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

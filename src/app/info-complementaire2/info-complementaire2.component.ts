@@ -11,6 +11,7 @@ export class InfoComplementaire2Component implements OnInit {
 
   isDisplay = false;
   isDisplayHosting = false;  
+  isAddMealFirst = false;
   
   
 
@@ -25,6 +26,7 @@ export class InfoComplementaire2Component implements OnInit {
   closeModalMeal()
   {
       this.isDisplay = false;
+      this.isAddMealFirst = false;
   }
 
   displayModalHosting()
@@ -34,6 +36,15 @@ export class InfoComplementaire2Component implements OnInit {
   closeModalHosting()
   {
       this.isDisplayHosting = false;
+  }
+
+  addMeal()
+  {
+    this.isAddMealFirst = true;
+  }
+  closeAddMeal()
+  {
+    this.isAddMealFirst = false;
   }
 
 }

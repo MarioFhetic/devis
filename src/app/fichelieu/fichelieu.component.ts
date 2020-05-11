@@ -15,6 +15,8 @@ export class FichelieuComponent implements OnInit {
   isShowStuffButtonActive = false;
   isShowActivityButtonActive = false;
 
+  isShowTarifButtonActive = false;
+
 
 
 
@@ -48,5 +50,8 @@ export class FichelieuComponent implements OnInit {
     this.isShowActivityButtonActive = !this.isShowActivityButtonActive;
   }
 
-
+  toggleShowTarifButton()
+  {
+    this.isShowTarifButtonActive = !this.isShowTarifButtonActive;
+  }
 }

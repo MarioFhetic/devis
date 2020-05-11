@@ -45,6 +45,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { DialogExempleComponent } from './dialog-exemple/dialog-exemple.component';
 import { DialogparticipantsComponent } from './dialogparticipants/dialogparticipants.component';
 import { DialogbudgetComponent } from './dialogbudget/dialogbudget.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 
@@ -90,7 +91,8 @@ import { DialogbudgetComponent } from './dialogbudget/dialogbudget.component';
     MatListModule,
     MatStepperModule,
     MatDialogModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatTooltipModule
 
   ],
   providers: [ImageService],
