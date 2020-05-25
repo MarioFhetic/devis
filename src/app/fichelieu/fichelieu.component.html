@@ -1,830 +1,1010 @@
-
 <app-image-lightbox></app-image-lightbox>
 
-
 <div class="row bigContainer mt-4">
-    <div class="marginLeftBlock col col-xl-3 d-none d-xl-block"></div>
-    <div class="col col-md-7 col-sm-12">
-        <div class="col breadCrumd">
-            <ul class="nav align-items-baseline">
-                <li class="nav-item align">
-                  <a class="nav-link activeNavButton" href="#">Salles de Séminaire et réunion en France<mat-icon class="md-24 d-inline align-middle activeNavButton" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link activeNavButton" href="#">Caugé<mat-icon class="md-24 d-inline align-middle" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Manoir HENRI IV</a>
-                </li>
-            </ul>
+  <div class="marginLeftBlock col col-xl-3 d-none d-xl-block"></div>
+  <div class="col col-md-7 col-sm-12">
+    <div class="col breadCrumd">
+      <ul class="nav align-items-baseline">
+        <li class="nav-item align">
+          <a class="nav-link activeNavButton" href="#"
+            >Salles de Séminaire et réunion en France<mat-icon
+              class="md-24 d-inline align-middle activeNavButton"
+              color="#7C7878"
+              matDatepickerToggleIcon
+              >keyboard_arrow_right</mat-icon
+            ></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link activeNavButton" href="#"
+            >Caugé<mat-icon
+              class="md-24 d-inline align-middle"
+              color="#7C7878"
+              matDatepickerToggleIcon
+              >keyboard_arrow_right</mat-icon
+            ></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Manoir HENRI IV</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col d-flex justify-content-between mt-3 pl-0">
+      <div class="col">
+        <h1 class="mb-0">Manoir HENRI IV</h1>
+        <span>Caugé ( 27180 )</span>
+      </div>
+      <mat-button-toggle-group
+        #toggleGroup="matButtonToggleGroup"
+        class="favoriteButton"
+        multiple
+      >
+        <mat-button-toggle disableRipple value="Séminaire"
+          ><mat-icon class="md-30" color="black" matDatepickerToggleIcon
+            >favorite</mat-icon
+          ></mat-button-toggle
+        >
+      </mat-button-toggle-group>
+    </div>
+    <div
+      class="col d-flex justify-content-between mt-3 mediumMarginTopContainer"
+    >
+      <div class="squareButtonIcon">
+        <div class="captionButton d-none d-sm-block">
+          <span class="captionSquareButtonIcon">5 espaces</span>
         </div>
-        <div class="col d-flex justify-content-between mt-3 pl-0">
-            <div class="col">
-                <h1 class="mb-0">Manoir HENRI IV</h1>
-                <span>Caugé ( 27180 )</span>
+        <mat-icon color="primary" class="iconSquareButton md-24"
+          >home_work</mat-icon
+        >
+      </div>
+      <div class="squareButtonIcon">
+        <div class="captionButton d-none d-sm-block">
+          <span class="captionSquareButtonIcon">930 m2</span>
+        </div>
+        <mat-icon color="primary" class="iconSquareButton md-24"
+          >zoom_out_map</mat-icon
+        >
+      </div>
+      <div class="squareButtonIcon">
+        <div class="captionButton d-none d-sm-block">
+          <span class="captionSquareButtonIcon">1500 pers</span>
+        </div>
+        <mat-icon color="primary" class="iconSquareButton md-24"
+          >people</mat-icon
+        >
+      </div>
+      <div class="squareButtonIcon">
+        <div class="captionButton d-none d-sm-block">
+          <span class="captionSquareButtonIcon">4 formules</span>
+        </div>
+        <mat-icon color="primary" class="iconSquareButton md-24"
+          >redeem</mat-icon
+        >
+      </div>
+      <div class="squareButtonIcon">
+        <div class="captionButton d-none d-sm-block">
+          <span class="captionSquareButtonIcon">Dès 2000€</span>
+        </div>
+        <mat-icon color="primary" class="iconSquareButton md-24"
+          >credit_card</mat-icon
+        >
+      </div>
+    </div>
+    <div class="col mt-4 pt-4 mediumMarginTopContainer">
+      <div class="col p-0 d-flex justify-content-between">
+        <h2 class="mb-0">Présentation du lieu</h2>
+        <div
+          class="divider_title d-none d-lg-block mb-2 d-none d-lg-block"
+        ></div>
+      </div>
+      <p class="mt-4">
+        Le Manoir Henri IV vous reçoit pour toutes vos réceptions privées ou
+        professionnelles.
+        <br /><br />
+
+        Lors de vos soirées, nos deux granges s'adaptent à votre nombre
+        d'invités de 80 à 600 personnes en repas assis et dansant sans avoir à
+        retirer le mobilier pour la danse.
+        <br /><br />
+
+        De part nos espaces, vous pouvez ainsi y organiser votre cérémonie
+        laïque en salle ou dans le jardin, votre cocktail ou extérieur aux
+        abords du préau et sur les pelouses ou en intérieur de grange.
+        <br /><br />
+        Votre dîner permet la convivialité autour de table de 8 invités et un
+        espace dansant accessible dès le début de votre entrée en salle.
+      </p>
+      <div *ngIf="isShowButtonActive">
+        <p class="mt-4">
+          La grande qualité du Domaine est l'espace parc et jardin, aménagé et
+          agréablement fleuri pour vos photos de groupes et nos espaces salles
+          de grande capacité d'accueil, totalement modulables selon votre nombre
+          d' invités jusqu'à 600 couverts..
+        </p>
+      </div>
+      <span
+        (click)="toggleShowButton()"
+        class="showToggleButton"
+        disableRipple
+        value=""
+        >Lire la suite<mat-icon
+          class="md-24"
+          color="primary"
+          matDatepickerToggleIcon
+          >keyboard_arrow_down</mat-icon
+        ></span
+      >
+    </div>
+    <div class="col mt-4">
+      <div class="col p-0 d-flex justify-content-between">
+        <h2 class="mb-0">Liste des espaces</h2>
+        <div class="divider_title d-none d-lg-block mb-2"></div>
+      </div>
+      <div class="col mt-4">
+        <img src="assets/Tableau_Espaces.png" alt="" />
+      </div>
+    </div>
+    <div class="col mt-4">
+      <div class="col p-0 d-flex justify-content-between">
+        <h2 class="mb-0">Explorer des espaces</h2>
+        <div class="divider_title d-none d-lg-block mb-2"></div>
+      </div>
+      <div class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
+        <div class="spaceCard vertGalant mb-3">
+          <div class="captionCard">
+            <h3 class="p-0 m-0">Le Vert Galant</h3>
+            <span>400m2 - 300 convives</span>
+          </div>
+        </div>
+        <div class="spaceCard centCouverts">
+          <div class="captionCard">
+            <h3 class="p-0 m-0">Les cents couverts</h3>
+            <span>400m2 - 300 convives</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- OPEN IF CLICKED  -->
+
+      <div
+        *ngIf="isShowSpaceButtonActive"
+        class="col d-flex justify-content-around p-0 mt-4 flex-wrap"
+      >
+        <div class="spaceCard other1 mb-3">
+          <div class="captionCard">
+            <h3 class="p-0 m-0">Le Vert Galant</h3>
+            <span>400m2 - 300 convives</span>
+          </div>
+        </div>
+        <div class="spaceCard other2">
+          <div class="captionCard">
+            <h3 class="p-0 m-0">Les cents couverts</h3>
+            <span>400m2 - 300 convives</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- OPEN IF CLICKED  -->
+
+      <div class="col mt-4 d-flex justify-content-center">
+        <button (click)="toggleSpaceShowButton()" class="toggleButton space">
+          <span *ngIf="!isShowSpaceButtonActive">Voir plus d'espaces</span>
+          <span *ngIf="isShowSpaceButtonActive">Voir moins d'espaces</span>
+          <mat-icon
+            *ngIf="!isShowSpaceButtonActive"
+            color="primary"
+            class="md-24"
+            >keyboard_arrow_down</mat-icon
+          >
+          <mat-icon
+            *ngIf="isShowSpaceButtonActive"
+            color="primary"
+            class="md-24"
+            >keyboard_arrow_up</mat-icon
+          >
+        </button>
+      </div>
+
+      <!-- OPEN IF CLICKED  -->
+    </div>
+    <div class="col mt-4">
+      <div class="col p-0 d-flex justify-content-between">
+        <h2 class="mb-0">Tarifs</h2>
+        <div class="divider_title d-none d-lg-block mb-2"></div>
+      </div>
+      <div class="col p-0 mediumMarginTopContainer mb-4">
+        <p>
+          Nos tarifs salles varient en fonction de la saison du jours, semaine
+          ou week-end de votre événement.
+          <br />
+          Tarif sur simple demande.
+          <br />
+          Nous proposons des tarifs promotionnels pour les lendemain de fête
+          (exemple : le lendemain d'un mariage).
+          <br />
+          N'hésitez pas à nous contacter pour en savoir davantage.
+        </p>
+        <p *ngIf="isShowTarifButtonActive" class="mediumMarginTopContainer">
+          Nos tarifs salles varient en fonction de la saison du jours, semaine
+          ou week-end de votre événement.
+          <br />
+          Tarif sur simple demande.
+          <br />
+          Nous proposons des tarifs promotionnels pour les lendemain de fête
+          (exemple : le lendemain d'un mariage).
+          <br />
+          N'hésitez pas à nous contacter pour en savoir davantage.
+        </p>
+        <span
+          (click)="toggleShowTarifButton()"
+          class="showToggleButton"
+          disableRipple
+          value=""
+          >Lire la suite<mat-icon
+            class="md-24"
+            color="primary"
+            matDatepickerToggleIcon
+            >keyboard_arrow_down</mat-icon
+          ></span
+        >
+      </div>
+      <div
+        class="col p-0 d-flex justify-content-between flex-wrap mt-4 mediumMarginTopContainer"
+      >
+        <div class="containerTarif d-flex mb-4">
+          <div class="squareButtonIcon">
+            <mat-icon color="primary" class="iconSquareButton md-24"
+              >home</mat-icon
+            >
+          </div>
+          <div class="captionTarif ml-4 mt-2">
+            <span>Tarif de location de la salle vide</span>
+            <br />
+            <span class="captionTarifActive">À partir de 2000 €</span>
+          </div>
+        </div>
+        <div class="containerTarif d-flex mb-4">
+          <div class="squareButtonIcon">
+            <mat-icon color="primary" class="iconSquareButton md-24"
+              >credit_card</mat-icon
+            >
+          </div>
+          <div class="captionTarif ml-4 mt-2">
+            <span>Moyen de paiement acceptés</span>
+            <br />
+            <span class="captionTarifActive">À partir de 80€</span>
+          </div>
+        </div>
+      </div>
+      <div class="col p-0 d-flex justify-content-between flex-wrap">
+        <div class="containerTarif d-flex mb-4">
+          <div class="squareButtonIcon">
+            <mat-icon color="primary" class="iconSquareButton md-24"
+              >people_alt</mat-icon
+            >
+          </div>
+          <div class="captionTarif ml-4 mt-2">
+            <span>Tarif par personne</span>
+            <br />
+            <span class="captionTarifActive">À partir de 80€</span>
+          </div>
+        </div>
+        <div class="containerTarif d-flex mb-4">
+          <div class="squareButtonIcon">
+            <mat-icon color="primary" class="iconSquareButton md-24"
+              >trending_up</mat-icon
+            >
+          </div>
+          <div class="captionTarif ml-4 mt-2">
+            <span>Gamme tarifaire</span>
+            <br />
+            <span class="captionTarifActive">Modérée</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col mt-4">
+      <div class="col p-0 d-flex justify-content-between mb-4">
+        <h2 class="mb-0">Équipements</h2>
+        <div class="divider_title d-none d-lg-block mb-2"></div>
+      </div>
+      <div class="col d-flex justify-content-between mt-3 mb-4">
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Wifi</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >wifi</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Frigo</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >kitchen</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Tableau blanc</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >assignment</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Micro</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >mic</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Téléphone</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >call</mat-icon
+          >
+        </div>
+      </div>
+      <!-- STUFF PART 2 -->
+      <div class="col d-flex justify-content-between bigMarginTopContainer">
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Téléviseur</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24">tv</mat-icon>
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Casques</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >headset</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Bluetooth</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >bluetooth</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">4 formules</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >keyboard_arrow_down</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Dès 2000€</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >keyboard_arrow_down</mat-icon
+          >
+        </div>
+      </div>
+
+      <!-- OPEN IF CLICKED -->
+
+      <div
+        *ngIf="isShowStuffButtonActive"
+        class="col d-flex justify-content-between p-0 flex-wrap bigMarginTopContainer"
+      >
+        <div class="col d-flex justify-content-between">
+          <div class="squareButtonIcon">
+            <div class="captionButton d-none d-sm-block">
+              <span class="captionSquareButtonIcon">5 espaces</span>
             </div>
-            <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" class="favoriteButton"  multiple>
-                <mat-button-toggle disableRipple value = "Séminaire"><mat-icon class="md-30" color="black" matDatepickerToggleIcon>favorite</mat-icon></mat-button-toggle>
-            </mat-button-toggle-group>
-            <!-- <div class="col">
-                <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
-                    <mat-icon style="position: absolute; right: 12%; top: 14%; z-index: 10;" color ="primary" class="md-24">favorite_border</mat-icon>
-                    <mat-button-toggle disableRipple value = "favoris">Ajouter aux favoris</mat-button-toggle>
-                </mat-button-toggle-group>
-            </div> -->
+            <mat-icon color="primary" class="iconSquareButton md-24"
+              >keyboard_arrow_down</mat-icon
+            >
+          </div>
+          <div class="squareButtonIcon">
+            <div class="captionButton d-none d-sm-block">
+              <span class="captionSquareButtonIcon">930 m2</span>
+            </div>
+            <mat-icon color="primary" class="iconSquareButton md-24"
+              >keyboard_arrow_down</mat-icon
+            >
+          </div>
+          <div class="squareButtonIcon">
+            <div class="captionButton d-none d-sm-block">
+              <span class="captionSquareButtonIcon">1500 pers</span>
+            </div>
+            <mat-icon color="primary" class="iconSquareButton md-24"
+              >keyboard_arrow_down</mat-icon
+            >
+          </div>
+          <div class="squareButtonIcon">
+            <div class="captionButton d-none d-sm-block">
+              <span class="captionSquareButtonIcon">4 formules</span>
+            </div>
+            <mat-icon color="primary" class="iconSquareButton md-24"
+              >keyboard_arrow_down</mat-icon
+            >
+          </div>
+          <div class="squareButtonIcon">
+            <div class="captionButton d-none d-sm-block">
+              <span class="captionSquareButtonIcon">Dès 2000€</span>
+            </div>
+            <mat-icon color="primary" class="iconSquareButton md-24"
+              >keyboard_arrow_down</mat-icon
+            >
+          </div>
         </div>
-        <div class="col d-flex justify-content-between mt-3 mediumMarginTopContainer">
+      </div>
+
+      <!-- OPEN IF CLICKED -->
+
+      <div
+        *ngIf="!isShowStuffButtonActive"
+        class="col mt-4 d-flex justify-content-center bigMarginTopContainer"
+      >
+        <button (click)="toggleStuffShowButton()" class="toggleButton stuff">
+          Voir plus
+          <mat-icon color="primary" class="md-24">keyboard_arrow_down</mat-icon>
+        </button>
+      </div>
+
+      <div
+        *ngIf="isShowStuffButtonActive"
+        class="col mt-4 d-flex justify-content-center bigMarginTopContainer"
+      >
+        <button (click)="toggleStuffShowButton()" class="toggleButton stuff">
+          Voir moins
+          <mat-icon color="primary" class="md-24">keyboard_arrow_up</mat-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="col mt-4">
+      <div class="col p-0 d-flex justify-content-between">
+        <h2 class="mb-0">Formules</h2>
+        <div class="divider_title d-none d-lg-block mb-2"></div>
+      </div>
+      <div class="col p-0 d-flex justify-content-around mt-4 flex-wrap">
+        <div class="cardFormuleContainer mb-3">
+          <div class="borderTop mb-4"></div>
+          <h3 class="ml-4">Basique</h3>
+          <p class="ml-4">
+            Ma formule à la journée avec la restauration de la pause midi inclue
+          </p>
+          <div
+            class="containerPrix d-flex flex-row justify-content-center align-items-center"
+          >
+            <mat-icon class="md-24">euro_symbol</mat-icon>
+            <h2 class="p-0 m-0">47</h2>
+            <span class="w-50">La journée par personne</span>
+          </div>
+          <div
+            class="infoCardContainer d-flex flex-column align-items-center mt-4"
+          >
+            <div class="infoCard mb-2">
+              <mat-icon class="md-18">people</mat-icon>
+              <span>10 à 15 personnes</span>
+            </div>
+            <div class="infoCard mb-2">
+              <mat-icon class="md-18">credit_card</mat-icon>
+              <span>50 HT par jour et par personnes</span>
+            </div>
+            <div class="infoCard mb-2">
+              <mat-icon class="md-18">description</mat-icon>
+              <span>Pas d'acompte, pas de caution</span>
+            </div>
+            <div class="infoCard mt-2">
+              <button class="toggleButton cardFormule">
+                Voir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cardFormuleContainer">
+          <div class="borderTop mb-4"></div>
+          <h3 class="ml-4">Avancée</h3>
+          <p class="ml-4">
+            Ma formule à la journée avec la restauration de la pause midi inclue
+          </p>
+          <div
+            class="containerPrix d-flex flex-row justify-content-center align-items-center"
+          >
+            <mat-icon class="md-24">euro_symbol</mat-icon>
+            <h2 class="p-0 m-0">84</h2>
+            <span class="w-50">La journée par personne</span>
+          </div>
+          <div
+            class="infoCardContainer d-flex flex-column align-items-center mt-4"
+          >
+            <div class="infoCard mb-2">
+              <mat-icon class="md-18">people</mat-icon>
+              <span>10 à 15 personnes</span>
+            </div>
+            <div class="infoCard mb-2">
+              <mat-icon class="md-18">credit_card</mat-icon>
+              <span>50 HT par jour et par personnes</span>
+            </div>
+            <div class="infoCard mb-2">
+              <mat-icon class="md-18">description</mat-icon>
+              <span>Pas d'acompte, pas de caution</span>
+            </div>
+            <div class="infoCard mt-2">
+              <button class="toggleButton cardFormule">
+                Voir plus
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col mt-4">
+      <div class="col p-0 d-flex justify-content-between">
+        <h2 class="mb-0">Activités</h2>
+        <div class="divider_title d-none d-lg-block mb-2"></div>
+      </div>
+      <div
+        class="col d-flex justify-content-between mt-4 mb-4 bigMarginTopContainer"
+      >
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">1km</span>
+          </div>
+          <div class="captionButtonActivity d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Football</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >sports_soccer</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">1km</span>
+          </div>
+          <div class="captionButtonActivity d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Tennis</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >sports_tennis</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">1km</span>
+          </div>
+          <div class="captionButtonActivity d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Baseball</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >sports_baseball</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">1km</span>
+          </div>
+          <div class="captionButtonActivity d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Basket-Ball</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >sports_basketball</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">1km</span>
+          </div>
+          <div class="captionButtonActivity d-none d-sm-block">
+            <span class="captionSquareButtonIcon">Volley Ball</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >sports_volleyball</mat-icon
+          >
+        </div>
+      </div>
+
+      <!-- OPEN IF CLICKED -->
+      <div
+        *ngIf="isShowActivityButtonActive"
+        class="col d-flex justify-content-between mt-4 mb-4 bigMarginTopContainer"
+      >
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">1km</span>
+          </div>
+          <div class="captionButton d-none d-sm-blockActivity">
+            <span class="captionSquareButtonIcon">Football</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >keyboard_arrow_down</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">1km</span>
+          </div>
+          <div class="captionButton d-none d-sm-blockActivity">
+            <span class="captionSquareButtonIcon">Football</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >keyboard_arrow_down</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">1km</span>
+          </div>
+          <div class="captionButton d-none d-sm-blockActivity">
+            <span class="captionSquareButtonIcon">Football</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >keyboard_arrow_down</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">1km</span>
+          </div>
+          <div class="captionButton d-none d-sm-blockActivity">
+            <span class="captionSquareButtonIcon">Football</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >keyboard_arrow_down</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareButtonIcon">1km</span>
+          </div>
+          <div class="captionButton d-none d-sm-blockActivity">
+            <span class="captionSquareButtonIcon">Football</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >keyboard_arrow_down</mat-icon
+          >
+        </div>
+      </div>
+
+      <div
+        *ngIf="!isShowActivityButtonActive"
+        class="col mt-4 d-flex justify-content-center bigMarginTopContainer"
+      >
+        <button (click)="toggleActivityShowButton()" class="toggleButton stuff">
+          Voir plus
+          <mat-icon color="primary" class="md-24">keyboard_arrow_down</mat-icon>
+        </button>
+      </div>
+
+      <div
+        *ngIf="isShowActivityButtonActive"
+        class="col mt-4 d-flex justify-content-center bigMarginTopContainer"
+      >
+        <button (click)="toggleActivityShowButton()" class="toggleButton stuff">
+          Voir moins
+          <mat-icon color="primary" class="md-24">keyboard_arrow_up</mat-icon>
+        </button>
+      </div>
+
+      <div class="col mt-4 p-0">
+        <div class="col p-0 d-flex justify-content-between">
+          <h2 class="mb-0">Restauration</h2>
+          <div class="divider_title d-none d-lg-block mb-2"></div>
+        </div>
+        <div class="col p-0 d-flex justify-content-between flex-wrap mt-4">
+          <div class="containerTarif d-flex mb-4">
             <div class="squareButtonIcon">
-                <div class= "captionButton d-none d-sm-block">
-                    <span class="captionSquareButtonIcon">5 espaces</span> 
-                </div>
-                <mat-icon color ="primary"  class="iconSquareButton md-24">home_work</mat-icon>
+              <mat-icon color="primary" class="iconSquareButton md-24"
+                >local_dining</mat-icon
+              >
             </div>
+            <div class="captionTarif ml-4 mt-2">
+              <span>Type de restauration</span>
+              <br />
+              <span class="captionTarifActive">Cocktail dinatoire</span>
+            </div>
+          </div>
+          <div class="containerTarif d-flex mb-4">
             <div class="squareButtonIcon">
-                <div class= "captionButton d-none d-sm-block">
-                    <span class="captionSquareButtonIcon">930 m2</span> 
-                </div>
-                <mat-icon color ="primary"  class="iconSquareButton md-24">zoom_out_map</mat-icon>
+              <mat-icon color="primary" class="iconSquareButton md-24"
+                >restaurant</mat-icon
+              >
             </div>
+            <div class="captionTarif ml-4 mt-2">
+              <span>Type de cuisine principale</span>
+              <br />
+              <span class="captionTarifActive">Bistro</span>
+            </div>
+          </div>
+        </div>
+        <div class="col p-0 d-flex justify-content-between flex-wrap">
+          <div class="containerTarif d-flex mb-4">
             <div class="squareButtonIcon">
-                <div class= "captionButton d-none d-sm-block">
-                    <span class="captionSquareButtonIcon">1500 pers</span> 
-                </div>
-                <mat-icon color ="primary"  class="iconSquareButton md-24">people</mat-icon>
+              <mat-icon color="primary" class="iconSquareButton md-24"
+                >store_mall_directory</mat-icon
+              >
             </div>
+            <div class="captionTarif ml-4 mt-2">
+              <span>Vous pouvez apporter</span>
+              <br />
+              <span class="captionTarifActive"
+                >Nourriture extérieure interdite</span
+              >
+            </div>
+          </div>
+          <div class="containerTarif d-flex mb-4">
             <div class="squareButtonIcon">
-                <div class= "captionButton d-none d-sm-block">
-                    <span class="captionSquareButtonIcon">4 formules</span> 
-                </div>
-                <mat-icon color ="primary"  class="iconSquareButton md-24">redeem</mat-icon>
+              <mat-icon color="primary" class="iconSquareButton md-24"
+                >flag</mat-icon
+              >
             </div>
-            <div class="squareButtonIcon">
-                <div class= "captionButton d-none d-sm-block">
-                    <span class="captionSquareButtonIcon">Dès 2000€</span> 
-                </div>
-                <mat-icon color ="primary"  class="iconSquareButton md-24">credit_card</mat-icon>
+            <div class="captionTarif ml-4 mt-2">
+              <span>Autre spécialité</span>
+              <br />
+              <span class="captionTarifActive">Japonais</span>
             </div>
+          </div>
         </div>
-        <div class="col mt-4 pt-4 mediumMarginTopContainer">
-            <div class="col p-0 d-flex justify-content-between">
-                <h2 class="mb-0">Présentation du lieu</h2>
-                <div class="divider_title d-none d-lg-block mb-2 d-none d-lg-block"></div>
-            </div>
-            <p class="mt-4">
-                Le Manoir Henri IV vous reçoit pour toutes vos réceptions privées ou professionnelles.
-                <br/><br/>
+        <p class="mt-4">
+          Nos menus, à partir de 40€ , sont copieux et complets. Retrouvez les
+          menus traiteurs pour tous les goûts et toutes les envies.
+          <br /><br />
+          La maison propose également des plateaux d’entrées et des apéritifs,
+          ainsi que des buffets de poissons, viandes, fromages ou desserts à
+          choisir selon vos goûts…
+          <br />
+        </p>
 
-                Lors de vos soirées, nos deux granges s'adaptent à votre nombre d'invités de 80 à 600 personnes en repas assis et dansant sans avoir à retirer le mobilier pour la danse.
-                <br/><br/>
-
-                De part nos espaces, vous pouvez ainsi y organiser votre cérémonie laïque en salle ou dans le jardin, votre cocktail ou extérieur aux abords du préau et sur les pelouses ou en intérieur de grange.
-                <br/><br/>
-                Votre dîner permet la convivialité autour de table de 8 invités et un espace dansant accessible dès le début de votre entrée en salle.
-            </p>
-            <div *ngIf= "isShowButtonActive">
-                <p class="mt-4">
-                    La grande qualité du Domaine est l'espace parc et jardin, aménagé et agréablement fleuri pour vos photos de groupes et nos espaces salles de grande capacité d'accueil, totalement modulables selon votre nombre d' invités jusqu'à 600 couverts..
-                </p>
-            </div>
-            <span (click) = "toggleShowButton()" class="showToggleButton" disableRipple value = "">Lire la suite<mat-icon class="md-24" color="primary" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></span>
-
+        <!-- OPEN IF CLIKED -->
+        <div *ngIf="isShowButtonFoodActive">
+          <p class="mt-2">
+            La grande qualité du Domaine est l'espace parc et jardin, aménagé et
+            agréablement fleuri pour vos photos de groupes et nos espaces salles
+            de grande capacité d'accueil, totalement modulables selon votre
+            nombre d' invités jusqu'à 600 couverts..
+          </p>
         </div>
-        <div class="col mt-4">
-            <div class="col p-0 d-flex justify-content-between">
-                <h2 class="mb-0">Liste des espaces</h2>
-                <div class="divider_title d-none d-lg-block mb-2"></div>
-            </div>
-            <div class="col mt-4">
-                <img src="assets/Tableau_Espaces.png" alt="">
-            </div>
+        <span
+          (click)="toggleShowFoodButton()"
+          class="showToggleButton"
+          disableRipple
+          value=""
+          >Lire la suite<mat-icon
+            class="md-24"
+            color="primary"
+            matDatepickerToggleIcon
+            >keyboard_arrow_down</mat-icon
+          ></span
+        >
+
+        <div
+          class="containerRestaurationCard d-flex justify-content-between flex-wrap mt-4 align-items-center pl-4 pr-4"
+        >
+          <div class="textRestaurationCard d-flex">
+            <h2 class="m-0 p-0">Notre carte</h2>
+            <mat-icon color="primary" class="iconSquareButton md-24"
+              >menu_book</mat-icon
+            >
+          </div>
+          <div class="containerIconRestaurationCard">
+            <mat-icon color="primary" class="iconSquareButton md-36"
+              >keyboard_arrow_down</mat-icon
+            >
+          </div>
         </div>
-        <div class="col mt-4">
-            <div class="col p-0 d-flex justify-content-between">
-                <h2 class="mb-0">Explorer des espaces</h2>
-                <div class="divider_title d-none d-lg-block mb-2"></div>
-            </div>
-            <div class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
-                <div class="spaceCard vertGalant mb-3">
-                    <div class="captionCard">
-                        <h3 class = "p-0 m-0">Le Vert Galant</h3>
-                        <span>400m2 - 300 convives</span>
-                    </div>
-                </div>
-                <div class="spaceCard centCouverts">
-                    <div class="captionCard">
-                        <h3 class = "p-0 m-0">Les cents couverts</h3>
-                        <span>400m2 - 300 convives</span>
-                    </div>
-                </div>
-            </div>
+        <!--  -->
+      </div>
 
-            <!-- OPEN IF CLICKED  -->
-
-
-            <div *ngIf = "isShowSpaceButtonActive" class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
-                <div class="spaceCard other1 mb-3">
-                    <div class="captionCard">
-                        <h3 class = "p-0 m-0">Le Vert Galant</h3>
-                        <span>400m2 - 300 convives</span>
-                    </div>
-                </div>
-                <div class="spaceCard other2">
-                    <div class="captionCard">
-                        <h3 class = "p-0 m-0">Les cents couverts</h3>
-                        <span>400m2 - 300 convives</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- OPEN IF CLICKED  -->
-
-
-            <div class="col mt-4 d-flex justify-content-center">
-                <button (click) = "toggleSpaceShowButton()" class="toggleButton space">
-                    <span *ngIf="!isShowSpaceButtonActive">Voir plus d'espaces</span>
-                    <span *ngIf="isShowSpaceButtonActive">Voir moins d'espaces</span>
-                    <mat-icon *ngIf="!isShowSpaceButtonActive" color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
-                    <mat-icon *ngIf="isShowSpaceButtonActive" color ="primary" class="md-24">keyboard_arrow_up</mat-icon>
-                </button>
-            </div>
-
-
-            <!-- OPEN IF CLICKED  -->
+      <div class="col mt-4 p-0">
+        <div class="col p-0 d-flex justify-content-between">
+          <h2 class="mb-0">Logement</h2>
+          <div class="divider_title d-none d-lg-block mb-2"></div>
         </div>
-        <div class="col mt-4">
-            <div class="col p-0 d-flex justify-content-between">
-                <h2 class="mb-0">Tarifs</h2>
-                <div class="divider_title d-none d-lg-block  mb-2"></div>
+        <div class="col d-flex mediumMarginTopContainer mb-4 flex-wrap">
+          <div class="col left flex-column containerLogementItem">
+            <div class="logementItem">
+              <span>
+                <mat-icon color="primary" class="md-24">check</mat-icon>
+                Hébergement <strong>non imposé</strong>
+              </span>
             </div>
-            <div class="col p-0 mediumMarginTopContainer mb-4">
-                <p>
-                    Nos tarifs salles varient en fonction de la saison du jours, semaine ou week-end de votre
-                    événement.
-                    <br/>
-                    Tarif sur simple demande.
-                    <br/>
-                    Nous proposons des tarifs promotionnels pour les lendemain de fête (exemple : le lendemain d'un
-                    mariage).
-                    <br/>
-                    N'hésitez pas à nous contacter pour en savoir davantage.
-                </p>
-                <p *ngIf = "isShowTarifButtonActive" class="mediumMarginTopContainer">
-                    Nos tarifs salles varient en fonction de la saison du jours, semaine ou week-end de votre
-                    événement.
-                    <br/>
-                    Tarif sur simple demande.
-                    <br/>
-                    Nous proposons des tarifs promotionnels pour les lendemain de fête (exemple : le lendemain d'un
-                    mariage).
-                    <br/>
-                    N'hésitez pas à nous contacter pour en savoir davantage.
-                </p>
-                <span (click) = "toggleShowTarifButton()" class="showToggleButton" disableRipple value = "">Lire la suite<mat-icon class="md-24" color="primary" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></span>
+            <div class="logementItem">
+              <span>
+                <mat-icon color="primary" class="md-24">check</mat-icon>
+                <strong>12</strong> chambre
+              </span>
+            </div>
+            <div class="logementItem">
+              <span>
+                <mat-icon color="primary" class="md-24">check</mat-icon>
+                <strong>24</strong> couchages
+              </span>
+            </div>
+          </div>
 
+          <div class="col left flex-column containerLogementItem">
+            <div class="logementItem">
+              <span>
+                <mat-icon color="primary" class="md-24">check</mat-icon>
+                Check in - out <strong>11 heures</strong>
+              </span>
             </div>
-            <div class="col p-0 d-flex justify-content-between flex-wrap mt-4 mediumMarginTopContainer">
-                <div class="containerTarif d-flex  mb-4">
-                    <div class="squareButtonIcon">
-                        <mat-icon color ="primary"  class="iconSquareButton md-24">home</mat-icon>
-                    </div>
-                    <div class="captionTarif ml-4 mt-2">
-                        <span>Tarif de location de la salle vide</span>
-                        <br/>
-                        <span class="captionTarifActive">À partir de 2000 €</span>
-                    </div>
-                </div>
-                <div class="containerTarif d-flex  mb-4">
-                    <div class="squareButtonIcon">
-                        <mat-icon color ="primary"  class="iconSquareButton md-24">credit_card</mat-icon>
-                    </div>
-                    <div class="captionTarif ml-4 mt-2">
-                        <span>Moyen de paiement acceptés</span>
-                        <br/>
-                        <span class="captionTarifActive">À partir de 80€</span>
-                    </div>
-                </div>
+            <div class="logementItem">
+              <span>
+                <mat-icon color="primary" class="md-24">check</mat-icon>
+                Check-out <strong>après mariage</strong> à 14 heures
+              </span>
             </div>
-            <div class="col p-0 d-flex justify-content-between flex-wrap">
-                <div class="containerTarif d-flex  mb-4">
-                    <div class="squareButtonIcon">
-                        <mat-icon color ="primary"  class="iconSquareButton md-24">people_alt</mat-icon>
-                    </div>
-                    <div class="captionTarif ml-4 mt-2">
-                        <span>Tarif par personne</span>
-                        <br/>
-                        <span class="captionTarifActive">À partir de 80€</span>
-                    </div>
-                </div>
-                <div class="containerTarif d-flex  mb-4">
-                    <div class="squareButtonIcon">
-                        <mat-icon color ="primary"  class="iconSquareButton md-24">trending_up</mat-icon>
-                    </div>
-                    <div class="captionTarif ml-4 mt-2">
-                        <span>Gamme tarifaire</span>
-                        <br/>
-                        <span class="captionTarifActive">Modérée</span>
-                    </div>
-                </div>
+            <div class="logementItem">
+              <span>
+                <mat-icon color="primary" class="md-24">check</mat-icon>
+                <strong>24</strong> couchages
+              </span>
             </div>
+          </div>
         </div>
-        <div class="col mt-4">
-            <div class="col p-0 d-flex justify-content-between mb-4">
-                <h2 class="mb-0">Équipements</h2>
-                <div class="divider_title d-none d-lg-block  mb-2"></div>
-            </div>
-            <div class="col d-flex justify-content-between mt-3 mb-4">
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">Wifi</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">wifi</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">Frigo</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">kitchen</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">Tableau blanc</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">assignment</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">Micro</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">mic</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">Téléphone</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">call</mat-icon>
-                </div>
-            </div>
-            <!-- STUFF PART 2 -->
-            <div class="col d-flex justify-content-between bigMarginTopContainer">
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">Téléviseur</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">tv</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">Casques</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">headset</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">Bluetooth</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">bluetooth</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">4 formules</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">Dès 2000€</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                </div>
-            </div>
+      </div>
 
-            <!-- OPEN IF CLICKED -->
+      <div class="col mt-4 p-0">
+        <div class="col p-0 d-flex justify-content-between">
+          <h2 class="mb-0">Disposition</h2>
+          <div class="divider_title d-none d-lg-block mb-2"></div>
+        </div>
+        <div class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
+          <div
+            class="containerCardLogement simpleBed d-flex flex-column align-items-center mb-3"
+          >
+            <h3 class="p-0 mt-3">Lit simple</h3>
+            <div class="imgCardLogement"></div>
+            <h3 class="mt-2 mb-0 p-0">4 offres</h3>
+            <span class="mb-4">À partir de 150 €</span>
+            <button class="detailsCardLogement">Détails</button>
+          </div>
 
-            <div *ngIf = "isShowStuffButtonActive" class="col d-flex justify-content-between p-0 flex-wrap bigMarginTopContainer">
-                <div class="col d-flex justify-content-between">
-                    <div class="squareButtonIcon">
-                        <div class= "captionButton d-none d-sm-block">
-                            <span class="captionSquareButtonIcon">5 espaces</span> 
-                        </div>
-                        <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                    </div>
-                    <div class="squareButtonIcon">
-                        <div class= "captionButton d-none d-sm-block">
-                            <span class="captionSquareButtonIcon">930 m2</span> 
-                        </div>
-                        <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                    </div>
-                    <div class="squareButtonIcon">
-                        <div class= "captionButton d-none d-sm-block">
-                            <span class="captionSquareButtonIcon">1500 pers</span> 
-                        </div>
-                        <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                    </div>
-                    <div class="squareButtonIcon">
-                        <div class= "captionButton d-none d-sm-block">
-                            <span class="captionSquareButtonIcon">4 formules</span> 
-                        </div>
-                        <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                    </div>
-                    <div class="squareButtonIcon">
-                        <div class= "captionButton d-none d-sm-block">
-                            <span class="captionSquareButtonIcon">Dès 2000€</span> 
-                        </div>
-                        <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- OPEN IF CLICKED -->
-            
+          <div
+            class="containerCardLogement doubleBed d-flex flex-column align-items-center mb-3"
+          >
+            <h3 class="p-0 mt-3">Lit double</h3>
+            <div class="imgCardLogement"></div>
+            <h3 class="mt-2 mb-0 p-0">4 offres</h3>
+            <span class="mb-4">À partir de 150 €</span>
+            <button class="detailsCardLogement">Détails</button>
+          </div>
 
-            <div *ngIf = "!isShowStuffButtonActive" class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
-                <button (click) = "toggleStuffShowButton()" class="toggleButton stuff">
-                    Voir plus
-                    <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
-                </button>
-            </div>
+          <div
+            class="containerCardLogement twinBed d-flex flex-column align-items-center"
+          >
+            <h3 class="p-0 mt-3">Lit twins</h3>
+            <div class="imgCardLogement"></div>
+            <h3 class="mt-2 mb-0 p-0">4 offres</h3>
+            <span class="mb-4">À partir de 150 €</span>
+            <button class="detailsCardLogement">Détails</button>
+          </div>
+        </div>
+      </div>
 
-            <div *ngIf = "isShowStuffButtonActive" class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
-                <button (click) = "toggleStuffShowButton()" class="toggleButton stuff">
-                    Voir moins
-                    <mat-icon color ="primary" class="md-24">keyboard_arrow_up</mat-icon>
-                </button>
-            </div>
+      <div class="col mt-4 p-0">
+        <div class="col p-0 d-flex justify-content-between">
+          <h2 class="mb-0">Accès</h2>
+          <div class="divider_title d-none d-lg-block mb-2"></div>
+        </div>
+        <div class="imgMap mt-4"></div>
+        <div class="adresseTitle d-flex mt-4">
+          <mat-icon color="primary" class="md-36 mr-4">location_on</mat-icon>
+          <h3 class="p-0 mb-4">Adresse</h3>
+        </div>
+        <span class="ml-2">5 impasses Mousset, 75012</span>
+        <div class="adresseTitle d-flex mt-4">
+          <mat-icon color="primary" class="md-36 mr-4"
+            >directions_subway</mat-icon
+          >
+          <h3 class="p-0 mb-4">Transports à proximité</h3>
+        </div>
+        <div class="infoTransport d-flex mb-2">
+          <div class="logoMetro ml-2 mr-2"></div>
+          <div class="logoLigneMetro first mr-2"></div>
+          <span>Nation - 5 minutes à pied</span>
+        </div>
+        <div class="infoTransport d-flex mb-2">
+          <div class="logoMetro ml-2 mr-2"></div>
+          <div class="logoLigneMetro second mr-2"></div>
+          <span>Nation - 5 minutes à pied</span>
+        </div>
+        <div class="infoTransport d-flex">
+          <div class="logoMetro ml-2 mr-2"></div>
+          <div class="logoLigneMetro first mr-2"></div>
+          <span>Nation - 5 minutes à pied</span>
+        </div>
+      </div>
 
-
-            
+      <div class="col mt-4 p-0">
+        <div class="col p-0 d-flex justify-content-between">
+          <h2 class="mb-0">Lieu du même groupe</h2>
+          <div class="divider_title d-none d-lg-block mb-2"></div>
         </div>
 
-        <div class="col mt-4">
-            <div class="col p-0 d-flex justify-content-between">
-                <h2 class="mb-0">Formules</h2>
-                <div class="divider_title d-none d-lg-block  mb-2"></div>
+        <div class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
+          <div class="cardSimilarGroup firstCard mb-3">
+            <div class="cardCategory">
+              <span>
+                Restaurant
+              </span>
             </div>
-            <div class="col p-0 d-flex justify-content-around mt-4 flex-wrap">
-                <div class="cardFormuleContainer mb-3">
-                    <div class="borderTop mb-4"></div>
-                    <h3 class="ml-4">Basique</h3>
-                    <p class="ml-4">Ma formule à la journée avec la restauration de la pause midi inclue</p>
-                    <div class="containerPrix d-flex flex-row justify-content-center align-items-center">
-                        <mat-icon class="md-24">euro_symbol</mat-icon>
-                        <h2 class="p-0 m-0">47</h2>
-                        <span class="w-50">La journée par personne</span>
-                    </div>
-                    <div class="infoCardContainer d-flex flex-column align-items-center mt-4">
-                        <div class="infoCard mb-2">
-                            <mat-icon class="md-18">people</mat-icon>
-                            <span>10 à 15 personnes</span>
-                        </div>
-                        <div class="infoCard mb-2">
-                            <mat-icon class="md-18">credit_card</mat-icon>
-                            <span>50 HT par jour et par personnes</span>
-                        </div>
-                        <div class="infoCard mb-2">
-                            <mat-icon class="md-18">description</mat-icon>
-                            <span>Pas d'acompte, pas de caution</span>
-                        </div>
-                        <div class="infoCard mt-2">
-                            <button class="toggleButton cardFormule">
-                                Voir plus
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardFormuleContainer">
-                    <div class="borderTop mb-4"></div>
-                    <h3 class="ml-4">Avancée</h3>
-                    <p class="ml-4">Ma formule à la journée avec la restauration de la pause midi inclue</p>
-                    <div class="containerPrix d-flex flex-row justify-content-center align-items-center">
-                        <mat-icon class="md-24">euro_symbol</mat-icon>
-                        <h2 class="p-0 m-0">84</h2>
-                        <span class="w-50">La journée par personne</span>
-                    </div>
-                    <div class="infoCardContainer d-flex flex-column align-items-center mt-4">
-                        <div class="infoCard mb-2">
-                            <mat-icon class="md-18">people</mat-icon>
-                            <span>10 à 15 personnes</span>
-                        </div>
-                        <div class="infoCard mb-2">
-                            <mat-icon class="md-18">credit_card</mat-icon>
-                            <span>50 HT par jour et par personnes</span>
-                        </div>
-                        <div class="infoCard mb-2">
-                            <mat-icon class="md-18">description</mat-icon>
-                            <span>Pas d'acompte, pas de caution</span>
-                        </div>
-                        <div class="infoCard mt-2">
-                            <button class="toggleButton cardFormule">
-                                Voir plus
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col mt-4">
-            <div class="col p-0 d-flex justify-content-between">
-                <h2 class="mb-0">Activités</h2>
-                <div class="divider_title d-none d-lg-block  mb-2"></div>
-            </div>
-            <div class="col d-flex justify-content-between mt-4 mb-4 bigMarginTopContainer">
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">1km</span> 
-                    </div>
-                    <div class= "captionButtonActivity d-none d-sm-block ">
-                        <span class="captionSquareButtonIcon">Football</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">sports_soccer</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">1km</span> 
-                    </div>
-                    <div class= "captionButtonActivity d-none d-sm-block ">
-                        <span class="captionSquareButtonIcon">Tennis</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">sports_tennis</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">1km</span> 
-                    </div>
-                    <div class= "captionButtonActivity d-none d-sm-block ">
-                        <span class="captionSquareButtonIcon">Baseball</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">sports_baseball</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">1km</span> 
-                    </div>
-                    <div class= "captionButtonActivity d-none d-sm-block ">
-                        <span class="captionSquareButtonIcon">Basket-Ball</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">sports_basketball</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">1km</span> 
-                    </div>
-                    <div class= "captionButtonActivity d-none d-sm-block ">
-                        <span class="captionSquareButtonIcon">Volley Ball</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">sports_volleyball</mat-icon>
-                </div>
-            </div>
-
-            <!-- OPEN IF CLICKED -->
-            <div *ngIf = "isShowActivityButtonActive" class="col d-flex justify-content-between mt-4 mb-4 bigMarginTopContainer">
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">1km</span> 
-                    </div>
-                    <div class= "captionButton d-none d-sm-blockActivity">
-                        <span class="captionSquareButtonIcon">Football</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">1km</span> 
-                    </div>
-                    <div class= "captionButton d-none d-sm-blockActivity">
-                        <span class="captionSquareButtonIcon">Football</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">1km</span> 
-                    </div>
-                    <div class= "captionButton d-none d-sm-blockActivity">
-                        <span class="captionSquareButtonIcon">Football</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">1km</span> 
-                    </div>
-                    <div class= "captionButton d-none d-sm-blockActivity">
-                        <span class="captionSquareButtonIcon">Football</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                </div>
-                <div class="squareButtonIcon">
-                    <div class= "captionButton d-none d-sm-block">
-                        <span class="captionSquareButtonIcon">1km</span> 
-                    </div>
-                    <div class= "captionButton d-none d-sm-blockActivity">
-                        <span class="captionSquareButtonIcon">Football</span> 
-                    </div>
-                    <mat-icon color ="primary"  class="iconSquareButton md-24">keyboard_arrow_down</mat-icon>
-                </div>
-            </div>
-
-
-            <div *ngIf = "!isShowActivityButtonActive" class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
-                <button (click) = "toggleActivityShowButton()" class="toggleButton stuff">
-                    Voir plus
-                    <mat-icon color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
-                </button>
-            </div>
-
-            <div *ngIf = "isShowActivityButtonActive" class="col mt-4 d-flex justify-content-center bigMarginTopContainer">
-                <button (click) = "toggleActivityShowButton()" class="toggleButton stuff">
-                    Voir moins
-                    <mat-icon color ="primary" class="md-24">keyboard_arrow_up</mat-icon>
-                </button>
-            </div>
-
-
-
-            <div class="col mt-4 p-0">
-                <div class="col p-0 d-flex justify-content-between">
-                    <h2 class="mb-0">Restauration</h2>
-                    <div class="divider_title d-none d-lg-block  mb-2"></div>
-                </div>
-                <div class="col p-0 d-flex justify-content-between flex-wrap mt-4">
-                    <div class="containerTarif d-flex mb-4">
-                        <div class="squareButtonIcon">
-                            <mat-icon color ="primary"  class="iconSquareButton md-24">local_dining</mat-icon>
-                        </div>
-                        <div class="captionTarif ml-4  mt-2">
-                            <span>Type de restauration</span>
-                        <br/>
-                        <span class="captionTarifActive">Cocktail dinatoire</span>
-                        </div>
-                    </div>
-                    <div class="containerTarif d-flex mb-4">
-                        <div class="squareButtonIcon">
-                            <mat-icon color ="primary"  class="iconSquareButton md-24">restaurant</mat-icon>
-                        </div>
-                        <div class="captionTarif ml-4  mt-2">
-                            <span>Type de cuisine principale</span>
-                        <br/>
-                        <span class="captionTarifActive">Bistro</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col p-0 d-flex justify-content-between flex-wrap">
-                    <div class="containerTarif d-flex mb-4">
-                        <div class="squareButtonIcon">
-                            <mat-icon color ="primary"  class="iconSquareButton md-24">store_mall_directory</mat-icon>
-                        </div>
-                        <div class="captionTarif ml-4  mt-2">
-                            <span>Vous pouvez apporter</span>
-                        <br/>
-                        <span class="captionTarifActive">Nourriture extérieure interdite</span>
-                        </div>
-                    </div>
-                    <div class="containerTarif d-flex mb-4">
-                        <div class="squareButtonIcon">
-                            <mat-icon color ="primary"  class="iconSquareButton md-24">flag</mat-icon>
-                        </div>
-                        <div class="captionTarif ml-4  mt-2">
-                            <span>Autre spécialité</span>
-                            <br/>
-                            <span class="captionTarifActive">Japonais</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="mt-4">
-                    Nos menus, à partir de 40€ , sont copieux et complets. Retrouvez les menus traiteurs pour tous les goûts et toutes les envies. 
-                    <br/><br/>
-                    La maison propose également des plateaux d’entrées et des apéritifs, ainsi que des buffets de poissons, viandes, fromages ou desserts à choisir selon vos goûts…
-                    <br/>
-                </p>
-
-
-                <!-- OPEN IF CLIKED -->
-                <div *ngIf= "isShowButtonFoodActive">
-                    <p class="mt-2">
-                        La grande qualité du Domaine est l'espace parc et jardin, aménagé et agréablement fleuri pour vos photos de groupes et nos espaces salles de grande capacité d'accueil, totalement modulables selon votre nombre d' invités jusqu'à 600 couverts..
-                    </p>
-                </div> 
-                <span (click) = "toggleShowFoodButton()" class="showToggleButton" disableRipple value = "">Lire la suite<mat-icon class="md-24" color="primary" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></span>
- 
-                <div class="containerRestaurationCard d-flex justify-content-between flex-wrap mt-4 align-items-center pl-4 pr-4">
-                    <div class="textRestaurationCard d-flex">
-                        <h2 class="m-0 p-0">Notre carte</h2>
-                        <mat-icon color ="primary"  class="iconSquareButton md-24">menu_book</mat-icon>
-                    </div>
-                    <div class="containerIconRestaurationCard">
-                        <mat-icon color ="primary"  class="iconSquareButton md-36">keyboard_arrow_down</mat-icon>
-                    </div>
-                </div>
-                <!--  -->
-            </div>
-
-            <div class="col mt-4 p-0">
-                <div class="col p-0 d-flex justify-content-between">
-                    <h2 class="mb-0">Logement</h2>
-                    <div class="divider_title d-none d-lg-block  mb-2"></div>
-                </div>
-                <div class="col d-flex mediumMarginTopContainer mb-4 flex-wrap">
-                    <div class="col left flex-column containerLogementItem">
-                        <div class="logementItem">
-                            <span>
-                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
-                                Hébergement <strong>non imposé</strong>
-                            </span>
-                        </div>
-                        <div class="logementItem">
-                            <span>
-                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
-                                <strong>12</strong> chambre
-                            </span>
-                        </div>
-                        <div class="logementItem">
-                            <span>
-                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
-                                 <strong>24</strong> couchages
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="col left flex-column containerLogementItem">
-                        <div class="logementItem">
-                            <span>
-                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
-                                Check in - out  <strong>11 heures</strong>
-                            </span>
-                        </div>
-                        <div class="logementItem">
-                            <span>
-                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
-                                Check-out <strong>après mariage</strong> à 14 heures
-                            </span>
-                        </div>
-                        <div class="logementItem">
-                            <span>
-                                <mat-icon color ="primary"  class=" md-24">check</mat-icon>
-                                <strong>24</strong> couchages
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="col mt-4 p-0">
-                <div class="col p-0 d-flex justify-content-between">
-                    <h2 class="mb-0">Disposition</h2>
-                    <div class="divider_title d-none d-lg-block  mb-2"></div>
-                </div>
-                <div class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
-                    <div class="containerCardLogement simpleBed d-flex flex-column align-items-center mb-3">
-                        <h3 class="p-0 mt-3">Lit simple</h3>
-                        <div class="imgCardLogement"></div>
-                        <h3 class="mt-2 mb-0 p-0">4 offres</h3>
-                        <span class="mb-4">À partir de 150 €</span>
-                        <button class="detailsCardLogement">Détails</button>
-                    </div>
-
-                    <div class="containerCardLogement doubleBed d-flex flex-column align-items-center mb-3">
-                        <h3 class="p-0 mt-3">Lit double</h3>
-                        <div class="imgCardLogement"></div>
-                        <h3 class="mt-2 mb-0 p-0">4 offres</h3>
-                        <span class="mb-4">À partir de 150 €</span>
-                        <button class="detailsCardLogement">Détails</button>
-                    </div>
-
-                    <div class="containerCardLogement twinBed d-flex flex-column align-items-center">
-                        <h3 class="p-0 mt-3">Lit twins</h3>
-                        <div class="imgCardLogement"></div>
-                        <h3 class="mt-2 mb-0 p-0">4 offres</h3>
-                        <span class="mb-4">À partir de 150 €</span>
-                        <button class="detailsCardLogement">Détails</button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col mt-4 p-0">
-                <div class="col p-0 d-flex justify-content-between">
-                    <h2 class="mb-0">Accès</h2>
-                    <div class="divider_title d-none d-lg-block  mb-2"></div>
-                </div>
-                <div class="imgMap mt-4"></div>
-                <div class="adresseTitle d-flex mt-4">
-                    <mat-icon  color ="primary"  class="md-36 mr-4">location_on</mat-icon>
-                    <h3 class="p-0 mb-4">Adresse</h3>
-                </div>
-                <span class="ml-2">5 impasses Mousset, 75012</span>
-                <div class="adresseTitle d-flex mt-4">
-                    <mat-icon  color ="primary"  class="md-36 mr-4">directions_subway</mat-icon>
-                    <h3 class="p-0 mb-4">Transports à proximité</h3>
-                </div>
-                <div class="infoTransport d-flex mb-2">
-                    <div class="logoMetro ml-2 mr-2"></div>
-                    <div class="logoLigneMetro first mr-2"></div>
-                    <span>Nation - 5 minutes à pied</span>
-                </div>
-                <div class="infoTransport d-flex mb-2">
-                    <div class="logoMetro ml-2 mr-2"></div>
-                    <div class="logoLigneMetro second mr-2"></div>
-                    <span>Nation - 5 minutes à pied</span>
-                </div>
-                <div class="infoTransport d-flex">
-                    <div class="logoMetro ml-2 mr-2"></div>
-                    <div class="logoLigneMetro first mr-2"></div>
-                    <span>Nation - 5 minutes à pied</span>
-                </div>
-            </div>
-
-            <div class="col mt-4 p-0">
-                <div class="col p-0 d-flex justify-content-between">
-                    <h2 class="mb-0">Lieu du même groupe</h2>
-                    <div class="divider_title d-none d-lg-block  mb-2"></div>
-                </div>
-
-                <div class="col d-flex justify-content-around p-0 mt-4 flex-wrap">
-                    <div class="cardSimilarGroup firstCard mb-3">
-                        <div class="cardCategory">
-                            <span>
-                                Restaurant
-                            </span>
-                        </div>
-                        <!-- <div class="captionCard">
+            <!-- <div class="captionCard">
                             <h3 class = "p-0 m-0">Le Vert Galant</h3>
                             <span>400m2 - 300 convives</span>
                         </div> -->
-                    </div>
-                    <div class="cardSimilarGroup secondCard mb-3">
-                        <div class="cardCategory">
-                            <span>
-                                Bar
-                            </span>
-                        </div>
-                        <!-- <div class="captionCard">
+          </div>
+          <div class="cardSimilarGroup secondCard mb-3">
+            <div class="cardCategory">
+              <span>
+                Bar
+              </span>
+            </div>
+            <!-- <div class="captionCard">
                             <h3 class = "p-0 m-0">Les cents couverts</h3>
                             <span>400m2 - 300 convives</span>
                         </div> -->
-                    </div>
-                    <div class="cardSimilarGroup thirdCard">
-                        <div class="cardCategory">
-                            <span>
-                                Discothèque
-                            </span>
-                        </div>
-                        <!-- <div class="captionCard">
+          </div>
+          <div class="cardSimilarGroup thirdCard">
+            <div class="cardCategory">
+              <span>
+                Discothèque
+              </span>
+            </div>
+            <!-- <div class="captionCard">
                             <h3 class = "p-0 m-0">Les cents couverts</h3>
                             <span>400m2 - 300 convives</span>
                         </div> -->
-                    </div>
-                </div>
-                <div class="col d-flex justify-content-around p-0 mt-3 flex-wrap">
-                    <div class="cardSimilarGroup fourthCard mb-3">
-                        <div class="cardCategory">
-                            <span>
-                                Restaurant
-                            </span>
-                        </div>
-                        <!-- <div class="captionCard">
+          </div>
+        </div>
+        <div class="col d-flex justify-content-around p-0 mt-3 flex-wrap">
+          <div class="cardSimilarGroup fourthCard mb-3">
+            <div class="cardCategory">
+              <span>
+                Restaurant
+              </span>
+            </div>
+            <!-- <div class="captionCard">
                             <h3 class = "p-0 m-0">Le Vert Galant</h3>
                             <span>400m2 - 300 convives</span>
                         </div> -->
-                    </div>
-                    <div class="cardSimilarGroup fiveCard mb-3">
-                        <div class="cardCategory">
-                            <span>
-                                Restaurant
-                            </span>
-                        </div>
-                        <!-- <div class="captionCard">
-                            <h3 class = "p-0 m-0">Les cents couverts</h3>
-                            <span>400m2 - 300 convives</span>
-                        </div> -->
-                    </div>
-                    <div class="cardSimilarGroup sixCard ">
-                        <div class="cardCategory">
-                            <span>
-                                Restaurant
-                            </span>
-                        </div>
-                        <!-- <div class="captionCard">
-                            <h3 class = "p-0 m-0">Les cents couverts</h3>
-                            <span>400m2 - 300 convives</span>
-                        </div> -->
-                    </div>
-                </div>
+          </div>
+          <div class="cardSimilarGroup fiveCard mb-3">
+            <div class="cardCategory">
+              <span>
+                Restaurant
+              </span>
             </div>
-
-
+            <!-- <div class="captionCard">
+                            <h3 class = "p-0 m-0">Les cents couverts</h3>
+                            <span>400m2 - 300 convives</span>
+                        </div> -->
+          </div>
+          <div class="cardSimilarGroup sixCard">
+            <div class="cardCategory">
+              <span>
+                Restaurant
+              </span>
+            </div>
+            <!-- <div class="captionCard">
+                            <h3 class = "p-0 m-0">Les cents couverts</h3>
+                            <span>400m2 - 300 convives</span>
+                        </div> -->
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div class="bigContainerDevis d-none d-md-flex ">
-        <app-devisgratuit></app-devisgratuit>
-    </div>
-
-
-
-    
-
+  <div class="bigContainerDevis d-none d-md-flex">
+    <app-devisgratuit></app-devisgratuit>
+  </div>
 </div>
 <!-- <div class="test d-none d-xl-inline">
 </div> -->
