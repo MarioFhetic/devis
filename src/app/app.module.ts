@@ -46,6 +46,8 @@ import { DialogExempleComponent } from './dialog-exemple/dialog-exemple.componen
 import { DialogparticipantsComponent } from './dialogparticipants/dialogparticipants.component';
 import { DialogbudgetComponent } from './dialogbudget/dialogbudget.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { FormulebasicComponent } from './formulebasic/formulebasic.component';
+import { FormuleavanceComponent } from './formuleavance/formuleavance.component';
 
 
 
@@ -69,6 +71,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     DialogExempleComponent,
     DialogparticipantsComponent,
     DialogbudgetComponent,
+    FormulebasicComponent,
+    FormuleavanceComponent,
   ],
   entryComponents:[DialogExempleComponent, DialogparticipantsComponent, DialogbudgetComponent ],
   imports: [

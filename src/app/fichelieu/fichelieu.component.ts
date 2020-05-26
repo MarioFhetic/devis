@@ -1,13 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { MatDialog } from "@angular/material/dialog";
+
+import { FormulebasicComponent } from "../formulebasic/formulebasic.component";
+import { FormuleavanceComponent } from "../formuleavance/formuleavance.component";
 
 @Component({
-  selector: 'app-fichelieu',
-  templateUrl: './fichelieu.component.html',
-  styleUrls: ['./fichelieu.component.scss']
+  selector: "app-fichelieu",
+  templateUrl: "./fichelieu.component.html",
+  styleUrls: ["./fichelieu.component.scss"],
 })
 export class FichelieuComponent implements OnInit {
-
-
   isShowButtonActive = false;
   isShowButtonFoodActive = false;
 
@@ -17,41 +19,37 @@ export class FichelieuComponent implements OnInit {
 
   isShowTarifButtonActive = false;
 
+  constructor(public dialog: MatDialog) {}
 
+  ngOnInit(): void {}
 
-
-
-  constructor() { }
-
-  ngOnInit(): void {
+  openFormuleBasic() {
+    this.dialog.open(FormulebasicComponent);
+  }
+  openFormuleAvance() {
+    this.dialog.open(FormuleavanceComponent);
   }
 
-  toggleShowButton()
-  {
+  toggleShowButton() {
     this.isShowButtonActive = !this.isShowButtonActive;
   }
 
-  toggleShowFoodButton()
-  {
+  toggleShowFoodButton() {
     this.isShowButtonFoodActive = !this.isShowButtonFoodActive;
   }
 
-  toggleSpaceShowButton()
-  {
+  toggleSpaceShowButton() {
     this.isShowSpaceButtonActive = !this.isShowSpaceButtonActive;
   }
 
-  toggleStuffShowButton()
-  {
+  toggleStuffShowButton() {
     this.isShowStuffButtonActive = !this.isShowStuffButtonActive;
   }
-  toggleActivityShowButton()
-  {
+  toggleActivityShowButton() {
     this.isShowActivityButtonActive = !this.isShowActivityButtonActive;
   }
 
-  toggleShowTarifButton()
-  {
+  toggleShowTarifButton() {
     this.isShowTarifButtonActive = !this.isShowTarifButtonActive;
   }
 }
