@@ -3,6 +3,9 @@ import { MatDialog } from "@angular/material/dialog";
 
 import { FormulebasicComponent } from "../formulebasic/formulebasic.component";
 import { FormuleavanceComponent } from "../formuleavance/formuleavance.component";
+import { ModalHebergementComponent } from "../modal-hebergement/modal-hebergement.component";
+import { ModalhebergementdoubleComponent } from "../modalhebergementdouble/modalhebergementdouble.component";
+import { ModalsebergementsimpleComponent } from "../modalsebergementsimple/modalsebergementsimple.component";
 
 @Component({
   selector: "app-fichelieu",
@@ -28,6 +31,15 @@ export class FichelieuComponent implements OnInit {
   }
   openFormuleAvance() {
     this.dialog.open(FormuleavanceComponent);
+  }
+  openModalHerbegement() {
+    this.dialog.open(ModalHebergementComponent);
+  }
+  openModalHerbegementSimple() {
+    this.dialog.open(ModalsebergementsimpleComponent);
+  }
+  openModalHerbegementDouble() {
+    this.dialog.open(ModalhebergementdoubleComponent);
   }
 
   toggleShowButton() {

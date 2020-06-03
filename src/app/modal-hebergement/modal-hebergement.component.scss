@@ -1,0 +1,49 @@
+.mat-dialog-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.close {
+  transform: translateY(-50%);
+}
+
+.containerImg {
+  height: 300px;
+  width: 100%;
+  background-color: #afbecd;
+}
+
+.containerInfo .mat-icon {
+  font-size: 36px;
+  width: initial !important;
+  height: initial !important;
+}
+
+.containerInfo h4 {
+  color: #404b5a;
+  font-weight: 600;
+}
+
+.containerInfo span {
+  color: #929fb1;
+}
+
+.containerItemService span {
+  display: flex;
+  justify-content: space-between;
+  background-color: pink;
+  padding: 10px 10px;
+}
+
+.serviceContainer h2 {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.containerService span {
+  color: #929fb1;
+}
+
+.containerService h4 {
+  font-weight: 500;
+}

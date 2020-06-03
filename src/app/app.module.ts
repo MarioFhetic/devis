@@ -48,6 +48,9 @@ import { DialogbudgetComponent } from './dialogbudget/dialogbudget.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { FormulebasicComponent } from './formulebasic/formulebasic.component';
 import { FormuleavanceComponent } from './formuleavance/formuleavance.component';
+import { ModalHebergementComponent } from './modal-hebergement/modal-hebergement.component';
+import { ModalsebergementsimpleComponent } from './modalsebergementsimple/modalsebergementsimple.component';
+import { ModalhebergementdoubleComponent } from './modalhebergementdouble/modalhebergementdouble.component';
 
 
 
@@ -73,6 +76,9 @@ import { FormuleavanceComponent } from './formuleavance/formuleavance.component'
     DialogbudgetComponent,
     FormulebasicComponent,
     FormuleavanceComponent,
+    ModalHebergementComponent,
+    ModalsebergementsimpleComponent,
+    ModalhebergementdoubleComponent,
   ],
   entryComponents:[DialogExempleComponent, DialogparticipantsComponent, DialogbudgetComponent ],
   imports: [
