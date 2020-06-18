@@ -1,67 +1,145 @@
-
 <div class="container">
-    <div class="row">
-        <div class="col breadCrumd ">
-            <ul class="nav align-items-baseline">
-                <li class="nav-item align">
-                  <a class="nav-link disabled" href="#">Brief <mat-icon class="md-24 d-inline align-middle" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
-                </li>
-                <li class="nav-item d-none d-sm-block">
-                  <a class="nav-link activeNavButton" href="#">Informations complémentaires <mat-icon class="md-24 d-inline align-middle activeNavButton" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
-                </li>
-                <li class="nav-item d-block d-sm-none">
-                    <a class="nav-link activeNavButton" href="#">Détails<mat-icon class="md-24 d-inline align-middle activeNavButton" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Confirmation</a>
-                </li>
-            </ul>
-        </div>
+  <div class="row">
+    <div class="col breadCrumd">
+      <ul class="nav align-items-baseline">
+        <li class="nav-item align">
+          <a class="nav-link disabled" href="#"
+            >Brief
+            <mat-icon
+              class="md-24 d-inline align-middle"
+              color="#7C7878"
+              matDatepickerToggleIcon
+              >keyboard_arrow_right</mat-icon
+            ></a
+          >
+        </li>
+        <li class="nav-item d-none d-sm-block">
+          <a class="nav-link activeNavButton" href="#"
+            >Informations complémentaires
+            <mat-icon
+              class="md-24 d-inline align-middle activeNavButton"
+              color="#7C7878"
+              matDatepickerToggleIcon
+              >keyboard_arrow_right</mat-icon
+            ></a
+          >
+        </li>
+        <li class="nav-item d-block d-sm-none">
+          <a class="nav-link activeNavButton" href="#"
+            >Détails<mat-icon
+              class="md-24 d-inline align-middle activeNavButton"
+              color="#7C7878"
+              matDatepickerToggleIcon
+              >keyboard_arrow_right</mat-icon
+            ></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Confirmation</a>
+        </li>
+      </ul>
     </div>
-    <div class="row">
-        <div class="col col-sm-8">
-            <h2>Quels événements souhaitez vous organiser ? <mat-icon class="md-24 ml-2 iconQuestion" color="primary" matDatepickerToggleIcon (click) = "openDialogElement()">help</mat-icon></h2>
-            
-            <!-- <button mat-raised-button (click) = "openDialogElement()" >Open</button>
+  </div>
+  <div class="row">
+    <div class="col col-sm-8">
+      <h2>
+        Quels événements souhaitez vous organiser ?
+        <mat-icon
+          class="md-24 ml-2 iconQuestion"
+          color="primary"
+          matDatepickerToggleIcon
+          (click)="openDialogElement()"
+          >help</mat-icon
+        >
+      </h2>
+
+      <!-- <button mat-raised-button (click) = "openDialogElement()" >Open</button>
             <button mat-raised-button (click) = "openDialogParticipants()" >Open</button> -->
 
-            <div>
-                <mat-button-toggle-group fxLayout="wrap" #toggleGroup="matButtonToggleGroup" class="d-xs-flex justify-content-center justify-content-sm-start">
-                    <mat-button-toggle disableRipple value = "Séminaire">Séminaire</mat-button-toggle>
-                    <mat-button-toggle disableRipple value = "Workshop">Workshop</mat-button-toggle>
-                    <mat-button-toggle disableRipple value = "Mariage">Mariage</mat-button-toggle>
-                    <mat-button-toggle disableRipple value = "Concert">Concert</mat-button-toggle>
-                    <mat-button-toggle disableRipple value = "Anniversaire">Anniversaire</mat-button-toggle>
-                    <mat-button-toggle disableRipple value = "Soirée">Soirée</mat-button-toggle>
-                    <mat-button-toggle disableRipple value = "Soirée">Soirée</mat-button-toggle>
-                    <mat-button-toggle disableRipple value = "Soirée">Soirée</mat-button-toggle>
-                    <mat-button-toggle disableRipple value = "Soirée">Soirée</mat-button-toggle>
-                    <mat-button-toggle (click) = "toggleShowButton()" class="showToggleButton" disableRipple value = ""><mat-icon class="md-24" color="white" matDatepickerToggleIcon>keyboard_arrow_down</mat-icon></mat-button-toggle>
-                </mat-button-toggle-group>
-            </div>
-            <div>
-                <mat-button-toggle-group *ngIf= "isShowButtonActive" fxLayout="wrap" #toggleGroup="matButtonToggleGroup" multiple class="">
-                    <mat-button-toggle disableRipple value = "Séminaire">Confinement</mat-button-toggle>
-                    <mat-button-toggle disableRipple value = "Workshop">Maison</mat-button-toggle>
-                    <mat-button-toggle disableRipple value = "Anniversaire">Barbecue</mat-button-toggle>
-                </mat-button-toggle-group>
-            </div>
-        </div>
+      <div>
+        <mat-button-toggle-group
+          fxLayout="wrap"
+          #toggleGroup="matButtonToggleGroup"
+          class="d-xs-flex justify-content-center justify-content-sm-start"
+        >
+          <mat-button-toggle disableRipple value="Séminaire"
+            >Séminaire</mat-button-toggle
+          >
+          <mat-button-toggle disableRipple value="Workshop"
+            >Workshop</mat-button-toggle
+          >
+          <mat-button-toggle disableRipple value="Mariage"
+            >Mariage</mat-button-toggle
+          >
+          <mat-button-toggle disableRipple value="Concert"
+            >Concert</mat-button-toggle
+          >
+          <mat-button-toggle disableRipple value="Anniversaire"
+            >Anniversaire</mat-button-toggle
+          >
+          <mat-button-toggle disableRipple value="Soirée"
+            >Soirée</mat-button-toggle
+          >
+          <mat-button-toggle disableRipple value="Soirée"
+            >Soirée</mat-button-toggle
+          >
+          <mat-button-toggle disableRipple value="Soirée"
+            >Soirée</mat-button-toggle
+          >
+          <mat-button-toggle disableRipple value="Soirée"
+            >Soirée</mat-button-toggle
+          >
+          <mat-button-toggle
+            (click)="toggleShowButton()"
+            class="showToggleButton"
+            disableRipple
+            value=""
+            ><mat-icon class="md-24" color="white" matDatepickerToggleIcon
+              >keyboard_arrow_down</mat-icon
+            ></mat-button-toggle
+          >
+        </mat-button-toggle-group>
+      </div>
+      <div>
+        <mat-button-toggle-group
+          *ngIf="isShowButtonActive"
+          fxLayout="wrap"
+          #toggleGroup="matButtonToggleGroup"
+          multiple
+          class=""
+        >
+          <mat-button-toggle disableRipple value="Séminaire"
+            >Confinement</mat-button-toggle
+          >
+          <mat-button-toggle disableRipple value="Workshop"
+            >Maison</mat-button-toggle
+          >
+          <mat-button-toggle disableRipple value="Anniversaire"
+            >Barbecue</mat-button-toggle
+          >
+        </mat-button-toggle-group>
+      </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <h2 class='mt-4'>À quelle date souhaitez-vous l'organiser ?</h2>
-            <mat-form-field appearance="outline" class="">
-                <mat-label>Date d'arrivée</mat-label>
-                <input (focus)="arrivalDay.open()" matInput [matDatepicker]="arrivalDay">
-                <mat-datepicker-toggle matSuffix [for]="arrivalDay">
-                  <mat-icon color="primary" matDatepickerToggleIcon>date_range</mat-icon>
-                </mat-datepicker-toggle>
-                <mat-datepicker disabled="false" #arrivalDay></mat-datepicker>
-            </mat-form-field>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2 class="mt-4">À quelle date souhaitez-vous l'organiser ?</h2>
+      <mat-form-field appearance="outline" class="">
+        <mat-label>Date d'arrivée</mat-label>
+        <input
+          (focus)="arrivalDay.open()"
+          matInput
+          [matDatepicker]="arrivalDay"
+        />
+        <mat-datepicker-toggle matSuffix [for]="arrivalDay">
+          <mat-icon color="primary" matDatepickerToggleIcon
+            >date_range</mat-icon
+          >
+        </mat-datepicker-toggle>
+        <mat-datepicker disabled="false" #arrivalDay></mat-datepicker>
+      </mat-form-field>
 
-              
-            <!-- Date + heure
+      <!-- Date + heure
 
             <mat-form-field appearance="outline" color="primary">
                 <input (focus)="picker1.open()" matInput [ngxMatDatetimePicker]="picker1" 
@@ -69,7 +147,7 @@
                 <mat-datepicker-toggle color="primary" matSuffix [for]="picker1"></mat-datepicker-toggle>
                 <ngx-mat-datetime-picker #picker1></ngx-mat-datetime-picker>
             </mat-form-field> -->
-            <!--             
+      <!--             
             <mat-form-field appearance="outline" color="primary">
                 <input (focus)="picker2.open()" matInput [ngxMatDatetimePicker]="picker2" 
                 placeholder="Date & heure d'arrivée">
@@ -77,96 +155,157 @@
                 <ngx-mat-datetime-picker #picker2></ngx-mat-datetime-picker>
             </mat-form-field> -->
 
-
-            <mat-icon class="md-30 ml-4 mr-4 d-none d-lg-inline" color="accent" matDatepickerToggleIcon>arrow_right_alt</mat-icon>
-            <mat-form-field appearance="outline" class="">
-                <mat-label>Date de départ</mat-label>
-                <input (focus)="departureDay.open()" matInput [matDatepicker]="departureDay">
-                <mat-datepicker-toggle matSuffix [for]="departureDay">
-                  <mat-icon color="primary" matDatepickerToggleIcon>date_range</mat-icon>
-                </mat-datepicker-toggle>
-                <mat-datepicker disabled="false" #departureDay></mat-datepicker>
-            </mat-form-field>
-
-
-
-        </div>
+      <mat-icon
+        class="md-30 ml-4 mr-4 d-none d-lg-inline"
+        color="accent"
+        matDatepickerToggleIcon
+        >arrow_right_alt</mat-icon
+      >
+      <mat-form-field appearance="outline" class="">
+        <mat-label>Date de départ</mat-label>
+        <input
+          (focus)="departureDay.open()"
+          matInput
+          [matDatepicker]="departureDay"
+        />
+        <mat-datepicker-toggle matSuffix [for]="departureDay">
+          <mat-icon color="primary" matDatepickerToggleIcon
+            >date_range</mat-icon
+          >
+        </mat-datepicker-toggle>
+        <mat-datepicker disabled="false" #departureDay></mat-datepicker>
+      </mat-form-field>
     </div>
-    <div class="row">
-        <div class="col">
-            <mat-form-field appearance="outline" class="">
-                <mat-label>Heure d'arrivée</mat-label>
-                <input matInput type="time" placeholder="start date">
-                <mat-datepicker-toggle matSuffix [for]="arrivalHour">
-                  <mat-icon color = "primary" matDatepickerToggleIcon>schedule</mat-icon>
-                </mat-datepicker-toggle>
-                <mat-datepicker disabled="false" #arrivalHour></mat-datepicker> 
-            </mat-form-field> 
-            <!-- <ngx-mat-timepicker 
+  </div>
+  <div class="row">
+    <div class="col">
+      <mat-form-field appearance="outline" class="">
+        <mat-label>Heure d'arrivée</mat-label>
+        <input matInput type="time" placeholder="start date" />
+        <mat-datepicker-toggle matSuffix [for]="arrivalHour">
+          <mat-icon color="primary" matDatepickerToggleIcon>schedule</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker disabled="false" #arrivalHour></mat-datepicker>
+      </mat-form-field>
+      <!-- <ngx-mat-timepicker 
                 [(ngModel)]="date" 
                 [showSpinners]="showSpinners"
                 [stepHour]="stepHour" [stepMinute]="stepMinute" 
                 [stepSecond]="stepSecond" 
                 [showSeconds]="showSeconds">
             </ngx-mat-timepicker> -->
-            <mat-icon class="md-30 ml-4 mr-4 d-none d-lg-inline" color="accent" matDatepickerToggleIcon>arrow_right_alt</mat-icon>
-            <mat-form-field appearance="outline" class="">
-                <mat-label>Heure de départ</mat-label>
-                <input matInput type="time" placeholder="start date">
-                <mat-datepicker-toggle matSuffix [for]="departureHour">
-                  <mat-icon color = "primary" matDatepickerToggleIcon>schedule</mat-icon>
-                </mat-datepicker-toggle>
-                <mat-datepicker disabled="false" #departureHour></mat-datepicker> 
+      <mat-icon
+        class="md-30 ml-4 mr-4 d-none d-lg-inline"
+        color="accent"
+        matDatepickerToggleIcon
+        >arrow_right_alt</mat-icon
+      >
+      <mat-form-field appearance="outline" class="">
+        <mat-label>Heure de départ</mat-label>
+        <input matInput type="time" placeholder="start date" />
+        <mat-datepicker-toggle matSuffix [for]="departureHour">
+          <mat-icon color="primary" matDatepickerToggleIcon>schedule</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker disabled="false" #departureHour></mat-datepicker>
+      </mat-form-field>
+      <div class="row">
+        <div class="col-4 mr-4 mr-sm-0">
+          <mat-checkbox
+            class="d-block"
+            disableRipple
+            color="primary"
+            (click)="toggleDisplayDate()"
+            >Date flexible ?</mat-checkbox
+          >
+          <div *ngIf="isDisplayDate">
+            <mat-form-field class="textareaButton" appearance="outline">
+              <mat-label>Sur quelles dates êtes-vous flexible ?</mat-label>
+              <textarea
+                matInput
+                placeholder="Je suis flexible du 13 au 26 février..."
+              ></textarea>
             </mat-form-field>
-            <div class="row ">
-                <div class="col-4 mr-4 mr-sm-0">
-                    <mat-checkbox class="d-block " disableRipple color = "primary" (click)="toggleDisplayDate()">Date flexible ?</mat-checkbox>
-                    <div *ngIf= "isDisplayDate">
-                        <mat-form-field class="textareaButton " appearance="outline">
-                            <mat-label>Sur quelles dates êtes-vous flexible ?</mat-label>
-                            <textarea matInput placeholder="Je suis flexible du 13 au 26 février..."></textarea>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col">
-                    <mat-checkbox class="d-block " disableRipple color = "primary" (click)="toggleDisplayEvent()">Événement récurrent ?</mat-checkbox>
-                    <div *ngIf= "isDisplayEvent" class="">
-                        <mat-form-field class="textareaButton " appearance="outline">
-                            <mat-label>Précisez la récurrence</mat-label>
-                            <textarea matInput placeholder="Précisez la récurrence"></textarea>
-                        </mat-form-field>
-                    </div>
-                </div>
-            </div>
-            
+          </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4">
-            <h2><mat-icon class="align-middle mr-3" color="accent">group</mat-icon>Participants<mat-icon class="md-24 ml-2 iconQuestion" color="primary" matDatepickerToggleIcon (click) = "openDialogParticipants()">help</mat-icon></h2>
-            <mat-checkbox class="d-block " disableRipple color = "primary" (click)="toggleDisplay()">Fourchette de participants</mat-checkbox>
-
-           <mat-form-field *ngIf= "!isDisplay" color="primary" appearance="outline" class="example-full-width">
-                <mat-label>Nombre de participants</mat-label>
-                <input matInput #postalCode maxlength="4" placeholder="13">
-                <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">people</mat-icon>
+        <div class="col">
+          <mat-checkbox
+            class="d-block"
+            disableRipple
+            color="primary"
+            (click)="toggleDisplayEvent()"
+            >Événement récurrent ?</mat-checkbox
+          >
+          <div *ngIf="isDisplayEvent" class="">
+            <mat-form-field class="textareaButton" appearance="outline">
+              <mat-label>Précisez la récurrence</mat-label>
+              <textarea
+                matInput
+                placeholder="Précisez la récurrence"
+              ></textarea>
             </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>
+        <mat-icon class="align-middle mr-3" color="accent">group</mat-icon
+        >Participants<mat-icon
+          class="md-24 ml-2 iconQuestion"
+          color="primary"
+          matDatepickerToggleIcon
+          (click)="openDialogParticipants()"
+          >help</mat-icon
+        >
+      </h2>
+      <mat-checkbox
+        class="d-block"
+        disableRipple
+        color="primary"
+        (click)="toggleDisplay()"
+        >Fourchette de participants</mat-checkbox
+      >
 
+      <mat-form-field
+        *ngIf="!isDisplay"
+        color="primary"
+        appearance="outline"
+        class="example-full-width"
+      >
+        <mat-label>Nombre de participants</mat-label>
+        <input matInput #postalCode maxlength="4" placeholder="13" />
+        <mat-icon
+          style="position: absolute; right: 0px; top: 20%;"
+          color="primary"
+          class="md-18"
+          >people</mat-icon
+        >
+      </mat-form-field>
 
-            <div *ngIf= "isDisplay">
-                <div class="containerForkInput">
-                    <mat-form-field appearance="none" class="forkInputButton min">
-                        
-                        <input placeholder="Min" matInput type="number" class="example-right-align">
-                        <!-- <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_downward</mat-icon> -->
-                    </mat-form-field>
-                    <mat-form-field appearance="none" class="forkInputButton max">
-                        
-                        <input placeholder="Max" matInput type="number" class="example-right-align">
-                        <!-- <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_downward</mat-icon> -->
-                    </mat-form-field>
-                </div>
-                <!-- <mat-form-field *ngIf= "isDisplay" appearance="outline" class="">
+      <div *ngIf="isDisplay">
+        <div class="containerForkInput">
+          <mat-form-field appearance="none" class="forkInputButton min">
+            <input
+              placeholder="Min"
+              matInput
+              type="number"
+              class="example-right-align"
+            />
+            <!-- <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_downward</mat-icon> -->
+          </mat-form-field>
+          <mat-form-field appearance="none" class="forkInputButton max">
+            <input
+              placeholder="Max"
+              matInput
+              type="number"
+              class="example-right-align"
+            />
+            <!-- <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_downward</mat-icon> -->
+          </mat-form-field>
+        </div>
+        <!-- <mat-form-field *ngIf= "isDisplay" appearance="outline" class="">
                     <mat-label>Fourchette de <strong>participant basse</strong></mat-label>
                     <input matInput type="number" class="example-right-align">
                     <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_downward</mat-icon>
@@ -176,42 +315,86 @@
                     <input matInput type="number" class="example-right-align">
                     <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_upward</mat-icon>
                 </mat-form-field> -->
-            </div>
-        </div>
-        <div class="col-lg-5">
-            <h2><mat-icon class="align-middle mr-3 md-24" color="accent">credit_card</mat-icon>Budget <mat-icon class="md-24 ml-2 iconQuestion" color="primary" matDatepickerToggleIcon (click) = "openDialogBudget()">help</mat-icon></h2>
-            <div>
-                <mat-checkbox disableRipple class="mr-4 " color = "primary" (click)="toggleDisplayBudget()">Par personne</mat-checkbox>
-                <mat-checkbox disableRipple class= "" color = "primary" (click)="toggleDisplayRangeOfPrices()">Fourchette de prix</mat-checkbox>
-            </div>
-            <mat-form-field *ngIf= "!isDisplayBudget" appearance="outline" class="">
-                <mat-label>Votre budget <strong>global</strong></mat-label>
-                <input matInput type="number" class="example-right-align">
-                <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">euro_symbol</mat-icon>
-            </mat-form-field>
-            <mat-form-field *ngIf= "isDisplayBudgetPeople" appearance="outline" class="">
-                <mat-label>Votre budget <strong>par personne</strong></mat-label>
-                <input matInput type="number" class="example-right-align">
-                <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">euro_symbol</mat-icon>
-            </mat-form-field>
-            <div class="containerForkInput" *ngIf= "isDisplayRangeOfPrices">
-                <mat-form-field appearance="none" class="forkInputButton min">
-                    
-                    <input placeholder="Min" matInput type="number" class="example-right-align">
-                    <!-- <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_downward</mat-icon> -->
-                </mat-form-field>
-                <mat-form-field appearance="none" class="forkInputButton max">
-                    
-                    <input placeholder="Max" matInput type="number" class="example-right-align">
-                    <!-- <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_downward</mat-icon> -->
-                </mat-form-field>
-            </div>
-        </div>
-        <!-- <div class="col-lg-7 d-flex justify-content-lg-end mt-4 continueButton">
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <h2>
+        <mat-icon class="align-middle mr-3 md-24" color="accent"
+          >credit_card</mat-icon
+        >Budget
+        <mat-icon
+          class="md-24 ml-2 iconQuestion"
+          color="primary"
+          matDatepickerToggleIcon
+          (click)="openDialogBudget()"
+          >help</mat-icon
+        >
+      </h2>
+      <div>
+        <mat-checkbox
+          disableRipple
+          class="mr-4"
+          color="primary"
+          (click)="toggleDisplayBudget()"
+          >Par personne</mat-checkbox
+        >
+        <mat-checkbox
+          disableRipple
+          class=""
+          color="primary"
+          (click)="toggleDisplayRangeOfPrices()"
+          >Fourchette de prix</mat-checkbox
+        >
+      </div>
+      <mat-form-field *ngIf="!isDisplayBudget" appearance="outline" class="">
+        <mat-label>Votre budget <strong>global</strong></mat-label>
+        <input matInput type="number" class="example-right-align" />
+        <mat-icon
+          style="position: absolute; right: 0px; top: 20%;"
+          color="primary"
+          class="md-18"
+          >euro_symbol</mat-icon
+        >
+      </mat-form-field>
+      <mat-form-field
+        *ngIf="isDisplayBudgetPeople"
+        appearance="outline"
+        class=""
+      >
+        <mat-label>Votre budget <strong>par personne</strong></mat-label>
+        <input matInput type="number" class="example-right-align" />
+        <mat-icon
+          style="position: absolute; right: 0px; top: 20%;"
+          color="primary"
+          class="md-18"
+          >euro_symbol</mat-icon
+        >
+      </mat-form-field>
+      <div class="containerForkInput" *ngIf="isDisplayRangeOfPrices">
+        <mat-form-field appearance="none" class="forkInputButton min">
+          <input
+            placeholder="Min"
+            matInput
+            type="number"
+            class="example-right-align"
+          />
+          <!-- <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_downward</mat-icon> -->
+        </mat-form-field>
+        <mat-form-field appearance="none" class="forkInputButton max">
+          <input
+            placeholder="Max"
+            matInput
+            type="number"
+            class="example-right-align"
+          />
+          <!-- <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_downward</mat-icon> -->
+        </mat-form-field>
+      </div>
+    </div>
+    <!-- <div class="col-lg-7 d-flex justify-content-lg-end mt-4 continueButton">
             <button mat-raised-button color="primary">Continuer</button>
         </div>  -->
-    </div>
-
+  </div>
 </div>
 <app-faq></app-faq>
 <app-svg></app-svg>
