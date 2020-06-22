@@ -215,14 +215,14 @@
             disableRipple
             color="primary"
             (click)="toggleDisplayDate()"
-            >Date flexible ?</mat-checkbox
+            >Ma date est flexible ?</mat-checkbox
           >
           <div *ngIf="isDisplayDate">
             <mat-form-field class="textareaButton" appearance="outline">
-              <mat-label>Sur quelles dates êtes-vous flexible ?</mat-label>
+              <mat-label>J’indique la flexibilité de ma date ?</mat-label>
               <textarea
                 matInput
-                placeholder="Je suis flexible du 13 au 26 février..."
+                placeholder="Mon événement peut aussi se faire la veille ou le lendemain … "
               ></textarea>
             </mat-form-field>
           </div>
@@ -233,14 +233,14 @@
             disableRipple
             color="primary"
             (click)="toggleDisplayEvent()"
-            >Événement récurrent ?</mat-checkbox
+            >Mon événement est récurrent ?</mat-checkbox
           >
           <div *ngIf="isDisplayEvent" class="">
             <mat-form-field class="textareaButton" appearance="outline">
-              <mat-label>Précisez la récurrence</mat-label>
+              <mat-label>Je précise la récurrence</mat-label>
               <textarea
                 matInput
-                placeholder="Précisez la récurrence"
+                placeholder="Mon événement aura lieu tous les vendredis du mois … "
               ></textarea>
             </mat-form-field>
           </div>
@@ -275,7 +275,7 @@
         class="example-full-width"
       >
         <mat-label>Nombre de participants</mat-label>
-        <input matInput #postalCode maxlength="4" placeholder="13" />
+        <input matInput #postalCode maxlength="4" placeholder="12" />
         <mat-icon
           style="position: absolute; right: 0px; top: 20%;"
           color="primary"
@@ -347,7 +347,7 @@
         >
       </div>
       <mat-form-field *ngIf="!isDisplayBudget" appearance="outline" class="">
-        <mat-label>Votre budget <strong>global</strong></mat-label>
+        <mat-label>Mon budget <strong>global</strong></mat-label>
         <input matInput type="number" class="example-right-align" />
         <mat-icon
           style="position: absolute; right: 0px; top: 20%;"
@@ -361,7 +361,7 @@
         appearance="outline"
         class=""
       >
-        <mat-label>Votre budget <strong>par personne</strong></mat-label>
+        <mat-label>Mon budget <strong>par personne</strong></mat-label>
         <input matInput type="number" class="example-right-align" />
         <mat-icon
           style="position: absolute; right: 0px; top: 20%;"

@@ -1,299 +1,500 @@
 <div class="mat-typography container">
-    <div class="row">
-        <div class="col breadCrumd ">
-            <ul class="nav align-items-baseline">
-                <li class="nav-item align">
-                  <a class="nav-link disabled" href="#">Brief <mat-icon class="md-24 d-inline align-middle" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
-                </li>
-                <li class="nav-item d-none d-sm-block">
-                  <a class="nav-link activeNavButton" href="#">Informations complémentaires <mat-icon class="md-24 d-inline align-middle activeNavButton" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
-                </li>
-                <li class="nav-item d-block d-sm-none">
-                    <a class="nav-link activeNavButton" href="#">Détails<mat-icon class="md-24 d-inline align-middle activeNavButton" color="#7C7878" matDatepickerToggleIcon>keyboard_arrow_right</mat-icon></a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Confirmation</a>
-                </li>
-            </ul>
-        </div>
+  <div class="row">
+    <div class="col breadCrumd">
+      <ul class="nav align-items-baseline">
+        <li class="nav-item align">
+          <a class="nav-link disabled" href="#"
+            >Brief
+            <mat-icon
+              class="md-24 d-inline align-middle"
+              color="#7C7878"
+              matDatepickerToggleIcon
+              >keyboard_arrow_right</mat-icon
+            ></a
+          >
+        </li>
+        <li class="nav-item d-none d-sm-block">
+          <a class="nav-link activeNavButton" href="#"
+            >Informations complémentaires
+            <mat-icon
+              class="md-24 d-inline align-middle activeNavButton"
+              color="#7C7878"
+              matDatepickerToggleIcon
+              >keyboard_arrow_right</mat-icon
+            ></a
+          >
+        </li>
+        <li class="nav-item d-block d-sm-none">
+          <a class="nav-link activeNavButton" href="#"
+            >Détails<mat-icon
+              class="md-24 d-inline align-middle activeNavButton"
+              color="#7C7878"
+              matDatepickerToggleIcon
+              >keyboard_arrow_right</mat-icon
+            ></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Confirmation</a>
+        </li>
+      </ul>
     </div>
-    <div class="row">
-        <div class="col">
-            <h2>Avez-vous besoin d'équipement spécifiques ?</h2>
-                <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple class="d-xs-flex justify-content-center justify-content-sm-start">
-                    <mat-button-toggle 
-                    disableRipple 
-                    value = "Séminaire"
-                    matTooltip="Debout"
-                    aria-label="Button that displays a tooltip when focused or hovered over" 
-                    >
-                        <mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon>
-                        <label class="labelButtonToggle d-xs-block d-lg-none" for="">Debout</label>
-                    </mat-button-toggle>
-                    <mat-button-toggle 
-                    disableRipple 
-                    value = "Séminaire"
-                    matTooltip="Debout"
-                    aria-label="Button that displays a tooltip when focused or hovered over" 
-                    >
-                        <mat-icon class="md-30" color="black" matDatepickerToggleIcon>wb_sunny</mat-icon>
-                        <label class="labelButtonToggle d-xs-block d-lg-none" for="">Debout</label>
-                    </mat-button-toggle>
-                    <mat-button-toggle 
-                    disableRipple 
-                    value = "Séminaire"
-                    matTooltip="Debout"
-                    aria-label="Button that displays a tooltip when focused or hovered over" 
-                    >
-                        <mat-icon class="md-30" color="black" matDatepickerToggleIcon>ac_unit</mat-icon>
-                        <label class="labelButtonToggle d-xs-block d-lg-none" for="">Debout</label>
-                    </mat-button-toggle>
-                    <mat-button-toggle 
-                    disableRipple 
-                    value = "Séminaire"
-                    matTooltip="Debout"
-                    aria-label="Button that displays a tooltip when focused or hovered over" 
-                    >
-                        <mat-icon class="md-30" color="black" matDatepickerToggleIcon>fitness_center</mat-icon>
-                        <label class="labelButtonToggle d-xs-block d-lg-none" for="">Debout</label>
-                    </mat-button-toggle>
-            </mat-button-toggle-group>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2>J’ai besoin d’équipements :</h2>
+      <mat-button-toggle-group
+        #toggleGroup="matButtonToggleGroup"
+        multiple
+        class="d-xs-flex justify-content-center justify-content-sm-start"
+      >
+        <mat-button-toggle
+          disableRipple
+          value="Séminaire"
+          matTooltip="Debout"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
+          <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+            >date_range</mat-icon
+          >
+          <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+            >Debout</label
+          >
+        </mat-button-toggle>
+        <mat-button-toggle
+          disableRipple
+          value="Séminaire"
+          matTooltip="Debout"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
+          <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+            >wb_sunny</mat-icon
+          >
+          <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+            >Debout</label
+          >
+        </mat-button-toggle>
+        <mat-button-toggle
+          disableRipple
+          value="Séminaire"
+          matTooltip="Debout"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
+          <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+            >ac_unit</mat-icon
+          >
+          <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+            >Debout</label
+          >
+        </mat-button-toggle>
+        <mat-button-toggle
+          disableRipple
+          value="Séminaire"
+          matTooltip="Debout"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
+          <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+            >fitness_center</mat-icon
+          >
+          <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+            >Debout</label
+          >
+        </mat-button-toggle>
+      </mat-button-toggle-group>
     </div>
-    <div class="row">
-        <div class="col">
-            <h2>Avez-vous besoin de restauration ?</h2>
-            <mat-button-toggle-group class="yesNoButton d-xs-flex justify-content-center justify-content-sm-start" #toggleYesNo="matButtonToggleGroup">
-                <mat-button-toggle (click)="displayModalMeal()" disableRipple value = "">Oui</mat-button-toggle>
-                <mat-button-toggle (click)="closeModalMeal()"disableRipple value = "" >Non</mat-button-toggle>
-                <mat-button-toggle (click)="closeModalMeal()"disableRipple value = "" >J'ai déjà mon traiteur</mat-button-toggle>
-            </mat-button-toggle-group>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2>J’ai besoin d'un traiteur :</h2>
+      <mat-button-toggle-group
+        class="yesNoButton d-xs-flex justify-content-center justify-content-sm-start"
+        #toggleYesNo="matButtonToggleGroup"
+      >
+        <mat-button-toggle (click)="displayModalMeal()" disableRipple value=""
+          >Oui</mat-button-toggle
+        >
+        <mat-button-toggle (click)="closeModalMeal()" disableRipple value=""
+          >Non</mat-button-toggle
+        >
+        <mat-button-toggle (click)="closeModalMeal()" disableRipple value=""
+          >J'ai déjà mon traiteur</mat-button-toggle
+        >
+      </mat-button-toggle-group>
     </div>
-    <div class="row" >
-        <div *ngIf= "isDisplay" class="col-lg-5 col-sm-12 modalRoom">
-            <div class="col">
-                <h3>Quel type de repas ?</h3>
-                <mat-form-field appearance="outline" >
-                    <select matNativeControl required>
-                      <option value="Collation">Collation</option>
-                      <option value="Petit déjeuner">Petit déjeuner</option>
-                      <option value="Déjeuner">Déjeuner</option>
-                      <option value="Goûter">Goûter</option>
-                      <option value="Dîner">Dîner</option>
-                    </select>
-                </mat-form-field>
-            </div>
-            <div class="col">
-                <h3>Combien de personne ?</h3>
-                <mat-form-field appearance="outline">
-                    <mat-label>Rentrez le nombre de d'invités</mat-label>
-                    <input matInput type="number" class="example-right-align">
-                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">people_alt</mat-icon>
-                </mat-form-field>
-            </div>
-            <div class="col">
-                <h3>Quelle est la disposition du repas ?</h3>
-                <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple class="d-xs-flex justify-content-center justify-content-sm-start">
-                    <mat-button-toggle 
-                    disableRipple 
-                    value = "Séminaire"
-                    matTooltip="Debout"
-                    aria-label="Button that displays a tooltip when focused or hovered over" 
-                    >
-                        <mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon>
-                        <label class="labelButtonToggle d-xs-block d-lg-none" for="">Debout</label>
-                    </mat-button-toggle>
-                </mat-button-toggle-group>
-                <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple class="d-xs-flex justify-content-center justify-content-sm-start">
-                    <mat-button-toggle 
-                    disableRipple 
-                    value = "Séminaire"
-                    matTooltip="Debout"
-                    aria-label="Button that displays a tooltip when focused or hovered over" 
-                    >
-                        <mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon>
-                        <label class="labelButtonToggle d-xs-block d-lg-none" for="">Debout</label>
-                    </mat-button-toggle>
-                </mat-button-toggle-group>
-                <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple class="d-xs-flex justify-content-center justify-content-sm-start">
-                    <mat-button-toggle 
-                    disableRipple 
-                    value = "Séminaire"
-                    matTooltip="Debout"
-                    aria-label="Button that displays a tooltip when focused or hovered over" 
-                    >
-                        <mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon>
-                        <label class="labelButtonToggle d-xs-block d-lg-none" for="">Debout</label>
-                    </mat-button-toggle>
-                </mat-button-toggle-group>
-            </div>
-            <div class="col">
-                <h3>Avez-vous des besoin spécifiques ?</h3>
-                <mat-form-field class="example-full-width" appearance="outline">
-                    <mat-label>Type de service, allergie, disposition...</mat-label>
-                    <textarea matInput placeholder="J'ai besoin de 267 chaises et 1557 tables"></textarea>
-                </mat-form-field>
-            </div>
-            <div class="col">
-                <h3>Combien de fois ce repas sera t-il pris par les invités ?</h3>
-                <mat-form-field appearance="outline">
-                    <mat-label>Rentrez le nombre de repas</mat-label>
-                    <input matInput type="number" class="example-right-align">
-                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">room_service</mat-icon>
-                </mat-form-field>
-            </div>
-            <div class="col d-flex d-flex justify-content-end mt-2 mb-2">
-                <button (click)="addMeal()" class="addMeal" mat-flat-button>Ajouter un repas</button>
-            </div>
+  </div>
+  <div class="row">
+    <div *ngIf="isDisplay" class="col-lg-5 col-sm-12 modalRoom">
+      <div class="col">
+        <h3>Type de repas</h3>
+        <mat-form-field appearance="outline">
+          <select matNativeControl required>
+            <option value="Collation">Collation</option>
+            <option value="Petit déjeuner">Petit déjeuner</option>
+            <option value="Déjeuner">Déjeuner</option>
+            <option value="Goûter">Goûter</option>
+            <option value="Dîner">Dîner</option>
+          </select>
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <h3>Nombre de participants</h3>
+        <mat-form-field appearance="outline">
+          <mat-label>J’indique mon nombre de participants</mat-label>
+          <input
+            placeholder="10"
+            matInput
+            type="number"
+            class="example-right-align"
+          />
+          <mat-icon
+            style="position: absolute; right: 0px; top: 20%;"
+            color="primary"
+            class="md-18"
+            >people_alt</mat-icon
+          >
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <h3>Disposition</h3>
+        <mat-button-toggle-group
+          #toggleGroup="matButtonToggleGroup"
+          multiple
+          class="d-xs-flex justify-content-center justify-content-sm-start"
+        >
+          <mat-button-toggle
+            disableRipple
+            value="Séminaire"
+            matTooltip="Debout"
+            aria-label="Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+              >date_range</mat-icon
+            >
+            <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+              >Debout</label
+            >
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+        <mat-button-toggle-group
+          #toggleGroup="matButtonToggleGroup"
+          multiple
+          class="d-xs-flex justify-content-center justify-content-sm-start"
+        >
+          <mat-button-toggle
+            disableRipple
+            value="Séminaire"
+            matTooltip="Debout"
+            aria-label="Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+              >date_range</mat-icon
+            >
+            <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+              >Debout</label
+            >
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+        <mat-button-toggle-group
+          #toggleGroup="matButtonToggleGroup"
+          multiple
+          class="d-xs-flex justify-content-center justify-content-sm-start"
+        >
+          <mat-button-toggle
+            disableRipple
+            value="Séminaire"
+            matTooltip="Debout"
+            aria-label="Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+              >date_range</mat-icon
+            >
+            <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+              >Debout</label
+            >
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="col">
+        <h3>Informations complémentaires</h3>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Régimes alimentaires, allergies, etc.</mat-label>
+          <textarea
+            matInput
+            placeholder="J’ai besoin d’une chaise haute … / Deux des participants sont végétariens … "
+          ></textarea>
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <h3>Ce repas doit être servi de nouveau</h3>
+        <mat-button-toggle-group
+          class="yesNoButton d-xs-flex justify-content-center justify-content-sm-start"
+          #toggleYesNo="matButtonToggleGroup"
+        >
+          <mat-button-toggle
+            (click)="displayModalMealRepetition()"
+            disableRipple
+            value=""
+            >Oui</mat-button-toggle
+          >
+
+          <mat-button-toggle
+            (click)="closeModalMealRepetition()"
+            disableRipple
+            value=""
+            >Non</mat-button-toggle
+          >
+        </mat-button-toggle-group>
+        {{ toggleYesNo.value }}
+        <div class="col pl-0" *ngIf="isMealRepet">
+          <mat-form-field appearance="outline">
+            <mat-label>Nombre de répétition du repas</mat-label>
+            <input
+              placeholder="10"
+              matInput
+              type="number"
+              class="example-right-align"
+            />
+            <mat-icon
+              style="position: absolute; right: 0px; top: 20%;"
+              color="primary"
+              class="md-18"
+              >meal</mat-icon
+            >
+          </mat-form-field>
         </div>
+      </div>
+      <div class="col d-flex d-flex justify-content-end mt-2 mb-2">
+        <button (click)="addMeal()" class="addMeal" mat-flat-button>
+          Ajouter un repas
+        </button>
+      </div>
     </div>
+  </div>
 
-    <!-- SECOND MODAL MEAL -->
+  <!-- SECOND MODAL MEAL -->
 
-    <div class="row" >
-        <div *ngIf= "isAddMealFirst" class="col-lg-5 col-sm-12 modalRoom">
-            <div class="col">
-                <button (click) = "closeAddMeal()" class="buttonCloseModal float-right">
-                    <mat-icon color ="primary" class=" md-24">close</mat-icon>
-                </button>
-                <h3>Quel type de repas ?</h3>
-                <mat-form-field appearance="outline" >
-                    <select matNativeControl required>
-                      <option value="Collation">Collation</option>
-                      <option value="Petit déjeuner">Petit déjeuner</option>
-                      <option value="Déjeuner">Déjeuner</option>
-                      <option value="Goûter">Goûter</option>
-                      <option value="Dîner">Dîner</option>
-
-                    </select>
-                </mat-form-field>
-            </div>
-            <div class="col">
-                <h3>Combien de personne ?</h3>
-                <mat-form-field appearance="outline">
-                    <mat-label>Rentrez le nombre de d'invités</mat-label>
-                    <input matInput type="number" class="example-right-align">
-                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">people_alt</mat-icon>
-                </mat-form-field>
-            </div>
-            <div class="col">
-                <h3>Quelle est la disposition du repas ?</h3>
-                <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple class="d-xs-flex justify-content-center justify-content-sm-start">
-                    <mat-button-toggle 
-                    disableRipple 
-                    value = "Séminaire"
-                    matTooltip="Debout"
-                    aria-label="Button that displays a tooltip when focused or hovered over" 
-                    >
-                        <mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon>
-                        <label class="labelButtonToggle d-xs-block d-lg-none" for="">Debout</label>
-                    </mat-button-toggle>
-                </mat-button-toggle-group>
-                <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple class="d-xs-flex justify-content-center justify-content-sm-start">
-                    <mat-button-toggle 
-                    disableRipple 
-                    value = "Séminaire"
-                    matTooltip="Debout"
-                    aria-label="Button that displays a tooltip when focused or hovered over" 
-                    >
-                        <mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon>
-                        <label class="labelButtonToggle d-xs-block d-lg-none" for="">Debout</label>
-                    </mat-button-toggle>
-                </mat-button-toggle-group>
-                <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple class="d-xs-flex justify-content-center justify-content-sm-start">
-                    <mat-button-toggle 
-                    disableRipple 
-                    value = "Séminaire"
-                    matTooltip="Debout"
-                    aria-label="Button that displays a tooltip when focused or hovered over" 
-                    >
-                        <mat-icon class="md-30" color="black" matDatepickerToggleIcon>date_range</mat-icon>
-                        <label class="labelButtonToggle d-xs-block d-lg-none" for="">Debout</label>
-                    </mat-button-toggle>
-                </mat-button-toggle-group>
-            </div>
-            <div class="col">
-                <h3>Avez-vous des besoin spécifiques ?</h3>
-                <mat-form-field class="example-full-width" appearance="outline">
-                    <mat-label>Type de service, allergie, disposition...</mat-label>
-                    <textarea matInput placeholder="J'ai besoin de 267 chaises et 1557 tables"></textarea>
-                </mat-form-field>
-            </div>
-            <div class="col">
-                <h3>Combien de fois ce repas sera t-il pris par les invités ?</h3>
-                <mat-form-field appearance="outline">
-                    <mat-label>Rentrez le nombre de repas</mat-label>
-                    <input matInput type="number" class="example-right-align">
-                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">room_service</mat-icon>
-                </mat-form-field>
-            </div>
-            <div class="col d-flex d-flex justify-content-end mt-2 mb-2">
-                <button class="addMeal" mat-flat-button>Ajouter un repas</button>
-            </div>
-        </div>
+  <div class="row">
+    <div *ngIf="isAddMealFirst" class="col-lg-5 col-sm-12 modalRoom">
+      <div class="col">
+        <button (click)="closeAddMeal()" class="buttonCloseModal float-right">
+          <mat-icon color="primary" class="md-24">close</mat-icon>
+        </button>
+        <h3>Quel type de repas ?</h3>
+        <mat-form-field appearance="outline">
+          <select matNativeControl required>
+            <option value="Collation">Collation</option>
+            <option value="Petit déjeuner">Petit déjeuner</option>
+            <option value="Déjeuner">Déjeuner</option>
+            <option value="Goûter">Goûter</option>
+            <option value="Dîner">Dîner</option>
+          </select>
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <h3>Combien de personne ?</h3>
+        <mat-form-field appearance="outline">
+          <mat-label>Rentrez le nombre de d'invités</mat-label>
+          <input matInput type="number" class="example-right-align" />
+          <mat-icon
+            style="position: absolute; right: 0px; top: 20%;"
+            color="primary"
+            class="md-18"
+            >people_alt</mat-icon
+          >
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <h3>Quelle est la disposition du repas ?</h3>
+        <mat-button-toggle-group
+          #toggleGroup="matButtonToggleGroup"
+          multiple
+          class="d-xs-flex justify-content-center justify-content-sm-start"
+        >
+          <mat-button-toggle
+            disableRipple
+            value="Séminaire"
+            matTooltip="Debout"
+            aria-label="Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+              >date_range</mat-icon
+            >
+            <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+              >Debout</label
+            >
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+        <mat-button-toggle-group
+          #toggleGroup="matButtonToggleGroup"
+          multiple
+          class="d-xs-flex justify-content-center justify-content-sm-start"
+        >
+          <mat-button-toggle
+            disableRipple
+            value="Séminaire"
+            matTooltip="Debout"
+            aria-label="Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+              >date_range</mat-icon
+            >
+            <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+              >Debout</label
+            >
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+        <mat-button-toggle-group
+          #toggleGroup="matButtonToggleGroup"
+          multiple
+          class="d-xs-flex justify-content-center justify-content-sm-start"
+        >
+          <mat-button-toggle
+            disableRipple
+            value="Séminaire"
+            matTooltip="Debout"
+            aria-label="Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+              >date_range</mat-icon
+            >
+            <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+              >Debout</label
+            >
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="col">
+        <h3>Avez-vous des besoin spécifiques ?</h3>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Type de service, allergie, disposition...</mat-label>
+          <textarea
+            matInput
+            placeholder="J'ai besoin de 267 chaises et 1557 tables"
+          ></textarea>
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <h3>Combien de fois ce repas sera t-il pris par les invités ?</h3>
+        <mat-form-field appearance="outline">
+          <mat-label>Rentrez le nombre de repas</mat-label>
+          <input matInput type="number" class="example-right-align" />
+          <mat-icon
+            style="position: absolute; right: 0px; top: 20%;"
+            color="primary"
+            class="md-18"
+            >room_service</mat-icon
+          >
+        </mat-form-field>
+      </div>
+      <div class="col d-flex d-flex justify-content-end mt-2 mb-2">
+        <button class="addMeal" mat-flat-button>Ajouter un repas</button>
+      </div>
     </div>
+  </div>
 
-        <!-- END MODAL MEAL -->
+  <!-- END MODAL MEAL -->
 
-
-
-    <div class="row">
-        <div class="col">
-            <h2>Avez-vous besoin d'hébergement ?</h2>
-            <mat-button-toggle-group class="yesNoButton d-xs-flex justify-content-center justify-content-sm-start" #toggleYesNo="matButtonToggleGroup">
-                <mat-button-toggle (click)="displayModalHosting()" disableRipple value = "">Oui</mat-button-toggle>
-                <mat-button-toggle (click)="closeModalHosting()"disableRipple value = "" >Non</mat-button-toggle>
-            </mat-button-toggle-group>
-        </div>
+  <div class="row">
+    <div class="col">
+      <h2>J’ai besoin d’un hébergement :</h2>
+      <mat-button-toggle-group
+        class="yesNoButton d-xs-flex justify-content-center justify-content-sm-start"
+        #toggleYesNo="matButtonToggleGroup"
+      >
+        <mat-button-toggle
+          (click)="displayModalHosting()"
+          disableRipple
+          value=""
+          >Oui</mat-button-toggle
+        >
+        <mat-button-toggle (click)="closeModalHosting()" disableRipple value=""
+          >Non</mat-button-toggle
+        >
+      </mat-button-toggle-group>
     </div>
-    <div class="row" >
-        <div *ngIf= "isDisplayHosting" class="col-lg-5 col-sm-12 modalRoom">
-            <div class="col">
-                <h3>Nombre de couchage</h3>
-                <mat-form-field appearance="outline">
-                    <mat-label>Rentrez le nombre de couchage</mat-label>
-                    <input matInput type="number" class="example-right-align">
-                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">king_bed</mat-icon>
-                </mat-form-field>
-            </div>
-            <div class="col">
-                <h3>Type de chambre</h3>
-                <mat-form-field appearance="outline">
-                    <mat-label>Lit simple</mat-label>
-                    <input matInput type="number" class="example-right-align">
-                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">king_bed</mat-icon>
-                </mat-form-field>
-                <mat-form-field appearance="outline">
-                    <mat-label>Lit double</mat-label>
-                    <input matInput type="number" class="example-right-align">
-                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">king_bed</mat-icon>
-                </mat-form-field>
-                <mat-form-field appearance="outline">
-                    <mat-label>Lit twins</mat-label>
-                    <input matInput type="number" class="example-right-align">
-                    <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">king_bed</mat-icon>
-                </mat-form-field>
-            </div>
-            <div class="col">
-                <h3>Avez-vous un besoin particulier ?</h3>
-                <mat-form-field class="textareaButton" appearance="outline">
-                    <mat-label>Détaillez vos besoins</mat-label>
-                    <textarea matInput placeholder=""></textarea>
-                </mat-form-field>
-            </div>
-        </div>
-        <div class="col-sm-12 col-lg-8 mt-4 containerDemande">
-            <h2>Avez-vous des demandes particulières ?</h2>
-            <mat-form-field class="textareaButton" appearance="outline">
-                <mat-label>Détaillez vos besoins</mat-label>
-                <textarea matInput placeholder=""></textarea>
-            </mat-form-field>
-        </div>
+  </div>
+  <div class="row">
+    <div *ngIf="isDisplayHosting" class="col-lg-5 col-sm-12 modalRoom">
+      <div class="col">
+        <h3>J'indique le nombre de couchage</h3>
+        <mat-form-field appearance="outline">
+          <mat-label>Rentrez le nombre de couchage</mat-label>
+          <input
+            placeholder="4"
+            matInput
+            type="number"
+            class="example-right-align"
+          />
+          <mat-icon
+            style="position: absolute; right: 0px; top: 20%;"
+            color="primary"
+            class="md-18"
+            >king_bed</mat-icon
+          >
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <h3>Répartition des chambres</h3>
+        <mat-form-field appearance="outline">
+          <mat-label>Lit simple</mat-label>
+          <input matInput type="number" class="example-right-align" />
+          <mat-icon
+            style="position: absolute; right: 0px; top: 20%;"
+            color="primary"
+            class="md-18"
+            >king_bed</mat-icon
+          >
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Lit double</mat-label>
+          <input matInput type="number" class="example-right-align" />
+          <mat-icon
+            style="position: absolute; right: 0px; top: 20%;"
+            color="primary"
+            class="md-18"
+            >king_bed</mat-icon
+          >
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Lit twins</mat-label>
+          <input matInput type="number" class="example-right-align" />
+          <mat-icon
+            style="position: absolute; right: 0px; top: 20%;"
+            color="primary"
+            class="md-18"
+            >king_bed</mat-icon
+          >
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <h3>Informations complémentaires</h3>
+        <mat-form-field class="textareaButton" appearance="outline">
+          <mat-label>Détaillez vos besoins</mat-label>
+          <textarea
+            matInput
+            placeholder="J’ai besoin d’un lit parapluie … 
+
+          "
+          ></textarea>
+        </mat-form-field>
+      </div>
     </div>
-    <!-- <div class="col-8 d-flex justify-content-end mt-4">
+    <div class="col-sm-12 col-lg-8 mt-4 containerDemande">
+      <h2>Je souhaite apporter des précisions à ma demande :</h2>
+      <mat-form-field class="textareaButton" appearance="outline">
+        <mat-label
+          >Déroulement de l’évent, questions particulières, etc.</mat-label
+        >
+        <textarea
+          matInput
+          placeholder="Le forfait ménage est-il compris dans les prestations ?"
+        ></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+  <!-- <div class="col-8 d-flex justify-content-end mt-4">
         <button mat-raised-button color="primary">Continuer</button>
     </div> -->
-    <app-faq></app-faq>
-    <app-svg></app-svg>
+  <app-faq></app-faq>
+  <app-svg></app-svg>
 </div>
