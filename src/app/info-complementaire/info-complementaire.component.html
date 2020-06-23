@@ -157,6 +157,28 @@
     <div class="col">
       <h2>J'ai des besoins spécifiques :</h2>
       <mat-button-toggle-group
+        class="yesNoButton d-xs-flex justify-content-center justify-content-sm-start"
+        #toggleYesNo="matButtonToggleGroup"
+      >
+        <mat-button-toggle
+          (click)="displaySpecificNeed()"
+          disableRipple
+          value=""
+          >Oui</mat-button-toggle
+        >
+        <mat-button-toggle
+          (click)="closeSpecificNeed()"
+          disableRipple
+          value=""
+          >Non</mat-button-toggle
+        >
+      </mat-button-toggle-group>
+      {{ toggleYesNo.value }}
+    </div>
+  </div>
+  <div class="row" *ngIf="isDisplaySpecificNeed">
+    <div class="col">
+      <mat-button-toggle-group
         #toggleGroup="matButtonToggleGroup"
         multiple
         class="d-xs-flex justify-content-center justify-content-sm-start"
@@ -239,8 +261,8 @@
       {{ toggleYesNo.value }}
     </div>
   </div>
-  <div class="row">
-    <div *ngIf="isDisplayHosting" class="col-lg-5 col-sm-12">
+  <div class="row" *ngIf="isDisplayHosting">
+    <div class="col-lg-5 col-sm-12">
       <div class="containerAddRemoveButton">
         <button type="button" (click)="minus()" class="minusButton">
           <mat-icon class="md-18 d-inline align-middle" color="primary"

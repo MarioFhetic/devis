@@ -11,6 +11,7 @@ export class InfoComplementaireComponent implements OnInit {
   isDisplay = false;
   isDisplayHosting = false;
   isDisplayModalRoom = false;
+  isDisplaySpecificNeed = false;
 
   ngOnInit(): void {}
 
@@ -49,5 +50,12 @@ export class InfoComplementaireComponent implements OnInit {
   }
   closeModalRoom() {
     this.isDisplayModalRoom = false;
+  }
+
+  displaySpecificNeed() {
+    this.isDisplaySpecificNeed = true;
+  }
+  closeSpecificNeed() {
+    this.isDisplaySpecificNeed = false;
   }
 }

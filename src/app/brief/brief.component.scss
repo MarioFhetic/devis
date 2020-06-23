@@ -10,6 +10,10 @@
 //   background-color: red !important;
 // }
 
+.col-lg-8 {
+  flex-wrap: wrap;
+}
+
 .mat-button-toggle {
   margin-right: 1rem;
   border-radius: 1.5rem;
@@ -40,6 +44,10 @@
   position: relative;
   left: -8px;
   top: 3px;
+}
+
+.containerCheckBox {
+  width: 18.75rem;
 }
 
 .containerForkInput {

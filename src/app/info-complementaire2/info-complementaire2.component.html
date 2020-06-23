@@ -105,6 +105,68 @@
   </div>
   <div class="row">
     <div class="col">
+      <mat-button-toggle-group
+        #toggleGroup="matButtonToggleGroup"
+        multiple
+        class="d-xs-flex justify-content-center justify-content-sm-start"
+      >
+        <mat-button-toggle
+          disableRipple
+          value="Séminaire"
+          matTooltip="Debout"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
+          <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+            >date_range</mat-icon
+          >
+          <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+            >Debout</label
+          >
+        </mat-button-toggle>
+        <mat-button-toggle
+          disableRipple
+          value="Séminaire"
+          matTooltip="Debout"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
+          <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+            >wb_sunny</mat-icon
+          >
+          <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+            >Debout</label
+          >
+        </mat-button-toggle>
+        <mat-button-toggle
+          disableRipple
+          value="Séminaire"
+          matTooltip="Debout"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
+          <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+            >ac_unit</mat-icon
+          >
+          <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+            >Debout</label
+          >
+        </mat-button-toggle>
+        <mat-button-toggle
+          disableRipple
+          value="Séminaire"
+          matTooltip="Debout"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
+          <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+            >fitness_center</mat-icon
+          >
+          <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+            >Debout</label
+          >
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
       <h2>J’ai besoin d'un traiteur :</h2>
       <mat-button-toggle-group
         class="yesNoButton d-xs-flex justify-content-center justify-content-sm-start"
@@ -122,8 +184,8 @@
       </mat-button-toggle-group>
     </div>
   </div>
-  <div class="row">
-    <div *ngIf="isDisplay" class="col-lg-5 col-sm-12 modalRoom">
+  <div class="row" *ngIf="isDisplay">
+    <div class="col-lg-5 col-sm-12 modalRoom">
       <div class="col">
         <h3>Type de repas</h3>
         <mat-form-field appearance="outline">
@@ -273,8 +335,8 @@
 
   <!-- SECOND MODAL MEAL -->
 
-  <div class="row">
-    <div *ngIf="isAddMealFirst" class="col-lg-5 col-sm-12 modalRoom">
+  <div class="row" *ngIf="isAddMealFirst">
+    <div class="col-lg-5 col-sm-12 modalRoom">
       <div class="col">
         <button (click)="closeAddMeal()" class="buttonCloseModal float-right">
           <mat-icon color="primary" class="md-24">close</mat-icon>
@@ -418,7 +480,7 @@
       <div class="col">
         <h3>J'indique le nombre de couchage</h3>
         <mat-form-field appearance="outline">
-          <mat-label>Rentrez le nombre de couchage</mat-label>
+          <mat-label>Nombre de couchage</mat-label>
           <input
             placeholder="4"
             matInput
@@ -469,7 +531,7 @@
       <div class="col">
         <h3>Informations complémentaires</h3>
         <mat-form-field class="textareaButton" appearance="outline">
-          <mat-label>Détaillez vos besoins</mat-label>
+          <mat-label>Détaillez les besoins</mat-label>
           <textarea
             matInput
             placeholder="J’ai besoin d’un lit parapluie … 
@@ -479,7 +541,7 @@
         </mat-form-field>
       </div>
     </div>
-    <div class="col-sm-12 col-lg-8 mt-4 containerDemande">
+    <div class="col-sm-12 col-lg-8 containerDemande">
       <h2>Je souhaite apporter des précisions à ma demande :</h2>
       <mat-form-field class="textareaButton" appearance="outline">
         <mat-label

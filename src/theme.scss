@@ -7,6 +7,15 @@ $my-app-warn: mat-palette($mat-deep-orange);
 $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
 @include angular-material-theme($my-app-theme);
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.mat-input-element[type="time"]::after {
+  display: none !important;
+}
+
 .mat-button-toggle-checked .mat-button-toggle-focus-overlay {
   background-color: inherit !important;
   border-bottom: none !important;
