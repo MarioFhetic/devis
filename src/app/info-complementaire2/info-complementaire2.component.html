@@ -189,13 +189,12 @@
       <div class="col">
         <h3>Type de repas</h3>
         <mat-form-field appearance="outline">
-          <select matNativeControl required>
-            <option value="Collation">Collation</option>
-            <option value="Petit déjeuner">Petit déjeuner</option>
-            <option value="Déjeuner">Déjeuner</option>
-            <option value="Goûter">Goûter</option>
-            <option value="Dîner">Dîner</option>
-          </select>
+          <mat-label>Repas</mat-label>
+          <mat-select>
+            <mat-option value="Déjeuner">Déjeuner</mat-option>
+            <mat-option value="Test">Diner</mat-option>
+            <mat-option value="Test2">Dessert</mat-option>
+          </mat-select>
         </mat-form-field>
       </div>
       <div class="col">
@@ -476,7 +475,7 @@
     </div>
   </div>
   <div class="row">
-    <div *ngIf="isDisplayHosting" class="col-lg-5 col-sm-12 modalRoom">
+    <div *ngIf="isDisplayHosting" class="col-lg-5 col-sm-12 mb-3 modalRoom">
       <div class="col">
         <h3>J'indique le nombre de couchage</h3>
         <mat-form-field appearance="outline">
@@ -491,7 +490,7 @@
             style="position: absolute; right: 0px; top: 20%;"
             color="primary"
             class="md-18"
-            >king_bed</mat-icon
+            >hotel</mat-icon
           >
         </mat-form-field>
       </div>
@@ -504,7 +503,7 @@
             style="position: absolute; right: 0px; top: 20%;"
             color="primary"
             class="md-18"
-            >king_bed</mat-icon
+            >single_bed</mat-icon
           >
         </mat-form-field>
         <mat-form-field appearance="outline">
@@ -524,7 +523,13 @@
             style="position: absolute; right: 0px; top: 20%;"
             color="primary"
             class="md-18"
-            >king_bed</mat-icon
+            >single_bed</mat-icon
+          >
+          <mat-icon
+            style="position: absolute; right: 12.5px; top: 20%;"
+            color="primary"
+            class="md-18"
+            >single_bed</mat-icon
           >
         </mat-form-field>
       </div>
@@ -557,6 +562,15 @@
   <!-- <div class="col-8 d-flex justify-content-end mt-4">
         <button mat-raised-button color="primary">Continuer</button>
     </div> -->
+  <div class="row">
+    <div class="col-lg-8 d-flex justify-content-end">
+      <div class="">
+        <button class="buttonContinue" mat-raised-button color="primary">
+          <a href="">Continuer</a>
+        </button>
+      </div>
+    </div>
+  </div>
   <app-faq></app-faq>
   <app-svg></app-svg>
 </div>

@@ -12,6 +12,19 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
+.buttonContinue a {
+  text-transform: none;
+  color: white;
+}
+.buttonContinue a:hover {
+  text-decoration: none;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  display: none !important;
+  height: 0 !important;
+}
+
 .mat-input-element[type="time"]::after {
   display: none !important;
 }
@@ -253,7 +266,7 @@ textarea:focus {
 .mat-button-toggle-checked {
   color: white !important;
   background: #27b9b9;
-  font-weight: bold;
+  // font-weight: bold;
 }
 
 .mat-button-toggle .mat-icon {

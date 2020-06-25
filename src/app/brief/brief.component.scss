@@ -4,6 +4,11 @@
   cursor: pointer;
 }
 
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  display: none !important;
+  height: 0 !important;
+}
+
 // input[type="time"]::-webkit-inner-spin-button,
 // input[type="time"]::-webkit-outer-spin-button {
 //   -webkit-appearance: none !important;

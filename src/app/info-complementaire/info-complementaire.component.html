@@ -42,7 +42,7 @@
   </div>
 
   <div class="row">
-    <div class="col-sm-12 col-lg-7">
+    <div class="col-sm-12 col-lg-8">
       <!-- containerRoomFeatures  col-sm-12 col-lg-7-->
       <h2>Cette salle est prévue pour :</h2>
       <!-- <mat-form-field class="textareaButton roomSection d-xs-flex justify-content-center justify-content-sm-start" appearance="outline" class="d-xs-flex justify-content-center justify-content-sm-start">
@@ -65,15 +65,14 @@
     </div>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col-lg-8">
       <h2>Je souhaite une disposition en :</h2>
       <mat-button-toggle-group
         #toggleGroup="matButtonToggleGroup"
-        multiple
         class="containerToggleGroup d-xs-flex justify-content-center justify-content-sm-start"
       >
         <mat-button-toggle
-          matTooltip="Vidéo projecteur"
+          matTooltip="En réunion"
           aria-label="Button that displays a tooltip when focused or hovered over"
           disableRipple
           value="Séminaire"
@@ -82,79 +81,79 @@
             >date_range</mat-icon
           >
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Vidéo-projecteur</label
+            >En réunion</label
           >
         </mat-button-toggle>
         <mat-button-toggle
           disableRipple
           value="Séminaire"
-          matTooltip="Cocktail"
+          matTooltip="En conférence"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
             >wb_sunny</mat-icon
           >
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Cocktail</label
+            >En conférence</label
           >
         </mat-button-toggle>
         <mat-button-toggle
           disableRipple
           value="Séminaire"
-          matTooltip="Debout"
+          matTooltip="En U"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
             >ac_unit</mat-icon
           >
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >En U</label
           >
         </mat-button-toggle>
         <mat-button-toggle
           disableRipple
           value="Séminaire"
-          matTooltip="Debout"
+          matTooltip="En cocktail"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
             >euro</mat-icon
           >
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >En cocktail</label
           >
         </mat-button-toggle>
         <mat-button-toggle
           disableRipple
           value="Séminaire"
-          matTooltip="Debout"
+          matTooltip="En banquet"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
             >local_cafe</mat-icon
           >
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >En banquet</label
           >
         </mat-button-toggle>
         <mat-button-toggle
           disableRipple
           value="Séminaire"
-          matTooltip="Debout"
+          matTooltip="En classe"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
             >local_cafe</mat-icon
           >
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >En classe</label
           >
         </mat-button-toggle>
       </mat-button-toggle-group>
     </div>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col-lg-8">
       <h2>J'ai des besoins spécifiques :</h2>
       <mat-button-toggle-group
         class="yesNoButton d-xs-flex justify-content-center justify-content-sm-start"
@@ -166,10 +165,7 @@
           value=""
           >Oui</mat-button-toggle
         >
-        <mat-button-toggle
-          (click)="closeSpecificNeed()"
-          disableRipple
-          value=""
+        <mat-button-toggle (click)="closeSpecificNeed()" disableRipple value=""
           >Non</mat-button-toggle
         >
       </mat-button-toggle-group>
@@ -239,7 +235,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col-lg-8">
       <h2>J’ai besoin d'une salle similaire :</h2>
       <mat-button-toggle-group
         class="yesNoButton d-xs-flex justify-content-center justify-content-sm-start"
@@ -336,7 +332,7 @@
         </div> -->
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col-lg-8">
       <h2>J’ai besoin d’une autre salle :</h2>
       <mat-button-toggle-group
         class="yesNoButton d-xs-flex justify-content-center justify-content-sm-start"
@@ -376,7 +372,6 @@
         <h3>Je souhaite une disposition en :</h3>
         <mat-button-toggle-group
           #toggleGroup="matButtonToggleGroup"
-          multiple
           class="d-xs-flex justify-content-center justify-content-sm-start"
         >
           <mat-button-toggle
@@ -483,6 +478,15 @@
             >
           </button>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 d-flex justify-content-end">
+      <div class="">
+        <button class="buttonContinue" mat-raised-button color="primary">
+          <a href="">Continuer</a>
+        </button>
       </div>
     </div>
   </div>

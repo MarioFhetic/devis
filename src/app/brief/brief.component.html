@@ -106,7 +106,7 @@
           fxLayout="wrap"
           #toggleGroup="matButtonToggleGroup"
           multiple
-          class=""
+          class="d-xs-flex justify-content-center justify-content-sm-start"
         >
           <mat-button-toggle disableRipple value="Séminaire"
             >Confinement</mat-button-toggle
@@ -121,7 +121,16 @@
       </div>
     </div>
   </div>
-  <h2 class="mt-4">Date prévue de l’événement</h2>
+  <h2>
+    Date prévue de l'événement
+    <mat-icon
+      class="md-24 ml-2 iconQuestion"
+      color="primary"
+      matDatepickerToggleIcon
+      (click)="openDialogDate()"
+      >help</mat-icon
+    >
+  </h2>
 
   <div class="row">
     <!-- DATE D'ARRIVÉE & DÉPART -->
@@ -164,7 +173,7 @@
     <div class="col-lg-8 d-flex justify-content-between">
       <mat-form-field appearance="outline" class="">
         <mat-label>Heure d'arrivée</mat-label>
-        <input matInput type="time" placeholder="start date" />
+        <input matInput placeholder="start date" />
         <mat-datepicker-toggle matSuffix [for]="arrivalHour">
           <mat-icon color="primary" matDatepickerToggleIcon>schedule</mat-icon>
         </mat-datepicker-toggle>
@@ -173,51 +182,12 @@
 
       <mat-form-field appearance="outline" class="">
         <mat-label>Heure de départ</mat-label>
-        <input matInput type="time" placeholder="start date" />
+        <input matInput placeholder="end date" />
         <mat-datepicker-toggle matSuffix [for]="departureHour">
           <mat-icon color="primary" matDatepickerToggleIcon>schedule</mat-icon>
         </mat-datepicker-toggle>
         <mat-datepicker disabled="false" #departureHour></mat-datepicker>
       </mat-form-field>
-
-      <!-- <div class="row">
-        <div class="col-4 mr-4 mr-sm-0">
-          <mat-checkbox
-            class="d-block"
-            disableRipple
-            color="primary"
-            (click)="toggleDisplayDate()"
-            >Ma date est flexible ?</mat-checkbox
-          >
-          <div *ngIf="isDisplayDate">
-            <mat-form-field class="textareaButton" appearance="outline">
-              <mat-label>J’indique la flexibilité de ma date ?</mat-label>
-              <textarea
-                matInput
-                placeholder="Mon événement peut aussi se faire la veille ou le lendemain … "
-              ></textarea>
-            </mat-form-field>
-          </div>
-        </div>
-        <div class="col">
-          <mat-checkbox
-            class="d-block"
-            disableRipple
-            color="primary"
-            (click)="toggleDisplayEvent()"
-            >Mon événement est récurrent ?</mat-checkbox
-          >
-          <div *ngIf="isDisplayEvent" class="">
-            <mat-form-field class="textareaButton" appearance="outline">
-              <mat-label>Je précise la récurrence</mat-label>
-              <textarea
-                matInput
-                placeholder="Mon événement aura lieu tous les vendredis du mois … "
-              ></textarea>
-            </mat-form-field>
-          </div>
-        </div>
-      </div> -->
     </div>
     <!-- END HEURE ARRIVEE & DEPART -->
   </div>
@@ -291,7 +261,13 @@
           class="example-full-width"
         >
           <mat-label>Nombre de participants</mat-label>
-          <input matInput #postalCode maxlength="4" placeholder="12" />
+          <input
+            type="number"
+            matInput
+            #postalCode
+            maxlength="4"
+            placeholder="12"
+          />
           <mat-icon
             style="position: absolute; right: 0px; top: 20%;"
             color="primary"
@@ -301,22 +277,26 @@
         </mat-form-field>
 
         <div *ngIf="isDisplay">
-          <div class="containerForkInput">
-            <mat-form-field appearance="none" class="forkInputButton min">
-              <input
-                placeholder="Min"
-                matInput
-                type="number"
-                class="example-right-align"
-              />
+          <div class="containerForkInput mb-3">
+            <mat-form-field class="example-full-width forkInputButton min">
+              <mat-label>Minimum</mat-label>
+              <input matInput placeholder="Minimum" />
+              <mat-icon
+                style="position: absolute; right: 5px; top: 22%;"
+                color="primary"
+                class="md-14"
+                >people</mat-icon
+              >
             </mat-form-field>
-            <mat-form-field appearance="none" class="forkInputButton max">
-              <input
-                placeholder="Max"
-                matInput
-                type="number"
-                class="example-right-align"
-              />
+            <mat-form-field class="example-full-width forkInputButton min">
+              <mat-label>Maximum</mat-label>
+              <input matInput placeholder="Maximum" />
+              <mat-icon
+                style="position: absolute; right: 5px; top: 22%;"
+                color="primary"
+                class="md-14"
+                >people</mat-icon
+              >
             </mat-form-field>
           </div>
         </div>
@@ -375,33 +355,38 @@
             >euro_symbol</mat-icon
           >
         </mat-form-field>
-        <div class="containerForkInput" *ngIf="isDisplayRangeOfPrices">
-          <mat-form-field appearance="none" class="forkInputButton min">
-            <input
-              placeholder="Min"
-              matInput
-              type="number"
-              class="example-right-align"
-            />
-            <!-- <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_downward</mat-icon> -->
+        <div class="containerForkInput mb-3" *ngIf="isDisplayRangeOfPrices">
+          <mat-form-field class="example-full-width forkInputButton min">
+            <mat-label>Minimum</mat-label>
+            <input matInput placeholder="Minimum" />
+            <mat-icon
+              style="position: absolute; right: 5px; top: 22%;"
+              color="primary"
+              class="md-14"
+              >euro_symbol</mat-icon
+            >
           </mat-form-field>
-          <mat-form-field appearance="none" class="forkInputButton max">
-            <input
-              placeholder="Max"
-              matInput
-              type="number"
-              class="example-right-align"
-            />
-            <!-- <mat-icon style="position: absolute; right: 0px; top:20%;"color ="primary" class="md-18">arrow_downward</mat-icon> -->
+          <mat-form-field class="example-full-width forkInputButton min">
+            <mat-label>Maximum</mat-label>
+            <input matInput placeholder="Maximum" />
+            <mat-icon
+              style="position: absolute; right: 5px; top: 22%;"
+              color="primary"
+              class="md-14"
+              >euro_symbol</mat-icon
+            >
           </mat-form-field>
         </div>
       </div>
-      <!-- <div class="col-lg-5">
-
-    </div> -->
-      <!-- <div class="col-lg-8 d-flex justify-content-lg-end mt-4 continueButton">
-            <button mat-raised-button color="primary">Continuer</button>
-        </div>  -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 d-flex justify-content-end">
+      <div class="">
+        <button class="buttonContinue" mat-raised-button color="primary">
+          <a href="">Continuer</a>
+        </button>
+      </div>
     </div>
   </div>
   <app-faq></app-faq>
