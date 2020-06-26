@@ -68,11 +68,10 @@
         </button>
       </div> -->
       <mat-form-field appearance="outline" class="">
-        <mat-label>Nombre de participants</mat-label>
+        <mat-label>Nombre de participant(s)</mat-label>
         <mat-select>
-          <mat-option value="Je ne sais pas exactement"
-            >Je ne sais pas exactement</mat-option
-          >
+          <mat-option value="0">0</mat-option>
+
           <mat-option value="">1</mat-option>
           <mat-option value="">2</mat-option>
           <mat-option value="">3</mat-option>
@@ -202,6 +201,7 @@
       <mat-button-toggle-group
         #toggleGroup="matButtonToggleGroup"
         class="containerToggleGroup d-xs-flex justify-content-center justify-content-sm-start"
+        multiple
       >
         <mat-button-toggle
           matTooltip="Écran"
@@ -397,24 +397,25 @@
     <div *ngIf="isDisplayModalRoom" class="col-lg-5 col-sm-12 modalRoom">
       <div class="col">
         <h3>Cette salle est prévue pour :</h3>
-        <div class="containerAddRemoveButton">
-          <button type="button" (click)="minus()" class="minusButton">
-            <mat-icon class="md-18 d-inline align-middle" color="primary"
-              >remove_circle_outline</mat-icon
-            >
-          </button>
-          <input
-            type="text"
-            [value]="
-              quantity === 0 ? quantity + participant : quantity + participants
-            "
-          />
-          <button type="button" (click)="plus()" class="plusButton">
-            <mat-icon class="md-18 d-inline align-middle" color="primary"
-              >add_circle_outline</mat-icon
-            >
-          </button>
-        </div>
+        <mat-form-field appearance="outline" class="">
+          <mat-label>Nombre de participant(s)</mat-label>
+          <mat-select>
+            <mat-option value="0">0</mat-option>
+
+            <mat-option value="">1</mat-option>
+            <mat-option value="">2</mat-option>
+            <mat-option value="">3</mat-option>
+            <mat-option value="">4</mat-option>
+            <mat-option value="">5</mat-option>
+            <mat-option value="">6</mat-option>
+            <mat-option value="">7</mat-option>
+            <mat-option value="">8</mat-option>
+            <mat-option value="">9</mat-option>
+            <mat-option value="">10</mat-option>
+            <mat-option value="">11</mat-option>
+            <mat-option value="">12</mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
       <div class="col mt-3">
         <h3>Je souhaite une disposition en :</h3>
@@ -506,6 +507,7 @@
         <h3>J'ai des besoins spécifiques :</h3>
         <mat-button-toggle-group
           #toggleGroup="matButtonToggleGroup"
+          multiple
           class="containerToggleGroup d-xs-flex justify-content-center justify-content-sm-start"
         >
           <mat-button-toggle
@@ -564,19 +566,25 @@
       </div>
       <div class="col">
         <h3>J'ai besoin d'une salle similaire :</h3>
-        <div class="containerAddRemoveButton">
-          <button type="button" (click)="minus()" class="minusButton">
-            <mat-icon class="md-18 d-inline align-middle" color="primary"
-              >remove_circle_outline</mat-icon
-            >
-          </button>
-          <input type="text" [value]="quantity" />
-          <button type="button" (click)="plus()" class="plusButton">
-            <mat-icon class="md-18 d-inline align-middle" color="primary"
-              >add_circle_outline</mat-icon
-            >
-          </button>
-        </div>
+        <mat-form-field appearance="outline" class="">
+          <mat-label>Nombre de salle similaire</mat-label>
+          <mat-select>
+            <mat-option value="0">0</mat-option>
+
+            <mat-option value="">1</mat-option>
+            <mat-option value="">2</mat-option>
+            <mat-option value="">3</mat-option>
+            <mat-option value="">4</mat-option>
+            <mat-option value="">5</mat-option>
+            <mat-option value="">6</mat-option>
+            <mat-option value="">7</mat-option>
+            <mat-option value="">8</mat-option>
+            <mat-option value="">9</mat-option>
+            <mat-option value="">10</mat-option>
+            <mat-option value="">11</mat-option>
+            <mat-option value="">12</mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
     </div>
   </div>

@@ -199,28 +199,31 @@
         </mat-form-field>
       </div>
       <div class="col">
-        <h3>Nombre de participants</h3>
-        <mat-form-field appearance="outline">
-          <mat-label>J’indique mon nombre de participants</mat-label>
-          <input
-            placeholder="10"
-            matInput
-            type="number"
-            class="example-right-align"
-          />
-          <mat-icon
-            style="position: absolute; right: 0px; top: 20%;"
-            color="primary"
-            class="md-18"
-            >people_alt</mat-icon
-          >
+        <h3>Nombre de participant(s)</h3>
+        <mat-form-field appearance="outline" class="">
+          <mat-label>Nombre de participant(s)</mat-label>
+          <mat-select>
+            <mat-option value="0">0</mat-option>
+
+            <mat-option value="">1</mat-option>
+            <mat-option value="">2</mat-option>
+            <mat-option value="">3</mat-option>
+            <mat-option value="">4</mat-option>
+            <mat-option value="">5</mat-option>
+            <mat-option value="">6</mat-option>
+            <mat-option value="">7</mat-option>
+            <mat-option value="">8</mat-option>
+            <mat-option value="">9</mat-option>
+            <mat-option value="">10</mat-option>
+            <mat-option value="">11</mat-option>
+            <mat-option value="">12</mat-option>
+          </mat-select>
         </mat-form-field>
       </div>
       <div class="col">
         <h3>Disposition</h3>
         <mat-button-toggle-group
           #toggleGroup="matButtonToggleGroup"
-          multiple
           class="d-xs-flex justify-content-center justify-content-sm-start"
         >
           <mat-button-toggle
@@ -236,12 +239,6 @@
               >Debout</label
             >
           </mat-button-toggle>
-        </mat-button-toggle-group>
-        <mat-button-toggle-group
-          #toggleGroup="matButtonToggleGroup"
-          multiple
-          class="d-xs-flex justify-content-center justify-content-sm-start"
-        >
           <mat-button-toggle
             disableRipple
             value="Séminaire"
@@ -255,12 +252,6 @@
               >Debout</label
             >
           </mat-button-toggle>
-        </mat-button-toggle-group>
-        <mat-button-toggle-group
-          #toggleGroup="matButtonToggleGroup"
-          multiple
-          class="d-xs-flex justify-content-center justify-content-sm-start"
-        >
           <mat-button-toggle
             disableRipple
             value="Séminaire"
@@ -278,7 +269,7 @@
       </div>
       <div class="col">
         <h3>Informations complémentaires</h3>
-        <mat-form-field class="example-full-width" appearance="outline">
+        <mat-form-field class="largeButtonModal" appearance="outline">
           <mat-label>Régimes alimentaires, allergies, etc.</mat-label>
           <textarea
             matInput
@@ -308,20 +299,23 @@
         </mat-button-toggle-group>
         {{ toggleYesNo.value }}
         <div class="col pl-0" *ngIf="isMealRepet">
-          <mat-form-field appearance="outline">
+          <mat-form-field appearance="outline" class="">
             <mat-label>Nombre de répétition du repas</mat-label>
-            <input
-              placeholder="10"
-              matInput
-              type="number"
-              class="example-right-align"
-            />
-            <mat-icon
-              style="position: absolute; right: 0px; top: 20%;"
-              color="primary"
-              class="md-18"
-              >meal</mat-icon
-            >
+            <mat-select>
+              <mat-option value="0">0</mat-option>
+              <mat-option value="">1</mat-option>
+              <mat-option value="">2</mat-option>
+              <mat-option value="">3</mat-option>
+              <mat-option value="">4</mat-option>
+              <mat-option value="">5</mat-option>
+              <mat-option value="">6</mat-option>
+              <mat-option value="">7</mat-option>
+              <mat-option value="">8</mat-option>
+              <mat-option value="">9</mat-option>
+              <mat-option value="">10</mat-option>
+              <mat-option value="">11</mat-option>
+              <mat-option value="">12</mat-option>
+            </mat-select>
           </mat-form-field>
         </div>
       </div>
@@ -354,22 +348,29 @@
       </div>
       <div class="col">
         <h3>Combien de personne ?</h3>
-        <mat-form-field appearance="outline">
-          <mat-label>Rentrez le nombre de d'invités</mat-label>
-          <input matInput type="number" class="example-right-align" />
-          <mat-icon
-            style="position: absolute; right: 0px; top: 20%;"
-            color="primary"
-            class="md-18"
-            >people_alt</mat-icon
-          >
+        <mat-form-field appearance="outline" class="">
+          <mat-label>Nombre de participant(s)</mat-label>
+          <mat-select>
+            <mat-option value="0">0</mat-option>
+            <mat-option value="">1</mat-option>
+            <mat-option value="">2</mat-option>
+            <mat-option value="">3</mat-option>
+            <mat-option value="">4</mat-option>
+            <mat-option value="">5</mat-option>
+            <mat-option value="">6</mat-option>
+            <mat-option value="">7</mat-option>
+            <mat-option value="">8</mat-option>
+            <mat-option value="">9</mat-option>
+            <mat-option value="">10</mat-option>
+            <mat-option value="">11</mat-option>
+            <mat-option value="">12</mat-option>
+          </mat-select>
         </mat-form-field>
       </div>
       <div class="col">
         <h3>Quelle est la disposition du repas ?</h3>
         <mat-button-toggle-group
           #toggleGroup="matButtonToggleGroup"
-          multiple
           class="d-xs-flex justify-content-center justify-content-sm-start"
         >
           <mat-button-toggle
@@ -385,12 +386,6 @@
               >Debout</label
             >
           </mat-button-toggle>
-        </mat-button-toggle-group>
-        <mat-button-toggle-group
-          #toggleGroup="matButtonToggleGroup"
-          multiple
-          class="d-xs-flex justify-content-center justify-content-sm-start"
-        >
           <mat-button-toggle
             disableRipple
             value="Séminaire"
@@ -404,12 +399,6 @@
               >Debout</label
             >
           </mat-button-toggle>
-        </mat-button-toggle-group>
-        <mat-button-toggle-group
-          #toggleGroup="matButtonToggleGroup"
-          multiple
-          class="d-xs-flex justify-content-center justify-content-sm-start"
-        >
           <mat-button-toggle
             disableRipple
             value="Séminaire"
@@ -427,7 +416,7 @@
       </div>
       <div class="col">
         <h3>Avez-vous des besoin spécifiques ?</h3>
-        <mat-form-field class="example-full-width" appearance="outline">
+        <mat-form-field class="largeButtonModal" appearance="outline">
           <mat-label>Type de service, allergie, disposition...</mat-label>
           <textarea
             matInput
@@ -437,15 +426,23 @@
       </div>
       <div class="col">
         <h3>Combien de fois ce repas sera t-il pris par les invités ?</h3>
-        <mat-form-field appearance="outline">
-          <mat-label>Rentrez le nombre de repas</mat-label>
-          <input matInput type="number" class="example-right-align" />
-          <mat-icon
-            style="position: absolute; right: 0px; top: 20%;"
-            color="primary"
-            class="md-18"
-            >room_service</mat-icon
-          >
+        <mat-form-field appearance="outline" class="">
+          <mat-label>Nombre de répétition du repas</mat-label>
+          <mat-select>
+            <mat-option value="0">0</mat-option>
+            <mat-option value="">1</mat-option>
+            <mat-option value="">2</mat-option>
+            <mat-option value="">3</mat-option>
+            <mat-option value="">4</mat-option>
+            <mat-option value="">5</mat-option>
+            <mat-option value="">6</mat-option>
+            <mat-option value="">7</mat-option>
+            <mat-option value="">8</mat-option>
+            <mat-option value="">9</mat-option>
+            <mat-option value="">10</mat-option>
+            <mat-option value="">11</mat-option>
+            <mat-option value="">12</mat-option>
+          </mat-select>
         </mat-form-field>
       </div>
       <div class="col d-flex d-flex justify-content-end mt-2 mb-2">
@@ -479,20 +476,24 @@
     <div *ngIf="isDisplayHosting" class="col-lg-5 col-sm-12 mb-3 modalRoom">
       <div class="col">
         <h3>J'indique le nombre de couchage</h3>
-        <mat-form-field appearance="outline">
-          <mat-label>Nombre de couchage</mat-label>
-          <input
-            placeholder="4"
-            matInput
-            type="number"
-            class="example-right-align"
-          />
-          <mat-icon
-            style="position: absolute; right: 0px; top: 20%;"
-            color="primary"
-            class="md-18"
-            >hotel</mat-icon
-          >
+        <mat-form-field appearance="outline" class="">
+          <mat-label>Nombre de couchage(s)</mat-label>
+          <mat-select>
+            <mat-option value="0">0</mat-option>
+
+            <mat-option value="">1</mat-option>
+            <mat-option value="">2</mat-option>
+            <mat-option value="">3</mat-option>
+            <mat-option value="">4</mat-option>
+            <mat-option value="">5</mat-option>
+            <mat-option value="">6</mat-option>
+            <mat-option value="">7</mat-option>
+            <mat-option value="">8</mat-option>
+            <mat-option value="">9</mat-option>
+            <mat-option value="">10</mat-option>
+            <mat-option value="">11</mat-option>
+            <mat-option value="">12</mat-option>
+          </mat-select>
         </mat-form-field>
       </div>
       <div class="col">
@@ -536,7 +537,7 @@
       </div>
       <div class="col">
         <h3>Informations complémentaires</h3>
-        <mat-form-field class="textareaButton" appearance="outline">
+        <mat-form-field class="largeButtonModal" appearance="outline">
           <mat-label>Détaillez les besoins</mat-label>
           <textarea
             matInput
