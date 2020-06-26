@@ -13,6 +13,7 @@ import { DialogdateComponent } from "../dialogdate/dialogdate.component";
 export class BriefComponent implements OnInit {
   isDisplayRangeOfPrices = false;
   isDisplayBudgetPeople = false;
+  isDisplayBudgetPeopleByPrices = false;
   isDisplayBudget = false;
   isDisplayDate = false;
   isDisplayEvent = false;
@@ -36,39 +37,68 @@ export class BriefComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  toggleDisplayBudget() {
-    // !this.isDisplayBudget;
+  toggleDisplayBudgetPeople() {
     this.isDisplayBudget = !this.isDisplayBudget;
     this.isDisplayBudgetPeople = !this.isDisplayBudgetPeople;
-    if (
-      this.isDisplayRangeOfPrices === true &&
-      this.isDisplayBudgetPeople === true
-    ) {
-      this.isDisplayBudget = !this.isDisplayBudget;
-    }
-
+    // if (
+    //   this.isDisplayRangeOfPrices === true &&
+    //   this.isDisplayBudgetPeople === true
+    // ) {
+    //   this.isDisplayBudget = !this.isDisplayBudget;
+    // }
     // this.isDisplayRangeOfPrices = !this.isDisplayRangeOfPrices;
-  }
 
-  toggleDisplayRangeOfPrices() {
-    this.isDisplayRangeOfPrices = !this.isDisplayRangeOfPrices;
-    this.isDisplayBudget = !this.isDisplayBudget;
+    // if (
+    //   this.isDisplayBudgetPeople === true &&
+    //   this.isDisplayRangeOfPrices === false
+    // ) {
+    //   this.isDisplayBudgetPeople = !this.isDisplayBudgetPeople;
+    //   this.isDisplayBudget = false;
+    //   this.isDisplayRangeOfPrices = false;
+    //
+
     if (
-      this.isDisplayRangeOfPrices === true &&
-      this.isDisplayBudgetPeople === true
+      this.isDisplayBudgetPeople === true &&
+      this.isDisplayRangeOfPrices === true
     ) {
-      this.isDisplayBudget = !this.isDisplayBudget;
+      this.isDisplayBudgetPeople = false;
+      this.isDisplayRangeOfPrices = false;
+      this.isDisplayBudget = false;
+      this.isDisplayBudgetPeopleByPrices = true;
     }
   }
 
+  // fourchette de prix
+  toggleDisplayRangeOfPrices() {
+    // this.isDisplayRangeOfPrices = !this.isDisplayRangeOfPrices;
+    // this.isDisplayBudget = !this.isDisplayBudget;
+    // if (
+    //   this.isDisplayRangeOfPrices === true &&
+    //   this.isDisplayBudgetPeople === true
+    // ) {
+    //   this.isDisplayBudget = !this.isDisplayBudget;
+    // }
+    // this.isDisplayRangeOfPrices = !this.isDisplayRangeOfPrices;
+
+    // Premier cas ou la checkbox "Par Personne" n'est pas checked
+    if (this.isDisplayBudgetPeople === false) {
+      this.isDisplayBudget = !this.isDisplayBudget;
+      this.isDisplayRangeOfPrices = !this.isDisplayRangeOfPrices;
+    }
+    if (
+      this.isDisplayBudgetPeople === true &&
+      this.isDisplayRangeOfPrices === true
+    ) {
+      this.isDisplayBudgetPeople = false;
+      this.isDisplayRangeOfPrices = false;
+      this.isDisplayBudget = false;
+      this.isDisplayBudgetPeopleByPrices = true;
+    }
+  }
+
+  // budget global
   toggleDisplay() {
     this.isDisplay = !this.isDisplay;
-    if (
-      this.isDisplayRangeOfPrices === true &&
-      this.isDisplayBudgetPeople === true
-    ) {
-      this.isDisplayBudget = !this.isDisplayBudget;
-    }
   }
 
   toggleDisplayDate() {

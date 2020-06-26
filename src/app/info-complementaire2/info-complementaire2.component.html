@@ -50,54 +50,54 @@
       >
         <mat-button-toggle
           disableRipple
-          value="Séminaire"
-          matTooltip="Debout"
+          value="Wifi"
+          matTooltip="Wifi"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
-            >date_range</mat-icon
+            >wifi</mat-icon
           >
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >Wifi</label
           >
         </mat-button-toggle>
         <mat-button-toggle
           disableRipple
-          value="Séminaire"
-          matTooltip="Debout"
+          value="Frigo"
+          matTooltip="Frigo"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
-            >wb_sunny</mat-icon
+            >kitchen</mat-icon
           >
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >Frigo</label
           >
         </mat-button-toggle>
         <mat-button-toggle
           disableRipple
-          value="Séminaire"
-          matTooltip="Debout"
+          value="Tableau blanc"
+          matTooltip="Tableau blanc"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
-            >ac_unit</mat-icon
-          >
+            >content_paste
+          </mat-icon>
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >Tableau blanc</label
           >
         </mat-button-toggle>
         <mat-button-toggle
           disableRipple
-          value="Séminaire"
-          matTooltip="Debout"
+          value="Microphone"
+          matTooltip="Microphone"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
-            >fitness_center</mat-icon
-          >
+            >keyboard_voice
+          </mat-icon>
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >Microphone</label
           >
         </mat-button-toggle>
       </mat-button-toggle-group>
@@ -112,54 +112,54 @@
       >
         <mat-button-toggle
           disableRipple
-          value="Séminaire"
-          matTooltip="Debout"
+          value="Téléphone"
+          matTooltip="Téléphone"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
-            >date_range</mat-icon
-          >
+            >phone
+          </mat-icon>
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >Téléphone</label
           >
         </mat-button-toggle>
         <mat-button-toggle
           disableRipple
-          value="Séminaire"
-          matTooltip="Debout"
+          value="Téléviseur"
+          matTooltip="Téléviseur"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
-            >wb_sunny</mat-icon
+            >tv</mat-icon
           >
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >Téléviseur</label
           >
         </mat-button-toggle>
         <mat-button-toggle
           disableRipple
-          value="Séminaire"
-          matTooltip="Debout"
+          value="Bluetooth"
+          matTooltip="Bluetooth"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
-            >ac_unit</mat-icon
+            >bluetooth</mat-icon
           >
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >Bluetooth</label
           >
         </mat-button-toggle>
         <mat-button-toggle
           disableRipple
-          value="Séminaire"
-          matTooltip="Debout"
+          value="Musique"
+          matTooltip="Musique"
           aria-label="Button that displays a tooltip when focused or hovered over"
         >
           <mat-icon class="md-30" color="black" matDatepickerToggleIcon
-            >fitness_center</mat-icon
-          >
+            >audiotrack
+          </mat-icon>
           <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-            >Debout</label
+            >Musique</label
           >
         </mat-button-toggle>
       </mat-button-toggle-group>
@@ -191,9 +191,10 @@
         <mat-form-field appearance="outline">
           <mat-label>Repas</mat-label>
           <mat-select>
+            <mat-option value="Déjeuner">Colation</mat-option>
+            <mat-option value="Petit-déjeuner">Petit déjeuner</mat-option>
             <mat-option value="Déjeuner">Déjeuner</mat-option>
-            <mat-option value="Test">Diner</mat-option>
-            <mat-option value="Test2">Dessert</mat-option>
+            <mat-option value="Diner">Diner</mat-option>
           </mat-select>
         </mat-form-field>
       </div>
@@ -342,13 +343,13 @@
         </button>
         <h3>Quel type de repas ?</h3>
         <mat-form-field appearance="outline">
-          <select matNativeControl required>
-            <option value="Collation">Collation</option>
-            <option value="Petit déjeuner">Petit déjeuner</option>
-            <option value="Déjeuner">Déjeuner</option>
-            <option value="Goûter">Goûter</option>
-            <option value="Dîner">Dîner</option>
-          </select>
+          <mat-label>Repas</mat-label>
+          <mat-select>
+            <mat-option value="Déjeuner">Colation</mat-option>
+            <mat-option value="Petit-déjeuner">Petit déjeuner</mat-option>
+            <mat-option value="Déjeuner">Déjeuner</mat-option>
+            <mat-option value="Diner">Diner</mat-option>
+          </mat-select>
         </mat-form-field>
       </div>
       <div class="col">

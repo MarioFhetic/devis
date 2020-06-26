@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-devisgratuit',
-  templateUrl: './devisgratuit.component.html',
-  styleUrls: ['./devisgratuit.component.scss']
+  selector: "app-devisgratuit",
+  templateUrl: "./devisgratuit.component.html",
+  styleUrls: ["./devisgratuit.component.scss"],
 })
 export class DevisgratuitComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

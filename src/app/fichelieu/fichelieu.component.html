@@ -2,7 +2,7 @@
 
 <div class="row bigContainer mt-4 d-xl-flex justify-content-center">
   <div class="marginLeftBlock col col-xl-3 d-none d-xl-none"></div>
-  <div class="col col-md-7 col-sm-12 col-xl-7">
+  <div class="col col-md-7 col-sm-12 col-xl-7 smallMarginTopContainer">
     <div class="col breadCrumd">
       <ul class="nav align-items-baseline">
         <li class="nav-item align">
@@ -32,10 +32,10 @@
     </div>
     <div class="col d-flex justify-content-between mt-3 pl-0">
       <div class="col">
-        <h1 class="mb-0">Manoir HENRI IV</h1>
+        <h1 class="mb-0 bigTitle">Manoir HENRI IV</h1>
         <span>Caugé ( 27180 )</span>
       </div>
-      <mat-button-toggle-group
+      <!-- <mat-button-toggle-group
         #toggleGroup="matButtonToggleGroup"
         class="favoriteButton"
         multiple
@@ -45,7 +45,14 @@
             >favorite</mat-icon
           ></mat-button-toggle
         >
-      </mat-button-toggle-group>
+      </mat-button-toggle-group> -->
+      <div class="example-button-row">
+        <div class="example-button-container">
+          <button mat-fab aria-label="Example icon button with a heart icon">
+            <mat-icon color="primary">favorite</mat-icon>
+          </button>
+        </div>
+      </div>
     </div>
     <div
       class="col d-flex justify-content-between mt-3 mediumMarginTopContainer"
@@ -136,7 +143,43 @@
         ></span
       >
     </div>
-    <div class="col mt-4">
+    <div class="col mt-4 pt-4 mediumMarginTopContainer">
+      <div class="col p-0 d-flex justify-content-between">
+        <h2 class="mb-0">Offre du moment</h2>
+        <div
+          class="divider_title d-none d-lg-block mb-2 d-none d-lg-block"
+        ></div>
+      </div>
+      <div
+        class="col d-flex justify-content-around bigMarginTopContainer bigMarginBottomContainer mt-3"
+      >
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareOffer">Promotion</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >card_giftcard
+          </mat-icon>
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareOffer">Cocktail</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >local_bar</mat-icon
+          >
+        </div>
+        <div class="squareButtonIcon">
+          <div class="captionButton d-none d-sm-block">
+            <span class="captionSquareOffer">DJ offert</span>
+          </div>
+          <mat-icon color="primary" class="iconSquareButton md-24"
+            >audiotrack</mat-icon
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col mt-4 bigMarginTopContainer">
       <div class="col p-0 d-flex justify-content-between">
         <h2 class="mb-0">Liste des espaces</h2>
         <div class="divider_title d-none d-lg-block mb-2"></div>

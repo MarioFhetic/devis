@@ -4,9 +4,14 @@
   // justify-content: space-between;
 }
 
+// .bigContainerLightbox .col {
+//   padding-left: 7px !important;
+//   padding-right: 7px !important;
+// }
+
 .containerImg {
   padding-right: 15px;
-  padding-left: 15px;
+  // padding-left: 15px;
 }
 
 .buttonFirstImg {
@@ -30,12 +35,12 @@
 
 .buttonFirstImg.button-360 {
   right: 10px !important;
-  bottom: 0px !important;
+  top: 30px !important;
 }
 
 .buttonFirstImg.button-video {
   right: 100px !important;
-  bottom: 0px !important;
+  top: 30px !important;
 }
 
 // Modif des valeurs primaires de bootstrap - peut causer prbl responsive sur plus petit desktop

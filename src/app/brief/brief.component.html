@@ -320,7 +320,7 @@
             disableRipple
             class="mr-4"
             color="primary"
-            (click)="toggleDisplayBudget()"
+            (click)="toggleDisplayBudgetPeople()"
             >Par personne</mat-checkbox
           >
           <mat-checkbox
@@ -377,6 +377,32 @@
             >
           </mat-form-field>
         </div>
+        <!-- <div
+          class="containerForkInput mb-3"
+          *ngIf="isDisplayBudgetPeopleByPrices"
+        >
+          <h3>Fourchette de prix par personne</h3>
+          <mat-form-field class="example-full-width forkInputButton min">
+            <mat-label>Minimum par personne</mat-label>
+            <input matInput placeholder="Minimum" />
+            <mat-icon
+              style="position: absolute; right: 5px; top: 22%;"
+              color="primary"
+              class="md-14"
+              >euro_symbol</mat-icon
+            >
+          </mat-form-field>
+          <mat-form-field class="example-full-width forkInputButton min">
+            <mat-label>Maximum par personne</mat-label>
+            <input matInput placeholder="Maximum" />
+            <mat-icon
+              style="position: absolute; right: 5px; top: 22%;"
+              color="primary"
+              class="md-14"
+              >euro_symbol</mat-icon
+            >
+          </mat-form-field>
+        </div> -->
       </div>
     </div>
   </div>

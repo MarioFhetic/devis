@@ -12,6 +12,32 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
+.mat-flat-button.mat-accent,
+.mat-raised-button.mat-accent,
+.mat-fab.mat-accent,
+.mat-mini-fab.mat-accent {
+  background-color: white;
+}
+
+.containerAddRemoveButton input {
+  height: 3rem !important;
+  width: 15rem !important;
+  border-radius: 35px;
+  border: 1px solid #d5dde5;
+}
+
+.containerAddRemoveButton .minusButton {
+  position: relative;
+  right: -40px;
+  transform: scale(1.2) !important;
+}
+
+.containerAddRemoveButton .plusButton {
+  transform: scale(1.2) !important;
+  position: relative;
+  left: -40px;
+}
+
 .buttonContinue a {
   text-transform: none;
   color: white;
@@ -277,6 +303,10 @@ textarea:focus {
 
 .mat-button-toggle-label-content {
   line-height: 0px !important;
+}
+
+.disableArrowDown .mat-select-arrow {
+  display: none !important;
 }
 
 .row {

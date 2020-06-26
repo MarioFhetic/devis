@@ -1,38 +1,31 @@
-
-
-.devisContainer
-{
-    position: sticky;
-    top: 15%;
-    box-shadow: 0 4px 30px 0 rgba(199, 199, 199, 0.2), 0 6px 30px 0 rgba(199, 199, 199, 0.2);
-    border-radius: 20px;
+.devisContainer {
+  position: sticky;
+  top: 9%;
+  box-shadow: 0 4px 30px 0 rgba(199, 199, 199, 0.2),
+    0 6px 30px 0 rgba(199, 199, 199, 0.2);
+  border-radius: 20px;
 }
 
-.devisContainer h3
-{
-    color: #329494;
-    text-transform: uppercase;
+.devisContainer h3 {
+  color: #329494;
+  text-transform: uppercase;
 }
 
-.devisContainer .divider
-{
-    border-bottom: 5px solid #329494;
-    width: 15%;
+.devisContainer .divider {
+  border-bottom: 5px solid #329494;
+  width: 15%;
 }
 
-.devisContainer .colorSpan
-{
-    color: #329494 !important;
-    font-weight: bolder;
+.devisContainer .colorSpan {
+  color: #329494 !important;
+  font-weight: bolder;
 }
 
-.devisContainer .buttonValider
-{
-    width: 90% !important;
-    border-radius: 20px;
+.devisContainer .buttonValider {
+  width: 90% !important;
+  border-radius: 20px;
 }
 
-.devisContainer .mat-form-field
-{
-    width: 100% !important;
+.devisContainer .mat-form-field {
+  width: 100% !important;
 }

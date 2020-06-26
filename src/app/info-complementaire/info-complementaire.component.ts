@@ -17,7 +17,10 @@ export class InfoComplementaireComponent implements OnInit {
 
   quantity: number = 0;
   i = 0;
+
+  participant = " participant";
   participants = " participants";
+
   plus() {
     if (this.i != 100) {
       this.i++;

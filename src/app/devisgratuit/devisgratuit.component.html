@@ -1,55 +1,72 @@
 <!-- Move col col-md-3 from main div -->
 
 <div class="col d-md-flex align-items-center flex-column devisContainer">
-    <h3 class="mb-2 pt-4">Devis gratuit</h3>
-    <div class = "divider"></div>
-    <mat-form-field class="mt-3 pr-4 pl-4" appearance="legacy" >
-        <mat-label>Type d'événement</mat-label>
-        <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
-        <select matNativeControl>
-            <!-- <mat-option>-- None --</mat-option> -->
-            <option value=""></option>
-            <option value="Footballeur">Séminaire</option>
-            <option value="Astronaute">Mariage</option>
-            <option value="Fonctionnaire">Réunion</option>
-        </select>
-    </mat-form-field>
-    <mat-form-field class="mt-3 pr-4 pl-4"  appearance="legacy">
-        <mat-label>Nombre d'invités</mat-label>
-        <input matInput type="number" class="example-right-align">
-        <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
-    </mat-form-field>
-    <mat-form-field class="mt-3 pr-4 pl-4"  appearance="legacy" >
-        <mat-label>Type de disposition</mat-label>
-        <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+  <h3 class="mb-2 pt-4">Devis gratuit</h3>
+  <div class="divider"></div>
 
-        <select matNativeControl>
-            <!-- <mat-option>-- None --</mat-option> -->
-            <option value=""></option>
-            <option value="Footballeur">Cocktail</option>
-            <option value="Astronaute">Debout</option>
-            <option value="Fonctionnaire">Assis</option>
-        </select>
-    </mat-form-field>
-    <mat-form-field class="mt-3 pr-4 pl-4">
-        <mat-label>Date de l'événément </mat-label>
-        <input  (focus)= "arrivalDay.open()" matInput [matDatepicker]="arrivalDay" >
-        <mat-datepicker-toggle matSuffix [for]="arrivalDay">
-          <mat-icon color="primary" matDatepickerToggleIcon class="md-24">keyboard_arrow_down</mat-icon>
-        </mat-datepicker-toggle>
-        <mat-datepicker #arrivalDay></mat-datepicker>
-    </mat-form-field>
-    <mat-form-field class="mt-3 pr-4 pl-4" appearance="legacy" >
-        <mat-label>Formule (facultatif)</mat-label>
-        <mat-icon style="position: absolute; right: 0px; top:0%;"color ="primary" class="md-24">keyboard_arrow_down</mat-icon>
+  <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+    <mat-label>Type d'événement</mat-label>
+    <mat-select>
+      <mat-option value="Séminaire">Séminaire</mat-option>
+      <mat-option value="Mariage">Mariage</mat-option>
+      <mat-option value="Réunion">Réunion</mat-option>
+    </mat-select>
+  </mat-form-field>
 
-        <select matNativeControl>
-            <!-- <mat-option>-- None --</mat-option> -->
-            <option value=""></option>
-            <option value="Footballeur">Basique</option>
-            <option value="Astronaute">Avancée</option>
-        </select>
-    </mat-form-field>
-    <button class="mt-4 mb-4 buttonValider" mat-raised-button color="primary">Valider</button>
-    <span class="pb-4">Faire un devis en <span class="colorSpan">3 click !</span></span>
+  <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+    <mat-label>Nombre de participants</mat-label>
+    <mat-select>
+      <mat-option value="Je ne sais pas exactement"
+        >Je ne sais pas exactement</mat-option
+      >
+      <mat-option value="">1</mat-option>
+      <mat-option value="">2</mat-option>
+      <mat-option value="">3</mat-option>
+      <mat-option value="">4</mat-option>
+      <mat-option value="">5</mat-option>
+      <mat-option value="">6</mat-option>
+      <mat-option value="">7</mat-option>
+      <mat-option value="">8</mat-option>
+      <mat-option value="">9</mat-option>
+      <mat-option value="">10</mat-option>
+      <mat-option value="">11</mat-option>
+      <mat-option value="">12</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+    <mat-label>Type de disposition</mat-label>
+    <mat-select>
+      <mat-option value="En réunion">En réunion</mat-option>
+      <mat-option value="En conférence">En conférence</mat-option>
+      <mat-option value="En U">En U</mat-option>
+      <mat-option value="En cocktail">En cocktail</mat-option>
+      <mat-option value="En banquet">En banquet</mat-option>
+      <mat-option value="En classe">En classe</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+    <mat-label>Date d'arrivée</mat-label>
+    <input (focus)="arrivalDay.open()" matInput [matDatepicker]="arrivalDay" />
+    <mat-datepicker-toggle matSuffix [for]="arrivalDay">
+      <mat-icon color="primary" matDatepickerToggleIcon>date_range</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker disabled="false" #arrivalDay></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+    <mat-label>Formule</mat-label>
+    <mat-select>
+      <mat-option value="Basique">Basique</mat-option>
+      <mat-option value="Avancée">Avancée</mat-option>
+      <mat-option value="Pasdeformule">Pas de formule</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button class="mt-4 mb-4 buttonValider" mat-raised-button color="primary">
+    Valider
+  </button>
+  <span class="pb-4"
+    >Faire un devis en <span class="colorSpan">3 click !</span></span
+  >
 </div>
