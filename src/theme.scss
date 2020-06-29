@@ -299,6 +299,25 @@ textarea:focus {
   // font-weight: bold;
 }
 
+// .mat-button-toggle-checked svg {
+//   fill: white !important;
+//   color: white !important;
+//   stroke: white !important;
+// }
+// .mat-button-toggle-checked svg g {
+//   fill: white !important;
+//   color: white !important;
+//   stroke: white !important;
+// }
+// .mat-button-toggle-checked svg rect {
+//   fill: white !important;
+//   color: white !important;
+//   stroke: white !important;
+// }
+.mat-button-toggle-checked svg path {
+  fill: white !important;
+}
+
 .mat-button-toggle .mat-icon {
   display: table-cell;
   vertical-align: middle;
