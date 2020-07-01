@@ -131,6 +131,7 @@
         </p>
       </div>
       <span
+        *ngIf="!isShowButtonActive"
         (click)="toggleShowButton()"
         class="showToggleButton"
         disableRipple
@@ -140,6 +141,19 @@
           color="primary"
           matDatepickerToggleIcon
           >keyboard_arrow_down</mat-icon
+        ></span
+      >
+      <span
+        *ngIf="isShowButtonActive"
+        (click)="toggleShowButton()"
+        class="showToggleButton"
+        disableRipple
+        value=""
+        >Réduire le texte<mat-icon
+          class="md-24"
+          color="primary"
+          matDatepickerToggleIcon
+          >keyboard_arrow_up</mat-icon
         ></span
       >
     </div>
@@ -280,6 +294,7 @@
           N'hésitez pas à nous contacter pour en savoir davantage.
         </p>
         <span
+          *ngIf="!isShowTarifButtonActive"
           (click)="toggleShowTarifButton()"
           class="showToggleButton"
           disableRipple
@@ -289,6 +304,19 @@
             color="primary"
             matDatepickerToggleIcon
             >keyboard_arrow_down</mat-icon
+          ></span
+        >
+        <span
+          *ngIf="isShowTarifButtonActive"
+          (click)="toggleShowTarifButton()"
+          class="showToggleButton"
+          disableRipple
+          value=""
+          >Réduire le texte<mat-icon
+            class="md-24"
+            color="primary"
+            matDatepickerToggleIcon
+            >keyboard_arrow_up</mat-icon
           ></span
         >
       </div>
@@ -819,6 +847,7 @@
           </p>
         </div>
         <span
+          *ngIf="!isShowButtonFoodActive"
           (click)="toggleShowFoodButton()"
           class="showToggleButton"
           disableRipple
@@ -828,6 +857,19 @@
             color="primary"
             matDatepickerToggleIcon
             >keyboard_arrow_down</mat-icon
+          ></span
+        >
+        <span
+          *ngIf="isShowButtonFoodActive"
+          (click)="toggleShowFoodButton()"
+          class="showToggleButton"
+          disableRipple
+          value=""
+          >Réduire le texte<mat-icon
+            class="md-24"
+            color="primary"
+            matDatepickerToggleIcon
+            >keyboard_arrow_up</mat-icon
           ></span
         >
 

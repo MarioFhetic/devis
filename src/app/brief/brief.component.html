@@ -151,6 +151,21 @@
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="">
+        <mat-label>Heure d'arrivée</mat-label>
+        <input matInput placeholder="start date" />
+        <mat-datepicker-toggle matSuffix [for]="arrivalHour">
+          <mat-icon color="primary" matDatepickerToggleIcon>schedule</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker disabled="false" #arrivalHour></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <!-- DATE D'ARRIVÉE -->
+  </div>
+
+  <!-- HEURE ARRIVEE & DEPART -->
+  <div class="row mb-0">
+    <div class="col-lg-8 d-flex justify-content-between">
+      <mat-form-field appearance="outline" class="">
         <mat-label>Date de départ</mat-label>
         <input
           (focus)="departureDay.open()"
@@ -163,21 +178,6 @@
           >
         </mat-datepicker-toggle>
         <mat-datepicker disabled="false" #departureDay></mat-datepicker>
-      </mat-form-field>
-    </div>
-    <!-- DATE D'ARRIVÉE -->
-  </div>
-
-  <!-- HEURE ARRIVEE & DEPART -->
-  <div class="row mb-0">
-    <div class="col-lg-8 d-flex justify-content-between">
-      <mat-form-field appearance="outline" class="">
-        <mat-label>Heure d'arrivée</mat-label>
-        <input matInput placeholder="start date" />
-        <mat-datepicker-toggle matSuffix [for]="arrivalHour">
-          <mat-icon color="primary" matDatepickerToggleIcon>schedule</mat-icon>
-        </mat-datepicker-toggle>
-        <mat-datepicker disabled="false" #arrivalHour></mat-datepicker>
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="">
@@ -331,7 +331,7 @@
             >Fourchette de prix</mat-checkbox
           >
         </div>
-        <mat-form-field *ngIf="!isDisplayBudget" appearance="outline" class="">
+        <mat-form-field *ngIf="isDisplayBudget" appearance="outline" class="">
           <mat-label>Mon budget <strong>global</strong></mat-label>
           <input matInput type="number" class="example-right-align" />
           <mat-icon
@@ -377,11 +377,10 @@
             >
           </mat-form-field>
         </div>
-        <!-- <div
+        <div
           class="containerForkInput mb-3"
           *ngIf="isDisplayBudgetPeopleByPrices"
         >
-          <h3>Fourchette de prix par personne</h3>
           <mat-form-field class="example-full-width forkInputButton min">
             <mat-label>Minimum par personne</mat-label>
             <input matInput placeholder="Minimum" />
@@ -402,7 +401,7 @@
               >euro_symbol</mat-icon
             >
           </mat-form-field>
-        </div> -->
+        </div>
       </div>
     </div>
   </div>

@@ -1,21 +1,17 @@
-.containerAddRemoveButton
-{
-    position: relative;
+.containerAddRemoveButton {
+  position: relative;
 }
 
-.containerAddRemoveButton input
-{
-    
-    text-align: center !important;
-    height: 2rem;
+.containerAddRemoveButton input {
+  text-align: center !important;
+  height: 2rem;
 }
 
-.containerAddRemoveButton button
-{
-    // position: absolute;
-    background: none !important;
-    border: none !important;
-    cursor: pointer;
+.containerAddRemoveButton button {
+  // position: absolute;
+  background: none !important;
+  border: none !important;
+  cursor: pointer;
 }
 
 // .containerAddRemoveButton .plusButton
@@ -23,3 +19,9 @@
 //     bottom: 0;
 //     right: 0px;
 // }
+
+.buttonCloseModal {
+  background: none !important;
+  border: none !important;
+  cursor: pointer;
+}

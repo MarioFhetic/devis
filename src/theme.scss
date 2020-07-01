@@ -26,17 +26,17 @@ input[type="number"]::-webkit-outer-spin-button {
   border: 1px solid #d5dde5;
 }
 
-.containerAddRemoveButton .minusButton {
-  position: relative;
-  right: -40px;
-  transform: scale(1.2) !important;
-}
+// .containerAddRemoveButton .minusButton {
+//   position: relative;
+//   right: -40px;
+//   transform: scale(1.2) !important;
+// }
 
-.containerAddRemoveButton .plusButton {
-  transform: scale(1.2) !important;
-  position: relative;
-  left: -40px;
-}
+// .containerAddRemoveButton .plusButton {
+//   transform: scale(1.2) !important;
+//   position: relative;
+//   left: -40px;
+// }
 
 .buttonContinue a {
   text-transform: none;
@@ -115,6 +115,10 @@ a .mat-icon {
 .activeNavButton {
   color: #329494;
   font-weight: bold;
+}
+
+.activeNavButton .mat-icon {
+  font-weight: inherit !important;
 }
 
 .activeNavButton:hover {
@@ -199,12 +203,6 @@ a .mat-icon {
   font-size: 3rem;
 }
 
-body {
-  margin: 0;
-  font-family: "Nunito", "sans-serif";
-  font-size: 16px;
-}
-
 //
 
 // header {
@@ -248,6 +246,7 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
 }
 
 // BLUE FOCUS
