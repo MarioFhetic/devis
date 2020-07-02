@@ -20,7 +20,10 @@ export class FichelieuComponent implements OnInit {
   isShowStuffButtonActive = false;
   isShowActivityButtonActive = false;
 
+  isCardRestaurationActive = false;
+
   isShowTarifButtonActive = false;
+  isFavorite = false;
 
   constructor(public dialog: MatDialog) {}
 
@@ -63,5 +66,13 @@ export class FichelieuComponent implements OnInit {
 
   toggleShowTarifButton() {
     this.isShowTarifButtonActive = !this.isShowTarifButtonActive;
+  }
+
+  toggleCardRestaution() {
+    this.isCardRestaurationActive = !this.isCardRestaurationActive;
+  }
+
+  onFavoriteClick() {
+    this.isFavorite = !this.isFavorite;
   }
 }

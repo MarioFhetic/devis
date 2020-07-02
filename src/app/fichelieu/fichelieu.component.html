@@ -46,13 +46,31 @@
           ></mat-button-toggle
         >
       </mat-button-toggle-group> -->
-      <div class="example-button-row">
+      <!-- <div class="example-button-row">
         <div class="example-button-container">
           <button mat-fab aria-label="Example icon button with a heart icon">
-            <mat-icon color="primary">favorite</mat-icon>
+            <mat-icon color="#fff">favorite</mat-icon>
           </button>
         </div>
-      </div>
+      </div> -->
+      <button class="favoriteButton" (click)="onFavoriteClick()">
+        <span>
+          <mat-icon
+            *ngIf="!isFavorite"
+            class="md-48"
+            color="primary"
+            matDatepickerToggleIcon
+            >favorite_border</mat-icon
+          >
+          <mat-icon
+            *ngIf="isFavorite"
+            class="md-48"
+            color="primary"
+            matDatepickerToggleIcon
+            >favorite</mat-icon
+          >
+        </span>
+      </button>
     </div>
     <div
       class="col d-flex justify-content-between mt-3 mediumMarginTopContainer"
@@ -141,19 +159,6 @@
           color="primary"
           matDatepickerToggleIcon
           >keyboard_arrow_down</mat-icon
-        ></span
-      >
-      <span
-        *ngIf="isShowButtonActive"
-        (click)="toggleShowButton()"
-        class="showToggleButton"
-        disableRipple
-        value=""
-        >Réduire le texte<mat-icon
-          class="md-24"
-          color="primary"
-          matDatepickerToggleIcon
-          >keyboard_arrow_up</mat-icon
         ></span
       >
     </div>
@@ -304,19 +309,6 @@
             color="primary"
             matDatepickerToggleIcon
             >keyboard_arrow_down</mat-icon
-          ></span
-        >
-        <span
-          *ngIf="isShowTarifButtonActive"
-          (click)="toggleShowTarifButton()"
-          class="showToggleButton"
-          disableRipple
-          value=""
-          >Réduire le texte<mat-icon
-            class="md-24"
-            color="primary"
-            matDatepickerToggleIcon
-            >keyboard_arrow_up</mat-icon
           ></span
         >
       </div>
@@ -859,22 +851,10 @@
             >keyboard_arrow_down</mat-icon
           ></span
         >
-        <span
-          *ngIf="isShowButtonFoodActive"
-          (click)="toggleShowFoodButton()"
-          class="showToggleButton"
-          disableRipple
-          value=""
-          >Réduire le texte<mat-icon
-            class="md-24"
-            color="primary"
-            matDatepickerToggleIcon
-            >keyboard_arrow_up</mat-icon
-          ></span
-        >
 
         <div
           class="containerRestaurationCard d-flex justify-content-between flex-wrap mt-4 align-items-center pl-4 pr-4"
+          (click)="toggleCardRestaution()"
         >
           <div class="textRestaurationCard d-flex">
             <h2 class="m-0 p-0">Notre carte</h2>
@@ -887,6 +867,47 @@
               >keyboard_arrow_down</mat-icon
             >
           </div>
+        </div>
+        <div
+          class="col mt-4 modalRestauration"
+          *ngIf="isCardRestaurationActive"
+        >
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <th scope="row">Entrées</th>
+                <th>Tarifs</th>
+              </tr>
+              <tr>
+                <td>test 1</td>
+                <td>8€</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <th scope="row">Plats</th>
+                <th>Tarifs</th>
+              </tr>
+              <tr>
+                <td>test 1</td>
+                <td>8€</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <th scope="row">Desserts</th>
+                <th>Tarifs</th>
+              </tr>
+              <tr>
+                <td>test 1</td>
+                <td>8€</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <!--  -->
       </div>

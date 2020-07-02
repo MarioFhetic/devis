@@ -16,7 +16,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .mat-raised-button.mat-accent,
 .mat-fab.mat-accent,
 .mat-mini-fab.mat-accent {
-  background-color: white;
+  background-color: #329494;
 }
 
 .containerAddRemoveButton input {
@@ -368,13 +368,19 @@ textarea:focus {
 }
 
 .favoriteButton {
-  max-width: 100px;
+  cursor: pointer;
+  background: none !important;
+  border: none !important;
 }
 
-.favoriteButton button {
-  display: flex;
-  justify-content: center;
-}
+// .favoriteButton {
+//   max-width: 100px;
+// }
+
+// .favoriteButton button {
+//   display: flex;
+//   justify-content: center;
+// }
 
 // .continueButton
 // {
