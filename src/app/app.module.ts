@@ -49,6 +49,7 @@ import { ModalHebergementComponent } from "./modal-hebergement/modal-hebergement
 import { ModalsebergementsimpleComponent } from "./modalsebergementsimple/modalsebergementsimple.component";
 import { ModalhebergementdoubleComponent } from "./modalhebergementdouble/modalhebergementdouble.component";
 import { DialogdateComponent } from "./dialogdate/dialogdate.component";
+import { AutorefComponent } from './autoref/autoref.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +75,7 @@ import { DialogdateComponent } from "./dialogdate/dialogdate.component";
     ModalsebergementsimpleComponent,
     ModalhebergementdoubleComponent,
     DialogdateComponent,
+    AutorefComponent,
   ],
   entryComponents: [
     DialogExempleComponent,

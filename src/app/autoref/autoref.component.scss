@@ -1,0 +1,211 @@
+h1 {
+  font-size: 3.125rem;
+  font-weight: bolder;
+  line-height: 140%;
+  color: white;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+img {
+  width: 138px;
+}
+
+video:focus {
+  outline: none;
+}
+
+.mat-icon {
+  width: initial !important;
+  height: initial !important;
+}
+
+.containerFormLieu h3 {
+  font-size: 1.5rem;
+  color: white;
+  line-height: 140%;
+  font-weight: 500;
+  padding: 1.438rem 0;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.mat-form-field {
+  width: 100% !important;
+}
+
+.row {
+  margin-bottom: 0px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+span {
+  font-size: 1.25rem;
+  line-height: 185%;
+  letter-spacing: 0.25%;
+  color: #329494;
+  cursor: pointer;
+}
+
+.containerHeader {
+  width: 100%;
+  height: 100vh;
+}
+
+.containerFormLieu {
+  //   width: 456px;
+  //   height: 752px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.containerTextHeader p {
+  font-size: 1.25rem;
+  line-height: 185%;
+  letter-spacing: 0.25%;
+  color: white;
+}
+
+.coverBackground {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/coverautoref.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.overlayBackground {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2b2b2b;
+  opacity: 0.7;
+}
+
+.headerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+  background: linear-gradient(
+    90deg,
+    rgba(39, 185, 185, 1) 0%,
+    rgba(50, 148, 148, 1) 100%
+  );
+}
+
+.headerForm .mat-icon {
+  position: absolute;
+  color: white;
+  left: 0px;
+  cursor: pointer;
+}
+
+.iconQuestion {
+  position: absolute;
+  left: 0;
+  transform: translate(85%, -100%);
+  cursor: pointer;
+}
+
+.containerCapacity .mat-form-field {
+  width: 50% !important;
+}
+
+.containerFormLieu .nextButton {
+  margin-top: 0rem;
+  margin-bottom: 2.5rem;
+  width: 9.75rem !important;
+  height: 3.25rem !important;
+  background: linear-gradient(
+    90deg,
+    rgba(39, 185, 185, 1) 0%,
+    rgba(50, 148, 148, 1) 100%
+  );
+  border-radius: 10px;
+
+  font-size: 1.125rem;
+  line-height: 180%;
+  letter-spacing: 1.25%;
+  font-weight: 500;
+}
+
+.nextButton .mat-raised-button {
+}
+
+.containerMain {
+  width: 100%;
+  height: 100vh;
+  //   background-color: skyblue;
+}
+
+.containerMain h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.containerMain h5 {
+  font-size: 1.5rem;
+  line-height: 188%;
+  color: #7c7c7c;
+}
+
+.backgroundColorMain {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(213, 255, 255, 0.25);
+}
+
+.containerVideo {
+  max-width: 85%;
+}
+
+.containerVideo video {
+  width: 100%;
+  height: 100%;
+}
+
+.containerPartner {
+  width: 100%;
+  height: 80vh;
+  //   background-color: pink;
+}
+
+.containerPartner h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.containerPartner h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 140%;
+  color: #7c7c7c;
+}
+
+.containerPartner p {
+  font-size: 1rem;
+  line-height: 166%;
+  letter-spacing: 0.25%;
+  color: #7c7c7c;
+  text-align: center;
+  max-width: 80%;
+}
+
+.item {
+  //   height: 380px;
+  min-width: 33%;
+  //   background-color: yellow;
+  padding-right: 10px;
+}

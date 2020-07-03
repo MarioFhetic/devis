@@ -373,74 +373,24 @@ textarea:focus {
   border: none !important;
 }
 
-// .favoriteButton {
-//   max-width: 100px;
-// }
+.containerToggleGroup .mat-icon {
+  width: initial !important;
+  height: initial !important;
+}
 
-// .favoriteButton button {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .continueButton
-// {
-//     width: 200px  !important;
-//     height: 50px !important;
-// }
-
-// .containerFaq
-// {
-//     position: absolute;
-//     right: 5%;
-//     top: 30%;
-//     z-index: 10000;
-// }
-
-// .btn
-// {
-//     width: 400px;
-//     height: 60px;
-//     background-color: white;
-// }
-
-// .dropdown-menu
-// {
-//     width: 400px;
-//     box-sizing: border-box;
-//     text-align: center;
-//     font-weight: lighter;
-//     line-height: 150%;
-//     margin: 0;
-//     background: #F8F9FA;
-//     border: none;
-//     padding-right: 10px;
-// }
-
-// .dropdown-menu p
-// {
-//     color: #404B5A;
-// }
-
-// .dropdown-menu h3
-// {
-//     color: #6E7A8A;
-// }
-
-// .containerFaq .btn
-// {
-//     font-size: 14px;
-//     font-weight: bold;
-//     color: #236772;
-// }
-
-// .containerFaq .mat-icon
-// {
-//     position: relative;
-//     top: 2px;
-// }
+.containerToggleGroup svg {
+  width: 30px !important;
+  height: 30px !important;
+}
 
 .iconName {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.mat-button-toggle-label-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
