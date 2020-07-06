@@ -1,159 +1,159 @@
-<div class="container">
-  <div class="row">
-    <div class="coverBackground"></div>
-    <div class="overlayBackground"></div>
-    <div class="row containerHeader align-items-center">
-      <!-- <div
+<div class="row">
+  <div class="coverBackground"></div>
+  <div class="overlayBackground"></div>
+  <div class="row containerHeader align-items-center justify-content-between">
+    <!-- <div
     class="row containerHeader d-xl-flex d-xs-flex flex-xs-column align-items-center"
   > -->
-      <div class="containerTextHeader col">
-        <!-- <div class="col-md-7 col-sm-5 containerTextHeader"> -->
+    <div class="containerTextHeader col">
+      <!-- <div class="col-md-7 col-sm-5 containerTextHeader"> -->
 
-        <h1>Inscription de votre lieu</h1>
-        <p>
-          Remplissez ce formulaire afin que l’un de nos conseillers vous
-          recontacte au plus vite. Vous pouvez également nous joindre par
-          téléphone (du lundi au vendredi de 9h30 à 18h) au
-          <span>01 85 90 62 22</span>.
-        </p>
-      </div>
-
-      <!-- FIRST FROM -->
-      <div class="col" *ngIf="isFirstFormActive">
-        <!-- <div class="col-md-5 col-sm-7" *ngIf="isFirstFormActive"> -->
-
-        <div class="containerFormLieu">
-          <div class="col headerForm">
-            <h3>À propos de votre lieu</h3>
-          </div>
-          <div class="col">
-            <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
-              <mat-label>Nom du lieu</mat-label>
-              <input matInput placeholder="Henri IV" />
-            </mat-form-field>
-
-            <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
-              <mat-label>Type de lieu</mat-label>
-              <mat-select>
-                <mat-option value="Séminaire">Séminaire</mat-option>
-                <mat-option value="Mariage">Mariage</mat-option>
-                <mat-option value="Réunion">Réunion</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-            <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
-              <mat-label>Type d'événement</mat-label>
-              <mat-select>
-                <mat-option value="Séminaire">Séminaire</mat-option>
-                <mat-option value="Mariage">Mariage</mat-option>
-                <mat-option value="Réunion">Réunion</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-            <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
-              <mat-label>Adresse</mat-label>
-              <input matInput placeholder="36 cours de Vincennes" />
-            </mat-form-field>
-
-            <div class="col d-flex containerCapacity pr-4 pl-4 mt-3">
-              <span>
-                <mat-icon
-                  class="md-16 iconQuestion"
-                  color="primary"
-                  matDatepickerToggleIcon
-                  >help</mat-icon
-                >
-              </span>
-              <mat-form-field appearance="outline" class="pr-2">
-                <mat-label>Capacité minimale</mat-label>
-                <input matInput placeholder="15 personnes" />
-              </mat-form-field>
-              <mat-form-field appearance="outline" class="pl-2">
-                <mat-label>Capacité maximale</mat-label>
-                <input matInput placeholder="50 personnes" />
-              </mat-form-field>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-              <button
-                (click)="openSecondForm()"
-                class="nextButton"
-                mat-raised-button
-                color="primary"
-              >
-                Suivant
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END FIRST FORM -->
-
-      <!-- SECOND FORM -->
-
-      <div class="col" *ngIf="isSecondFormActive">
-        <!-- <div class="col-md-5 col-sm-7" *ngIf="isSecondFormActive"> -->
-
-        <div class="containerFormLieu">
-          <div class="col headerForm">
-            <mat-icon (click)="closeSecondForm()" class="md-48"
-              >keyboard_arrow_left
-            </mat-icon>
-            <h3>Informations personnelles</h3>
-          </div>
-          <div class="col">
-            <div class="col d-flex containerCapacity pr-4 pl-4 mt-3">
-              <mat-form-field appearance="outline" class="pr-2">
-                <mat-label>Prénom</mat-label>
-                <input matInput placeholder="Yvan" />
-              </mat-form-field>
-              <mat-form-field appearance="outline" class="pl-2">
-                <mat-label>Nom</mat-label>
-                <input matInput placeholder="Deyra" />
-              </mat-form-field>
-            </div>
-
-            <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
-              <mat-label>Téléphone</mat-label>
-              <input matInput placeholder="36 cours de Vincennes" />
-            </mat-form-field>
-
-            <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
-              <mat-label>Émail</mat-label>
-              <input matInput placeholder="36 cours de Vincennes" />
-            </mat-form-field>
-
-            <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
-              <mat-label>Quelle est votre fonction ?</mat-label>
-              <mat-select>
-                <mat-option value="">Fonction 1</mat-option>
-                <mat-option value="">Fonction 2</mat-option>
-                <mat-option value="">Fonction 3</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-            <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
-              <mat-label>Comment vous nous avez connu ?</mat-label>
-              <mat-select>
-                <mat-option value="">Sur le site Internet</mat-option>
-                <mat-option value="">Emailing</mat-option>
-                <mat-option value="">Publicités</mat-option>
-                <mat-option value="">Bouche à oreille</mat-option>
-                <mat-option value="">Autre</mat-option>
-              </mat-select>
-            </mat-form-field>
-
-            <div class="col d-flex justify-content-center">
-              <button class="nextButton" mat-raised-button color="primary">
-                Suivant
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- END SECOND FORM -->
+      <h1>Inscription de votre lieu</h1>
+      <p>
+        Remplissez ce formulaire afin que l’un de nos conseillers vous
+        recontacte au plus vite. Vous pouvez également nous joindre par
+        téléphone (du lundi au vendredi de 9h30 à 18h) au
+        <span>01 85 90 62 22</span>.
+      </p>
     </div>
+
+    <!-- FIRST FROM -->
+    <div class="col" *ngIf="isFirstFormActive">
+      <!-- <div class="col-md-5 col-sm-7" *ngIf="isFirstFormActive"> -->
+
+      <div class="containerFormLieu">
+        <div class="col headerForm">
+          <h3>À propos de votre lieu</h3>
+        </div>
+        <div class="col">
+          <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+            <mat-label>Nom du lieu</mat-label>
+            <input matInput placeholder="Henri IV" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+            <mat-label>Type de lieu</mat-label>
+            <mat-select>
+              <mat-option value="Séminaire">Séminaire</mat-option>
+              <mat-option value="Mariage">Mariage</mat-option>
+              <mat-option value="Réunion">Réunion</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+            <mat-label>Type d'événement</mat-label>
+            <mat-select>
+              <mat-option value="Séminaire">Séminaire</mat-option>
+              <mat-option value="Mariage">Mariage</mat-option>
+              <mat-option value="Réunion">Réunion</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+            <mat-label>Adresse</mat-label>
+            <input matInput placeholder="36 cours de Vincennes" />
+          </mat-form-field>
+
+          <div class="col d-flex containerCapacity pr-4 pl-4 mt-3">
+            <span>
+              <mat-icon
+                class="md-16 iconQuestion"
+                color="primary"
+                matDatepickerToggleIcon
+                >help</mat-icon
+              >
+            </span>
+            <mat-form-field appearance="outline" class="pr-2">
+              <mat-label>Capacité minimale</mat-label>
+              <input matInput placeholder="15 personnes" />
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="pl-2">
+              <mat-label>Capacité maximale</mat-label>
+              <input matInput placeholder="50 personnes" />
+            </mat-form-field>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <button
+              (click)="openSecondForm()"
+              class="nextButton"
+              mat-raised-button
+              color="primary"
+            >
+              Suivant
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END FIRST FORM -->
+
+    <!-- SECOND FORM -->
+
+    <div class="col" *ngIf="isSecondFormActive">
+      <!-- <div class="col-md-5 col-sm-7" *ngIf="isSecondFormActive"> -->
+
+      <div class="containerFormLieu">
+        <div class="col headerForm">
+          <mat-icon (click)="closeSecondForm()" class="md-48"
+            >keyboard_arrow_left
+          </mat-icon>
+          <h3>Informations personnelles</h3>
+        </div>
+        <div class="col">
+          <div class="col d-flex containerCapacity pr-4 pl-4 mt-3">
+            <mat-form-field appearance="outline" class="pr-2">
+              <mat-label>Prénom</mat-label>
+              <input matInput placeholder="Yvan" />
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="pl-2">
+              <mat-label>Nom</mat-label>
+              <input matInput placeholder="Deyra" />
+            </mat-form-field>
+          </div>
+
+          <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+            <mat-label>Téléphone</mat-label>
+            <input matInput placeholder="36 cours de Vincennes" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+            <mat-label>Émail</mat-label>
+            <input matInput placeholder="36 cours de Vincennes" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+            <mat-label>Quelle est votre fonction ?</mat-label>
+            <mat-select>
+              <mat-option value="">Fonction 1</mat-option>
+              <mat-option value="">Fonction 2</mat-option>
+              <mat-option value="">Fonction 3</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="mt-3 pr-4 pl-4">
+            <mat-label>Comment vous nous avez connu ?</mat-label>
+            <mat-select>
+              <mat-option value="">Sur le site Internet</mat-option>
+              <mat-option value="">Emailing</mat-option>
+              <mat-option value="">Publicités</mat-option>
+              <mat-option value="">Bouche à oreille</mat-option>
+              <mat-option value="">Autre</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <div class="col d-flex justify-content-center">
+            <button class="nextButton" mat-raised-button color="primary">
+              Suivant
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END SECOND FORM -->
+  </div>
+  <div class="container">
     <div class="row containerMain">
       <div class="backgroundColorMain"></div>
       <div
@@ -168,7 +168,7 @@
           <div class="overlayVideo"></div>
 
           <video controls muted poster="../../assets/covervideo.png">
-            <source src="/assets/PeakyBlindersHD.mp4" type="video/mp4" />
+            <source src="assets/PeakyBlindersHD.mp4" type="video/mp4" />
             Le fichier ne peut pas être lu
           </video>
         </div>
@@ -184,7 +184,7 @@
         <div class="d-lg-flex">
           <div class="d-flex flex-column item align-items-center">
             <div class="">
-              <img src="/assets/first.png" alt="" />
+              <img src="assets/first.png" alt="" />
             </div>
             <h5 class="mt-4">Boost de visibilité</h5>
             <p>
@@ -197,7 +197,7 @@
 
           <div class="d-flex flex-column item align-items-center">
             <div class="">
-              <img src="/assets/two.png" alt="" />
+              <img src="assets/two.png" alt="" />
             </div>
             <h5 class="mt-4">Gain de temps</h5>
             <p>
@@ -208,7 +208,7 @@
           </div>
           <div class="d-flex flex-column item align-items-center">
             <div class="">
-              <img src="/assets/third.png" alt="" />
+              <img src="assets/third.png" alt="" />
             </div>
             <h5 class="mt-3">Demandes qualifiées</h5>
             <p>
