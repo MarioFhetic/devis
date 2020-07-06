@@ -1,3 +1,40 @@
+@media (max-width: 991px) {
+  h1 {
+    font-size: 32px !important;
+  }
+  .containerMain h3 {
+    font-size: 28px !important;
+  }
+  .containerPartner h3 {
+    font-size: 28px !important;
+  }
+
+  .containerMain h5 {
+    font-size: 1rem !important;
+  }
+
+  span {
+    font-size: 1rem !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .containerMain {
+    margin-top: 21rem;
+  }
+  .coverBackground,
+  .overlayBackground {
+    height: 150vh !important;
+  }
+  .backgroundColorMain {
+    z-index: -1;
+  }
+}
+
 h1 {
   font-size: 3.125rem;
   font-weight: bolder;
@@ -7,10 +44,6 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-}
-
-img {
-  width: 138px;
 }
 
 video:focus {
@@ -179,6 +212,10 @@ span {
   width: 100%;
   height: 80vh;
   //   background-color: pink;
+}
+
+.containerPartner img {
+  width: 138px;
 }
 
 .containerPartner h3 {
