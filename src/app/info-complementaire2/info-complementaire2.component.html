@@ -224,45 +224,84 @@
         <h3>Disposition</h3>
         <mat-button-toggle-group
           #toggleGroup="matButtonToggleGroup"
-          class="d-xs-flex justify-content-center justify-content-sm-start"
+          class="containerToggleGroup d-xs-flex justify-content-center justify-content-sm-start"
         >
           <mat-button-toggle
+            matTooltip="En réunion"
+            aria-label="Button that displays a tooltip when focused or hovered over"
             disableRipple
             value="Séminaire"
-            matTooltip="Debout"
-            aria-label="Button that displays a tooltip when focused or hovered over"
           >
             <mat-icon class="md-30" color="black" matDatepickerToggleIcon
               >date_range</mat-icon
             >
             <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-              >Debout</label
+              >En réunion</label
             >
           </mat-button-toggle>
           <mat-button-toggle
             disableRipple
             value="Séminaire"
-            matTooltip="Debout"
+            matTooltip="En conférence"
             aria-label="Button that displays a tooltip when focused or hovered over"
           >
             <mat-icon class="md-30" color="black" matDatepickerToggleIcon
-              >date_range</mat-icon
+              >wb_sunny</mat-icon
             >
             <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-              >Debout</label
+              >En conférence</label
             >
           </mat-button-toggle>
           <mat-button-toggle
             disableRipple
             value="Séminaire"
-            matTooltip="Debout"
+            matTooltip="En U"
             aria-label="Button that displays a tooltip when focused or hovered over"
           >
             <mat-icon class="md-30" color="black" matDatepickerToggleIcon
-              >date_range</mat-icon
+              >ac_unit</mat-icon
             >
             <label class="labelButtonToggle d-xs-block d-lg-none" for=""
-              >Debout</label
+              >En U</label
+            >
+          </mat-button-toggle>
+          <mat-button-toggle
+            disableRipple
+            value="Séminaire"
+            matTooltip="En cocktail"
+            aria-label="Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+              >euro</mat-icon
+            >
+            <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+              >En cocktail</label
+            >
+          </mat-button-toggle>
+          <mat-button-toggle
+            disableRipple
+            value="Séminaire"
+            matTooltip="En banquet"
+            aria-label="Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+              >local_cafe</mat-icon
+            >
+            <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+              >En banquet</label
+            >
+          </mat-button-toggle>
+          <mat-button-toggle
+            disableRipple
+            value="Séminaire"
+            matTooltip="En classe"
+            aria-label="Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon class="md-30" color="black" matDatepickerToggleIcon
+              >local_cafe</mat-icon
+            >
+            <label class="labelButtonToggle d-xs-block d-lg-none" for=""
+              >En classe</label
             >
           </mat-button-toggle>
         </mat-button-toggle-group>
