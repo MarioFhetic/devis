@@ -9,10 +9,18 @@
 }
 .containerFaq .card {
   width: 100%;
+  border: none !important;
+}
+
+.containerFaq .card-header {
+  padding: 0 !important;
+  background-color: none !important;
+  border: none !important;
 }
 
 .card-header button {
   width: 100%;
+  text-decoration: none !important;
 }
 
 .btn {
@@ -42,7 +50,7 @@
 
 .containerFaq button {
   font-size: 0.9rem !important;
-  border-top: 1px solid #dee3e2;
+  border-bottom: 1px solid #dee3e2;
   background-color: white;
 }
 
