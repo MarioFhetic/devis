@@ -19,6 +19,12 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: #329494;
 }
 
+button.close {
+  color: #329494 !important;
+  opacity: 1 !important;
+  background-color: none !important;
+}
+
 .containerAddRemoveButton input {
   height: 3rem !important;
   width: 15rem !important;
@@ -314,6 +320,13 @@ textarea:focus {
 //   stroke: white !important;
 // }
 .mat-button-toggle-checked svg path {
+  fill: white !important;
+}
+.mat-button-toggle-checked svg rect {
+  fill: white !important;
+}
+
+.mat-button-toggle-checked svg circle {
   fill: white !important;
 }
 
