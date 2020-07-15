@@ -8,6 +8,8 @@ import { InfoComplementaire2Component } from "./info-complementaire2/info-comple
 import { ConfirmationComponent } from "./confirmation/confirmation.component";
 import { FichelieuComponent } from "./fichelieu/fichelieu.component";
 import { AutorefComponent } from "./autoref/autoref.component";
+import { TestwidgetComponent } from "./testwidget/testwidget.component";
+import { HomewebzineComponent } from "./homewebzine/homewebzine.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -18,6 +20,8 @@ const routes: Routes = [
   { path: "confirmation", component: ConfirmationComponent },
   { path: "fichelieu", component: FichelieuComponent },
   { path: "autoref", component: AutorefComponent },
+  { path: "testwidget", component: TestwidgetComponent },
+  { path: "homewebzine", component: HomewebzineComponent },
 ];
 
 @NgModule({

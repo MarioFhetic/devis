@@ -50,6 +50,8 @@ import { ModalsebergementsimpleComponent } from "./modalsebergementsimple/modals
 import { ModalhebergementdoubleComponent } from "./modalhebergementdouble/modalhebergementdouble.component";
 import { DialogdateComponent } from "./dialogdate/dialogdate.component";
 import { AutorefComponent } from './autoref/autoref.component';
+import { TestwidgetComponent } from './testwidget/testwidget.component';
+import { HomewebzineComponent } from './homewebzine/homewebzine.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +78,8 @@ import { AutorefComponent } from './autoref/autoref.component';
     ModalhebergementdoubleComponent,
     DialogdateComponent,
     AutorefComponent,
+    TestwidgetComponent,
+    HomewebzineComponent,
   ],
   entryComponents: [
     DialogExempleComponent,
