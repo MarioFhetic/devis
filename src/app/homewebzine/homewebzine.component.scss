@@ -218,7 +218,11 @@ button.discoverButton {
       width: 100%;
       height: 255px;
       border-radius: 20px;
-
+      // img {
+      //   width: 100%;
+      //   height: 100%;
+      //   object-fit: cover;
+      // }
       &.first {
         background-image: url("../../assets/img1.jpg");
       }
@@ -682,23 +686,54 @@ button.discoverButton {
 
 // GRID MICKA
 
+.discoverElements {
+  height: 100%;
+
+  width: 100%;
+  h3 {
+    color: white;
+
+    font-size: 1.6rem;
+
+    font-weight: 600;
+  }
+}
+
 .containerInfo2 {
+  position: absolute;
+
+  z-index: 150;
+
   display: flex;
+
   padding-top: 24px;
+
   padding-left: 32px;
 
   .containerInfoItem {
+    z-index: 150;
+
     align-items: center;
+
     width: 89px;
+
     height: 34px;
+
     background: rgba(255, 255, 255, 0.3);
+
     border-radius: 5px;
+
     color: #ffffff;
 
     .mat-icon {
+      z-index: 150;
+
       width: initial !important;
+
       height: initial !important;
+
       color: #ffffff;
+
       margin-left: 6px;
     }
   }
@@ -706,32 +741,47 @@ button.discoverButton {
 
 .overlayBackground {
   position: absolute;
+
   width: 100%;
+
   height: 100%;
+
   z-index: 100;
-  background: black;
+
+  background: rgba(0, 0, 0, 0.5);
+
   opacity: 0;
-  transition: 0.3s all ease;
+
+  transition: 0.2s all ease;
+
   border-radius: 20px;
+
   cursor: pointer;
 }
 
 .overlayBackground:hover {
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .title {
   margin-top: 93px;
+
   color: #7c7c7c;
+
   font-weight: 600;
+
   font-size: 24px;
 }
 
 .titleInspiration {
   grid-column: 1/10;
+
   grid-row: 29/29;
+
   color: #7c7c7c;
-  // font-weight: 600;
+
+  font-weight: 600;
+
   font-size: 24px;
 }
 
@@ -741,51 +791,89 @@ button.discoverButton {
   }
 
   display: grid;
+
   grid-template-columns: repeat(12, [col] 1fr);
+
   grid-template-rows: repeat(56, 50px);
+
   grid-column-gap: 24px;
+
   grid-row-gap: 16px;
 
   .one {
-    position: relative;
     grid-column: 1/8;
+
     grid-row: 1/11;
 
     .backgroundImage {
       position: relative;
+
+      background-size: 100% 100%;
+
       background-image: url("../../assets/12.jpg");
-      background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       border-radius: 20px;
+
       height: 100%;
+      transition: all 0.7s ease;
+
       width: 100%;
+    }
+
+    .backgroundImage:hover {
+      // transition: all 0.7s ease;
+
+      background-size: 102% 102%;
+
+      // transform: scale(1.02);
+
+      // transform-origin: 50% 50%;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -793,42 +881,67 @@ button.discoverButton {
 
   .two {
     grid-column: 8/13;
+
     grid-row: 1/8;
 
     .backgroundImage {
+      position: relative;
+
       background-image: url("../../assets/2.jpg");
+
       background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       border-radius: 20px;
+
       height: 100%;
+
       width: 100%;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -836,43 +949,69 @@ button.discoverButton {
 
   .three {
     margin-top: 32px;
+
     grid-column: 1/8;
+
     grid-row: 12/20;
 
     .backgroundImage {
+      position: relative;
+
       background-image: url("../../assets/4.jpg");
+
       background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       height: 100%;
+
       width: 100%;
+
       border-radius: 20px;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -880,43 +1019,69 @@ button.discoverButton {
 
   .four {
     margin-top: 32px;
+
     grid-column: 8/13;
+
     grid-row: 9/20;
 
     .backgroundImage {
+      position: relative;
+
       background-image: url("../../assets/15.jpg");
+
       background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       width: 100%;
+
       height: 100%;
+
       border-radius: 20px;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -924,42 +1089,67 @@ button.discoverButton {
 
   .five {
     grid-column: 1/5;
+
     grid-row: 22/27;
 
     .backgroundImage {
+      position: relative;
+
       background-image: url("../../assets/2.jpg");
+
       background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       width: 100%;
+
       height: 100%;
+
       border-radius: 20px;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -967,42 +1157,67 @@ button.discoverButton {
 
   .six {
     grid-column: 5/10;
+
     grid-row: 22/27;
 
     .backgroundImage {
+      position: relative;
+
       background-image: url("../../assets/3.jpg");
+
       background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       width: 100%;
+
       height: 100%;
+
       border-radius: 20px;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -1010,52 +1225,74 @@ button.discoverButton {
 
   .seven {
     grid-column: 10/13;
+
     grid-row: 22/27;
 
     .discoverElements {
-      cursor: pointer;
-      width: 100%;
       height: 100%;
+
+      cursor: pointer;
+
+      width: 100%;
+
       background: linear-gradient(270deg, #5cb7cb -28.77%, #329494 100%);
+
       box-shadow: 0px8px24pxrgba (41, 41, 41, 0.08),
         0px2px4pxrgba (61, 61, 61, 0.12);
+
       border-radius: 20px;
 
       h3 {
         color: white;
+
         font-size: 1.4rem;
+
         font-weight: 600;
       }
 
       .mat-icon {
+        color: #ffffff;
+
         vertical-align: middle;
       }
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -1063,42 +1300,67 @@ button.discoverButton {
 
   .height {
     grid-column: 1/8;
+
     grid-row: 30/35;
 
     .backgroundImage {
+      position: relative;
+
       background-image: url("../../assets/5.jpg");
+
       background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       border-radius: 20px;
+
       height: 100%;
+
       width: 100%;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -1106,42 +1368,67 @@ button.discoverButton {
 
   .nine {
     grid-column: 8/13;
+
     grid-row: 30/36;
 
     .backgroundImage {
+      position: relative;
+
       background-image: url("../../assets/8.jpg");
+
       background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       border-radius: 20px;
+
       height: 100%;
+
       width: 100%;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -1149,42 +1436,67 @@ button.discoverButton {
 
   .ten {
     grid-column: 1/6;
+
     grid-row: 37/47;
 
     .backgroundImage {
+      position: relative;
+
       background-image: url("../../assets/6.jpg");
+
       background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       border-radius: 20px;
+
       height: 100%;
+
       width: 100%;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -1192,42 +1504,67 @@ button.discoverButton {
 
   .eleven {
     grid-column: 6/13;
+
     grid-row: 38/49;
 
     .backgroundImage {
+      position: relative;
+
       background-image: url("../../assets/7.jpg");
+
       background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       border-radius: 20px;
+
       height: 100%;
+
       width: 100%;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -1235,42 +1572,67 @@ button.discoverButton {
 
   .twelve {
     grid-column: 1/5;
+
     grid-row: 49/55;
 
     .backgroundImage {
+      position: relative;
+
       background-image: url("../../assets/9.jpg");
+
       background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       width: 100%;
+
       height: 100%;
+
       border-radius: 20px;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -1278,42 +1640,67 @@ button.discoverButton {
 
   .thirteen {
     grid-column: 5/10;
+
     grid-row: 51/55;
 
     .backgroundImage {
+      position: relative;
+
       background-image: url("../../assets/10.jpg");
+
       background-size: cover;
+
       background-repeat: no-repeat;
+
       background-position: center center;
+
       width: 100%;
+
       height: 100%;
+
       border-radius: 20px;
+    }
+
+    .mat-icon {
+      color: #ffffff;
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -1321,52 +1708,74 @@ button.discoverButton {
 
   .fourteen {
     grid-column: 10/13;
+
     grid-row: 51/55;
 
     .discoverElements {
       cursor: pointer;
+
       width: 100%;
+
       height: 100%;
+
       background: linear-gradient(270deg, #5cb7cb -28.77%, #329494 100%);
+
       box-shadow: 0px8px24pxrgba (41, 41, 41, 0.08),
         0px2px4pxrgba (61, 61, 61, 0.12);
+
       border-radius: 20px;
 
       h3 {
         color: white;
+
         font-size: 1.4rem;
+
         font-weight: 600;
       }
 
       .mat-icon {
+        color: #ffffff;
+
         vertical-align: middle;
       }
     }
 
     .titleArticle {
       margin-top: 16px;
+
       margin-bottom: 4px;
+
       font-size: 18px;
+
       color: #2b2b2b;
+
       font-weight: 500;
     }
 
     .containerText {
       display: flex;
+
       justify-content: space-between;
 
       .infoArticle {
         font-size: 13px;
+
         color: #2b2b2b;
       }
 
       .buttonArticle {
         height: 25px;
+
         width: 90px;
+
         border-radius: 15px;
+
         border: none;
+
         background-color: #f4f4f4;
+
         font-size: 12px;
+
         color: #2b2b2b;
       }
     }
@@ -1377,6 +1786,7 @@ button.discoverButton {
   .gridContainer {
     .twelve {
       grid-column: 1/6;
+
       grid-row: 49/55;
     }
 
@@ -1386,11 +1796,13 @@ button.discoverButton {
 
     .fourteen {
       grid-column: 6/13;
+
       grid-row: 51/55;
     }
 
     .five {
       grid-column: 1/6;
+
       grid-row: 22/27;
     }
 
@@ -1400,6 +1812,7 @@ button.discoverButton {
 
     .seven {
       grid-column: 6/13;
+
       grid-row: 22/27;
     }
   }
@@ -1408,11 +1821,14 @@ button.discoverButton {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .gridContainer {
     grid-template-rows: repeat(47, 50px);
+
     grid-column-gap: 24px;
+
     grid-row-gap: 8px;
 
     .one {
       grid-column: 1/13;
+
       grid-row: 1/8;
     }
 
@@ -1422,6 +1838,7 @@ button.discoverButton {
 
     .three {
       grid-row: 9/17;
+
       grid-column: 1/13;
     }
 
@@ -1439,16 +1856,19 @@ button.discoverButton {
 
     .seven {
       grid-column: 1/13;
+
       grid-row: 19/22;
     }
 
     .titleInspiration {
       grid-column: 1/13;
+
       grid-row: 24/24;
     }
 
     .height {
       grid-column: 1/13;
+
       grid-row: 25/32;
     }
 
@@ -1458,6 +1878,7 @@ button.discoverButton {
 
     .ten {
       grid-column: 1/13;
+
       grid-row: 34/42;
     }
 
@@ -1475,6 +1896,7 @@ button.discoverButton {
 
     .fourteen {
       grid-row: 44/47;
+
       grid-column: 1/13;
     }
   }
