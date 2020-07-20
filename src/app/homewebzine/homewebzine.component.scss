@@ -15,6 +15,7 @@ h2 {
 
 ul {
   margin: 0px !important;
+  padding-inline-start: 0px !important;
 }
 
 .mat-icon {
@@ -38,9 +39,9 @@ p {
 //   padding-right: 40px;
 // }
 
-.rightContent {
-  padding-left: 40px;
-}
+// .rightContent {
+//   padding-left: 40px;
+// }
 
 .nav-link.active {
   background: linear-gradient(270deg, #5cb7cb -28.77%, #329494 100%);
@@ -168,6 +169,29 @@ button.discoverButton {
     }
   }
 }
+.containerArrow {
+  .arrow {
+    width: 24px;
+    height: 24px;
+    background: #f7f7f7;
+    border-radius: 100%;
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+      0px 2px 4px rgba(61, 61, 61, 0.12);
+    cursor: pointer;
+  }
+}
+
+.containerArrowMobile {
+  .arrow {
+    width: 40px;
+    height: 40px;
+    background: #f7f7f7;
+    border-radius: 100%;
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+      0px 2px 4px rgba(61, 61, 61, 0.12);
+    cursor: pointer;
+  }
+}
 
 .containerEvent {
   margin-top: 4.5rem;
@@ -266,10 +290,132 @@ button.discoverButton {
       }
     }
   }
+
+  .containerCardEventMobile {
+    width: 100%;
+    height: 410px;
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+      0px 2px 4px rgba(61, 61, 61, 0.12);
+    border-radius: 20px;
+    margin-bottom: 1rem;
+
+    .imgCardEvent {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 100%;
+      height: 255px;
+      border-radius: 20px 20px 0 0;
+      &.first {
+        background-image: url("../../assets/img1.jpg");
+      }
+      &.second {
+        background-image: url("../../assets/img2.jpg");
+      }
+      &.third {
+        background-image: url("../../assets/img3.jpg");
+      }
+      &.fourth {
+        background-image: url("../../assets/img4.jpg");
+      }
+      &.five {
+        background-image: url("../../assets/img5.jpg");
+      }
+      &.six {
+        background-image: url("../../assets/img6.jpg");
+      }
+      &.seven {
+        background-image: url("../../assets/img7.jpg");
+      }
+      &.eight {
+        background-image: url("../../assets/img8.jpg");
+      }
+    }
+
+    .infoCardEvent {
+      padding: 0 16px;
+
+      h4 {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 160%;
+        font-weight: 500;
+        letter-spacing: 0.25%;
+      }
+      :first-child {
+        font-size: 0.875rem;
+        line-height: 160%;
+        letter-spacing: 0.15%;
+        font-weight: 500;
+        color: #329494;
+      }
+      .infoPosition {
+        font-size: 0.875rem;
+        line-height: 160%;
+        letter-spacing: 0.25%;
+        color: #2b2b2b;
+        .mat-icon {
+          color: #2b2b2b;
+        }
+      }
+    }
+
+    .containerButtonEvent {
+      padding: 0 16px;
+      .calendarButton {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 180%;
+        letter-spacing: 0.25%;
+        width: 269px;
+        height: 49px;
+        margin-right: 12px;
+        background: #f7f7f7;
+        box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+          0px 2px 4px rgba(61, 61, 61, 0.12);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+
+        .mat-icon {
+          padding-right: 10px;
+        }
+      }
+      .previewButton {
+        cursor: pointer;
+        width: 65px;
+        height: 49px;
+        background: #f7f7f7;
+        box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+          0px 2px 4px rgba(61, 61, 61, 0.12);
+        border-radius: 10px;
+        border: none;
+      }
+    }
+  }
+
   .discoverElements {
     cursor: pointer;
     width: 392px;
     height: 255px;
+    background: linear-gradient(270deg, #5cb7cb -28.77%, #329494 100%);
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+      0px 2px 4px rgba(61, 61, 61, 0.12);
+    border-radius: 20px;
+    h3 {
+      color: white;
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+    .mat-icon {
+      vertical-align: middle;
+    }
+  }
+
+  .discoverElementsMobile {
+    cursor: pointer;
+    width: 100%;
+    height: 124px;
     background: linear-gradient(270deg, #5cb7cb -28.77%, #329494 100%);
     box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
       0px 2px 4px rgba(61, 61, 61, 0.12);
@@ -374,6 +520,45 @@ button.discoverButton {
   }
 }
 
+.containerCardGuideMobile {
+  cursor: pointer !important;
+  width: 100%;
+  height: 86px;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.25;
+  font-weight: bold;
+  border-radius: 20px;
+  &.first {
+    background: linear-gradient(
+      145.77deg,
+      rgba(255, 124, 124, 0.85) 0%,
+      rgba(255, 198, 114, 0.7) 100%
+    );
+  }
+  &.second {
+    background: linear-gradient(
+      145.77deg,
+      rgba(124, 192, 255, 0.85) 0%,
+      rgba(142, 114, 255, 0.7) 100%
+    );
+  }
+  &.third {
+    background: linear-gradient(
+      145.77deg,
+      rgba(255, 124, 187, 0.85) 0%,
+      rgba(255, 114, 114, 0.7) 100%
+    );
+  }
+  &.fourth {
+    background: linear-gradient(
+      145.77deg,
+      rgba(111, 242, 140, 0.85) 0%,
+      rgba(114, 230, 255, 0.7) 100%
+    );
+  }
+}
+
 .containerFooter {
   padding: 0 6.75rem;
   width: 100vw;
@@ -430,6 +615,30 @@ button.discoverButton {
       }
     }
   }
+  .legalInfo {
+    line-height: 166%;
+    /* identical to box height, or 27px */
+
+    letter-spacing: 0.0035em;
+
+    /* Grey scale / 1 */
+
+    color: #2b2b2b;
+    opacity: 0.75;
+    a,
+    li {
+      text-decoration: none !important;
+      color: #2b2b2b;
+      cursor: pointer;
+    }
+
+    .espacerDot {
+      padding: 0 1.5rem;
+    }
+    li.espacerDot {
+      font-size: 3.5rem;
+    }
+  }
 }
 
 // GRID MICKA
@@ -445,7 +654,7 @@ button.discoverButton {
   grid-column: 1/10;
   grid-row: 29/29;
   color: #7c7c7c;
-  font-weight: 600;
+  // font-weight: 600;
   font-size: 24px;
 }
 
@@ -1120,6 +1329,40 @@ button.discoverButton {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1224px;
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .containerFooter {
+    padding: 0 0 !important;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1100px) {
+  .rightContent {
+    .imgContainer {
+      height: 60vh;
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+  .rightContent {
+    .imgContainer {
+      height: 40vh;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .containerCardEvent {
+    width: 332px !important;
   }
 }

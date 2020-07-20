@@ -29,8 +29,8 @@
       test
     </div>
   </nav> -->
-  <div class="navbar">
-    <a class="logoAbc">
+  <div class="navbar d-none d-lg-flex">
+    <a class="logoAbc mr-4">
       <img src="assets/Green.svg" alt="" />
     </a>
     <ul class="d-flex flex-row">
@@ -124,7 +124,7 @@
     </div>
   </div>
   <div class="row align-items-center">
-    <div class="col-5 d-flex flex-column leftContent">
+    <div class="col-lg-5 col-md-12 d-flex flex-column leftContent">
       <div class="containerInfo d-flex">
         <div
           class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
@@ -152,13 +152,18 @@
         Et rien de plus fun. À l’aventure ! 🐫
       </p>
       <p class="">Le 15 juillet 2020 à 10h32</p>
-      <button class="discoverButton" mat-raised-button>Découvrir</button>
+      <button class="discoverButton mb-4 mt-4" mat-raised-button>
+        Découvrir
+      </button>
     </div>
-    <div class="col rightContent">
+    <div class="col-lg col-md-12 rightContent">
       <div class="imgContainer"></div>
     </div>
   </div>
-  <div class="row">
+
+  <!-- DESKTOP & IPAD ARROW SLIDER -->
+
+  <div class="row d-none d-sm-flex">
     <div class="col">
       <div class="containerCaptionImageSlider d-flex align-items-center">
         <div class="captionImageSlider first mr-2"></div>
@@ -178,6 +183,39 @@
       </div>
     </div>
   </div>
+
+  <!-- END DESKTOP & IPAD ARROW SLIDER -->
+
+  <div class="row d-flex d-sm-none">
+    <div class="col">
+      <div
+        class="containerCaptionImageSlider d-flex justify-content-between align-items-center"
+      >
+        <div class="containerArrowMobile d-flex">
+          <div
+            class="arrow d-flex justify-content-center align-items-center ml-2 mr-2"
+          >
+            <mat-icon class="md-24">keyboard_arrow_left </mat-icon>
+          </div>
+        </div>
+
+        <div class="containerIndex">
+          <span> 1 / 4</span>
+        </div>
+        <div class="containerArrowMobile d-flex">
+          <div
+            class="arrow d-flex justify-content-center align-items-center ml-2 mr-2"
+          >
+            <mat-icon class="md-24">keyboard_arrow_right </mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE ARROW SLIDER -->
+
+  <!-- END MOBILE ARROW SLIDER -->
 
   <!-- GRID MICKA -->
 
@@ -333,9 +371,8 @@
   </div>
 
   <!-- END GRID MICKA -->
-  <div class="row">
+  <div class="row d-none d-sm-flex">
     <h2 class="w-100 p-0">Guides (31)</h2>
-
     <div class="col pl-1">
       <div class="app mt-4">
         <ul class="hs full">
@@ -371,9 +408,38 @@
       </div>
     </div>
   </div>
-  <div class="row containerEvent">
-    <h2 class="w-100 p-0">Événements (104)</h2>
-    <div class="col p-0 d-flex flex-row justify-content-between flex-wrap">
+
+  <div class="row d-flex d-sm-none">
+    <h2 class="w-100">Guides (31)</h2>
+    <div class="col d-flex flex-column">
+      <div
+        class="containerCardGuideMobile first d-flex justify-content-center align-items-center"
+      >
+        <h3 class="mb-0">Je suis un privé</h3>
+      </div>
+      <div
+        class="containerCardGuideMobile second d-flex justify-content-center align-items-center"
+      >
+        <h3 class="mb-0">Je suis un privé</h3>
+      </div>
+      <div
+        class="containerCardGuideMobile third d-flex justify-content-center align-items-center"
+      >
+        <h3 class="mb-0">Je suis un privé</h3>
+      </div>
+      <div
+        class="containerCardGuideMobile fourth d-flex justify-content-center align-items-center"
+      >
+        <h3 class="mb-0">Je suis un privé</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="row containerEvent d-none d-sm-flex">
+    <h2 class="w-100">Événements (104)</h2>
+    <div
+      class="col p-xl-0 pl-sm-2 pr-sm-2 d-flex flex-row justify-content-between flex-wrap"
+    >
       <div class="containerCardEvent d-flex flex-column">
         <div class="imgCardEvent first"></div>
         <div class="infoCardEvent d-flex flex-column mt-2">
@@ -614,7 +680,126 @@
 
       <!-- LAST CARD -->
       <div
-        class="discoverElements d-flex justify-content-center align-items-center"
+        class="discoverElements justify-content-center align-items-center d-none d-sm-flex"
+      >
+        <div class="contentDiscover d-flex flex-row">
+          <h3 class="mb-0">
+            Découvrez tout nos<br />
+            évènements
+            <mat-icon class="md-30"> arrow_right_alt </mat-icon>
+          </h3>
+        </div>
+      </div>
+
+      <!-- MOBILE DISCOVER -->
+
+      <!-- <div
+        class="discoverElementsMobile d-flex justify-content-center align-items-center d-sm-none"
+      >
+        <div class="contentDiscover d-flex flex-row">
+          <h3 class="mb-0">
+            Découvrez tout nos<br />
+            évènements
+            <mat-icon class="md-30"> arrow_right_alt </mat-icon>
+          </h3>
+        </div>
+      </div> -->
+
+      <!-- END MOBILE DISCOVER -->
+    </div>
+  </div>
+
+  <div class="row containerEvent d-flex d-sm-none">
+    <h2 class="w-100">Événements (104)</h2>
+    <div
+      class="col p-xl-0 pl-sm-2 pr-sm-2 d-flex flex-row justify-content-between flex-wrap"
+    >
+      <div class="containerCardEventMobile d-flex flex-column">
+        <div class="imgCardEvent first"></div>
+        <div class="infoCardEvent d-flex flex-column mt-2">
+          <span class="d-flex align-items-center">
+            <mat-icon class="md-18 mr-1">date_range </mat-icon>
+            15 JAN à 10H - 16 JAN à 17H</span
+          >
+          <h4>Construire son projet les pieds dans l’eau</h4>
+          <span class="infoPosition d-flex align-items-center">
+            <mat-icon class="md-18 mr-1">location_on </mat-icon> ABC
+            Salles</span
+          >
+        </div>
+        <div class="containerButtonEvent d-flex mt-2">
+          <button
+            class="calendarButton d-flex justify-content-center align-items-center"
+          >
+            <mat-icon class="md-18">event_note</mat-icon>
+            Ajouter à mon calendrier
+          </button>
+          <button
+            class="previewButton d-flex justify-content-center align-items-center"
+          >
+            <mat-icon class="md-18">undo </mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="containerCardEventMobile d-flex flex-column">
+        <div class="imgCardEvent first"></div>
+        <div class="infoCardEvent d-flex flex-column mt-2">
+          <span class="d-flex align-items-center">
+            <mat-icon class="md-18 mr-1">date_range </mat-icon>
+            15 JAN à 10H - 16 JAN à 17H</span
+          >
+          <h4>Construire son projet les pieds dans l’eau</h4>
+          <span class="infoPosition d-flex align-items-center">
+            <mat-icon class="md-18 mr-1">location_on </mat-icon> ABC
+            Salles</span
+          >
+        </div>
+        <div class="containerButtonEvent d-flex mt-2">
+          <button
+            class="calendarButton d-flex justify-content-center align-items-center"
+          >
+            <mat-icon class="md-18">event_note</mat-icon>
+            Ajouter à mon calendrier
+          </button>
+          <button
+            class="previewButton d-flex justify-content-center align-items-center"
+          >
+            <mat-icon class="md-18">undo </mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="containerCardEventMobile d-flex flex-column">
+        <div class="imgCardEvent first"></div>
+        <div class="infoCardEvent d-flex flex-column mt-2">
+          <span class="d-flex align-items-center">
+            <mat-icon class="md-18 mr-1">date_range </mat-icon>
+            15 JAN à 10H - 16 JAN à 17H</span
+          >
+          <h4>Construire son projet les pieds dans l’eau</h4>
+          <span class="infoPosition d-flex align-items-center">
+            <mat-icon class="md-18 mr-1">location_on </mat-icon> ABC
+            Salles</span
+          >
+        </div>
+        <div class="containerButtonEvent d-flex mt-2">
+          <button
+            class="calendarButton d-flex justify-content-center align-items-center"
+          >
+            <mat-icon class="md-18">event_note</mat-icon>
+            Ajouter à mon calendrier
+          </button>
+          <button
+            class="previewButton d-flex justify-content-center align-items-center"
+          >
+            <mat-icon class="md-18">undo </mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="discoverElementsMobile d-flex justify-content-center align-items-center"
       >
         <div class="contentDiscover d-flex flex-row">
           <h3 class="mb-0">
@@ -715,27 +900,55 @@
       </li>
     </ul>
     <ul class="d-flex flex-column">
-      <li class="titleList">À propos</li>
+      <li class="titleList">Explorer</li>
       <li>
-        <a href="">Qui sommes nous</a>
+        <a href="">Destination</a>
       </li>
       <li>
-        <a href="">Recrutement</a>
+        <a href="">Événements</a>
       </li>
       <li>
-        <a href="">Blog</a>
+        <a href="">Actualités</a>
       </li>
     </ul>
     <ul class="d-flex flex-column">
-      <li class="titleList">À propos</li>
+      <li class="titleList">Mon compte</li>
       <li>
-        <a href="">Qui sommes nous</a>
+        <a href="">Connexion</a>
       </li>
       <li>
-        <a href="">Recrutement</a>
+        <a href="">Inscription</a>
       </li>
       <li>
-        <a href="">Blog</a>
+        <a href="/devis/autoref">Référencer un lieu</a>
+      </li>
+      <li>
+        <a href="/devis/autoref">Espace manager</a>
+      </li>
+    </ul>
+  </div>
+  <div class="d-flex w-100 pl-3">
+    <ul class="legalInfo d-flex justify-content-between">
+      <li>
+        © 2020 - ABC Salles - Tous droits réservés. Reproduction interdite
+      </li>
+      <li class="espacerDot">&#183;</li>
+      <li>
+        <a
+          href="#
+          "
+        >
+          Mentions légales CGU
+        </a>
+      </li>
+      <li class="espacerDot">&#183;</li>
+      <li>
+        <a
+          href="#
+          "
+        >
+          CGU
+        </a>
       </li>
     </ul>
   </div>
