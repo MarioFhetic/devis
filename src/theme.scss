@@ -18,8 +18,18 @@ $mat-theming-theme-dark: mat-dark-theme(
   $my-app-warn
 );
 
-@include angular-material-theme($my-app-theme);
+@include angular-material-theme($mat-theming-theme-dark);
 // @include angular-material-theme($mat-theming-theme-dark);
+
+.theme-dark {
+  @include angular-material-theme($mat-theming-theme-dark);
+  .mat-typography {
+    background-color: black !important;
+  }
+}
+.theme-light {
+  @include angular-material-theme($mat-theming-theme);
+}
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {

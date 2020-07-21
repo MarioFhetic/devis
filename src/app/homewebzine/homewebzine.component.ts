@@ -1,15 +1,31 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit } from "@angular/core";
+import { MatSlideToggleChange } from "@angular/material/slide-toggle";
 
 @Component({
-  selector: 'app-homewebzine',
-  templateUrl: './homewebzine.component.html',
-  styleUrls: ['./homewebzine.component.scss']
+  selector: "app-homewebzine",
+  templateUrl: "./homewebzine.component.html",
+  styleUrls: ["./homewebzine.component.scss"],
 })
 export class HomewebzineComponent implements OnInit {
+  // @Output()
+  // readonly darkModeSwitched = new EventEmitter<boolean>();
 
-  constructor() { }
+  // constructor() {}
 
-  ngOnInit(): void {
+  // onDarkModeSwitched({ checked }: MatSlideToggleChange) {
+  //   this.darkModeSwitched.emit(checked);
+  // }
+
+  storedTheme: string = localStorage.getItem("theme-color");
+  constructor() {}
+  ngOnInit() {}
+  setTheme() {
+    if (this.storedTheme === "theme-dark") {
+      localStorage.setItem("theme-color", "theme-light");
+      this.storedTheme = localStorage.getItem("theme-color");
+    } else {
+      localStorage.setItem("theme-color", "theme-dark");
+      this.storedTheme = localStorage.getItem("theme-color");
+    }
   }
-
 }

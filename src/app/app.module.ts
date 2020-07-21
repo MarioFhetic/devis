@@ -15,6 +15,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatStepperModule } from "@angular/material/stepper";
 import { MatSelectModule } from "@angular/material/select";
+import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 
 import { MaterialModule } from "./material/material.module";
 import { BriefComponent } from "./brief/brief.component";
@@ -49,9 +50,9 @@ import { ModalHebergementComponent } from "./modal-hebergement/modal-hebergement
 import { ModalsebergementsimpleComponent } from "./modalsebergementsimple/modalsebergementsimple.component";
 import { ModalhebergementdoubleComponent } from "./modalhebergementdouble/modalhebergementdouble.component";
 import { DialogdateComponent } from "./dialogdate/dialogdate.component";
-import { AutorefComponent } from './autoref/autoref.component';
-import { TestwidgetComponent } from './testwidget/testwidget.component';
-import { HomewebzineComponent } from './homewebzine/homewebzine.component';
+import { AutorefComponent } from "./autoref/autoref.component";
+import { TestwidgetComponent } from "./testwidget/testwidget.component";
+import { HomewebzineComponent } from "./homewebzine/homewebzine.component";
 
 @NgModule({
   declarations: [
@@ -109,6 +110,7 @@ import { HomewebzineComponent } from './homewebzine/homewebzine.component';
     MatDatepickerModule,
     MatTooltipModule,
     MatSelectModule,
+    MatSlideToggleModule,
   ],
   providers: [ImageService],
   bootstrap: [AppComponent],
