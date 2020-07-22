@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output, OnInit } from "@angular/core";
-import { MatSlideToggleChange } from "@angular/material/slide-toggle";
+// import { MatSlideToggleChange } from "@angular/material/slide-toggle";
 
 @Component({
   selector: "app-homewebzine",
@@ -16,7 +16,13 @@ export class HomewebzineComponent implements OnInit {
   //   this.darkModeSwitched.emit(checked);
   // }
 
-  storedTheme: string = localStorage.getItem("theme-color");
+  isActive = false;
+
+  toggleIconTheme() {
+    this.isActive = !this.isActive;
+  }
+
+  storedTheme: string = localStorage.getItem("theme-color"); // key value from localstorage
   constructor() {}
   ngOnInit() {}
   setTheme() {
@@ -27,5 +33,6 @@ export class HomewebzineComponent implements OnInit {
       localStorage.setItem("theme-color", "theme-dark");
       this.storedTheme = localStorage.getItem("theme-color");
     }
+    // return this.setTheme();
   }
 }
