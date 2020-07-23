@@ -10,6 +10,7 @@ import { FichelieuComponent } from "./fichelieu/fichelieu.component";
 import { AutorefComponent } from "./autoref/autoref.component";
 import { TestwidgetComponent } from "./testwidget/testwidget.component";
 import { HomewebzineComponent } from "./homewebzine/homewebzine.component";
+import { WebzineActuComponent } from "./webzine-actu/webzine-actu.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: "autoref", component: AutorefComponent },
   { path: "testwidget", component: TestwidgetComponent },
   { path: "homewebzine", component: HomewebzineComponent },
+  { path: "webzine-actu", component: WebzineActuComponent },
 ];
 
 @NgModule({

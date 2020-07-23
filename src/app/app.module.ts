@@ -53,6 +53,7 @@ import { DialogdateComponent } from "./dialogdate/dialogdate.component";
 import { AutorefComponent } from "./autoref/autoref.component";
 import { TestwidgetComponent } from "./testwidget/testwidget.component";
 import { HomewebzineComponent } from "./homewebzine/homewebzine.component";
+import { WebzineActuComponent } from './webzine-actu/webzine-actu.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { HomewebzineComponent } from "./homewebzine/homewebzine.component";
     AutorefComponent,
     TestwidgetComponent,
     HomewebzineComponent,
+    WebzineActuComponent,
   ],
   entryComponents: [
     DialogExempleComponent,
