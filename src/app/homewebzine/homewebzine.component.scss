@@ -1,3 +1,125 @@
+$bg-theme-light: #fff;
+$color-theme-light: #222;
+
+$bg-theme-dark: #0c0c0c;
+$color-theme-dark: rgba(255, 255, 255, 0.8);
+$color-title-theme-dark: #fff;
+$color-background-button-dark: #2b2b2b;
+$color-background-footer: #2b2b2b;
+
+.container {
+  margin-left: inherit !important;
+  margin-right: inherit !important;
+  max-width: 100% !important;
+  padding: 0 5% !important;
+}
+
+.theme-dark {
+  background-color: $bg-theme-dark;
+  h1 {
+    color: $color-title-theme-dark !important;
+  }
+
+  span {
+    color: $color-theme-dark;
+    .mat-icon {
+      color: $color-theme-dark;
+    }
+  }
+  .discoverButton {
+    background-color: $color-background-button-dark;
+    color: $color-theme-dark !important;
+  }
+  .gridContainer {
+    h2 {
+      color: $color-title-theme-dark !important;
+    }
+    p {
+      color: $color-theme-dark !important;
+    }
+  }
+  .containerCardEvent {
+    .infoCardEvent {
+      h4 {
+        color: $color-title-theme-dark !important;
+      }
+    }
+    .infoPosition {
+      color: $color-theme-dark !important;
+      .mat-icon {
+        color: $color-theme-dark !important;
+      }
+    }
+  }
+
+  // Mobile Card Event
+
+  .containerCardEventMobile {
+    background: $color-background-button-dark;
+    .infoCardEvent {
+      h4 {
+        color: $color-title-theme-dark !important;
+      }
+    }
+    .infoPosition {
+      color: $color-theme-dark !important;
+      .mat-icon {
+        color: $color-theme-dark !important;
+      }
+    }
+
+    .calendarButton,
+    .previewButton {
+      background-color: rgba(75, 74, 74, 0.6) !important;
+    }
+  }
+
+  // End Mobile Card Event
+
+  .calendarButton,
+  .previewButton {
+    background-color: $color-background-button-dark !important;
+    color: $color-theme-dark !important;
+    .mat-icon {
+      color: $color-theme-dark !important;
+    }
+  }
+}
+.theme-dark.containerFooter {
+  background-color: $color-background-footer !important;
+  // background: $color-background-footer !important;
+  p {
+    color: $color-theme-dark !important;
+  }
+  h5 {
+    color: $color-title-theme-dark !important;
+  }
+  .titleList {
+    color: $color-title-theme-dark !important;
+  }
+  li {
+    color: $color-theme-dark !important;
+  }
+  .legalInfo li,
+  a {
+    color: $color-theme-dark !important;
+  }
+}
+
+.bigMarginTop {
+  margin-top: 5.813rem !important;
+}
+
+// .theme-light {
+//   background-color: $bg-theme-light;
+//   h1 {
+//     color: $color-theme-light !important;
+//   }
+// .backgroundBelow {
+//   background-color: $color-theme-light;
+// }
+// }
+
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -80,6 +202,7 @@ p {
 
   .containerRightContent {
     margin-left: auto;
+    cursor: pointer;
 
     svg {
       width: 20px;
@@ -205,13 +328,17 @@ button.discoverButton {
   }
 }
 
+.row.containerEvent {
+  margin-bottom: 0rem !important;
+}
+
 .containerEvent {
   margin-top: 4.5rem;
+  padding-bottom: 5.813rem;
 
   .containerCardEvent {
     width: 392px;
     height: 410px;
-
     .imgCardEvent {
       background-size: cover;
       background-repeat: no-repeat;
@@ -601,9 +728,9 @@ button.discoverButton {
 
 .containerFooter {
   width: 100vw;
-  padding: 2.938rem 6.75rem;
+  padding: 2.938rem 3%;
   // height: 500px;
-  background: #f7f7f7;
+  background-color: #f7f7f7;
 
   .leftContent {
     img {
@@ -658,17 +785,18 @@ button.discoverButton {
         line-height: 180%;
         letter-spacing: 0.25%;
         padding-bottom: 1.25rem;
-        color: #2b2b2b !important;
+        color: #2b2b2b;
       }
     }
   }
 
   .legalInfo {
     line-height: 166%;
+    padding: 0 20px;
     /* identical to box height, or 27px */
 
     letter-spacing: 0.0035em;
-    margin-top: 5.563rem;
+    padding-top: 5.563rem;
 
     /* Grey scale / 1 */
 
@@ -774,7 +902,6 @@ button.discoverButton {
 .titleInspiration {
   grid-column: 1/10;
   grid-row: 29/29;
-  color: #7c7c7c;
   font-weight: 600;
   font-size: 24px;
 }
@@ -838,7 +965,9 @@ button.discoverButton {
       .buttonArticle {
         height: 25px;
         width: 90px;
-        border-radius: 15px;
+
+        border-radius: 4px;
+
         border: none;
         background-color: #f4f4f4;
         font-size: 12px;
@@ -1663,12 +1792,6 @@ button.discoverButton {
   }
 }
 
-@media (max-width: 1100px) {
-  .containerFooter {
-    padding: 0 0 !important;
-  }
-}
-
 @media (min-width: 993px) and (max-width: 1100px) {
   .rightContent {
     .imgContainer {
@@ -1690,3 +1813,30 @@ button.discoverButton {
     width: 332px !important;
   }
 }
+
+@media (min-width: 450px) and (max-width: 888px) {
+  .containerAllCardEvent {
+    justify-content: center !important;
+  }
+}
+
+// RESPONSIVE FOOTER
+
+@media (max-width: 1100px) {
+  .containerFooter {
+    // padding: 0 0 !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .containerFooter {
+    .rightContent.col {
+      flex-basis: inherit !important;
+    }
+    .rightContent {
+      margin-top: 2.813rem;
+    }
+  }
+}
+
+// END RESPONSIVE FOOTER

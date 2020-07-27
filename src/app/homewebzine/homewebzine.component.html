@@ -1,4 +1,6 @@
-<div class="container">
+<!-- <div class="backgroundBelow {{ storedTheme }}"></div> -->
+
+<div class="container {{ storedTheme }}">
   <!-- <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="#">
       <img src="assets/Green.svg" width="138" alt="" loading="lazy" />
@@ -51,11 +53,47 @@
       </li>
     </ul>
     <div class="containerRightContent">
-      <span>
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- <mat-slide-toggle 
+        >Slide me! </mat-slide-toggle
+      > -->
+
+      <span (click)="setTheme()" (click)="toggleIconTheme()" *ngIf="!isActive">
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 22 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M11.9941 22C15.3782 22 18.4816 20.4615 20.5382 17.9276C21.7529 16.431 20.4283 14.2443 18.551 14.6018C15.0126 15.2757 11.7502 12.5708 11.7502 8.98184C11.7502 6.90112 12.87 5.01617 14.6478 4.00452C16.3126 3.05705 15.8938 0.533156 14.0023 0.183777C13.3399 0.0616235 12.6677 0.000109842 11.9941 0C5.92008 0 0.994141 4.92314 0.994141 11C0.994141 17.0741 5.91733 22 11.9941 22ZM11.9941 2.0625C12.5521 2.0625 13.098 2.11411 13.6276 2.21195C11.2747 3.55098 9.68771 6.08094 9.68771 8.98184C9.68771 13.8737 14.141 17.5412 18.9368 16.6279C17.2982 18.6469 14.797 19.9375 11.9941 19.9375C7.0581 19.9375 3.05664 15.936 3.05664 11C3.05664 6.06396 7.0581 2.0625 11.9941 2.0625Z"
             fill="#329494" />
+        </svg>
+      </span>
+      <span *ngIf="isActive" (click)="setTheme()" (click)="toggleIconTheme()">
+        <svg
+          width="22"
+          height="23"
+          viewBox="0 0 22 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0)">
+            <path
+              d="M21.2352 10.0358L18.6656 8.29561L19.2543 5.24483C19.366 4.67764 19.1855 4.09326 18.7773 3.68076C18.3648 3.27256 17.7805 3.09209 17.2219 3.20381L14.1754 3.79248L12.4395 1.21865C11.7906 0.260449 10.2094 0.260449 9.56055 1.21865L7.82461 3.79248L4.78242 3.20381C4.21094 3.09639 3.63086 3.27256 3.22266 3.68506C2.81445 4.09756 2.63398 4.67764 2.7457 5.24483L3.33437 8.29561L0.764844 10.0358C0.283594 10.3624 0 10.8995 0 11.4796C0 12.0597 0.287891 12.5968 0.764844 12.919L3.33437 14.6593L2.7457 17.7101C2.63398 18.2772 2.81445 18.8616 3.22266 19.2698C3.63086 19.678 4.20664 19.8585 4.78242 19.7468L7.82461 19.1581L9.56055 21.7319C9.88281 22.2132 10.4242 22.5011 11 22.5011C11.5758 22.5011 12.1172 22.2132 12.4395 21.7362L14.1754 19.1624L17.2219 19.7511C17.7977 19.8671 18.3734 19.6823 18.7816 19.2741C19.1898 18.8659 19.366 18.2815 19.2586 17.7144L18.6699 14.6636L21.2395 12.9233C21.7164 12.6011 22.0043 12.0597 22.0043 11.4839C22 10.8995 21.7164 10.3624 21.2352 10.0358V10.0358ZM16.384 13.714L17.1402 17.6327L13.2301 16.8765L11 20.1808L8.76992 16.8722L4.86406 17.6284L5.62031 13.7097L2.32031 11.4753L5.62031 9.24092L4.86406 5.32217L8.77422 6.07842L11 2.77842L13.2301 6.08272L17.1402 5.32647L16.384 9.24092L19.684 11.4753L16.384 13.714ZM11 7.03233C8.53789 7.03233 6.53125 9.03897 6.53125 11.5011C6.53125 13.9632 8.53789 15.9698 11 15.9698C13.4621 15.9698 15.4688 13.9632 15.4688 11.5011C15.4688 9.03897 13.4621 7.03233 11 7.03233ZM11 13.9073C9.67227 13.9073 8.59375 12.8288 8.59375 11.5011C8.59375 10.1733 9.67227 9.09483 11 9.09483C12.3277 9.09483 13.4062 10.1733 13.4062 11.5011C13.4062 12.8288 12.3277 13.9073 11 13.9073Z"
+              fill="#329494"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <rect
+                width="22"
+                height="22"
+                fill="white"
+                transform="translate(0 0.5)"
+              />
+            </clipPath>
+          </defs>
         </svg>
       </span>
       <span>
@@ -174,7 +212,7 @@
 
   <!-- GRID MICKA -->
 
-  <h1 class="title">Actualités ( 124 )</h1>
+  <h2 class="pl-0 mt-4 bigMarginTop">Actualités (124)</h2>
 
   <div class="gridContainer">
     <div class="one">
@@ -402,7 +440,7 @@
       </div>
     </div>
 
-    <h2 class="titleInspiration">Inspiration ( 67 )</h2>
+    <h2 class="titleInspiration">Inspiration (67)</h2>
 
     <div class="height">
       <div class="backgroundImage">
@@ -631,7 +669,7 @@
 
   <!-- END GRID MICKA -->
   <div class="row d-none d-sm-flex">
-    <h2 class="w-100 p-0">Guides (31)</h2>
+    <h2 class="w-100 pl-2">Guides (31)</h2>
     <div class="col pl-1">
       <div class="app mt-4">
         <ul class="hs full">
@@ -661,7 +699,7 @@
   </div>
 
   <div class="row d-flex d-sm-none">
-    <h2 class="w-100">Guides (31)</h2>
+    <h2 class="w-100 pl-2">Guides (31)</h2>
     <div class="col d-flex flex-column">
       <div class="containerCardGuideMobile first d-flex justify-content-center align-items-center">
         <h3 class="mb-0">Je suis un privé</h3>
@@ -679,8 +717,10 @@
   </div>
 
   <div class="row containerEvent d-none d-sm-flex">
-    <h2 class="w-100">Événements (104)</h2>
-    <div class="col p-xl-0 pl-sm-2 pr-sm-2 d-flex flex-row justify-content-between flex-wrap">
+    <h2 class="w-100 pl-2">Événements (104)</h2>
+    <div
+      class="col p-xl-0 pl-sm-2 pr-sm-2 d-flex flex-row justify-content-between flex-wrap containerAllCardEvent"
+    >
       <div class="containerCardEvent d-flex flex-column">
         <div class="imgCardEvent first">
           <!-- <img src="assets/img1.jpg" alt=""> -->
@@ -997,7 +1037,9 @@
     </div>
   </div>
 </div>
-<div class="row m-0 containerFooter d-flex align-items-center">
+<div
+  class="row m-0 containerFooter d-flex align-items-center {{ storedTheme }}"
+>
   <div class="col d-flex flex-column leftContent">
     <img src="assets/Green.svg" alt="" />
     <p>
@@ -1036,7 +1078,7 @@
       </svg>
     </div>
   </div>
-  <div class="col d-flex rightContent justify-content-between">
+  <div class="col d-flex rightContent justify-content-between flex-wrap">
     <ul class="d-flex flex-column">
       <li class="titleList">À propos</li>
       <li>

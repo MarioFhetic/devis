@@ -15,6 +15,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatStepperModule } from "@angular/material/stepper";
 import { MatSelectModule } from "@angular/material/select";
+import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 
 import { MaterialModule } from "./material/material.module";
 import { BriefComponent } from "./brief/brief.component";
@@ -29,6 +30,7 @@ import { MatListModule } from "@angular/material/list";
 import { InfoComplementaireComponent } from "./info-complementaire/info-complementaire.component";
 import { InfoComplementaire2Component } from "./info-complementaire2/info-complementaire2.component";
 import { ConfirmationComponent } from "./confirmation/confirmation.component";
+import { MatMenuModule } from "@angular/material/menu";
 
 import { MatDatepickerModule } from "@angular/material/datepicker";
 
@@ -53,6 +55,7 @@ import { AutorefComponent } from './autoref/autoref.component';
 import { TestwidgetComponent } from './testwidget/testwidget.component';
 import { HomewebzineComponent } from './homewebzine/homewebzine.component';
 import { ArticlePageComponent } from './article-page/article-page.component';
+import { WebzineActuComponent } from "./webzine-actu/webzine-actu.component";
 import { TextImageCentreComponent } from './text-image-centre/text-image-centre.component';
 
 @NgModule({
@@ -84,6 +87,7 @@ import { TextImageCentreComponent } from './text-image-centre/text-image-centre.
     HomewebzineComponent,
     ArticlePageComponent,
     TextImageCentreComponent,
+    WebzineActuComponent,
   ],
   entryComponents: [
     DialogExempleComponent,
@@ -113,6 +117,8 @@ import { TextImageCentreComponent } from './text-image-centre/text-image-centre.
     MatDatepickerModule,
     MatTooltipModule,
     MatSelectModule,
+    MatSlideToggleModule,
+    MatMenuModule,
   ],
   providers: [ImageService],
   bootstrap: [AppComponent],

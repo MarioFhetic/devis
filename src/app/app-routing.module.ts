@@ -11,6 +11,7 @@ import { AutorefComponent } from "./autoref/autoref.component";
 import { TestwidgetComponent } from "./testwidget/testwidget.component";
 import { HomewebzineComponent } from "./homewebzine/homewebzine.component";
 import { ArticlePageComponent } from "./article-page/article-page.component";
+import { WebzineActuComponent } from "./webzine-actu/webzine-actu.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: "testwidget", component: TestwidgetComponent },
   { path: "homewebzine", component: HomewebzineComponent },
   { path: "article-page", component: ArticlePageComponent },
+  { path: "webzine-actu", component: WebzineActuComponent },
 ];
 
 @NgModule({
