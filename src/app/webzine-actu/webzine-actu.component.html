@@ -5,10 +5,10 @@
     </a>
     <ul class="d-flex flex-row">
       <li>
-        <a href="#" class="nav-link active">Accueil</a>
+        <a href="#" class="nav-link">Accueil</a>
       </li>
       <li>
-        <a href="#" class="nav-link">Actualités</a>
+        <a href="#" class="nav-link active">Actualités</a>
       </li>
       <li>
         <a href="#" class="nav-link">Agenda</a>
@@ -86,6 +86,11 @@
           </defs>
         </svg>
       </span>
+      <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+
       <span>
         <svg
           width="22"
@@ -250,60 +255,144 @@
       <div class="app mt-4">
         <ul class="hs full">
           <li class="item">
-            <div class="containerSelectedCards d-flex flex-column">
-              <div class="containerImgSelectedCards first"></div>
-              <h4>Construire son projet les pieds dans l'eau</h4>
-              <div
-                class="containerInfo d-flex justify-content-between align-items-center"
-              >
-                <span>Le 15 juillet 2020 à 20h20</span>
-                <button class="containerButtonSelectedCards">
-                  On en parle
-                </button>
+            <a href="">
+              <div class="containerSelectedCards d-flex flex-column">
+                <div class="containerImgSelectedCards first">
+                  <div
+                    class="containerViewTime view d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      1049
+                    </span>
+                    <mat-icon class="ml-1 md-14">visibility</mat-icon>
+                  </div>
+                  <div
+                    class="containerViewTime time d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      5 min
+                    </span>
+                    <mat-icon class="ml-1 md-14">timer</mat-icon>
+                  </div>
+                  <img src="assets/img1.jpg" alt="" />
+                </div>
+
+                <h4>Construire son projet les pieds dans l'eau</h4>
+                <div
+                  class="containerInfo d-flex justify-content-between align-items-center"
+                >
+                  <span>Le 15 juillet 2020 à 20h20</span>
+                  <button class="containerButtonSelectedCards">
+                    On en parle
+                  </button>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li class="item">
-            <div class="containerSelectedCards d-flex flex-column">
-              <div class="containerImgSelectedCards second"></div>
-              <h4>Construire son projet les pieds dans l'eau</h4>
-              <div
-                class="containerInfo d-flex justify-content-between align-items-center"
-              >
-                <span>Le 15 juillet 2020 à 20h20</span>
-                <button class="containerButtonSelectedCards">
-                  On en parle
-                </button>
+            <a href="">
+              <div class="containerSelectedCards d-flex flex-column">
+                <div class="containerImgSelectedCards first">
+                  <div
+                    class="containerViewTime view d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      1049
+                    </span>
+                    <mat-icon class="ml-1 md-14">visibility</mat-icon>
+                  </div>
+                  <div
+                    class="containerViewTime time d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      5 min
+                    </span>
+                    <mat-icon class="ml-1 md-14">timer</mat-icon>
+                  </div>
+                  <img src="assets/img2.jpg" alt="" />
+                </div>
+
+                <h4>Construire son projet les pieds dans l'eau</h4>
+                <div
+                  class="containerInfo d-flex justify-content-between align-items-center"
+                >
+                  <span>Le 15 juillet 2020 à 20h20</span>
+                  <button class="containerButtonSelectedCards">
+                    On en parle
+                  </button>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li class="item">
-            <div class="containerSelectedCards d-flex flex-column">
-              <div class="containerImgSelectedCards third"></div>
-              <h4>Construire son projet les pieds dans l'eau</h4>
-              <div
-                class="containerInfo d-flex justify-content-between align-items-center"
-              >
-                <span>Le 15 juillet 2020 à 20h20</span>
-                <button class="containerButtonSelectedCards">
-                  On en parle
-                </button>
+            <a href="">
+              <div class="containerSelectedCards d-flex flex-column">
+                <div class="containerImgSelectedCards first">
+                  <div
+                    class="containerViewTime view d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      1049
+                    </span>
+                    <mat-icon class="ml-1 md-14">visibility</mat-icon>
+                  </div>
+                  <div
+                    class="containerViewTime time d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      5 min
+                    </span>
+                    <mat-icon class="ml-1 md-14">timer</mat-icon>
+                  </div>
+                  <img src="assets/img3.jpg" alt="" />
+                </div>
+
+                <h4>Construire son projet les pieds dans l'eau</h4>
+                <div
+                  class="containerInfo d-flex justify-content-between align-items-center"
+                >
+                  <span>Le 15 juillet 2020 à 20h20</span>
+                  <button class="containerButtonSelectedCards">
+                    On en parle
+                  </button>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li class="item">
-            <div class="containerSelectedCards d-flex flex-column">
-              <div class="containerImgSelectedCards fourth"></div>
-              <h4>Construire son projet les pieds dans l'eau</h4>
-              <div
-                class="containerInfo d-flex justify-content-between align-items-center"
-              >
-                <span>Le 15 juillet 2020 à 20h20</span>
-                <button class="containerButtonSelectedCards">
-                  On en parle
-                </button>
+            <a href="">
+              <div class="containerSelectedCards d-flex flex-column">
+                <div class="containerImgSelectedCards first">
+                  <div
+                    class="containerViewTime view d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      1049
+                    </span>
+                    <mat-icon class="ml-1 md-14">visibility</mat-icon>
+                  </div>
+                  <div
+                    class="containerViewTime time d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      5 min
+                    </span>
+                    <mat-icon class="ml-1 md-14">timer</mat-icon>
+                  </div>
+                  <img src="assets/img4.jpg" alt="" />
+                </div>
+
+                <h4>Construire son projet les pieds dans l'eau</h4>
+                <div
+                  class="containerInfo d-flex justify-content-between align-items-center"
+                >
+                  <span>Le 15 juillet 2020 à 20h20</span>
+                  <button class="containerButtonSelectedCards">
+                    On en parle
+                  </button>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -315,60 +404,144 @@
       <div class="app mt-4">
         <ul class="hs full">
           <li class="item">
-            <div class="containerSelectedCards d-flex flex-column">
-              <div class="containerImgSelectedCards first"></div>
-              <h4>Construire son projet les pieds dans l'eau</h4>
-              <div
-                class="containerInfo d-flex justify-content-between align-items-center"
-              >
-                <span>Le 15 juillet 2020 à 20h20</span>
-                <button class="containerButtonSelectedCards">
-                  On en parle
-                </button>
+            <a href="">
+              <div class="containerSelectedCards d-flex flex-column">
+                <div class="containerImgSelectedCards first">
+                  <div
+                    class="containerViewTime view d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      1049
+                    </span>
+                    <mat-icon class="ml-1 md-14">visibility</mat-icon>
+                  </div>
+                  <div
+                    class="containerViewTime time d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      5 min
+                    </span>
+                    <mat-icon class="ml-1 md-14">timer</mat-icon>
+                  </div>
+                  <img src="assets/img5.jpg" alt="" />
+                </div>
+
+                <h4>Construire son projet les pieds dans l'eau</h4>
+                <div
+                  class="containerInfo d-flex justify-content-between align-items-center"
+                >
+                  <span>Le 15 juillet 2020 à 20h20</span>
+                  <button class="containerButtonSelectedCards">
+                    On en parle
+                  </button>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li class="item">
-            <div class="containerSelectedCards d-flex flex-column">
-              <div class="containerImgSelectedCards second"></div>
-              <h4>Construire son projet les pieds dans l'eau</h4>
-              <div
-                class="containerInfo d-flex justify-content-between align-items-center"
-              >
-                <span>Le 15 juillet 2020 à 20h20</span>
-                <button class="containerButtonSelectedCards">
-                  On en parle
-                </button>
+            <a href="">
+              <div class="containerSelectedCards d-flex flex-column">
+                <div class="containerImgSelectedCards first">
+                  <div
+                    class="containerViewTime view d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      1049
+                    </span>
+                    <mat-icon class="ml-1 md-14">visibility</mat-icon>
+                  </div>
+                  <div
+                    class="containerViewTime time d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      5 min
+                    </span>
+                    <mat-icon class="ml-1 md-14">timer</mat-icon>
+                  </div>
+                  <img src="assets/img6.jpg" alt="" />
+                </div>
+
+                <h4>Construire son projet les pieds dans l'eau</h4>
+                <div
+                  class="containerInfo d-flex justify-content-between align-items-center"
+                >
+                  <span>Le 15 juillet 2020 à 20h20</span>
+                  <button class="containerButtonSelectedCards">
+                    On en parle
+                  </button>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li class="item">
-            <div class="containerSelectedCards d-flex flex-column">
-              <div class="containerImgSelectedCards third"></div>
-              <h4>Construire son projet les pieds dans l'eau</h4>
-              <div
-                class="containerInfo d-flex justify-content-between align-items-center"
-              >
-                <span>Le 15 juillet 2020 à 20h20</span>
-                <button class="containerButtonSelectedCards">
-                  On en parle
-                </button>
+            <a href="">
+              <div class="containerSelectedCards d-flex flex-column">
+                <div class="containerImgSelectedCards first">
+                  <div
+                    class="containerViewTime view d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      1049
+                    </span>
+                    <mat-icon class="ml-1 md-14">visibility</mat-icon>
+                  </div>
+                  <div
+                    class="containerViewTime time d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      5 min
+                    </span>
+                    <mat-icon class="ml-1 md-14">timer</mat-icon>
+                  </div>
+                  <img src="assets/img7.jpg" alt="" />
+                </div>
+
+                <h4>Construire son projet les pieds dans l'eau</h4>
+                <div
+                  class="containerInfo d-flex justify-content-between align-items-center"
+                >
+                  <span>Le 15 juillet 2020 à 20h20</span>
+                  <button class="containerButtonSelectedCards">
+                    On en parle
+                  </button>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li class="item">
-            <div class="containerSelectedCards d-flex flex-column">
-              <div class="containerImgSelectedCards fourth"></div>
-              <h4>Construire son projet les pieds dans l'eau</h4>
-              <div
-                class="containerInfo d-flex justify-content-between align-items-center"
-              >
-                <span>Le 15 juillet 2020 à 20h20</span>
-                <button class="containerButtonSelectedCards">
-                  On en parle
-                </button>
+            <a href="">
+              <div class="containerSelectedCards d-flex flex-column">
+                <div class="containerImgSelectedCards first">
+                  <div
+                    class="containerViewTime view d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      1049
+                    </span>
+                    <mat-icon class="ml-1 md-14">visibility</mat-icon>
+                  </div>
+                  <div
+                    class="containerViewTime time d-flex justify-content-center align-items-center"
+                  >
+                    <span>
+                      5 min
+                    </span>
+                    <mat-icon class="ml-1 md-14">timer</mat-icon>
+                  </div>
+                  <img src="assets/img8.jpg" alt="" />
+                </div>
+
+                <h4>Construire son projet les pieds dans l'eau</h4>
+                <div
+                  class="containerInfo d-flex justify-content-between align-items-center"
+                >
+                  <span>Le 15 juillet 2020 à 20h20</span>
+                  <button class="containerButtonSelectedCards">
+                    On en parle
+                  </button>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -393,164 +566,440 @@
     <div
       class="col p-xl-0 pl-sm-2 pr-sm-2 d-flex flex-row justify-content-between flex-wrap containerAllCardArticles"
     >
-      <div class="containerSelectedCards d-flex flex-column smallMarginBottom">
-        <div class="containerImgSelectedCards first"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
+      <a href="">
         <div
-          class="containerInfo d-flex justify-content-between align-items-center"
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
         >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/img1.jpg" alt="" />
+          </div>
+
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="containerSelectedCards d-flex flex-column smallMarginBottom">
-        <div class="containerImgSelectedCards second"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
+      </a>
+
+      <a href="">
         <div
-          class="containerInfo d-flex justify-content-between align-items-center"
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
         >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/1.jpg" alt="" />
+          </div>
+
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="containerSelectedCards d-flex flex-column smallMarginBottom">
-        <div class="containerImgSelectedCards third"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
+      </a>
+
+      <a href="">
         <div
-          class="containerInfo d-flex justify-content-between align-items-center"
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
         >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/img2.jpg" alt="" />
+          </div>
+
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="containerSelectedCards d-flex flex-column smallMarginBottom">
-        <div class="containerImgSelectedCards fourth"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
+      </a>
+
+      <a href="">
         <div
-          class="containerInfo d-flex justify-content-between align-items-center"
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
         >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/img3.jpg" alt="" />
+          </div>
+
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="containerSelectedCards d-flex flex-column smallMarginBottom">
-        <div class="containerImgSelectedCards five"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
+      </a>
+
+      <a href="">
         <div
-          class="containerInfo d-flex justify-content-between align-items-center"
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
         >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/img4.jpg" alt="" />
+          </div>
+
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="containerSelectedCards d-flex flex-column smallMarginBottom">
-        <div class="containerImgSelectedCards six"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
+      </a>
+
+      <a href="">
         <div
-          class="containerInfo d-flex justify-content-between align-items-center"
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
         >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/img5.jpg" alt="" />
+          </div>
+
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="containerSelectedCards d-flex flex-column smallMarginBottom">
-        <div class="containerImgSelectedCards seven"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
+      </a>
+
+      <a href="">
         <div
-          class="containerInfo d-flex justify-content-between align-items-center"
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
         >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/img6.jpg" alt="" />
+          </div>
+
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="containerSelectedCards d-flex flex-column smallMarginBottom">
-        <div class="containerImgSelectedCards eight"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
+      </a>
+
+      <a href="">
         <div
-          class="containerInfo d-flex justify-content-between align-items-center"
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
         >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/img7.jpg" alt="" />
+          </div>
+
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="containerSelectedCards d-flex flex-column smallMarginBottom">
-        <div class="containerImgSelectedCards nine"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
+      </a>
+
+      <a href="">
         <div
-          class="containerInfo d-flex justify-content-between align-items-center"
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
         >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/img8.jpg" alt="" />
+          </div>
+
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
         </div>
-      </div>
+      </a>
 
       <!-- SHOW IS LOAD MORE CLICKED -->
 
-      <div
-        class="containerSelectedCards d-flex flex-column smallMarginBottom"
-        *ngIf="isLoadMoreClicked"
-      >
-        <div class="containerImgSelectedCards nine"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
+      <!-- *ngIf="isLoadMoreClicked" -->
+      <a href="" *ngIf="isLoadMoreClicked">
         <div
-          class="containerInfo d-flex justify-content-between align-items-center"
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
         >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
-        </div>
-      </div>
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/9.jpg" alt="" />
+          </div>
 
-      <div
-        class="containerSelectedCards d-flex flex-column smallMarginBottom"
-        *ngIf="isLoadMoreClicked"
-      >
-        <div class="containerImgSelectedCards nine"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
-        <div
-          class="containerInfo d-flex justify-content-between align-items-center"
-        >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <div
-        class="containerSelectedCards d-flex flex-column smallMarginBottom"
-        *ngIf="isLoadMoreClicked"
-      >
-        <div class="containerImgSelectedCards nine"></div>
-        <h4>Construire son projet les pieds dans l'eau</h4>
+      <a href="" *ngIf="isLoadMoreClicked">
         <div
-          class="containerInfo d-flex justify-content-between align-items-center"
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
         >
-          <span>Le 15 juillet 2020 à 20h20</span>
-          <button class="containerButtonSelectedCards">
-            On en parle
-          </button>
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/10.jpg" alt="" />
+          </div>
+
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
         </div>
-      </div>
+      </a>
+
+      <a href="" *ngIf="isLoadMoreClicked">
+        <div
+          class="containerSelectedCards d-flex flex-column smallMarginBottom"
+        >
+          <div class="containerImgSelectedCards first">
+            <div
+              class="containerViewTime view d-flex justify-content-center align-items-center"
+            >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
+            </div>
+            <div
+              class="containerViewTime time d-flex justify-content-center align-items-center"
+            >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
+            </div>
+            <img src="assets/12.jpg" alt="" />
+          </div>
+
+          <h4>Construire son projet les pieds dans l'eau</h4>
+          <div
+            class="containerInfo d-flex justify-content-between align-items-center"
+          >
+            <span>Le 15 juillet 2020 à 20h20</span>
+            <button class="containerButtonSelectedCards">
+              On en parle
+            </button>
+          </div>
+        </div>
+      </a>
 
       <!-- END  -->
     </div>

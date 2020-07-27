@@ -61,6 +61,12 @@ $color-background-footer: #2b2b2b;
 
 // GENERAL SETTINGS
 
+a {
+  text-transform: none;
+  text-decoration: none;
+  color: inherit !important;
+}
+
 h2 {
   padding-left: 0 !important;
   font-size: 1.5rem;
@@ -138,7 +144,19 @@ ul {
 .bigPaddingBottom {
   padding-bottom: 4.5rem;
 }
+
 // END GENERAL SETTINGS
+
+.overlayMenu {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 13;
+  background: black;
+  opacity: 0.7;
+}
 
 // NAVBAR
 .navbar {
@@ -397,28 +415,9 @@ button.discoverButton {
   }
 
   .containerImgSelectedCards {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     width: 100%;
     height: 255px;
     border-radius: 10px;
-    cursor: pointer;
-    &.first {
-      background-image: url("../../assets/img1.jpg");
-    }
-
-    &.second {
-      background-image: url("../../assets/img2.jpg");
-    }
-
-    &.third {
-      background-image: url("../../assets/img3.jpg");
-    }
-
-    &.fourth {
-      background-image: url("../../assets/img4.jpg");
-    }
   }
 }
 
@@ -475,47 +474,6 @@ button.discoverButton {
 // END HORIZONTAL SLIDER
 
 // ARTICLES SECTIONS
-
-.containerAllArticles {
-  .containerAllCardArticles {
-    .containerImgSelectedCards {
-      &.first {
-        background-image: url("../../assets/12.jpg");
-      }
-
-      &.second {
-        background-image: url("../../assets/10.jpg");
-      }
-
-      &.third {
-        background-image: url("../../assets/9.jpg");
-      }
-
-      &.fourth {
-        background-image: url("../../assets/4.jpg");
-      }
-      &.five {
-        background-image: url("../../assets/5.jpg");
-      }
-
-      &.six {
-        background-image: url("../../assets/6.jpg");
-      }
-
-      &.seven {
-        background-image: url("../../assets/15.jpg");
-      }
-
-      &.eight {
-        background-image: url("../../assets/7.jpg");
-      }
-
-      &.nine {
-        background-image: url("../../assets/8.jpg");
-      }
-    }
-  }
-}
 
 // END ARTICLES SECTIONS
 
@@ -621,6 +579,60 @@ button.discoverButton {
   }
 }
 
+// RESPONSIVE HEADER SLIDER
+
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   .containerSlider {
+//     height: 110vh !important;
+//     .coverBackground {
+//       height: 110vh !important;
+//     }
+//   }
+// }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .containerSlider {
+    height: 130vh !important;
+    .imgContainer {
+      height: 50vh !important;
+    }
+    .coverBackground {
+      height: 130vh !important;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .containerSlider {
+    height: 175vh !important;
+    .coverBackground {
+      height: 175vh !important;
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  .containerSlider {
+    height: 190vh !important;
+    .coverBackground {
+      height: 190vh !important;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .containerSlider {
+    height: 50vh !important;
+    .imgContainer {
+      height: 30vh !important;
+    }
+    .coverBackground {
+      height: 50vh !important;
+    }
+  }
+}
+// END RESPONSIVE HEADER SLIDER
+
 // RESPONSIVE FOOTER
 
 @media (max-width: 1100px) {
@@ -652,4 +664,92 @@ button.discoverButton {
   }
 }
 
+@media (min-width: 350px) and (max-width: 650px) {
+  .containerAllCardArticles {
+    .containerSelectedCards {
+      width: 100% !important;
+    }
+  }
+}
+
 // END RESPONSIVE CONTAINER ARTICLES
+
+// ANIMATION IMG
+.containerImgSelectedCards:hover img {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.containerViewTime {
+  position: absolute;
+  z-index: 3;
+  top: 15px;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.3); // border: none;
+  width: 89px;
+  height: 34px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: 0.5s ease;
+  opacity: 0;
+  &.view {
+    left: 15px;
+  }
+  &.time {
+    left: 115px;
+  }
+}
+
+.containerImgSelectedCards:hover {
+  .containerViewTime {
+    opacity: 1;
+  }
+}
+
+.containerImgSelectedCards:before {
+  content: "Découvrir" + " " + "\2192";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  opacity: 0;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.containerImgSelectedCards:hover:before {
+  opacity: 1;
+}
+
+.containerImgSelectedCards {
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  position: relative !important;
+  overflow: hidden;
+}
+
+.containerImgSelectedCards {
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+}
+// END IMG ANIMATION

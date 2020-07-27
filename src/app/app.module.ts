@@ -30,6 +30,7 @@ import { MatListModule } from "@angular/material/list";
 import { InfoComplementaireComponent } from "./info-complementaire/info-complementaire.component";
 import { InfoComplementaire2Component } from "./info-complementaire2/info-complementaire2.component";
 import { ConfirmationComponent } from "./confirmation/confirmation.component";
+import { MatMenuModule } from "@angular/material/menu";
 
 import { MatDatepickerModule } from "@angular/material/datepicker";
 
@@ -53,7 +54,7 @@ import { DialogdateComponent } from "./dialogdate/dialogdate.component";
 import { AutorefComponent } from "./autoref/autoref.component";
 import { TestwidgetComponent } from "./testwidget/testwidget.component";
 import { HomewebzineComponent } from "./homewebzine/homewebzine.component";
-import { WebzineActuComponent } from './webzine-actu/webzine-actu.component';
+import { WebzineActuComponent } from "./webzine-actu/webzine-actu.component";
 
 @NgModule({
   declarations: [
@@ -113,6 +114,7 @@ import { WebzineActuComponent } from './webzine-actu/webzine-actu.component';
     MatTooltipModule,
     MatSelectModule,
     MatSlideToggleModule,
+    MatMenuModule,
   ],
   providers: [ImageService],
   bootstrap: [AppComponent],
