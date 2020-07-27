@@ -52,6 +52,8 @@ import { DialogdateComponent } from "./dialogdate/dialogdate.component";
 import { AutorefComponent } from './autoref/autoref.component';
 import { TestwidgetComponent } from './testwidget/testwidget.component';
 import { HomewebzineComponent } from './homewebzine/homewebzine.component';
+import { ArticlePageComponent } from './article-page/article-page.component';
+import { TextImageCentreComponent } from './text-image-centre/text-image-centre.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +82,8 @@ import { HomewebzineComponent } from './homewebzine/homewebzine.component';
     AutorefComponent,
     TestwidgetComponent,
     HomewebzineComponent,
+    ArticlePageComponent,
+    TextImageCentreComponent,
   ],
   entryComponents: [
     DialogExempleComponent,
