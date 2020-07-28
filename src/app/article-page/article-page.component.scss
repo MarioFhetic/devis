@@ -152,9 +152,9 @@ p {
 
 
   .containerSocialArticle {
-    vertical-align: center;
+    transform: translateY(-70%);
     display: inline-grid;
-    top: 30%;
+    top: 38%;
     right: 0;
     margin-right: 5%;
     position: fixed;
@@ -241,6 +241,16 @@ p {
   }
 }
 
+.titleAction {
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 12px;
+  margin-bottom: 40px;
+  font-size: 1.125rem;
+  color: #329494;
+  padding-left: 0px;
+}
+
 
 .containerComponent1 {
   .title {
@@ -249,15 +259,6 @@ p {
 
   .containerTextArrow {
     margin-top: 32px;
-
-    .titleAction {
-      cursor: pointer;
-      font-weight: bold;
-      margin-right: 12px;
-      margin-bottom: 40px;
-      font-size: 1.125rem;
-      color: #329494;
-    }
 
     .mat-icon {
       cursor: pointer;
@@ -276,15 +277,6 @@ p {
 
   .title {
     margin-bottom: 32px !important;
-  }
-
-  .titleAction {
-    cursor: pointer;
-    font-weight: bold;
-    margin-right: 12px;
-    margin-bottom: 40px;
-    font-size: 1.125rem;
-    color: #329494;
   }
 
   .mat-icon {
@@ -307,15 +299,6 @@ p {
 
   .title {
     margin-bottom: 32px !important;
-  }
-
-  .titleAction {
-    cursor: pointer;
-    font-weight: bold;
-    margin-right: 12px;
-    margin-bottom: 40px;
-    font-size: 1.125rem;
-    color: #329494;
   }
 
   .mat-icon {
@@ -419,11 +402,6 @@ p {
   }
 }
 
-@media (min-width: 450px) and (max-width: 888px) {
-  .containerAllCardArticles {
-    justify-content: center !important;
-  }
-}
 
 // ANIMATION IMG
 .containerImgSelectedCards:hover img {
@@ -654,7 +632,7 @@ p {
       position: static;
       display: flex;
       vertical-align: center;
-      margin-top: 32px;
+      margin-top: 62px;
       float: initial;
 
       .Social {
@@ -700,4 +678,18 @@ p {
       margin-top: 2.813rem;
     }
   }
+}
+
+@media (max-width: 450px) {
+.containerTag {
+  text-align: center;
+  .buttonArticle {
+    height: 45px;
+    width: 120px;
+    background: rgba(43, 43, 43, 0.05);
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+  }
+}
 }
