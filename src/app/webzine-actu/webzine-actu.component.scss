@@ -590,35 +590,35 @@ button.discoverButton {
 //   }
 // }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .containerSlider {
-    height: 130vh !important;
-    .imgContainer {
-      height: 50vh !important;
-    }
-    .coverBackground {
-      height: 130vh !important;
-    }
-  }
-}
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   .containerSlider {
+//     height: 130vh !important;
+//     .imgContainer {
+//       height: 50vh !important;
+//     }
+//     .coverBackground {
+//       height: 130vh !important;
+//     }
+//   }
+// }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  .containerSlider {
-    height: 175vh !important;
-    .coverBackground {
-      height: 175vh !important;
-    }
-  }
-}
+// @media (min-width: 576px) and (max-width: 767px) {
+//   .containerSlider {
+//     height: 175vh !important;
+//     .coverBackground {
+//       height: 175vh !important;
+//     }
+//   }
+// }
 
-@media (min-width: 300px) and (max-width: 576px) {
-  .containerSlider {
-    height: 190vh !important;
-    .coverBackground {
-      height: 190vh !important;
-    }
-  }
-}
+// @media (min-width: 300px) and (max-width: 576px) {
+//   .containerSlider {
+//     height: 190vh !important;
+//     .coverBackground {
+//       height: 190vh !important;
+//     }
+//   }
+// }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   .containerSlider {

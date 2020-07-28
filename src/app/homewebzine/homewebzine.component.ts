@@ -15,7 +15,7 @@ export class HomewebzineComponent implements OnInit {
   // onDarkModeSwitched({ checked }: MatSlideToggleChange) {
   //   this.darkModeSwitched.emit(checked);
   // }
-
+  isOpen = false;
   isActive = false;
 
   toggleIconTheme() {
