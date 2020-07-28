@@ -342,9 +342,10 @@ button.discoverButton {
   padding-bottom: 5.813rem;
 
   .containerCardEvent {
-    width: 392px;
+    width: 33%;
     height: auto;
     margin-bottom: 1rem;
+    padding-right: 1rem;
 
     .imgCardEvent {
       width: 100%;
@@ -526,7 +527,7 @@ button.discoverButton {
 
   .discoverElements {
     cursor: pointer;
-    width: 392px;
+    width: 33%;
     height: 255px;
     background: linear-gradient(270deg, #5cb7cb -28.77%, #329494 100%);
     box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
@@ -1849,17 +1850,34 @@ button.discoverButton {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+// CARD EVENT RESPONSIVE
+
+@media (min-width: 700px) and (max-width: 992px) {
   .containerCardEvent {
-    width: 332px !important;
+    width: 50% !important;
+  }
+  .discoverElements {
+    width: 100% !important;
   }
 }
 
+@media (min-width: 576px) and (max-width: 700px) {
+  .containerCardEvent {
+    width: 100% !important;
+  }
+  .discoverElements {
+    width: 100% !important;
+  }
+}
+
+//
 @media (min-width: 450px) and (max-width: 888px) {
   .containerAllCardEvent {
     justify-content: space-around !important;
   }
 }
+
+// END CARD EVENT RESPONSIVE
 
 // RESPONSIVE FOOTER
 
