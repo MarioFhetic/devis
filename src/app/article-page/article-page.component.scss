@@ -150,21 +150,22 @@ p {
   margin-bottom: 24px;
 }
 
-.containerSocialArticle {
-  vertical-align: center;
-  display: inline-grid;
-  top: 30%;
-  right: 0;
-  margin-right: 5%;
-  position: absolute;
-  float: right;
 
-  .Social {
-    position: sticky;
-    cursor: pointer;
-    margin-bottom: 32px;
+  .containerSocialArticle {
+    vertical-align: center;
+    display: inline-grid;
+    top: 30%;
+    right: 0;
+    margin-right: 5%;
+    position: fixed;
+    float: right;
+
+    .Social {
+      position: sticky;
+      cursor: pointer;
+      margin-bottom: 32px;
+    }
   }
-}
 
 .containerTitle {
   align-items: center;
@@ -340,7 +341,7 @@ p {
   .citation {
     margin-left: 80px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 24px;
     line-height: 180%;
     color: #6B6B6B;
@@ -368,12 +369,16 @@ p {
     text-decoration: none;
     color: inherit !important;
   }
+
   margin-bottom: 80px;
 }
+
 .containerSelectedCards {
+  margin-right: 32px;
   margin-bottom: 24px;
   width: 392px;
   height: auto;
+  position: relative;
 
   h4 {
     padding-top: 16px;
@@ -384,6 +389,12 @@ p {
     letter-spacing: 0.25%;
   }
 
+  .imageThird {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .containerInfo {
     span {
       font-size: 0.875rem;
@@ -391,6 +402,7 @@ p {
       letter-spacing: 0.25%;
       color: #2b2b2b;
     }
+
     .containerButtonSelectedCards {
       color: rgba(43, 43, 43, 0.5);
       border: none;
@@ -406,11 +418,13 @@ p {
     border-radius: 10px;
   }
 }
+
 @media (min-width: 450px) and (max-width: 888px) {
   .containerAllCardArticles {
     justify-content: center !important;
   }
 }
+
 // ANIMATION IMG
 .containerImgSelectedCards:hover img {
   transform: scale(1.1);
@@ -431,9 +445,11 @@ p {
 
   transition: 0.5s ease;
   opacity: 0;
+
   &.view {
     left: 15px;
   }
+
   &.time {
     left: 115px;
   }
@@ -446,7 +462,7 @@ p {
 }
 
 .containerImgSelectedCards:before {
-  content: "Découvrir" + " " + "\2192";
+  content: "Découvrir"+ " "+ "\2192";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -467,6 +483,7 @@ p {
   transition: 0.5s ease;
   cursor: pointer;
 }
+
 .containerImgSelectedCards:hover:before {
   opacity: 1;
 }
@@ -494,12 +511,11 @@ p {
 
 //// Footer
 
-
 .containerFooter {
   width: 100vw;
-  padding: 2.938rem 6.75rem;
+  padding: 2.938rem 3%;
   // height: 500px;
-  background: #f7f7f7;
+  background-color: #f7f7f7;
 
   .leftContent {
     img {
@@ -554,17 +570,18 @@ p {
         line-height: 180%;
         letter-spacing: 0.25%;
         padding-bottom: 1.25rem;
-        color: #2b2b2b !important;
+        color: #2b2b2b;
       }
     }
   }
 
   .legalInfo {
     line-height: 166%;
+    padding: 0 20px;
     /* identical to box height, or 27px */
 
     letter-spacing: 0.0035em;
-    margin-top: 5.563rem;
+    padding-top: 5.563rem;
 
     /* Grey scale / 1 */
 
@@ -612,8 +629,8 @@ p {
   }
 
   .imageArticle {
-  width: 100%;
-  height: 240px;
+    width: 100%;
+    height: 240px;
   }
 
   .titleArticle {
@@ -627,31 +644,33 @@ p {
       font-size: 1rem;
       border-radius: 4px;
     }
+
     .infoArticle {
       font-size: 1rem;
     }
   }
 
-  .containerSocialArticle {
-    position: static;
-    display: flex;
-    vertical-align: center;
-    margin-top: 32px;
-    float: initial;
-    .Social {
-      margin-right: 24px;
-      cursor: pointer;
-      margin-bottom: 32px;
+    .containerSocialArticle {
+      position: static;
+      display: flex;
+      vertical-align: center;
+      margin-top: 32px;
+      float: initial;
+
+      .Social {
+        margin-right: 24px;
+        cursor: pointer;
+        margin-bottom: 32px;
+      }
     }
-  }
 
   .paragraphe {
     margin-top: 56px;
   }
 
-  .containerFooter {
-    padding: 0 0 !important;
-  }
+  // .containerFooter {
+  //   padding: 0 0 !important;
+  // }
 }
 
 @media (max-width: 991px) {
@@ -667,6 +686,18 @@ p {
 
 @media (max-width: 1100px) {
   .containerFooter {
-    padding: 0 0 !important;
+    // padding: 0 0 !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .containerFooter {
+    .rightContent.col {
+      flex-basis: inherit !important;
+    }
+
+    .rightContent {
+      margin-top: 2.813rem;
+    }
   }
 }
