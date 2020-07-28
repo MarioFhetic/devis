@@ -31,8 +31,8 @@ import { InfoComplementaireComponent } from "./info-complementaire/info-compleme
 import { InfoComplementaire2Component } from "./info-complementaire2/info-complementaire2.component";
 import { ConfirmationComponent } from "./confirmation/confirmation.component";
 import { MatMenuModule } from "@angular/material/menu";
-
 import { MatDatepickerModule } from "@angular/material/datepicker";
+import { OverlayModule } from "@angular/cdk/overlay";
 
 import { FaqComponent } from "./faq/faq.component";
 import { FichelieuComponent } from "./fichelieu/fichelieu.component";
@@ -51,12 +51,12 @@ import { ModalHebergementComponent } from "./modal-hebergement/modal-hebergement
 import { ModalsebergementsimpleComponent } from "./modalsebergementsimple/modalsebergementsimple.component";
 import { ModalhebergementdoubleComponent } from "./modalhebergementdouble/modalhebergementdouble.component";
 import { DialogdateComponent } from "./dialogdate/dialogdate.component";
-import { AutorefComponent } from './autoref/autoref.component';
-import { TestwidgetComponent } from './testwidget/testwidget.component';
-import { HomewebzineComponent } from './homewebzine/homewebzine.component';
-import { ArticlePageComponent } from './article-page/article-page.component';
+import { AutorefComponent } from "./autoref/autoref.component";
+import { TestwidgetComponent } from "./testwidget/testwidget.component";
+import { HomewebzineComponent } from "./homewebzine/homewebzine.component";
+import { ArticlePageComponent } from "./article-page/article-page.component";
 import { WebzineActuComponent } from "./webzine-actu/webzine-actu.component";
-import { TextImageCentreComponent } from './text-image-centre/text-image-centre.component';
+import { TextImageCentreComponent } from "./text-image-centre/text-image-centre.component";
 
 @NgModule({
   declarations: [
