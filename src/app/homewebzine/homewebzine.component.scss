@@ -179,12 +179,18 @@ p {
 
 .navbar {
   padding: 0.5rem 0rem;
-  margin-bottom: 2rem;
+  margin-bottom: 64px;
+  margin-top: 32px;
+
+  .listNav {
+    display: flex;
+  }
 
   ul {
     a {
       text-decoration: none;
       color: #adadad;
+      font-size: 16px;
     }
 
     a.active:after {
@@ -888,6 +894,59 @@ button.discoverButton {
     padding-left: 0px;
   }
 
+  .backgroundImage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .imageArticle {
+    object-fit: cover;
+    position: absolute;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+  }
+  .imageArticle:hover {
+    transform: scale(1.06);
+  }
+
+  .mat-icon {
+    color: #ffffff;
+  }
+
+  .titleArticle {
+    margin-top: 16px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    color: #2b2b2b;
+    font-weight: 500;
+  }
+
+  .containerText {
+    display: flex;
+    justify-content: space-between;
+
+    .infoArticle {
+      font-size: 13px;
+
+      color: #2b2b2b;
+    }
+
+    .buttonArticle {
+      height: 30px;
+      width: 90px;
+      border-radius: 4px;
+      border: none;
+      background-color: #f4f4f4;
+      font-size: 12px;
+      color: #2b2b2b;
+      opacity: 0.6;
+    }
+  }
+
   display: grid;
   grid-template-columns: repeat(12, [col] 1fr);
   grid-template-rows: repeat(56, 50px);
@@ -898,325 +957,36 @@ button.discoverButton {
     grid-column: 1/8;
     grid-row: 1/11;
 
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.5s ease;
-    }
-    .imageArticle:hover {
-      transform: scale(1.06);
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-
-        border-radius: 4px;
-
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-        color: #2b2b2b;
-      }
-    }
   }
 
   .two {
     grid-column: 8/13;
 
     grid-row: 1/8;
-
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-        color: #2b2b2b;
-      }
-    }
   }
 
   .three {
     margin-top: 32px;
     grid-column: 1/8;
     grid-row: 12/20;
-
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-        color: #2b2b2b;
-      }
-    }
   }
 
   .four {
     margin-top: 32px;
     grid-column: 8/13;
     grid-row: 9/20;
-
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-        color: #2b2b2b;
-      }
-    }
   }
 
   .five {
     grid-column: 1/5;
     grid-row: 22/27;
 
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-        color: #2b2b2b;
-      }
-    }
   }
 
   .six {
     grid-column: 5/10;
 
     grid-row: 22/27;
-
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-        color: #2b2b2b;
-      }
-    }
   }
 
   .seven {
@@ -1260,337 +1030,37 @@ button.discoverButton {
         font-size: 13px;
         color: #2b2b2b;
       }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-        color: #2b2b2b;
-      }
     }
   }
 
   .height {
     grid-column: 1/8;
     grid-row: 30/35;
-
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-
-        color: #2b2b2b;
-      }
-    }
   }
 
   .nine {
     grid-column: 8/13;
     grid-row: 30/36;
-
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-
-        width: 90px;
-
-        border-radius: 15px;
-
-        border: none;
-
-        background-color: #f4f4f4;
-
-        font-size: 12px;
-
-        color: #2b2b2b;
-      }
-    }
   }
 
   .ten {
     grid-column: 1/6;
     grid-row: 37/47;
-
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-        color: #2b2b2b;
-      }
-    }
   }
 
   .eleven {
     grid-column: 6/13;
     grid-row: 38/49;
-
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-        color: #2b2b2b;
-      }
-    }
   }
 
   .twelve {
     grid-column: 1/5;
     grid-row: 49/55;
-
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-        color: #2b2b2b;
-      }
-    }
   }
 
   .thirteen {
     grid-column: 5/10;
-
     grid-row: 51/55;
-
-    .backgroundImage {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-    }
-
-    .imageArticle {
-      object-fit: cover;
-      position: absolute;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-    }
-
-    .mat-icon {
-      color: #ffffff;
-    }
-
-    .titleArticle {
-      margin-top: 16px;
-      margin-bottom: 4px;
-      font-size: 18px;
-      color: #2b2b2b;
-      font-weight: 500;
-    }
-
-    .containerText {
-      display: flex;
-      justify-content: space-between;
-
-      .infoArticle {
-        font-size: 13px;
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
-        color: #2b2b2b;
-      }
-    }
   }
 
   .fourteen {
@@ -1632,16 +1102,6 @@ button.discoverButton {
 
       .infoArticle {
         font-size: 13px;
-        color: #2b2b2b;
-      }
-
-      .buttonArticle {
-        height: 25px;
-        width: 90px;
-        border-radius: 15px;
-        border: none;
-        background-color: #f4f4f4;
-        font-size: 12px;
         color: #2b2b2b;
       }
     }
@@ -1881,9 +1341,9 @@ button.discoverButton {
 
 // RESPONSIVE FOOTER
 
-@media (max-width: 1100px) {
-  .containerFooter {
-    // padding: 0 0 !important;
+@media (max-width: 1150px) {
+  .listNav {
+    display: none !important;
   }
 }
 

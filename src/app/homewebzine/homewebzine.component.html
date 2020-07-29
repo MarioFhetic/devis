@@ -1,23 +1,56 @@
 <div class="container {{ storedTheme }}">
-  <div class="navbar d-none d-lg-flex">
+  <!-- <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+      <img src="assets/Green.svg" width="138" alt="" loading="lazy" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+        <li>
+          <a class="nav-item nav-link active" href="#">Home</a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" href="#">Features</a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+        </li>
+        <li>
+          <a
+            class="nav-item nav-link disabled"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Disabled</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="align-self-end">
+      test
+    </div>
+  </nav> -->
+  <div class="navbar d-lg-flex">
     <a class="logoAbc mr-4">
       <img src="assets/Green.svg" alt="" />
     </a>
-    <ul class="d-flex flex-row">
+    <ul class="listNav flex-row">
       <li>
         <a href="#" class="nav-link">Accueil</a>
       </li>
       <li>
-        <a href="#" class="nav-link">Actualités</a>
+        <a href="/devis/webzine-actu" class="nav-link">Actualités</a>
       </li>
       <li>
-        <a href="#" class="nav-link">Agenda</a>
+        <a href="/devis/webzine-actu" class="nav-link">Inspiration</a>
       </li>
       <li>
         <a href="#" class="nav-link">Guide</a>
       </li>
       <li>
-        <a href="#" class="nav-link">Agenda</a>
+        <a href="/devis/agenda" class="nav-link">Agenda</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Référencer un évènement</a>
       </li>
     </ul>
     <div class="containerRightContent">
@@ -222,47 +255,29 @@
 
   <div class="gridContainer">
     <div class="one">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/12.jpg" alt="Article" />
-        <div
-          class="overlayBackground"
-          ng-class="{ imageArticle: hover }"
-          ng-mouseenter="hover = true"
-          ng-mouseleave="hover = false"
-        >
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/12.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
       <div class="containerText">
@@ -272,42 +287,29 @@
     </div>
 
     <div class="two">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/2.jpg" alt="Article" />
-        <div class="overlayBackground">
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/2.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
 
@@ -319,42 +321,29 @@
     </div>
 
     <div class="three">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/4.jpg" alt="Article" />
-        <div class="overlayBackground">
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/4.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
 
@@ -366,42 +355,29 @@
     </div>
 
     <div class="four">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/15.jpg" alt="Article" />
-        <div class="overlayBackground">
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/15.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
 
@@ -413,42 +389,29 @@
     </div>
 
     <div class="five">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/10.jpg" alt="Article" />
-        <div class="overlayBackground">
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/10.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
 
@@ -460,42 +423,29 @@
     </div>
 
     <div class="six">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/3.jpg" alt="Article" />
-        <div class="overlayBackground">
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/3.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
 
@@ -525,42 +475,29 @@
     <h2 class="titleInspiration">Inspiration (67)</h2>
 
     <div class="height">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/5.jpg" alt="Article" />
-        <div class="overlayBackground">
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/5.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
 
@@ -572,89 +509,61 @@
     </div>
 
     <div class="nine">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/8.jpg" alt="Article" />
-        <div class="overlayBackground">
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/8.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
-
       <div class="containerText">
         <p class="infoArticle">Le 15 juillet 2020 à 20h20</p>
-
         <button class="buttonArticle">On en parle</button>
       </div>
     </div>
 
     <div class="ten">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/6.jpg" alt="Article" />
-        <div class="overlayBackground">
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/6.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
 
@@ -666,42 +575,29 @@
     </div>
 
     <div class="eleven">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/7.jpg" alt="Article" />
-        <div class="overlayBackground">
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/7.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
 
@@ -713,42 +609,29 @@
     </div>
 
     <div class="twelve">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/9.jpg" alt="Article" />
-        <div class="overlayBackground">
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/9.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
 
@@ -760,42 +643,29 @@
     </div>
 
     <div class="thirteen">
-      <div class="backgroundImage">
-        <img class="imageArticle" src="assets/10.jpg" alt="Article" />
-        <div class="overlayBackground">
-          <div class="containerInfo2">
+      <a href="/article-page">
+        <div class="backgroundImage">
+          <div class="imgCardEvent">
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center mr-2"
+              class="containerViewTime view d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >1048<mat-icon color="primary" class="md-18">
-                  visibility</mat-icon
-                ></span
-              >
+              <span>
+                1049
+              </span>
+              <mat-icon class="ml-1 md-14">visibility</mat-icon>
             </div>
-
             <div
-              class="containerInfoItem d-flex justify-content-center align-items-center"
+              class="containerViewTime time d-flex justify-content-center align-items-center"
             >
-              <span class="containerInfoItem d-flex justify-content-center"
-                >5 min<mat-icon color="primary" class="md-18"
-                  >timer</mat-icon
-                ></span
-              >
+              <span>
+                5 min
+              </span>
+              <mat-icon class="ml-1 md-14">timer</mat-icon>
             </div>
-          </div>
-
-          <div
-            class="discoverElements d-flex justify-content-center align-items-center"
-          >
-            <div class="contentDiscover d-flex flex-row">
-              <h3 class="mb-0">Découvrir</h3>
-
-              <mat-icon class="md-30"> arrow_right_alt </mat-icon>
-            </div>
+            <img class="imageArticle" src="assets/10.jpg" alt="Article" />
           </div>
         </div>
-      </div>
+      </a>
 
       <h2 class="titleArticle">Construire son projet les pieds dans l'eau</h2>
 
