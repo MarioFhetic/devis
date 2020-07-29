@@ -186,6 +186,10 @@ p {
     display: flex;
   }
 
+  .iconMenu {
+    display: none;
+  }
+
   ul {
     a {
       text-decoration: none;
@@ -212,6 +216,7 @@ p {
   }
 
   .containerRightContent {
+    display: flex;
     margin-left: auto;
     cursor: pointer;
 
@@ -350,8 +355,8 @@ button.discoverButton {
   .containerCardEvent {
     width: 33%;
     height: auto;
-    margin-bottom: 1rem;
-    padding-right: 1rem;
+    margin-bottom: 32px;
+    padding-right: 24px;
 
     .imgCardEvent {
       width: 100%;
@@ -1205,7 +1210,7 @@ button.discoverButton {
 
 // END IMG ANIMATION
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 250px) and (max-width: 768px) {
   .gridContainer {
     grid-template-rows: repeat(47, 50px);
     grid-column-gap: 24px;
@@ -1221,7 +1226,7 @@ button.discoverButton {
     }
 
     .three {
-      grid-row: 9/17;
+      grid-row: 10/18;
       grid-column: 1/13;
     }
 
@@ -1239,17 +1244,17 @@ button.discoverButton {
 
     .seven {
       grid-column: 1/13;
-      grid-row: 19/22;
+      grid-row: 20/23;
     }
 
     .titleInspiration {
       grid-column: 1/13;
-      grid-row: 24/24;
+      grid-row: 25/25;
     }
 
     .height {
       grid-column: 1/13;
-      grid-row: 25/32;
+      grid-row: 26/33;
     }
 
     .nine {
@@ -1258,7 +1263,7 @@ button.discoverButton {
 
     .ten {
       grid-column: 1/13;
-      grid-row: 34/42;
+      grid-row: 35/43;
     }
 
     .eleven {
@@ -1274,8 +1279,9 @@ button.discoverButton {
     }
 
     .fourteen {
-      grid-row: 44/47;
+      grid-row: 45/48;
       grid-column: 1/13;
+      margin-bottom: 64px;
     }
   }
 }
@@ -1345,6 +1351,19 @@ button.discoverButton {
   .listNav {
     display: none !important;
   }
+  .iconNight {
+    display: none;
+  }
+
+  .iconUser {
+    display: none;
+  }
+
+  .iconMenu {
+    display: block !important;
+  } 
+
+
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
@@ -1358,4 +1377,10 @@ button.discoverButton {
   }
 }
 
+@media (max-width: 320px) {
+  .logoAbc {
+    display: none !important;
+  }
+
+}
 // END RESPONSIVE FOOTER

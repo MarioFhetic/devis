@@ -4,6 +4,7 @@
   max-width: 100% !important;
   padding: 0 5% !important;
 }
+
 .containerHorizontalSlider {
   margin-left: inherit !important;
   margin-right: inherit !important;
@@ -66,21 +67,27 @@ p {
 .bigMarginTop {
   margin-top: 4.5rem;
 }
+
 .bigMarginBottom {
   margin-bottom: 4.5rem !important;
 }
+
 .smallMarginBottom {
   margin-bottom: 2.25rem;
 }
+
 .bigPaddingTop {
   padding-top: 4.5rem !important;
 }
+
 .smallPaddingTop {
   padding-top: 2.5rem !important;
 }
+
 .mediumPaddingBottom {
   padding-bottom: 3rem !important;
 }
+
 .bigPaddingBottom {
   padding-bottom: 4.5rem;
 }
@@ -249,6 +256,70 @@ button.discoverButton {
   }
 }
 
+
+// First block 
+
+
+.containerInfo {
+  .dateArticle {
+    font-size: 0.875rem;
+    letter-spacing: 0.15%;
+    font-weight: 500;
+    color: #329494;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 180%;
+
+  }
+}
+
+.containerTitle {
+  .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 140%;
+    margin-bottom: 8px;
+  }
+
+  .infoPosition {
+    margin-bottom: 24px;
+  }
+}
+
+.containerButtonEvent {
+  margin-top: 32px;
+
+  .calendarButton {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0.25%;
+    width: 269px;
+    height: 49px;
+    margin-right: 12px;
+    background: #f7f7f7;
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08), 0px 2px 4px rgba(61, 61, 61, 0.12);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .previewButton {
+    cursor: pointer;
+    margin-left: 24px;
+    width: 65px;
+    height: 49px;
+    background: #f7f7f7;
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08), 0px 2px 4px rgba(61, 61, 61, 0.12);
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+
 // HORIZONTAL SLIDER
 :root {
   --gutter: 20px;
@@ -262,7 +333,7 @@ button.discoverButton {
   align-content: start;
 }
 
-.app > * {
+.app>* {
   grid-column: 2 / -2;
 }
 
@@ -271,7 +342,7 @@ button.discoverButton {
   padding-right: 16px;
 }
 
-.app > .full {
+.app>.full {
   grid-column: 1 / -1;
 }
 
@@ -419,9 +490,11 @@ button.discoverButton {
 
   transition: 0.5s ease;
   opacity: 0;
+
   &.view {
     left: 15px;
   }
+
   &.time {
     left: 115px;
   }
@@ -434,7 +507,7 @@ button.discoverButton {
 }
 
 .imgCardEvent:before {
-  content: "Découvrir" + " " + "\2192";
+  content: "Découvrir"+ " "+ "\2192";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -455,6 +528,7 @@ button.discoverButton {
   transition: 0.5s ease;
   cursor: pointer;
 }
+
 .imgCardEvent:hover:before {
   opacity: 1;
 }
@@ -467,6 +541,7 @@ button.discoverButton {
     width: 15.66%;
   }
 }
+
 .containerCardCategory {
   width: 100%;
   height: 95px;
@@ -483,89 +558,484 @@ button.discoverButton {
     font-size: 1.125rem;
     font-weight: 600;
   }
+
   &.first {
-    background: linear-gradient(
-      142.58deg,
-      rgba(255, 124, 124, 0.85) 0%,
-      rgba(241, 176, 77, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(255, 124, 124, 0.85) 0%,
+        rgba(241, 176, 77, 0.7) 100%);
   }
+
   &.second {
-    background: linear-gradient(
-      142.58deg,
-      rgba(126, 193, 255, 0.85) 0%,
-      rgba(73, 115, 197, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(126, 193, 255, 0.85) 0%,
+        rgba(73, 115, 197, 0.7) 100%);
   }
+
   &.third {
-    background: linear-gradient(
-      142.58deg,
-      rgba(166, 124, 255, 0.85) 0%,
-      rgba(129, 50, 208, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(166, 124, 255, 0.85) 0%,
+        rgba(129, 50, 208, 0.7) 100%);
   }
+
   &.fourth {
-    background: linear-gradient(
-      142.58deg,
-      rgba(255, 124, 124, 0.85) 0%,
-      rgba(221, 56, 56, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(255, 124, 124, 0.85) 0%,
+        rgba(221, 56, 56, 0.7) 100%);
   }
+
   &.five {
-    background: linear-gradient(
-      142.58deg,
-      rgba(127, 124, 255, 0.85) 0%,
-      rgba(47, 33, 209, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(127, 124, 255, 0.85) 0%,
+        rgba(47, 33, 209, 0.7) 100%);
   }
+
   &.six {
-    background: linear-gradient(
-      142.58deg,
-      rgba(255, 203, 124, 0.85) 0%,
-      rgba(224, 148, 78, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(255, 203, 124, 0.85) 0%,
+        rgba(224, 148, 78, 0.7) 100%);
   }
+
   &.seven {
-    background: linear-gradient(
-      142.58deg,
-      rgba(255, 124, 226, 0.85) 0%,
-      rgba(202, 71, 173, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(255, 124, 226, 0.85) 0%,
+        rgba(202, 71, 173, 0.7) 100%);
   }
+
   &.eight {
-    background: linear-gradient(
-      142.58deg,
-      rgba(150, 255, 124, 0.85) 0%,
-      rgba(77, 184, 51, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(150, 255, 124, 0.85) 0%,
+        rgba(77, 184, 51, 0.7) 100%);
   }
+
   &.nine {
-    background: linear-gradient(
-      142.58deg,
-      rgba(0, 56, 255, 0.85) 0%,
-      rgba(0, 12, 116, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(0, 56, 255, 0.85) 0%,
+        rgba(0, 12, 116, 0.7) 100%);
   }
+
   &.ten {
-    background: linear-gradient(
-      142.58deg,
-      rgba(124, 224, 255, 0.85) 0%,
-      rgba(69, 189, 197, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(124, 224, 255, 0.85) 0%,
+        rgba(69, 189, 197, 0.7) 100%);
   }
+
   &.eleven {
-    background: linear-gradient(
-      142.58deg,
-      rgba(250, 79, 79, 0.85) 0%,
-      rgba(166, 0, 0, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(250, 79, 79, 0.85) 0%,
+        rgba(166, 0, 0, 0.7) 100%);
   }
+
   &.twelve {
-    background: linear-gradient(
-      142.58deg,
-      rgba(79, 240, 95, 0.85) 0%,
-      rgba(51, 205, 94, 0.7) 100%
-    );
+    background: linear-gradient(142.58deg,
+        rgba(79, 240, 95, 0.85) 0%,
+        rgba(51, 205, 94, 0.7) 100%);
   }
 }
+
 // END CARD CATEGORY
+
+
+
+// Tous les evenements 
+
+
+.containerEvent {
+  margin-top: 4.5rem;
+  padding-bottom: 5.813rem;
+
+  .containerCardEvent {
+    width: 33%;
+    height: auto;
+    margin-bottom: 32px;
+    padding-right: 24px;
+
+    .imgCardEvent {
+      width: 100%;
+      height: 255px;
+      -moz-transition: 0.5s ease;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+      position: relative !important;
+      overflow: hidden;
+      border-radius: 20px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -moz-transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+      }
+    }
+
+    .infoCardEvent {
+      h4 {
+        margin: 0;
+        font-size: 1.125rem;
+        line-height: 160%;
+        font-weight: 500;
+        letter-spacing: 0.25%;
+      }
+
+      :first-child {
+        font-size: 0.875rem;
+        line-height: 160%;
+        letter-spacing: 0.15%;
+        font-weight: 500;
+        color: #329494;
+      }
+
+      .infoPosition {
+        font-size: 0.875rem;
+        line-height: 160%;
+        letter-spacing: 0.25%;
+        color: #2b2b2b;
+
+        .mat-icon {
+          color: #2b2b2b;
+        }
+      }
+    }
+
+    .containerButtonEvent {
+      .calendarButton {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 180%;
+        letter-spacing: 0.25%;
+        width: 269px;
+        height: 49px;
+        margin-right: 12px;
+        background: #f7f7f7;
+        box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+          0px 2px 4px rgba(61, 61, 61, 0.12);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+
+        .mat-icon {
+          padding-right: 10px;
+        }
+      }
+
+      .previewButton {
+        cursor: pointer;
+        width: 65px;
+        height: 49px;
+        background: #f7f7f7;
+        box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+          0px 2px 4px rgba(61, 61, 61, 0.12);
+        border-radius: 10px;
+        border: none;
+      }
+    }
+  }
+
+  .mobileContainer {
+    a {
+      width: 100%;
+    }
+  }
+
+  .containerCardEventMobile {
+    width: 100%;
+    height: 410px;
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+      0px 2px 4px rgba(61, 61, 61, 0.12);
+    border-radius: 20px;
+    margin-bottom: 1rem;
+
+    .imgCardEventMobile {
+      width: 100%;
+      height: 255px;
+      border-radius: 20px 20px 0 0;
+      position: relative;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 20px 0px 0px;
+      }
+    }
+
+    .infoCardEvent {
+      padding: 0 16px;
+
+      h4 {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 160%;
+        font-weight: 500;
+        letter-spacing: 0.25%;
+      }
+
+      :first-child {
+        font-size: 0.875rem;
+        line-height: 160%;
+        letter-spacing: 0.15%;
+        font-weight: 500;
+        color: #329494;
+      }
+
+      .infoPosition {
+        font-size: 0.875rem;
+        line-height: 160%;
+        letter-spacing: 0.25%;
+        color: #2b2b2b;
+
+        .mat-icon {
+          color: #2b2b2b;
+        }
+      }
+    }
+
+    .containerButtonEvent {
+      padding: 0 16px;
+
+      .calendarButton {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 180%;
+        letter-spacing: 0.25%;
+        width: 269px;
+        height: 49px;
+        margin-right: 12px;
+        background: #f7f7f7;
+        box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+          0px 2px 4px rgba(61, 61, 61, 0.12);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+
+        .mat-icon {
+          padding-right: 10px;
+        }
+      }
+
+      .previewButton {
+        cursor: pointer;
+        width: 65px;
+        height: 49px;
+        background: #f7f7f7;
+        box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+          0px 2px 4px rgba(61, 61, 61, 0.12);
+        border-radius: 10px;
+        border: none;
+      }
+    }
+  }
+
+  .discoverElements {
+    cursor: pointer;
+    width: 33%;
+    height: 255px;
+    background: linear-gradient(270deg, #5cb7cb -28.77%, #329494 100%);
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+      0px 2px 4px rgba(61, 61, 61, 0.12);
+    border-radius: 20px;
+
+    h3 {
+      color: white;
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+
+    .mat-icon {
+      vertical-align: middle;
+    }
+  }
+
+  .discoverElementsMobile {
+    cursor: pointer;
+    width: 100%;
+    height: 124px;
+    background: linear-gradient(270deg, #5cb7cb -28.77%, #329494 100%);
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+      0px 2px 4px rgba(61, 61, 61, 0.12);
+    border-radius: 20px;
+
+    h3 {
+      color: white;
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+
+    .mat-icon {
+      vertical-align: middle;
+    }
+  }
+}
+
+
+/// Footer
+
+.containerFooter {
+  // width: 100vw;
+  padding: 2.938rem 3%;
+  // height: 500px;
+  background-color: #f7f7f7;
+
+  .leftContent {
+    img {
+      width: 242px;
+      margin-bottom: 2.5rem;
+    }
+
+    .containerSocial {
+      svg {
+        // width: 33px;
+        margin-right: 26px;
+      }
+    }
+
+    p {
+      font-size: 1.125rem;
+      letter-spacing: 0.0025em;
+      line-height: 160%;
+      color: #2b2b2b;
+      padding-bottom: 2.5rem;
+    }
+
+    h5 {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 160%;
+
+      letter-spacing: 0.0025em;
+
+      color: #2b2b2b;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .rightContent {
+    ul {
+      a {
+        text-decoration: none !important;
+      }
+
+      .titleList {
+        color: #2b2b2b;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 140%;
+        padding-bottom: 2.375rem;
+      }
+
+      li,
+      a {
+        font-size: 1.125rem;
+        line-height: 180%;
+        letter-spacing: 0.25%;
+        padding-bottom: 1.25rem;
+        color: #2b2b2b;
+      }
+    }
+  }
+
+  .legalInfo {
+    line-height: 166%;
+    padding: 0 20px;
+    /* identical to box height, or 27px */
+
+    letter-spacing: 0.0035em;
+    padding-top: 5.563rem;
+
+    /* Grey scale / 1 */
+
+    color: #2b2b2b;
+    opacity: 0.75;
+
+    a,
+    li {
+      text-decoration: none !important;
+      color: #2b2b2b;
+      cursor: pointer;
+    }
+
+    .espacerDot {
+      padding: 0 1.5rem;
+    }
+
+    li.espacerDot {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+
+/// Responsive CARD EVENT 
+
+@media (min-width: 700px) and (max-width: 992px) {
+  .containerCardEvent {
+    width: 50% !important;
+  }
+
+  .discoverElements {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 700px) {
+  .containerCardEvent {
+    width: 100% !important;
+  }
+
+  .discoverElements {
+    width: 100% !important;
+  }
+}
+
+//
+@media (min-width: 450px) and (max-width: 888px) {
+  .containerAllCardEvent {
+    justify-content: space-around !important;
+  }
+}
+
+
+
+
+/// Responsive FOOTER & Header
+
+
+@media (max-width: 1150px) {
+  .listNav {
+    display: none !important;
+  }
+
+  .iconNight {
+    display: none;
+  }
+
+  .iconUser {
+    display: none;
+  }
+
+  .iconMenu {
+    display: block !important;
+  }
+
+
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .containerFooter {
+    .rightContent.col {
+      flex-basis: inherit !important;
+    }
+
+    .rightContent {
+      margin-top: 2.813rem;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .logoAbc {
+    display: none !important;
+  }
+
+}
