@@ -383,8 +383,17 @@ button.discoverButton {
 
 // END ARROW CONTAINER
 
-// SELECTEDS CARDS
+// CARD ARTICLES
+.containerAllCardArticles {
+  .containerSelectedCards {
+    width: 33%;
+    height: auto;
+    padding-right: 1rem;
+  }
+}
+// CARDS ARTICLES END
 
+// CARD SLIDER HORIZONTAL
 .containerSelectedCards {
   width: 392px;
   height: auto;
@@ -490,7 +499,7 @@ button.discoverButton {
 
 // CONTAINER FOOTER
 .containerFooter {
-  width: 100vw;
+  // width: 100vw;
   padding: 2.938rem 3%;
   // height: 500px;
   background-color: #f7f7f7;
@@ -671,6 +680,26 @@ button.discoverButton {
     }
   }
 }
+
+// CARD EVENT RESPONSIVE
+
+@media (min-width: 700px) and (max-width: 992px) {
+  .containerAllCardArticles {
+    .containerSelectedCards {
+      width: 50% !important;
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 700px) {
+  .containerAllCardArticles {
+    .containerSelectedCards {
+      width: 100% !important;
+      padding-right: 0rem !important;
+    }
+  }
+}
+
+//
 
 // END RESPONSIVE CONTAINER ARTICLES
 
