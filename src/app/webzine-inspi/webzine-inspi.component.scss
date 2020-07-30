@@ -739,6 +739,10 @@ button.discoverButton {
 // Responsive Header
 
 @media (max-width: 1150px) {
+  .sizeFirstText {
+    width: 100% !important;
+  }
+
   .listNav {
     display: none !important;
   }

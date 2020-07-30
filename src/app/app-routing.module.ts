@@ -12,6 +12,7 @@ import { TestwidgetComponent } from "./testwidget/testwidget.component";
 import { HomewebzineComponent } from "./homewebzine/homewebzine.component";
 import { ArticlePageComponent } from "./article-page/article-page.component";
 import { WebzineActuComponent } from "./webzine-actu/webzine-actu.component";
+import { WebzineInspiComponent } from "./webzine-inspi/webzine-inspi.component";
 import { AgendaComponent } from "./agenda/agenda.component";
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: "homewebzine", component: HomewebzineComponent },
   { path: "article-page", component: ArticlePageComponent },
   { path: "webzine-actu", component: WebzineActuComponent },
+  { path: "webzine-inspi", component: WebzineInspiComponent },
   { path: "agenda", component: AgendaComponent },
 ];
 

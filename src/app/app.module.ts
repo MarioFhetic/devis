@@ -56,6 +56,7 @@ import { TestwidgetComponent } from "./testwidget/testwidget.component";
 import { HomewebzineComponent } from "./homewebzine/homewebzine.component";
 import { ArticlePageComponent } from "./article-page/article-page.component";
 import { WebzineActuComponent } from "./webzine-actu/webzine-actu.component";
+import { WebzineInspiComponent } from "./webzine-inspi/webzine-inspi.component";
 import { TextImageCentreComponent } from "./text-image-centre/text-image-centre.component";
 import { OverlayExampleComponent } from './overlay-example/overlay-example.component';
 import { AgendaComponent } from './agenda/agenda.component';
@@ -92,6 +93,7 @@ import { AgendaComponent } from './agenda/agenda.component';
     WebzineActuComponent,
     OverlayExampleComponent,
     AgendaComponent,
+    WebzineInspiComponent,
   ],
   entryComponents: [
     DialogExempleComponent,
