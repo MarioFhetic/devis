@@ -31,6 +31,19 @@ $mat-theming-theme-dark: mat-dark-theme(
 //   @include angular-material-theme($mat-theming-theme);
 // }
 
+// RANGE SLIDER
+
+.ng5-slider .ng5-slider-pointer,
+.ng5-slider .ng5-slider-selection,
+.ng5-slider .ng5-slider-pointer:after {
+  background-color: #329494 !important;
+}
+.ng5-slider .ng5-slider-bubble {
+  display: none !important;
+}
+
+// END RANGE SLIDER
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;

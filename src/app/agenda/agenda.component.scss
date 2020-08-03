@@ -11,7 +11,6 @@ $color-background-footer: #2b2b2b;
 .theme-dark {
   background-color: $bg-theme-dark;
 
-
   h1 {
     color: $color-title-theme-dark !important;
   }
@@ -29,7 +28,6 @@ $color-background-footer: #2b2b2b;
   }
 
   .containerInfo {
-
     .dateArticle {
       color: #329494 !important;
     }
@@ -48,29 +46,48 @@ $color-background-footer: #2b2b2b;
     }
   }
 
-
-.containerCardEventMobile {
-  background: $color-background-button-dark;
-  .infoCardEvent {
-    h4 {
-      color: $color-title-theme-dark !important;
+  .containerCardEventMobile {
+    background: $color-background-button-dark;
+    .infoCardEvent {
+      h4 {
+        color: $color-title-theme-dark !important;
+      }
     }
-  }
-  .infoPosition {
-    color: $color-theme-dark !important;
-    .mat-icon {
+    .infoPosition {
+      color: $color-theme-dark !important;
+      .mat-icon {
+        color: $color-theme-dark !important;
+      }
+    }
+
+    .calendarButton,
+    .previewButton {
+      background-color: rgba(75, 74, 74, 0.6) !important;
       color: $color-theme-dark !important;
     }
   }
 
-  .calendarButton,
-  .previewButton {
-    background-color: rgba(75, 74, 74, 0.6) !important;
+  .containerCardEvent {
+    // background: $color-background-button-dark;
+    .infoCardEvent {
+      h4 {
+        color: $color-title-theme-dark !important;
+      }
+    }
+    .infoPosition {
+      color: $color-theme-dark !important;
+      .mat-icon {
+        color: $color-theme-dark !important;
+      }
+    }
+
+    .calendarButton,
+    .previewButton {
+      background-color: rgba(75, 74, 74, 0.6) !important;
+      color: $color-theme-dark !important;
+    }
   }
 }
-}
-
-
 
 .theme-dark.containerFooter {
   background-color: $color-background-footer !important;
@@ -93,11 +110,81 @@ $color-background-footer: #2b2b2b;
   }
 }
 
+// END THEME
+
+.iconMenu {
+  // position: absolute;
+
+  // z-index: 4 !important;
+}
+// SIDENAV
+
+.mat-sidenav-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  // background-color: none !important;
+}
+
+.mat-drawer {
+  right: 0 !important;
+}
+
+.mat-drawer-container {
+  background-color: transparent !important;
+}
+
+.mat-sidenav {
+  width: 396px;
+}
+
+.mat-sidenav,
+.mat-sidenav-content {
+  padding: 16px;
+  // position: absolute;
+}
+
+// .contentFilterNav.col {
+//   flex-basis: 0 !important;
+// }
+.contentFilterNav {
+  h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    color: #2b2b2b;
+  }
+
+  .col {
+    flex-basis: initial !important;
+  }
+
+  .containerIconFilter {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgba(50, 148, 148, 0.1);
+  }
+}
+
+.mat-expension-panel {
+  border-bottom: 1px solid black !important;
+  border-radius: inherit !important;
+  box-shadow: inherit !important;
+}
+
+// SLIDER
+
+// END SLIDER
+
+// END SIDENAV
+
 .row {
   margin-bottom: 0px !important;
   padding-bottom: 1rem !important;
 }
-
 
 .container {
   margin-left: inherit !important;
@@ -154,6 +241,7 @@ ul {
 
 .navbar {
   justify-content: initial !important;
+  // padding: 0 5%;
 }
 
 p {
@@ -181,6 +269,10 @@ p {
   padding-top: 4.5rem !important;
 }
 
+.paddingTopNavBar {
+  padding-top: 8.5rem !important;
+}
+
 .smallPaddingTop {
   padding-top: 2.5rem !important;
 }
@@ -201,9 +293,8 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
-
 .navbar {
-  padding: 0.5rem 0rem;
+  padding: 0% 5%;
   margin-bottom: 64px;
   padding-top: 32px;
 
@@ -251,7 +342,6 @@ p {
     }
   }
 }
-
 
 a:hover:after {
   // transform-origin: 50% 100%;
@@ -333,7 +423,6 @@ button.discoverButton {
     }
   }
 
-
   .containerArrow {
     .arrow {
       width: 24px;
@@ -371,9 +460,7 @@ button.discoverButton {
   }
 }
 
-
-// First block 
-
+// First block
 
 .containerInfo {
   .dateArticle {
@@ -385,7 +472,6 @@ button.discoverButton {
     font-style: normal;
     font-size: 20px;
     line-height: 180%;
-
   }
 }
 
@@ -417,7 +503,8 @@ button.discoverButton {
     height: 49px;
     margin-right: 12px;
     background: #f7f7f7;
-    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08), 0px 2px 4px rgba(61, 61, 61, 0.12);
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+      0px 2px 4px rgba(61, 61, 61, 0.12);
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -427,19 +514,18 @@ button.discoverButton {
     }
   }
 
-
   .previewButton {
     cursor: pointer;
     margin-left: 24px;
     width: 65px;
     height: 49px;
     background: #f7f7f7;
-    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08), 0px 2px 4px rgba(61, 61, 61, 0.12);
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
+      0px 2px 4px rgba(61, 61, 61, 0.12);
     border-radius: 10px;
     border: none;
   }
 }
-
 
 // HORIZONTAL SLIDER
 :root {
@@ -454,7 +540,7 @@ button.discoverButton {
   align-content: start;
 }
 
-.app>* {
+.app > * {
   grid-column: 2 / -2;
 }
 
@@ -463,7 +549,7 @@ button.discoverButton {
   padding-right: 16px;
 }
 
-.app>.full {
+.app > .full {
   grid-column: 1 / -1;
 }
 
@@ -569,7 +655,7 @@ button.discoverButton {
       cursor: pointer;
 
       .mat-icon {
-        padding-right: 10px;
+        // padding-right: 10px;
       }
     }
 
@@ -656,6 +742,23 @@ button.discoverButton {
 
 // END IMG ANIMATION
 
+// RESPONSIVE CARD CATEGORY
+
+.containerAllCardCategoryMobile {
+  .item {
+    width: 176px;
+    a {
+      width: 100% !important;
+    }
+  }
+
+  .item.containerCardCategory {
+    width: 100%;
+  }
+}
+
+// END RESPONSIVE CARD CATEGORY
+
 // CARD CATEGORY
 .containerAllCardCategory {
   a {
@@ -681,87 +784,108 @@ button.discoverButton {
   }
 
   &.first {
-    background: linear-gradient(142.58deg,
-        rgba(255, 124, 124, 0.85) 0%,
-        rgba(241, 176, 77, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(255, 124, 124, 0.85) 0%,
+      rgba(241, 176, 77, 0.7) 100%
+    );
   }
 
   &.second {
-    background: linear-gradient(142.58deg,
-        rgba(126, 193, 255, 0.85) 0%,
-        rgba(73, 115, 197, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(126, 193, 255, 0.85) 0%,
+      rgba(73, 115, 197, 0.7) 100%
+    );
   }
 
   &.third {
-    background: linear-gradient(142.58deg,
-        rgba(166, 124, 255, 0.85) 0%,
-        rgba(129, 50, 208, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(166, 124, 255, 0.85) 0%,
+      rgba(129, 50, 208, 0.7) 100%
+    );
   }
 
   &.fourth {
-    background: linear-gradient(142.58deg,
-        rgba(255, 124, 124, 0.85) 0%,
-        rgba(221, 56, 56, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(255, 124, 124, 0.85) 0%,
+      rgba(221, 56, 56, 0.7) 100%
+    );
   }
 
   &.five {
-    background: linear-gradient(142.58deg,
-        rgba(127, 124, 255, 0.85) 0%,
-        rgba(47, 33, 209, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(127, 124, 255, 0.85) 0%,
+      rgba(47, 33, 209, 0.7) 100%
+    );
   }
 
   &.six {
-    background: linear-gradient(142.58deg,
-        rgba(255, 203, 124, 0.85) 0%,
-        rgba(224, 148, 78, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(255, 203, 124, 0.85) 0%,
+      rgba(224, 148, 78, 0.7) 100%
+    );
   }
 
   &.seven {
-    background: linear-gradient(142.58deg,
-        rgba(255, 124, 226, 0.85) 0%,
-        rgba(202, 71, 173, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(255, 124, 226, 0.85) 0%,
+      rgba(202, 71, 173, 0.7) 100%
+    );
   }
 
   &.eight {
-    background: linear-gradient(142.58deg,
-        rgba(150, 255, 124, 0.85) 0%,
-        rgba(77, 184, 51, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(150, 255, 124, 0.85) 0%,
+      rgba(77, 184, 51, 0.7) 100%
+    );
   }
 
   &.nine {
-    background: linear-gradient(142.58deg,
-        rgba(0, 56, 255, 0.85) 0%,
-        rgba(0, 12, 116, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(0, 56, 255, 0.85) 0%,
+      rgba(0, 12, 116, 0.7) 100%
+    );
   }
 
   &.ten {
-    background: linear-gradient(142.58deg,
-        rgba(124, 224, 255, 0.85) 0%,
-        rgba(69, 189, 197, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(124, 224, 255, 0.85) 0%,
+      rgba(69, 189, 197, 0.7) 100%
+    );
   }
 
   &.eleven {
-    background: linear-gradient(142.58deg,
-        rgba(250, 79, 79, 0.85) 0%,
-        rgba(166, 0, 0, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(250, 79, 79, 0.85) 0%,
+      rgba(166, 0, 0, 0.7) 100%
+    );
   }
 
   &.twelve {
-    background: linear-gradient(142.58deg,
-        rgba(79, 240, 95, 0.85) 0%,
-        rgba(51, 205, 94, 0.7) 100%);
+    background: linear-gradient(
+      142.58deg,
+      rgba(79, 240, 95, 0.85) 0%,
+      rgba(51, 205, 94, 0.7) 100%
+    );
   }
 }
 
 // END CARD CATEGORY
 
-
-
-// Tous les evenements 
-
+// Tous les evenements
 
 .containerEvent {
-  margin-top: 4.5rem;
+  // margin-top: 4.5rem;
   padding-bottom: 5.813rem;
 
   .containerCardEvent {
@@ -836,7 +960,7 @@ button.discoverButton {
         cursor: pointer;
 
         .mat-icon {
-          padding-right: 10px;
+          // padding-right: 10px;
         }
       }
 
@@ -922,7 +1046,7 @@ button.discoverButton {
         letter-spacing: 0.25%;
         width: 269px;
         height: 49px;
-        margin-right: 12px;
+        // margin-right: 12px;
         background: #f7f7f7;
         box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08),
           0px 2px 4px rgba(61, 61, 61, 0.12);
@@ -931,7 +1055,7 @@ button.discoverButton {
         cursor: pointer;
 
         .mat-icon {
-          padding-right: 10px;
+          // padding-right: 10px;
         }
       }
 
@@ -988,7 +1112,6 @@ button.discoverButton {
     }
   }
 }
-
 
 /// Footer
 
@@ -1086,19 +1209,18 @@ button.discoverButton {
   }
 }
 
-
-/// Responsive CARD EVENT 
+/// Responsive CARD EVENT
 
 @media (min-width: 700px) and (max-width: 992px) {
   .containerEvent {
-  .containerCardEvent {
-    width: 50% !important;
-  }
+    .containerCardEvent {
+      width: 50% !important;
+    }
 
-  .discoverElements {
-    width: 100% !important;
+    .discoverElements {
+      width: 100% !important;
+    }
   }
-}
 }
 
 @media (min-width: 576px) and (max-width: 700px) {
@@ -1118,11 +1240,7 @@ button.discoverButton {
   }
 }
 
-
-
-
 /// Responsive FOOTER & Header
-
 
 @media (max-width: 1150px) {
   .listNav {
@@ -1158,5 +1276,4 @@ button.discoverButton {
   .logoAbc {
     display: none !important;
   }
-
 }
