@@ -359,7 +359,8 @@ a {
 }
 
 .imageThird {
-  height: 250px;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -368,7 +369,8 @@ a {
     text-decoration: none;
   }
   .containerSelectedCards {
-    width: 33%;
+    width: 390px;
+    height: 250px;
     height: auto;
     padding-right: 24px;
     padding-bottom: 40px;
@@ -705,7 +707,7 @@ a {
 }
 
 
-// responsive article similaire 
+// responsive Third image
 
 @media (min-width: 450px) and (max-width: 888px) {
   .containerAllCardArticles {
@@ -713,7 +715,7 @@ a {
   }
 }
 
-@media (min-width: 350px) and (max-width: 650px) {
+@media (min-width: 350px) and (max-width: 900px) {
   .containerAllCardArticles {
     .containerSelectedCards {
       width: 100% !important;
@@ -723,20 +725,24 @@ a {
 
 // CARD EVENT RESPONSIVE
 
-@media (min-width: 900px) and (max-width: 1500px) {
+@media (min-width: 900px) and (max-width: 1715px) {
+  .containerAllArticles {
   .containerAllCardArticles {
     .containerSelectedCards {
       width: 50% !important;
     }
   }
 }
+}
 @media (min-width: 576px) and (max-width: 900px) {
+  .containerAllArticles {
   .containerAllCardArticles {
     .containerSelectedCards {
       width: 100% !important;
       padding-right: 0rem !important;
     }
   }
+}
 }
 
 

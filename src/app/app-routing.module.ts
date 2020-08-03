@@ -14,6 +14,7 @@ import { ArticlePageComponent } from "./article-page/article-page.component";
 import { WebzineActuComponent } from "./webzine-actu/webzine-actu.component";
 import { WebzineInspiComponent } from "./webzine-inspi/webzine-inspi.component";
 import { AgendaComponent } from "./agenda/agenda.component";
+import { EvenementComponent } from "./evenement/evenement.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: "webzine-actu", component: WebzineActuComponent },
   { path: "webzine-inspi", component: WebzineInspiComponent },
   { path: "agenda", component: AgendaComponent },
+  { path: "evenement", component: EvenementComponent },
 ];
 
 @NgModule({
