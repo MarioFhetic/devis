@@ -1,7 +1,200 @@
-.container {
-  max-width: 70%;
-  margin: 0 auto;
+$bg-theme-light: #fff;
+$color-theme-light: #222;
+
+$bg-theme-dark: #0c0c0c;
+$color-theme-dark: rgba(255, 255, 255, 0.8);
+$color-button-theme-dark: rgba(255, 255, 255, 0.5);
+$color-title-theme-dark: #fff;
+$color-background-button-dark: #2b2b2b;
+$color-background-footer: #2b2b2b;
+
+
+.theme-dark {
+  background-color: $bg-theme-dark;
+  h1 {
+    color: $color-title-theme-dark !important;
+  }
+
+  span {
+    color: $color-theme-dark;
+    // .mat-icon {
+    //   color: $color-theme-dark;
+    // }
+  }
+
+
+  h4 {
+    color: $color-theme-dark !important;
+  }
+
+
+  .containerSelectedCards {
+  .containerInfo {
+    span {
+      color: $color-theme-dark !important
+    }
+  }
+
+    .containerButtonSelectedCards {
+      background: $color-background-button-dark !important;
+      color: $color-button-theme-dark !important;
+    }
+  }
+
+  .row {
+    margin-bottom: 0px !important;
+    padding-bottom: 32px !important;
+  }
+
+  .calendarButtonFirst {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+  }
+
+  .calendarButtonSecond {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+  }
+
+  .calendarButtonThird {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+  }
+
+  p {
+    color: $color-theme-dark !important;
+  }
+
+  .buttonArticle {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+  }
+  .discoverButton {
+    background-color: $color-background-button-dark;
+    color: $color-theme-dark !important;
+  }
+
+  .gridContainer {
+    h2 {
+      color: $color-title-theme-dark !important;
+    }
+    p {
+      color: $color-theme-dark !important;
+    }
+  }
+  .containerCardEvent {
+    .infoCardEvent {
+      h4 {
+        color: $color-title-theme-dark !important;
+      }
+    }
+    .infoPosition {
+      color: $color-theme-dark !important;
+      .mat-icon {
+        color: $color-theme-dark !important;
+      }
+    }
+  }
+
+  /// Second block 
+
+  .containerLeftInfo {
+    background-color: $color-background-footer;
+    li {
+      color: #fff;
+      opacity: 0.6;
+    }
+    .buttonLeftContent {
+      background-color: $color-button-theme-dark;
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+
+  .imgBorder {
+    .bottomBorder {
+      background-color: #7C7C7C;
+    }
+    .titleBorder {
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+
+  // Mobile Card Event
+
+  .containerCardEventMobile {
+    background: $color-background-button-dark;
+    .infoCardEvent {
+      h4 {
+        color: $color-title-theme-dark !important;
+      }
+    }
+    .infoPosition {
+      color: $color-theme-dark !important;
+      .mat-icon {
+        color: $color-theme-dark !important;
+      }
+    }
+
+    .calendarButton,
+    .previewButton {
+      background-color: rgba(75, 74, 74, 0.6) !important;
+    }
+  }
+
+  .containerSimilaire {
+    .title {
+      color: #7C7C7C;
+    }
+  }
+
+  // End Mobile Card Event
+
+  .calendarButton,
+  .previewButton {
+    background-color: $color-background-button-dark !important;
+    color: $color-theme-dark !important;
+    .mat-icon {
+      color: $color-theme-dark !important;
+    }
+  }
 }
+.theme-dark.containerFooter {
+  background-color: $color-background-footer !important;
+  // background: $color-background-footer !important;
+  p {
+    color: $color-theme-dark !important;
+  }
+  h5 {
+    color: $color-title-theme-dark !important;
+  }
+  .titleList {
+    color: $color-title-theme-dark !important;
+  }
+  li {
+    color: $color-theme-dark !important;
+  }
+  .legalInfo li,
+  a {
+    color: $color-theme-dark !important;
+  }
+}
+
+/// Fin theme
+
+  .container {
+  margin: 0 auto !important;
+  max-width: 100% !important;
+  padding: 0 15% !important;
+}
+//   max-width: 70%;
+//   margin: 0 auto;
+// }
 
 .nav-link.active {
   background: linear-gradient(270deg, #5cb7cb -28.77%, #329494 100%);
@@ -206,16 +399,16 @@ a {
 }
 
 .infoPosition {
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 180%;
-display: flex;
-align-items: center;
-letter-spacing: 0.0025em;
-color: #2B2B2B;
-opacity: 0.8;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0025em;
+  color: #2B2B2B;
+  opacity: 0.8;
 }
 
 .containerTitle {
@@ -239,10 +432,49 @@ opacity: 0.8;
 }
 
 .containerButtonEvent {
+  flex-wrap: wrap;
   margin-top: 32px;
   padding-bottom: 32px;
 
-  .calendarButton {
+  .calendarButtonFirst {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0.25%;
+    width: 269px;
+    height: 49px;
+    margin-right: 24px;
+    background: #f7f7f7;
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08), 0px 2px 4px rgba(61, 61, 61, 0.12);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    .mat-icon {
+      margin-right: 12px;
+    }
+  }
+
+  .calendarButtonSecond {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: 0.25%;
+    width: 269px;
+    height: 49px;
+    margin-right: 24px;
+    background: #f7f7f7;
+    box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08), 0px 2px 4px rgba(61, 61, 61, 0.12);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    .mat-icon {
+      margin-right: 12px;
+    }
+  }
+
+  .calendarButtonThird {
     font-size: 1rem;
     font-weight: 500;
     line-height: 180%;
@@ -304,7 +536,104 @@ opacity: 0.8;
 }
 
 
-// Third image 
+/// Second block 
+
+.containerLeftInfo {
+  // width: 392px;
+  height: 418px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08), 0px 2px 4px rgba(61, 61, 61, 0.12);
+  border-radius: 20px;
+}
+
+.titleLeftContent {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 32px;
+  margin-top: 32px !important;
+  padding-bottom: 24px;
+  line-height: 180%;
+  letter-spacing: 0.0025em;
+  color: #2B2B2B;
+}
+
+.ListLeftContent {
+  padding-left: 32px;
+  padding-bottom: 24px;
+}
+
+.buttonLeftContent {
+  padding: 6px 16px;
+  width: 120px;
+  height: 35px;
+  font-size: 14px;
+  background: rgba(43, 43, 43, 0.05);
+  color: grey;
+  border: none;
+  margin-left: 32px;
+  border-radius: 5px;
+}
+
+.iconLeftInfo {
+  margin-right: 12px;
+  font-size: 1.2rem;
+  color: #999999;
+}
+
+.textLeftInfo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.0015em;
+  color: #2B2B2B;
+  opacity: 0.6;
+}
+
+.imgBorder {
+  position: relative;
+  box-shadow: 0px 8px 24px rgba(41, 41, 41, 0.08), 0px 2px 4px rgba(61, 61, 61, 0.12);
+  border-radius: 20px;
+}
+
+.bottomBorder {
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  height: 15%;
+  z-index: 3;
+  bottom: 0;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #fff;
+}
+
+.titleBorder {
+  transform: translateY(16px);
+  text-align: center;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.0025em;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 418px;
+  box-shadow: rgba(43, 43, 43, 0.05);
+  border-radius: 20px;
+}
+
+
+// Block Third Image
+
+.titleThirdImage {
+  margin-top: 60px;
+}
 
 .imageThird {
   height: 100%;
@@ -312,16 +641,140 @@ opacity: 0.8;
   border-radius: 10px;
 }
 
+
 .containerAllCardArticles {
   a {
     text-decoration: none;
   }
+
   .containerSelectedCards {
     width: 390px;
     height: 250px;
     height: auto;
     padding-right: 24px;
     padding-bottom: 40px;
+  }
+}
+
+/// Article similaire 
+
+.containerSelectedCards {
+  width: 392px;
+  height: auto;
+
+  h4 {
+    padding-top: 16px;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 160%;
+    font-weight: 500;
+    letter-spacing: 0.25%;
+  }
+
+  .containerInfo {
+    span {
+      font-size: 0.875rem;
+      line-height: 160%;
+      letter-spacing: 0.25%;
+      color: #2b2b2b;
+    }
+
+    .containerButtonSelectedCards {
+      color: rgba(43, 43, 43, 0.5);
+      border: none;
+      padding: 6px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .containerImgSelectedCards {
+    width: 100%;
+    height: 255px;
+    border-radius: 10px;
+  }
+}
+
+
+// ANIMATION IMG
+.containerImgSelectedCards:hover img {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.containerViewTime {
+  position: absolute;
+  z-index: 3;
+  top: 15px;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.3); // border: none;
+  width: 89px;
+  height: 34px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: 0.5s ease;
+  opacity: 0;
+
+  &.view {
+    left: 15px;
+  }
+
+  &.time {
+    left: 115px;
+  }
+}
+
+.containerImgSelectedCards:hover {
+  .containerViewTime {
+    opacity: 1;
+  }
+}
+
+.containerImgSelectedCards:before {
+  content: "Découvrir"+ " "+ "\2192";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  opacity: 0;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.containerImgSelectedCards:hover:before {
+  opacity: 1;
+}
+
+.containerImgSelectedCards {
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  position: relative !important;
+  overflow: hidden;
+}
+
+.containerImgSelectedCards {
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
 }
 
@@ -460,5 +913,50 @@ opacity: 0.8;
     .rightContent {
       margin-top: 2.813rem;
     }
+  }
+}
+
+@media (max-width: 991px) {
+  .containerLeftInfo {
+    margin-bottom: 32px;
+  }
+}
+
+
+
+
+@media (min-width: 900px) and (max-width: 1715px) {
+  .containerAllArticlesSimilaire {
+    .containerAllCardArticles {
+      .containerSelectedCards {
+        width: 50% !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 900px) {
+  .containerAllArticlesSimilaire {
+    .containerAllCardArticles {
+      .containerSelectedCards {
+        width: 100% !important;
+        padding-right: 0rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+
+  .calendarButtonFirst {
+    margin-bottom: 24px !important;
+  }
+
+  .calendarButtonSecond {
+    margin-bottom: 24px !important;
+  }
+
+  .calendarButtonThird {
+    margin-bottom: 24px !important;
   }
 }
