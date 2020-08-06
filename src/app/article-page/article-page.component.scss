@@ -1,6 +1,198 @@
+$bg-theme-light: #fff;
+$color-theme-light: #222;
+
+$bg-theme-dark: #0c0c0c;
+$color-theme-dark: rgba(255, 255, 255, 0.8);
+$color-button-theme-dark: rgba(255, 255, 255, 0.5);
+$color-title-theme-dark: #fff;
+$color-background-button-dark: #2b2b2b;
+$color-background-footer: #2b2b2b;
+
+
+.theme-dark {
+  background-color: $bg-theme-dark;
+  h1 {
+    color: $color-title-theme-dark !important;
+  }
+
+  span {
+    color: $color-theme-dark !important;
+    // .mat-icon {
+    //   color: $color-theme-dark;
+    // }
+  }
+
+  .title {
+    color: #fff !important;
+  }
+
+  h4 {
+    color: $color-theme-dark !important;
+  }
+
+
+  .containerSelectedCards {
+  .containerInfo {
+    span {
+      color: $color-theme-dark !important
+    }
+  }
+
+    .containerButtonSelectedCards {
+      background: $color-background-button-dark !important;
+      color: $color-button-theme-dark !important;
+    }
+  }
+
+  .row {
+    margin-bottom: 0px !important;
+    padding-bottom: 32px !important;
+  }
+
+  .calendarButtonFirst {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+  }
+
+  .calendarButtonSecond {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+  }
+
+  .calendarButtonThird {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+  }
+
+  p {
+    color: $color-theme-dark !important;
+  }
+
+  .buttonArticle {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+  }
+  .discoverButton {
+    background-color: $color-background-button-dark;
+    color: $color-theme-dark !important;
+  }
+
+  .gridContainer {
+    h2 {
+      color: $color-title-theme-dark !important;
+    }
+    p {
+      color: $color-theme-dark !important;
+    }
+  }
+  .containerCardEvent {
+    .infoCardEvent {
+      h4 {
+        color: $color-title-theme-dark !important;
+      }
+    }
+    .infoPosition {
+      color: $color-theme-dark !important;
+      .mat-icon {
+        color: $color-theme-dark !important;
+      }
+    }
+  }
+
+  /// Second block 
+
+  .containerLeftInfo {
+    background-color: $color-background-footer;
+    li {
+      color: #fff;
+      opacity: 0.6;
+    }
+    .buttonLeftContent {
+      background-color: $color-button-theme-dark;
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+
+  .imgBorder {
+    .bottomBorder {
+      background-color: #7C7C7C;
+    }
+    .titleBorder {
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+
+  // Mobile Card Event
+
+  .containerCardEventMobile {
+    background: $color-background-button-dark;
+    .infoCardEvent {
+      h4 {
+        color: $color-title-theme-dark !important;
+      }
+    }
+    .infoPosition {
+      color: $color-theme-dark !important;
+      .mat-icon {
+        color: $color-theme-dark !important;
+      }
+    }
+
+    .calendarButton,
+    .previewButton {
+      background-color: rgba(75, 74, 74, 0.6) !important;
+    }
+  }
+
+  .containerSimilaire {
+    .title {
+      color: #7C7C7C;
+    }
+  }
+
+  // End Mobile Card Event
+
+  .calendarButton,
+  .previewButton {
+    background-color: $color-background-button-dark !important;
+    color: $color-theme-dark !important;
+    .mat-icon {
+      color: $color-theme-dark !important;
+    }
+  }
+}
+.theme-dark.containerFooter {
+  background-color: $color-background-footer !important;
+  // background: $color-background-footer !important;
+  p {
+    color: $color-theme-dark !important;
+  }
+  h5 {
+    color: $color-title-theme-dark !important;
+  }
+  .titleList {
+    color: $color-title-theme-dark !important;
+  }
+  li {
+    color: $color-theme-dark !important;
+  }
+  .legalInfo li,
+  a {
+    color: $color-theme-dark !important;
+  }
+}
+
+
 .container {
-  max-width: 70%;
-  margin: 0 auto;
+  margin: 0 auto !important;
+  max-width: 100% !important;
+  padding: 0 15% !important;
 }
 
 .nav-link.active {
@@ -19,7 +211,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  color: #7c7c7c;
+  color: #ffffff;
   font-weight: bold;
   line-height: 140%;
   padding-left: 15px;
