@@ -10,17 +10,16 @@ export class AppComponent implements OnInit {
   // constructor() {}
   ngOnInit() {}
   // setTheme()
-  // {
-  //   if(this.storedTheme === 'theme-dark')
-  //   {
-  //       localStorage.setItem('theme-color', 'theme-light');
-  //       this.storedTheme = localStorage.getItem('theme-color');
-  //     }
-  //     else
-  //     {
-  //       localStorage.setItem('theme-color', 'theme-dark');
-  //       this.storedTheme = localStorage.getItem('theme-color');
-  //     }
+  // storedTheme: string = localStorage.getItem("theme-color"); // key value from localstorage
+  // setTheme() {
+  //   if (this.storedTheme === "theme-dark") {
+  //     localStorage.setItem("theme-color", "theme-light");
+  //     this.storedTheme = localStorage.getItem("theme-color");
+  //   } else {
+  //     localStorage.setItem("theme-color", "theme-dark");
+  //     this.storedTheme = localStorage.getItem("theme-color");
+  //   }
+  //   // return this.setTheme();
   // }
 
   // private isDark = false;

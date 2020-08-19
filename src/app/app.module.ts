@@ -32,7 +32,6 @@ import { InfoComplementaire2Component } from "./info-complementaire2/info-comple
 import { ConfirmationComponent } from "./confirmation/confirmation.component";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatDatepickerModule } from "@angular/material/datepicker";
-import { OverlayModule } from "@angular/cdk/overlay";
 import { MatExpansionModule } from "@angular/material/expansion";
 
 import { FaqComponent } from "./faq/faq.component";
@@ -59,10 +58,10 @@ import { ArticlePageComponent } from "./article-page/article-page.component";
 import { WebzineActuComponent } from "./webzine-actu/webzine-actu.component";
 import { WebzineInspiComponent } from "./webzine-inspi/webzine-inspi.component";
 import { TextImageCentreComponent } from "./text-image-centre/text-image-centre.component";
-import { OverlayExampleComponent } from "./overlay-example/overlay-example.component";
+// import { OverlayExampleModule } from "./overlay-example/overlay-example.module";
 import { AgendaComponent } from "./agenda/agenda.component";
 import { Ng5SliderModule } from "ng5-slider";
-
+import { OverlayModule } from "@angular/cdk/overlay";
 @NgModule({
   declarations: [
     AppComponent,
@@ -93,7 +92,6 @@ import { Ng5SliderModule } from "ng5-slider";
     ArticlePageComponent,
     TextImageCentreComponent,
     WebzineActuComponent,
-    OverlayExampleComponent,
     AgendaComponent,
     WebzineInspiComponent,
   ],
@@ -129,6 +127,8 @@ import { Ng5SliderModule } from "ng5-slider";
     MatMenuModule,
     MatExpansionModule,
     Ng5SliderModule,
+    OverlayModule,
+    // OverlayExampleModule,
   ],
   providers: [ImageService],
   bootstrap: [AppComponent],

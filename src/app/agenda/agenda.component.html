@@ -1,14 +1,125 @@
-<!-- <mat-sidenav-container>
-  <mat-sidenav [(opened)]="opened"> Sidenav </mat-sidenav>
-  <mat-sidenav-content>Main</mat-sidenav-content>
-</mat-sidenav-container> -->
+<div>
+  <mat-form-field
+    appearance="fill"
+    class="drop-down-input containerSearch {{ storedTheme }}"
+    [class.drop-down-input-active]="showPanel$ | async"
+    cdkOverlayOrigin
+    #originOverlay="cdkOverlayOrigin"
+  >
+    <mat-icon matPrefix class="mr-2 md-24 searchIcon">search</mat-icon>
 
-<mat-sidenav-container>
-  <mat-sidenav [(opened)]="hamburgerOpened"> </mat-sidenav>
+    <input
+      class="inputSearch"
+      matInput
+      type="search"
+      placeholder="Rechercher dans le webzine"
+      required
+    />
+
+    <mat-icon matSuffix color="primary">close</mat-icon>
+  </mat-form-field>
+  <ng-template
+    cdkConnectedOverlay
+    hostElement
+    cdkConnectedOverlayHasBackdrop
+    [cdkConnectedOverlayScrollStrategy]="scrollStrategy"
+    [cdkConnectedOverlayOffsetY]="-20"
+    [cdkConnectedOverlayOrigin]="originOverlay"
+    [cdkConnectedOverlayOpen]="showPanel$ | async"
+  >
+    <section class="drop-down-serch-panel {{ storedTheme }}">
+      <h3 class="mb-0 pt-3">Raccourcis</h3>
+      <div class="col pl-0">
+        <ul class="containerItemSearch d-flex flex-column pl-0">
+          <li>Mariage</li>
+          <li>Mariage</li>
+          <li>Mariage</li>
+          <li>Mariage</li>
+          <li>Mariage</li>
+          <li>Mariage</li>
+          <li>Mariage</li>
+        </ul>
+      </div>
+    </section>
+  </ng-template>
+</div>
+
+<!-- <app-drop-down-seach></app-drop-down-seach> -->
+
+<!-- NAVBAR START -->
+<!-- <mat-sidenav-container class="{{ storedTheme }}">
+  <mat-sidenav #hamburgerNav [(opened)]="hamburgerOpened">
+    <div class="row contentHamburgerNav">
+      <div class="col d-flex justify-content-end containerCloseIcon">
+        <mat-icon
+          class="md-24 cursor-pointer"
+          color="primary"
+          (click)="hamburgerNav.close()"
+          >close</mat-icon
+        >
+      </div>
+      <div class="col d-flex align-items-center">
+        <div
+          class="containerIconHamburger d-flex justify-content-center align-items-center"
+        >
+          <mat-icon class="md-18" color="primary">menu</mat-icon>
+        </div>
+        <h3 class="mb-0 ml-4">Menu</h3>
+      </div>
+      <div class="col d-flex flex-column containerNavItems">
+        <ul class="navItems">
+          <li>
+            <a href="" class="active"
+              ><mat-icon class="md-18" color="primary">home</mat-icon>
+              Accueil</a
+            >
+          </li>
+          <li>
+            <a href="" class=""
+              ><mat-icon class="md-18" color="primary">fiber_new</mat-icon>
+              Actualités
+            </a>
+          </li>
+          <li>
+            <a href="" class=""
+              ><mat-icon class="md-18" color="primary">emoji_objects</mat-icon>
+              Inspirations
+            </a>
+          </li>
+          <li>
+            <a href="" class=""
+              ><mat-icon class="md-18" color="primary">today</mat-icon>
+              Évènements
+            </a>
+          </li>
+          <li class="lastChild">
+            <a href="" class=""
+              ><mat-icon class="md-18" color="primary">person</mat-icon>
+              Mon espace personnel
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col divider"></div>
+      <div
+        class="col d-flex justify-content-between align-items-center darkModeContainer"
+      >
+        <span>Dark mode</span>
+        <mat-slide-toggle
+          (click)="setTheme()"
+          disableRipple
+          color="primary"
+        ></mat-slide-toggle>
+      </div>
+    </div>
+  </mat-sidenav>
   <mat-sidenav #filterNav position="end" [(opened)]="filterOpened">
     <div class="row contentFilterNav">
-      <div class="col d-flex justify-content-end">
-        <mat-icon class="md-24" color="primary" (click)="filterNav.close()"
+      <div class="col d-flex justify-content-end containerCloseIcon">
+        <mat-icon
+          class="md-24 cursor-pointer"
+          color="primary"
+          (click)="filterNav.close()"
           >close</mat-icon
         >
       </div>
@@ -20,31 +131,74 @@
         </div>
         <h3 class="mb-0 ml-4">Filtres</h3>
       </div>
-      <div class="col">
-        <!-- <p>Min value: <input type="number" [(ngModel)]="minValue" /></p>
-        <p>Max value: <input type="number" [(ngModel)]="maxValue" /></p> -->
-        <ng5-slider
-          [(value)]="minValue"
-          [(highValue)]="maxValue"
-          [options]="options"
-        ></ng5-slider>
-        <!-- <mat-accordion>
-          <mat-expansion-panel
-            (opened)="panelOpenState = true"
-            (closed)="panelOpenState = false"
+
+      <mat-accordion class="">
+        <mat-expansion-panel
+          expanded
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Durée
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div
+            class="col d-flex align-items-center bigContainerRangeNumber pl-0"
           >
-            <mat-expansion-panel-header>
-              <mat-panel-title> Durée </mat-panel-title>
-              <mat-panel-description> </mat-panel-description>
-            </mat-expansion-panel-header>
-            <p>I'm visible because I am open</p>
-          </mat-expansion-panel>
-        </mat-accordion> -->
-      </div>
+            <div class="containerRangeNumber d-flex">
+              <span
+                class="littleContainer d-flex justify-content-between align-items-center"
+              >
+                <input type="number" [(ngModel)]="minValue" class="" /> -
+                <input type="number" [(ngModel)]="maxValue" class="" />
+              </span>
+            </div>
+            <span class="timeValue">
+              min
+            </span>
+          </div>
+          <div class="col pl-0">
+            <ng5-slider
+              [(value)]="minValue"
+              [(highValue)]="maxValue"
+              [options]="options"
+            ></ng5-slider>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <mat-accordion class="">
+        <mat-expansion-panel
+          expanded
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>Tags</mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="col pl-0 d-flex flex-column">
+            <mat-checkbox disableRipple color="primary" class="example-margin"
+              >Bonnes adresses</mat-checkbox
+            >
+            <mat-checkbox disableRipple color="primary" class="example-margin"
+              >Food</mat-checkbox
+            >
+            <mat-checkbox disableRipple color="primary" class="example-margin"
+              >Mode</mat-checkbox
+            >
+            <mat-checkbox disableRipple color="primary" class="example-margin"
+              >À faire</mat-checkbox
+            >
+            <mat-checkbox disableRipple color="primary" class="example-margin"
+              >Déco</mat-checkbox
+            >
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
     </div>
   </mat-sidenav>
 
-  <!-- <mat-sidenav-content>Main</mat-sidenav-content> -->
   <div class="navbar d-lg-flex">
     <a class="logoAbc mr-4">
       <img src="assets/Green.svg" alt="" />
@@ -187,7 +341,8 @@
       </span>
     </div>
   </div>
-</mat-sidenav-container>
+</mat-sidenav-container> -->
+<!-- NAVBAR END -->
 
 <div class="container {{ storedTheme }} paddingTopNavBar">
   <div class="row align-items-center">
@@ -291,7 +446,7 @@
 
 <!-- A PROXIMITE -->
 
-<div class="containerHorizontalSlider  {{ storedTheme }}">
+<div class="containerHorizontalSlider {{ storedTheme }}">
   <h2 class="bigPaddingTop p-0 mb-0">À proximité</h2>
   <div class="col pl-0 pr-0">
     <div class="app mt-4">

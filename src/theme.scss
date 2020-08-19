@@ -18,6 +18,15 @@ $mat-theming-theme-dark: mat-dark-theme(
   $my-app-warn
 );
 
+$bg-theme-light: #fff;
+$color-theme-light: #222;
+
+$bg-theme-dark: #0c0c0c;
+$color-theme-dark: rgba(255, 255, 255, 0.8);
+$color-title-theme-dark: #fff;
+$color-background-button-dark: #2b2b2b;
+$color-background-footer: #2b2b2b;
+
 @include angular-material-theme($mat-theming-theme);
 // @include angular-material-theme($mat-theming-theme-dark);
 
@@ -28,10 +37,112 @@ $mat-theming-theme-dark: mat-dark-theme(
 //   }
 // }
 // .theme-light {
-//   @include angular-material-theme($mat-theming-theme);
+//   @include angular-material-theme&($mat-theming-theme);
 // }
 
+.cdk-overlay-dark-backdrop {
+  background-color: $color-theme-dark;
+  background: $color-theme-dark;
+  // opacity: 0.7 !important;
+}
+
+.theme-dark {
+  .cdk-overlay-dark-backdrop {
+    background-color: red;
+    background: red;
+  }
+  .mat-drawer-backdrop.mat-drawer-shown {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+  }
+
+  .mat-sidenav {
+    background: #1a1a1a;
+    h3 {
+      color: white !important;
+    }
+
+    .containerIconHamburger {
+      background-color: rgba(50, 148, 148, 0.5) !important;
+    }
+
+    .navItems {
+      a {
+        color: rgba(255, 255, 255, 0.8) !important;
+      }
+    }
+    .darkModeContainer {
+      span {
+        color: rgba(255, 255, 255, 0.8) !important;
+      }
+    }
+
+    .mat-expansion-panel-header-description,
+    .mat-expansion-indicator::after {
+      color: #d6d6d6 !important;
+    }
+
+    .mat-expansion-panel {
+      background: #1a1a1a;
+    }
+    .mat-checkbox-label {
+      color: #c5c5c5 !important;
+    }
+    .mat-checkbox-frame {
+      background: rgba(124, 124, 124, 0.3) !important;
+      border: none !important;
+    }
+    .mat-expansion-panel-header-title {
+      color: #d6d6d6 !important;
+    }
+    .ng5-slider .ng5-slider-bar {
+      cursor: pointer;
+    }
+    .containerRangeNumber {
+      input {
+        color: white !important;
+        background: none !important;
+      }
+    }
+  }
+  .containerIconFilter {
+    background-color: #329494 !important;
+    .mat-icon {
+      color: white;
+    }
+  }
+
+  .mat-form-field-flex {
+    background-color: $bg-theme-dark !important;
+  }
+}
+
+.mat-form-field-flex {
+  background-color: white !important;
+}
+
 // RANGE SLIDER
+
+.mat-expansion-panel .mat-expension-panel-header {
+  background: none !important;
+  border-bottom: 1px solid red !important;
+  margin-bottom: 2rem !important;
+  height: 54px !important;
+}
+
+.mat-drawer-inner-container {
+  overflow: hidden !important;
+}
+
+.ng5-slider :focus {
+  outline: none !important;
+}
+.ng5-slider .ng5-slider-pointer:after {
+  display: none !important;
+}
+
+.ng5-slider .ng5-slider-bar {
+  background: #dceeee !important;
+}
 
 .ng5-slider .ng5-slider-pointer,
 .ng5-slider .ng5-slider-selection,
@@ -42,7 +153,38 @@ $mat-theming-theme-dark: mat-dark-theme(
   display: none !important;
 }
 
+.ng5-slider .ng5-slider-pointer {
+  width: 15px !important;
+  height: 15px !important;
+  top: -6px !important;
+}
+
 // END RANGE SLIDER
+
+// SEARCH BAR
+
+.containerSearch {
+  .mat-form-field-wrapper {
+    padding-bottom: 0em !important;
+  }
+}
+
+.drop-down-input-active {
+  z-index: 10000;
+  &.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: white;
+  }
+}
+
+.mat-form-field-suffix {
+  cursor: pointer !important;
+}
+
+.mat-form-field-underline {
+  display: none;
+}
+
+// END SEARCH BAR
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -68,18 +210,6 @@ button.close {
   border-radius: 35px;
   border: 1px solid #d5dde5;
 }
-
-// .containerAddRemoveButton .minusButton {
-//   position: relative;
-//   right: -40px;
-//   transform: scale(1.2) !important;
-// }
-
-// .containerAddRemoveButton .plusButton {
-//   transform: scale(1.2) !important;
-//   position: relative;
-//   left: -40px;
-// }
 
 .buttonContinue a {
   text-transform: none;
@@ -281,10 +411,12 @@ a .mat-icon {
 h1 {
   margin-top: 2em;
 }
+
 html,
 body {
   height: 100%;
   font-size: 100%;
+  // overflow: hidden;
 }
 body {
   margin: 0;
