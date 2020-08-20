@@ -1,5 +1,6 @@
 <div>
   <mat-form-field
+    *ngIf="test"
     appearance="fill"
     class="drop-down-input containerSearch {{ storedTheme }}"
     [class.drop-down-input-active]="showPanel$ | async"
@@ -16,15 +17,17 @@
       required
     />
 
-    <mat-icon matSuffix color="primary">close</mat-icon>
+    <mat-icon matSuffix color="primary" (click)="toggleSearch()"
+      >close</mat-icon
+    >
   </mat-form-field>
+  <!-- [cdkConnectedOverlayOrigin]="originOverlay" -->
+
   <ng-template
     cdkConnectedOverlay
-    hostElement
     cdkConnectedOverlayHasBackdrop
     [cdkConnectedOverlayScrollStrategy]="scrollStrategy"
     [cdkConnectedOverlayOffsetY]="-20"
-    [cdkConnectedOverlayOrigin]="originOverlay"
     [cdkConnectedOverlayOpen]="showPanel$ | async"
   >
     <section class="drop-down-serch-panel {{ storedTheme }}">
@@ -47,7 +50,7 @@
 <!-- <app-drop-down-seach></app-drop-down-seach> -->
 
 <!-- NAVBAR START -->
-<!-- <mat-sidenav-container class="{{ storedTheme }}">
+<mat-sidenav-container class="{{ storedTheme }}" *ngIf="!test">
   <mat-sidenav #hamburgerNav [(opened)]="hamburgerOpened">
     <div class="row contentHamburgerNav">
       <div class="col d-flex justify-content-end containerCloseIcon">
@@ -290,7 +293,7 @@
           </defs>
         </svg>
       </span>
-      <span>
+      <span (click)="toggleSearch()">
         <svg
           width="22"
           height="22"
@@ -341,7 +344,7 @@
       </span>
     </div>
   </div>
-</mat-sidenav-container> -->
+</mat-sidenav-container>
 <!-- NAVBAR END -->
 
 <div class="container {{ storedTheme }} paddingTopNavBar">

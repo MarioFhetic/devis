@@ -3,7 +3,7 @@ import { Options } from "ng5-slider";
 import { Observable, merge } from "rxjs";
 import { FocusMonitor } from "@angular/cdk/a11y";
 import { MatInput } from "@angular/material/input";
-import { map, filter, mapTo } from "rxjs/operators";
+import { filter, mapTo } from "rxjs/operators";
 import {
   CdkConnectedOverlay,
   ScrollStrategyOptions,
@@ -21,6 +21,7 @@ export class AgendaComponent implements OnInit {
   filterOpened = false;
   panelOpenState = false;
   showNav = false;
+  test = false;
   showPanel$: Observable<boolean>;
 
   @ViewChild(MatInput, { read: ElementRef, static: true })
@@ -41,27 +42,31 @@ export class AgendaComponent implements OnInit {
   toggleIconTheme() {
     this.isActive = !this.isActive;
   }
+  toggleSearch() {
+    this.test = !this.test;
+  }
 
   storedTheme: string = localStorage.getItem("theme-color"); // key value from localstorage
   ngOnInit(): void {
-    this.scrollStrategy = this.scrollStrategies.block();
-    this.isPannelHidden$ = this.connectedOverlay.backdropClick.pipe(
-      mapTo(false)
-    );
+    if (this.test === true) {
+      this.scrollStrategy = this.scrollStrategies.block();
+      this.isPannelHidden$ = this.connectedOverlay.backdropClick.pipe(
+        mapTo(false)
+      );
 
-    this.isPanelVisible$ = this.focusMonitor.monitor(this.inputEl).pipe(
-      filter((focused) => !!focused),
-      mapTo(true)
-    );
+      this.isPanelVisible$ = this.focusMonitor.monitor(this.inputEl).pipe(
+        filter((focused) => !!focused),
+        mapTo(true)
+      );
 
-    this.showPanel$ = merge(this.isPannelHidden$, this.isPanelVisible$);
+      this.showPanel$ = merge(this.isPannelHidden$, this.isPanelVisible$);
+    }
   }
-
   minValue: number = 4;
-  maxValue: number = 20;
+  maxValue: number = 8;
   options: Options = {
     floor: 0,
-    ceil: 30,
+    ceil: 15,
   };
   setTheme() {
     if (this.storedTheme === "theme-dark") {
