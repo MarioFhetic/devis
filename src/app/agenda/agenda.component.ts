@@ -20,6 +20,7 @@ export class AgendaComponent implements OnInit {
   hamburgerOpened = false;
   filterOpened = false;
   panelOpenState = false;
+  showNav = false;
   showPanel$: Observable<boolean>;
 
   @ViewChild(MatInput, { read: ElementRef, static: true })

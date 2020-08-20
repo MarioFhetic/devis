@@ -576,3 +576,63 @@ textarea:focus {
   flex-direction: column !important;
   align-items: center !important;
 }
+
+// RESPONSIVE HORIZONTAL SLIDER
+
+@media (min-width: 1700px) and (max-width: 1900px) {
+  .containerHorizontalSlider {
+    .containerCardEvent {
+      width: 480px !important;
+    }
+  }
+}
+
+@media (min-width: 1900px) and (max-width: 2200px) {
+  .containerHorizontalSlider {
+    .containerCardEvent {
+      width: 535px !important;
+    }
+  }
+}
+
+@media (min-width: 2200px) and (max-width: 2400px) {
+  .containerHorizontalSlider {
+    .containerCardEvent {
+      width: 535px !important;
+    }
+  }
+}
+
+@media (min-width: 2400px) and (max-width: 2600px) {
+  .containerHorizontalSlider {
+    .containerCardEvent {
+      width: 620px !important;
+    }
+  }
+}
+
+//
+
+@media (min-width: 1700px) and (max-width: 1900px) {
+  .containerCardGuide {
+    width: 480px !important;
+  }
+}
+
+@media (min-width: 1900px) and (max-width: 2200px) {
+  .containerCardGuide {
+    width: 535px !important;
+  }
+}
+
+@media (min-width: 2200px) and (max-width: 2400px) {
+  .containerCardGuide {
+    width: 535px !important;
+  }
+}
+
+@media (min-width: 2400px) and (max-width: 2600px) {
+  .containerCardGuide {
+    width: 620px !important;
+  }
+}

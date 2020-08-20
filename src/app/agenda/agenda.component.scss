@@ -1165,10 +1165,10 @@ button.discoverButton {
   padding-bottom: 5.813rem;
 
   .containerCardEvent {
-    width: 33%;
+    width: 31.5%;
     height: auto;
     margin-bottom: 32px;
-    padding-right: 24px;
+    // padding-right: 24px;
 
     .imgCardEvent {
       width: 100%;
@@ -1490,7 +1490,8 @@ button.discoverButton {
 @media (min-width: 700px) and (max-width: 992px) {
   .containerEvent {
     .containerCardEvent {
-      width: 50% !important;
+      width: 48% !important;
+      padding-right: 0px !important;
     }
 
     .discoverElements {
@@ -1502,6 +1503,7 @@ button.discoverButton {
 @media (min-width: 576px) and (max-width: 700px) {
   .containerCardEvent {
     width: 100% !important;
+    padding-right: 0px !important;
   }
 
   .discoverElements {
