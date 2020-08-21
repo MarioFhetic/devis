@@ -1,6 +1,5 @@
-<div>
+<div *ngIf="test" class="bigContainerSearchBar pt-4 {{ storedTheme }}">
   <mat-form-field
-    *ngIf="test"
     appearance="fill"
     class="drop-down-input containerSearch {{ storedTheme }}"
     [class.drop-down-input-active]="showPanel$ | async"
@@ -21,32 +20,33 @@
       >close</mat-icon
     >
   </mat-form-field>
-
-  <!-- Ligne du dessous à mettre dans le ng-template pour afficher l'overlay au clique sur la searchbar -->
-  <!-- [cdkConnectedOverlayOrigin]="originOverlay" -->
-  <ng-template
-    cdkConnectedOverlay
-    cdkConnectedOverlayHasBackdrop
-    [cdkConnectedOverlayScrollStrategy]="scrollStrategy"
-    [cdkConnectedOverlayOffsetY]="-20"
-    [cdkConnectedOverlayOpen]="showPanel$ | async"
-  >
-    <section class="drop-down-serch-panel {{ storedTheme }}">
-      <h3 class="mb-0 pt-3">Raccourcis</h3>
-      <div class="col pl-0">
-        <ul class="containerItemSearch d-flex flex-column pl-0">
-          <li>Mariage</li>
-          <li>Mariage</li>
-          <li>Mariage</li>
-          <li>Mariage</li>
-          <li>Mariage</li>
-          <li>Mariage</li>
-          <li>Mariage</li>
-        </ul>
-      </div>
-    </section>
-  </ng-template>
 </div>
+
+<!-- Ligne du dessous à mettre dans le ng-template pour afficher l'overlay + dropdown au clique sur la searchbar -->
+<!-- Ne fonctionne pas si la searchbar est caché -->
+<!-- [cdkConnectedOverlayOrigin]="originOverlay" -->
+<ng-template
+  cdkConnectedOverlay
+  cdkConnectedOverlayHasBackdrop
+  [cdkConnectedOverlayScrollStrategy]="scrollStrategy"
+  [cdkConnectedOverlayOffsetY]="-20"
+  [cdkConnectedOverlayOpen]="showPanel$ | async"
+>
+  <section class="drop-down-serch-panel {{ storedTheme }}">
+    <h3 class="mb-0 pt-3">Raccourcis</h3>
+    <div class="col pl-0">
+      <ul class="containerItemSearch d-flex flex-column pl-0">
+        <li>Mariage</li>
+        <li>Mariage</li>
+        <li>Mariage</li>
+        <li>Mariage</li>
+        <li>Mariage</li>
+        <li>Mariage</li>
+        <li>Mariage</li>
+      </ul>
+    </div>
+  </section>
+</ng-template>
 
 <!-- <app-drop-down-seach></app-drop-down-seach> -->
 
@@ -348,7 +348,8 @@
 </mat-sidenav-container>
 <!-- NAVBAR END -->
 
-<div class="container {{ storedTheme }} paddingTopNavBar">
+<div class="container {{ storedTheme }} ">
+  <!-- paddingTopNavBar -->
   <div class="row align-items-center">
     <div class="col-lg-5 col-md-12 d-flex flex-column leftContent">
       <div class="containerInfo d-flex">
