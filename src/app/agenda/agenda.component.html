@@ -21,8 +21,9 @@
       >close</mat-icon
     >
   </mat-form-field>
-  <!-- [cdkConnectedOverlayOrigin]="originOverlay" -->
 
+  <!-- Ligne du dessous à mettre dans le ng-template pour afficher l'overlay au clique sur la searchbar -->
+  <!-- [cdkConnectedOverlayOrigin]="originOverlay" -->
   <ng-template
     cdkConnectedOverlay
     cdkConnectedOverlayHasBackdrop
@@ -647,7 +648,11 @@
 
 <!-- CATEGORIE -->
 
-<div class="container {{ storedTheme }} smallPaddingTop d-none d-sm-flex">
+<div
+  class="container {{
+    storedTheme
+  }} smallPaddingTop d-none d-sm-flex justify-content-around"
+>
   <div class="row w-100">
     <h2 class="p-0 w-100">Rechercher par catégorie</h2>
 
@@ -720,7 +725,7 @@
 <div
   class="containerHorizontalSlider containerAllCardCategoryMobile {{
     storedTheme
-  }} smallPaddingTop d-flex d-sm-none"
+  }} smallPaddingTop d-flex d-sm-none "
 >
   <div class="col pl-0 pr-0">
     <h2 class="p-0 w-100">Rechercher par catégorie</h2>

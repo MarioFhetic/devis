@@ -187,7 +187,6 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
-
 .navbar {
   padding: 0.5rem 0rem;
   margin-bottom: 64px;
@@ -476,7 +475,7 @@ button.discoverButton {
   align-content: start;
 }
 
-.app>* {
+.app > * {
   grid-column: 2 / -2;
 }
 
@@ -485,7 +484,7 @@ button.discoverButton {
   padding-right: 16px;
 }
 
-.app>.full {
+.app > .full {
   grid-column: 1 / -1;
 }
 
@@ -760,12 +759,10 @@ button.discoverButton {
   }
 }
 
-
 @media (max-width: 320px) {
   .logoAbc {
     display: none !important;
   }
-
 }
 
 // END CONTAINER FOOTER
@@ -774,7 +771,7 @@ button.discoverButton {
 
 @media (min-width: 450px) and (max-width: 888px) {
   .containerAllCardArticles {
-    justify-content: center !important;
+    // justify-content: center !important;
   }
 }
 
@@ -791,7 +788,7 @@ button.discoverButton {
 @media (min-width: 700px) and (max-width: 992px) {
   .containerAllCardArticles {
     .containerSelectedCards {
-      width: 50% !important;
+      width: 49% !important;
     }
   }
 }

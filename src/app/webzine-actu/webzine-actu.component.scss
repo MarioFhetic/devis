@@ -162,6 +162,10 @@ ul {
   padding-bottom: 4.5rem;
 }
 
+.separatorPaddingTop {
+  padding-top: 5.5rem;
+}
+
 // END GENERAL SETTINGS
 
 .overlayMenu {
@@ -186,7 +190,6 @@ ul {
 
   -webkit-text-fill-color: transparent;
 }
-
 
 .navbar {
   padding: 0.5rem 0rem;
@@ -476,7 +479,7 @@ button.discoverButton {
   align-content: start;
 }
 
-.app>* {
+.app > * {
   grid-column: 2 / -2;
 }
 
@@ -485,7 +488,7 @@ button.discoverButton {
   padding-right: 16px;
 }
 
-.app>.full {
+.app > .full {
   grid-column: 1 / -1;
 }
 
@@ -624,6 +627,28 @@ button.discoverButton {
   }
 }
 
+// RESPONSIVE PADDING HORIZONTAL SLIDER
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .containerHorizontalSlider {
+    .separatorPaddingTop {
+      padding-top: 10rem !important;
+    }
+  }
+}
+
+// Ipad
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .containerHorizontalSlider {
+    .separatorPaddingTop {
+      padding-top: 3rem !important;
+    }
+  }
+}
+
+// END RESPONSIVE PADDING HORIZONTAL SLIDER
+
 // RESPONSIVE HEADER SLIDER
 
 // @media (min-width: 768px) and (max-width: 1024px) {
@@ -756,12 +781,10 @@ button.discoverButton {
   }
 }
 
-
 @media (max-width: 320px) {
   .logoAbc {
     display: none !important;
   }
-
 }
 
 // END CONTAINER FOOTER
@@ -770,7 +793,7 @@ button.discoverButton {
 
 @media (min-width: 450px) and (max-width: 888px) {
   .containerAllCardArticles {
-    justify-content: center !important;
+    // justify-content: center !important;
   }
 }
 
@@ -787,7 +810,7 @@ button.discoverButton {
 @media (min-width: 700px) and (max-width: 992px) {
   .containerAllCardArticles {
     .containerSelectedCards {
-      width: 50% !important;
+      width: 49% !important;
     }
   }
 }
