@@ -652,3 +652,31 @@ textarea:focus {
 }
 
 // END ALL RESPONSIVE HORIZONTAL SLIDER
+
+// RESPONSIVE SEARCH BAR
+@media (min-width: 300px) and (max-width: 900px) {
+  .drop-down-input {
+    width: 300px !important;
+  }
+
+  .drop-down-serch-panel {
+    width: 300px !important;
+  }
+
+  .imgContainer {
+    height: 35vh !important;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .drop-down-input {
+    width: 500px !important;
+  }
+
+  .drop-down-serch-panel {
+    width: 500px !important;
+  }
+  .imgContainer {
+    height: 40vh !important;
+  }
+}
+// END RESPONSIVE SEARCH BAR
