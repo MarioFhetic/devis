@@ -185,7 +185,7 @@ p {
 }
 
 .navbar {
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 4%;
   margin-bottom: 64px;
   padding-top: 32px;
 
@@ -360,7 +360,7 @@ button.discoverButton {
   padding-bottom: 5.813rem;
 
   .containerCardEvent {
-    width: 33%;
+    width: 32.5%;
     height: auto;
     margin-bottom: 32px;
     padding-right: 24px;
@@ -968,7 +968,6 @@ button.discoverButton {
   .one {
     grid-column: 1/8;
     grid-row: 1/11;
-
   }
 
   .two {
@@ -992,7 +991,6 @@ button.discoverButton {
   .five {
     grid-column: 1/5;
     grid-row: 22/27;
-
   }
 
   .six {
@@ -1327,7 +1325,7 @@ button.discoverButton {
 
 @media (min-width: 700px) and (max-width: 992px) {
   .containerCardEvent {
-    width: 50% !important;
+    width: 49% !important;
   }
   .discoverElements {
     width: 100% !important;
@@ -1368,7 +1366,7 @@ button.discoverButton {
 
   .iconMenu {
     display: block !important;
-  } 
+  }
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
@@ -1386,6 +1384,5 @@ button.discoverButton {
   .logoAbc {
     display: none !important;
   }
-
 }
 // END RESPONSIVE FOOTER
