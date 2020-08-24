@@ -62,6 +62,11 @@ import { TextImageCentreComponent } from "./text-image-centre/text-image-centre.
 import { AgendaComponent } from "./agenda/agenda.component";
 import { Ng5SliderModule } from "ng5-slider";
 import { OverlayModule } from "@angular/cdk/overlay";
+import { OverlayExampleComponent } from './overlay-example/overlay-example.component';
+import { AgendaComponent } from './agenda/agenda.component';
+import { EvenementComponent } from './evenement/evenement.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -94,6 +99,7 @@ import { OverlayModule } from "@angular/cdk/overlay";
     WebzineActuComponent,
     AgendaComponent,
     WebzineInspiComponent,
+    EvenementComponent,
   ],
   entryComponents: [
     DialogExempleComponent,
