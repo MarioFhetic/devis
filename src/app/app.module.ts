@@ -59,10 +59,9 @@ import { WebzineActuComponent } from "./webzine-actu/webzine-actu.component";
 import { WebzineInspiComponent } from "./webzine-inspi/webzine-inspi.component";
 import { TextImageCentreComponent } from "./text-image-centre/text-image-centre.component";
 // import { OverlayExampleModule } from "./overlay-example/overlay-example.module";
-import { AgendaComponent } from "./agenda/agenda.component";
+// import { OverlayExampleComponent } from './overlay-example/overlay-example.component';
 import { Ng5SliderModule } from "ng5-slider";
 import { OverlayModule } from "@angular/cdk/overlay";
-import { OverlayExampleComponent } from './overlay-example/overlay-example.component';
 import { AgendaComponent } from './agenda/agenda.component';
 import { EvenementComponent } from './evenement/evenement.component';
 
